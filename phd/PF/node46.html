@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformaci&#195;&#179;n proyectiva y estimaci&#195;&#179;n de la homograf&#195;&#173;a</TITLE>
+<META NAME="description" CONTENT="Transformaci&#195;&#179;n proyectiva y estimaci&#195;&#179;n de la homograf&#195;&#173;a">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node44.html">
+<LINK REL="up" HREF="node42.html">
+<LINK REL="next" HREF="node47.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html872"
+  HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html868"
+  HREF="node42.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html864"
+  HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html870"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html873"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<B> Subir:</B> <A NAME="tex2html869"
+  HREF="node42.html">Formaci&#195;&#179;n de la imagen</A>
+<B> Anterior:</B> <A NAME="tex2html865"
+  HREF="node45.html">Par&#195;&#161;metros extr&#195;&#173;nsecos e intr&#195;&#173;nsecos</A>
+ &nbsp; <B>  <A NAME="tex2html871"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00763000000000000000"></A>
+<A NAME="sec:transf_proyectiva_homograph"></A>
+<BR>
+Transformaci&#195;&#179;n proyectiva y estimaci&#195;&#179;n de la homograf&#195;&#173;a
+</H2>
+Al tomar dos im&#195;&#161;genes de una misma escena desde diferentes puntos de vista, existe una importante relaci&#195;&#179;n proyectiva entre &#195;&#169;stas y la escena. Estas im&#195;&#161;genes, pueden haber sido obtenidas mediante la misma c&#195;&#161;mara (tomando la fotograf&#195;&#173;a desde dos puntos de vistas diferentes), o mediante dos c&#195;&#161;maras posicionadas en diferentes lugares observando el mismo punto.
+
+<P>
+Una transformaci&#195;&#179;n proyectiva (tambi&#195;&#169;n conocida con los t&#195;&#169;rminos equivalentes: colineaci&#195;&#179;n u homograf&#195;&#173;a) es un mapeo invertible <SPAN CLASS="MATH"><IMG
+ WIDTH="182" HEIGHT="89" ALIGN="BOTTOM" BORDER="0"
+ SRC="img211.png"
+ ALT="$ h$"></SPAN> de <!-- MATH
+ $\mathbb{P}^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img212.png"
+ ALT="$ \mathbb{P}^2$"></SPAN> a s&#195;&#173; mismo, de tal manera que tres puntos <!-- MATH
+ $x_1, x_2, x_3$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img213.png"
+ ALT="$ x_1, x_2, x_3$"></SPAN> est&#195;&#161;n sobre la misma l&#195;&#173;nea si y solo si <!-- MATH
+ $h(x_1), h(x_2), h(x_3)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img214.png"
+ ALT="$ h(x_1), h(x_2), h(x_3)$"></SPAN> tambi&#195;&#169;n lo est&#195;&#161;n. 
+<P>
+<DIV><A NAME="def:transf_proyectiva"><B>Definici&#195;^3n  thedef_transf_proyectiva </B></A> &nbsp; 
+<I>Un mapeo <SPAN CLASS="MATH"><IMG
+ WIDTH="182" HEIGHT="89" ALIGN="BOTTOM" BORDER="0"
+ SRC="img211.png"
+ ALT="$ h$"></SPAN>: <!-- MATH
+ $\mathbb{P}^2 \rightarrow \mathbb{P}^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="152" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img215.png"
+ ALT="$ \mathbb{P}^2 \rightarrow \mathbb{P}^2$"></SPAN> es
+  una transformaci&#195;&#179;n proyectiva si y solo si existe una matriz de <!-- MATH
+ $3 \times 3$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="262" HEIGHT="262" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ 3\times3$"></SPAN> (<!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN>) tal que para cada punto en <!-- MATH
+ $\mathbb{P}^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img212.png"
+ ALT="$ \mathbb{P}^2$"></SPAN> representado por un vector <!-- MATH
+ $\mathbf{x}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img69.png"
+ ALT="$ \mathbf{x}$"></SPAN> se cumple que <!-- MATH
+ $h(\mathbf{x})=\textit{H}\mathbf{x}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img217.png"
+ ALT="$ h(\mathbf{x})=\textit{H}\mathbf{x}$"></SPAN>.</I></DIV><P></P>
+Una definici&#195;&#179;n algebraica se expresa en la Def. <A HREF="#def:transf_proyectiva">1</A>, de la que se puede interpretar que:
+
+<UL>
+<LI>cualquier punto en <!-- MATH
+ $\mathbb{P}^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img212.png"
+ ALT="$ \mathbb{P}^2$"></SPAN> es representado por un vector homog&#195;&#169;neo <!-- MATH
+ $\mathbf{x}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img69.png"
+ ALT="$ \mathbf{x}$"></SPAN> de 3 componentes y <!-- MATH
+ $\textit{H}\mathbf{x}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="92" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img218.png"
+ ALT="$ \textit{H}\mathbf{x}$"></SPAN> es un mapeo lineal en coordenadas homog&#195;&#169;neas,
+</LI>
+<LI>cualquier transformaci&#195;&#179;n lineal invertible de coordenadas homog&#195;&#169;neas es una transformaci&#195;&#179;n proyectiva.
+</LI>
+</UL>
+
+<P>
+Si consideramos el conjunto de puntos <!-- MATH
+ $(x_i,y_i,z_i)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img219.png"
+ ALT="$ (x_i,y_i,z_i)$"></SPAN> perteneciente a una primer imagen y sabemos que mapean a un conjunto de puntos <!-- MATH
+ $(x'_i, y'_i, z'_i)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="80" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img220.png"
+ ALT="$ (x'_i, y'_i, z'_i)$"></SPAN> en la segunda imagen (ambos en coordenadas homog&#195;&#169;neas), la relaci&#195;&#179;n entre las dos im&#195;&#161;genes es una homograf&#195;&#173;a si se cumple la ecuaci&#195;&#179;n <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:eq_cumple_homografia"></A><!-- MATH
+ \begin{equation}
+\begin{bmatrix}
+  x'_i\\
+  y'_i\\
+  z'_i
+  \end{bmatrix}=\textit{H}
+  \begin{bmatrix}
+  x_i\\
+  y_i \\
+  z_i
+  \end{bmatrix}\Longrightarrow
+\begin{bmatrix}
+  x'_i\\
+  y'_i\\
+  z'_i
+  \end{bmatrix}=
+  \begin{bmatrix}
+  h_{11} & h_{12} & h_{13}\\
+  h_{21} & h_{22} & h_{23}\\
+  h_{31} & h_{32} & h_{33}\\
+  \end{bmatrix}
+\begin{bmatrix}
+  x_i\\
+  y_i \\
+  z_i
+  \end{bmatrix}.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="80" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.png"
+ ALT="$\displaystyle \begin{bmatrix}x'_i\\ y'_i\\ z'_i \end{bmatrix}=\textit{H} \begin...
+... h_{32} &amp; h_{33}\\ \end{bmatrix} \begin{bmatrix}x_i\\ y_i \\ z_i \end{bmatrix}.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">24</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Se puede interpretar de la ecuaci&#195;&#179;n (<A HREF="#eq:eq_cumple_homografia">2.24</A>) que la homograf&#195;&#173;a <!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN> mapea coordenadas <SPAN CLASS="MATH"></SPAN> en una imagen a coordenadas <SPAN CLASS="MATH"><IMG
+ WIDTH="402" HEIGHT="89" ALIGN="BOTTOM" BORDER="0"
+ SRC="img222.png"
+ ALT="$ x'$"></SPAN> en otra. Es decir, la proyecci&#195;&#179;n a trav&#195;&#169;s de rayos que pasan a trav&#195;&#169;s de un punto en com&#195;&#186;n (el centro de proyecci&#195;&#179;n), definen un mapeo de un plano a otro. Este mapeo punto a punto, preserva el mapeo de una l&#195;&#173;nea en un plano a otra l&#195;&#173;nea en otro plano, pero el paralelismo no es necesariamente preservado. Si se considera un plano que pase a trav&#195;&#169;s del centro de proyecci&#195;&#179;n (Fig. <A HREF="#fig:homografia_esquema">2.17</A>), el mismo intersectar&#195;&#173;a los planos <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img223.png"
+ ALT="$ \pi$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img224.png"
+ ALT="$ \pi'$"></SPAN> mapeando l&#195;&#173;neas de un plano a otro. Dado este mapeo, la proyecci&#195;&#179;n central es una transformaci&#195;&#179;n proyectiva y puede ser representado por un mapeo lineal en coordenadas homog&#195;&#169;neas de la forma <!-- MATH
+ $\mathbf{x'}=\textit{H}\mathbf{x}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img225.png"
+ ALT="$ \mathbf{x'}=\textit{H}\mathbf{x}$"></SPAN>.
+
+<DIV ALIGN="CENTER"><A NAME="fig:homografia_esquema"></A><A NAME="1609"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 2.17:</STRONG>
+La proyecci&#195;&#179;n central mapea puntos de un plano a puntos en otro plano. (Figura adaptada de ()).</CAPTION>
+<TR><TD>
+<DIV CLASS="centerline" ID="par13233" ALIGN="CENTER">
+<IMG
+ WIDTH="73" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img226.png"
+ ALT="\includegraphics[scale=0.7]{../figs/sizzerman/homografia_esquema}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+La matriz <!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN> contiene nueve elementos y resulta ambigua al escalarla (el uso de coordenadas homog&#195;&#169;neas significa que cualquier m&#195;&#186;ltiplo de la homograf&#195;&#173;a, tendr&#195;&#173;a el mismo efecto). Agregando un factor de escala <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN>, la expresi&#195;&#179;n (<A HREF="#eq:eq_cumple_homografia">2.24</A>) queda como
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:eq_ecuacion_rel_homography_ptos"></A><!-- MATH
+ \begin{equation}
+\begin{bmatrix} sx'_i \\
+  sy'_i\\
+  s
+  \end{bmatrix}=\textit{H}
+  \begin{bmatrix}
+  x_i\\
+  y_i\\
+  1
+  \end{bmatrix}.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="402" HEIGHT="200" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.png"
+ ALT="$\displaystyle \begin{bmatrix}sx'_i \\ sy'_i\\ s \end{bmatrix}=\textit{H} \begin{bmatrix}x_i\\ y_i\\ 1 \end{bmatrix}.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">25</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P> Una vez que se a logrado obtener <!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN>, todos los puntos en una vista pueden ser convertidos a la segunda vista usando la relaci&#195;&#179;n <A HREF="#eq:eq_ecuacion_rel_homography_ptos">2.25</A>.
+
+<P>
+No es com&#195;&#186;n conocer las correspondencias entre puntos de forma exacta, incluso se pueden tener pares de correspondencias que no son v&#195;&#161;lidos o tener m&#195;&#161;s de 4 pares de correspondencias en cuyo caso la matriz <!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN> puede resultar incorrecta. Por ello, para estos casos, se procede mediante una <SPAN  CLASS="textit">estimaci&#195;&#179;n</SPAN> de la homograf&#195;&#173;a.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html874"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<UL>
+<LI><A NAME="tex2html875"
+  HREF="node48.html">Transformaci&#195;&#179;n lineal directa.</A>
+<LI><A NAME="tex2html876"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+<UL>
+<LI><A NAME="tex2html877"
+  HREF="node50.html">Determinaci&#195;&#179;n adaptativa de la cantidad de muestras</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html872"
+  HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html868"
+  HREF="node42.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html864"
+  HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html870"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html873"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<B> Subir:</B> <A NAME="tex2html869"
+  HREF="node42.html">Formaci&#195;&#179;n de la imagen</A>
+<B> Anterior:</B> <A NAME="tex2html865"
+  HREF="node45.html">Par&#195;&#161;metros extr&#195;&#173;nsecos e intr&#195;&#173;nsecos</A>
+ &nbsp; <B>  <A NAME="tex2html871"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

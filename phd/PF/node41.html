@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Remoci&#195;&#179;n de correspondencias no v&#195;&#161;lidas</TITLE>
+<META NAME="description" CONTENT="Remoci&#195;&#179;n de correspondencias no v&#195;&#161;lidas">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node40.html">
+<LINK REL="up" HREF="node39.html">
+<LINK REL="next" HREF="node42.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html805"
+  HREF="node42.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html801"
+  HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html797"
+  HREF="node40.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html803"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html806"
+  HREF="node42.html">Formaci&#195;&#179;n de la imagen</A>
+<B> Subir:</B> <A NAME="tex2html802"
+  HREF="node39.html">Correspondencia entre puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html798"
+  HREF="node40.html">El algoritmo de &#195;&#161;rboles</A>
+ &nbsp; <B>  <A NAME="tex2html804"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00752000000000000000"></A>
+<A NAME="sec:remocion_corresp_invalidas"></A>
+<BR>
+Remoci&#195;&#179;n de correspondencias no v&#195;&#161;lidas
+</H2>
+La utilizaci&#195;&#179;n de la forma de b&#195;&#186;squeda de coincidencias descripta en la secci&#195;&#179;n anterior no resulta del todo adecuada, ya que para un punto clave de consulta siempre se encontrar&#195;&#161;n valores de correspondencias que no necesariamente son v&#195;&#161;lidos. Por ello, se hace necesario la aplicaci&#195;&#179;n de un umbral para determinar las potenciales correspondencias v&#195;&#161;lidas. Usar un valor de umbral global que se compare con la distancia a la caracter&#195;&#173;stica m&#195;&#161;s cercana no funciona correctamente
+seg&#195;&#186;n lo afirma Lowe (<A
+ HREF="node79.html#Lowe:2004:DIF:993451.996342">39</A>). Por ello, se propone considerar una medida m&#195;&#161;s efectiva obtenida mediante la comparaci&#195;&#179;n de la distancia del vecino m&#195;&#161;s cercano respecto del segundo vecino m&#195;&#161;s cercano. As&#195;&#173; la estrategia que se propone en (<A
+ HREF="node79.html#Lowe:2004:DIF:993451.996342">39</A>) es la utilizada en este trabajo y es la que se describe a continuaci&#195;&#179;n.
+
+<P>
+Sean <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN> dos im&#195;&#161;genes sobre las cuales se quieren buscar correspondencias. Consideremos <SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.png"
+ ALT="$ a_i$"></SPAN> con <!-- MATH
+ $i=0\ldots n$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img159.png"
+ ALT="$ i=0\ldots n$"></SPAN> un punto del conjunto de puntos claves detectados en <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="218" HEIGHT="194" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$ n$"></SPAN> el total de puntos claves detectados en <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img160.png"
+ ALT="$ av_i$"></SPAN> el vector caracter&#195;&#173;stico asociado al punto <SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.png"
+ ALT="$ a_i$"></SPAN> y de forma similar para la imagen <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN>. Para cada <SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.png"
+ ALT="$ a_i$"></SPAN>, se seleccionan los dos mejores puntos claves candidatos <!-- MATH
+ $p_1 \in b_i$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img161.png"
+ ALT="$ p_1 \in b_i$"></SPAN> y <!-- MATH
+ $p_2 \in b_i$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img162.png"
+ ALT="$ p_2 \in b_i$"></SPAN> cuyos vectores de caracter&#195;&#173;sticas asociados a cada uno representan las distancias eucl&#195;&#173;deas m&#195;&#173;nimas <SPAN CLASS="MATH"><IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.png"
+ ALT="$ d_1$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$ d_2$"></SPAN> respectivamente respecto a <SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img160.png"
+ ALT="$ av_i$"></SPAN>. Luego, si se cumple la proporci&#195;&#179;n <!-- MATH
+ $\frac{d_{1}}{d_{2}}>\varepsilon\qquad(\varepsilon=0.8\:\cite{Lowe:2004:DIF:993451.996342})$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.png"
+ ALT="$ \frac{d_{1}}{d_{2}}&gt;\varepsilon\qquad(\varepsilon=0.8\:\cite{Lowe:2004:DIF:993451.996342})$"></SPAN> la coincidencia es rechazada.
+El valor de <!-- MATH
+ $\varepsilon=0.8$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="199" HEIGHT="43" ALIGN="BOTTOM" BORDER="0"
+ SRC="img166.png"
+ ALT="$ \varepsilon=0.8$"></SPAN> fue seleccionado de acuerdo al estudio llevado a cabo por Lowe (<A
+ HREF="node79.html#Lowe:2004:DIF:993451.996342">39</A>) que afirma que se alcanzan a eliminar un 90% de falsas coincidencias mientras se descartan s&#195;&#179;lo un 5% de buenas coincidencias, resultando en el valor m&#195;&#161;s apropiado. 
+<P>
+Esta remoci&#195;&#179;n de pares de correspondencias, que resultan presuntamente pares inadecuados, reduce el n&#195;&#186;mero de pares disponibles para buscar la correspondencia pero realza la habilidad de buscar la homograf&#195;&#173;a correcta mediante la reducci&#195;&#179;n de correspondencias incorrectas.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html805"
+  HREF="node42.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html801"
+  HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html797"
+  HREF="node40.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html803"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html806"
+  HREF="node42.html">Formaci&#195;&#179;n de la imagen</A>
+<B> Subir:</B> <A NAME="tex2html802"
+  HREF="node39.html">Correspondencia entre puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html798"
+  HREF="node40.html">El algoritmo de &#195;&#161;rboles</A>
+ &nbsp; <B>  <A NAME="tex2html804"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

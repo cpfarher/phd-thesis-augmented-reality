@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformaci&#195;&#179;n lineal directa.</TITLE>
+<META NAME="description" CONTENT="Transformaci&#195;&#179;n lineal directa.">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node49.html">
+<LINK REL="previous" HREF="node47.html">
+<LINK REL="up" HREF="node47.html">
+<LINK REL="next" HREF="node49.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html901"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html897"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html891"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html899"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html902"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+<B> Subir:</B> <A NAME="tex2html898"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<B> Anterior:</B> <A NAME="tex2html892"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+ &nbsp; <B>  <A NAME="tex2html900"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H4><A NAME="SECTION00763110000000000000">
+Transformaci&#195;&#179;n lineal directa.</A>
+</H4> 
+La transformaci&#195;&#179;n lineal directa o DLT (del ingl&#195;&#169;s, Direct Linear Transform) es un algoritmo lineal para determinar <!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN> dado un conjunto de 4 puntos 2D correspondientes <!-- MATH
+ $\mathbf{x_{\textrm{i}}\leftrightarrow x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="138" HEIGHT="89" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.png"
+ ALT="$ \mathbf{x_{\textrm{i}}\leftrightarrow x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}}$"></SPAN>. La transformaci&#195;&#179;n viene dada por la ecuaci&#195;&#179;n 
+<!-- MATH
+ $\mathbf{x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}=\textrm{\textit{H}}x_{\textrm{i}}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.png"
+ ALT="$ \mathbf{x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}=\textrm{\textit{H}}x_{\textrm{i}}}$"></SPAN> donde los vectores est&#195;&#161;n dados en coordenadas homog&#195;&#169;neas, es decir que <!-- MATH
+ $\mathbf{x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="78" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.png"
+ ALT="$ \mathbf{x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}}$"></SPAN> y <!-- MATH
+ $\mathbf{\textrm{\textit{H}}x_{\textrm{i}}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.png"
+ ALT="$ \mathbf{\textrm{\textit{H}}x_{\textrm{i}}}$"></SPAN> no son iguales (tienen la misma direcci&#195;&#179;n pero pueden diferir en magnitud por un escalar que no sea cero). Denotando <!-- MATH
+ $\mathbf{x_{\textrm{i}}=}(x_{i},y_{i},w_{i})^{\mathsf{T}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \mathbf{x_{\textrm{i}}=}(x_{i},y_{i},w_{i})^{\mathsf{T}}$"></SPAN>, <!-- MATH
+ $\mathbf{x_{\textrm{i}}^{\prime}=}(x_{i}^{\prime},y_{i}^{\prime},w_{i}^{\prime})^{\mathsf{T}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="131" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.png"
+ ALT="$ \mathbf{x_{\textrm{i}}^{\prime}=}(x_{i}^{\prime},y_{i}^{\prime},w_{i}^{\prime})^{\mathsf{T}}$"></SPAN> y <!-- MATH
+ $\textit{H}=\left(\begin{array}{c}
+\mathbf{\mathbf{h^{\textrm{1}\mathsf{T}}}}\\
+\mathbf{h}^{\textrm{2}\textsf{T}}\\
+\mathbf{h}^{\textrm{3}\textsf{T}}
+\end{array}\right)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="131" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img234.png"
+ ALT="$ \textit{H}=\left(\begin{array}{c}
+\mathbf{\mathbf{h^{\textrm{1}\mathsf{T}}}}\\...
+...^{\textrm{2}\textsf{T}}\\
+\mathbf{h}^{\textrm{3}\textsf{T}}
+\end{array}\right)$"></SPAN>, donde <!-- MATH
+ $\mathbf{h^{\textrm{i}\textsf{T}}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="116" HEIGHT="89" ALIGN="BOTTOM" BORDER="0"
+ SRC="img235.png"
+ ALT="$ \mathbf{h^{\textrm{i}\textsf{T}}}$"></SPAN> es un vector fila que denota la fila <SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img236.png"
+ ALT="$ i$"></SPAN> de <!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN>, mediante algunos c&#195;&#161;lculos (, p. 89) y teniendo presente que el sistema <!-- MATH
+ $\mathbf{x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}=\textrm{\textit{H}}x_{\textrm{i}}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.png"
+ ALT="$ \mathbf{x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}=\textrm{\textit{H}}x_{\textrm{i}}}$"></SPAN> posee tres ecuaciones, de las cuales solo dos son independientes (la tercera fila es obtenida para un factor de escala) se obtiene
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:hxsystem"></A><!-- MATH
+ \begin{equation}
+\begin{bmatrix}\mathbf{0}^{\textsf{T}} & -w_{i}^{\prime}\mathbf{x_{\textrm{i}}^{\textrm{\textsf{T}}}} & y_{i}^{\prime}\mathbf{x_{\textrm{i}}^{\textrm{\textsf{T}}}}\\
+w_{i}^{\prime}\mathbf{x_{\textrm{i}}^{\textrm{\textsf{T}}}} & \mathbf{0}^{\textsf{T}} & -x_{i}^{\prime}\mathbf{x_{\textrm{i}}^{\textrm{\textsf{T}}}}
+\end{bmatrix}\begin{pmatrix}\mathbf{h^{\textrm{1}}}\\
+\mathbf{h^{\textrm{2}}}\\
+\mathbf{h^{\textrm{3}}}
+\end{pmatrix}=\mathbf{0}.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.png"
+ ALT="$\displaystyle \begin{bmatrix}\mathbf{0}^{\textsf{T}} &amp; -w_{i}^{\prime}\mathbf{x...
+...}\\ \mathbf{h^{\textrm{2}}}\\ \mathbf{h^{\textrm{3}}} \end{pmatrix}=\mathbf{0}.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">26</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+El sistema <A HREF="#eq:hxsystem">2.26</A> se puede escribir como <!-- MATH
+ $A_{i} \mathbf{h}=\mathbf{0}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="295" HEIGHT="89" ALIGN="MIDDLE" BORDER="0"
+ SRC="img238.png"
+ ALT="$ A_{i} \mathbf{h}=\mathbf{0}$"></SPAN> donde <SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img239.png"
+ ALT="$ A_{i}$"></SPAN> es la matriz de <!-- MATH
+ $2 \times 9$
+ -->
+<SPAN CLASS="MATH"></SPAN> y <!-- MATH
+ $\mathbf{h}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img240.png"
+ ALT="$ \mathbf{h}$"></SPAN> el vector de <!-- MATH
+ $9 \times 1$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img241.png"
+ ALT="$ 9 \times 1$"></SPAN> de la ecuaci&#195;&#179;n (<A HREF="#eq:hxsystem">2.26</A>). Para cada correspondencia de puntos se obtienen 2 ecuaciones, por lo que 4 correspondencias (forman un sistema de <!-- MATH
+ $8 \times 8$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img242.png"
+ ALT="$ 8 \times 8$"></SPAN>) resultan suficientes para resolver los 8 grados de libertad de <!-- MATH
+ $\textit{H}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img216.png"
+ ALT="$ \textit{H}$"></SPAN> (recordar que se determina para un factor de escala), siempre que se tengan al menos 3 puntos no colineales.
+
+<P>
+Si se tienen m&#195;&#161;s de cuatro correspondencias <!-- MATH
+ $\mathbf{x_{\textrm{i}}\leftrightarrow x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="138" HEIGHT="89" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.png"
+ ALT="$ \mathbf{x_{\textrm{i}}\leftrightarrow x_{\textrm{i}}^{\textrm{\ensuremath{\prime}}}}$"></SPAN>, el conjunto de ecuaciones <!-- MATH
+ $A\mathbf{h}=\mathbf{0}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img243.png"
+ ALT="$ A\mathbf{h}=\mathbf{0}$"></SPAN> tiene muchas soluciones. Adem&#195;&#161;s, si estas correspondencias no son exactas, la soluci&#195;&#179;n encontrada no ser&#195;&#161; adecuada, por lo que el problema se convierte en estimar la homograf&#195;&#173;a minimizando una funci&#195;&#179;n de error ().
+
+<P>
+Existen algoritmos como <SPAN  CLASS="textit">least median of squares</SPAN> (LMEDS) () o el de <SPAN  CLASS="textit">random sample consensus</SPAN> (RANSAC)(,) que pueden hallar la mejor soluci&#195;&#179;n aproximada minimizando el error y a su vez, tratando de detectar cu&#195;&#161;les son los supuestos valores de coincidencias v&#195;&#161;lidos (del ingl&#195;&#169;s, inliers) y los espurios (del ingl&#195;&#169;s, outliers). Adem&#195;&#161;s son capaces de utilizar m&#195;&#161;s de cuatro correspondencias para obtener una soluci&#195;&#179;n m&#195;&#161;s exacta. El m&#195;&#169;todo LMEDS, a diferencia del RANSAC, no necesita un umbral para distinguir entre las correspondencias v&#195;&#161;lidas y las espurias, sin embargo, LMEDS s&#195;&#179;lo funciona correctamente cuando hay m&#195;&#161;s de un <SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img244.png"
+ ALT="$ 50\%$"></SPAN> de valores v&#195;&#161;lidos (,<A NAME="tex2html906" target="contents"
+  HREF="node79.html#BenhimaneNGGNM08">27</A>).
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html901"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html897"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html891"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html899"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html902"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+<B> Subir:</B> <A NAME="tex2html898"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<B> Anterior:</B> <A NAME="tex2html892"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+ &nbsp; <B>  <A NAME="tex2html900"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

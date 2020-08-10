@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Detecci&#195;&#179;n y correspondencia de puntos de inter&#195;&#169;s</TITLE>
+<META NAME="description" CONTENT="Detecci&#195;&#179;n y correspondencia de puntos de inter&#195;&#169;s">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html400"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html396"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html390"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html398"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html401"
+  HREF="node14.html">B&#195;&#186;squeda de correspondencias</A>
+<B> Subir:</B> <A NAME="tex2html397"
+  HREF="node8.html">Estado del arte</A>
+<B> Anterior:</B> <A NAME="tex2html391"
+  HREF="node12.html">Propiedades de caracter&#195;&#173;sticas locales</A>
+ &nbsp; <B>  <A NAME="tex2html399"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00623000000000000000">
+Detecci&#195;&#179;n y correspondencia de puntos de inter&#195;&#169;s</A>
+</H2>
+En visi&#195;&#179;n computacional, el concepto de puntos de inter&#195;&#169;s (puntos claves) o puntos caracter&#195;&#173;sticos, como la correspondencia entre los mismos resultan ampliamente usados en diversas tareas. La idea consiste en seleccionar algunos puntos especiales de la imagen (una cantidad suficiente) que sean distinguibles, estables, posean repetibilidad y puedan localizarse como se describi&#195;&#179; en la Sec. <A HREF="node11.html#c:deteccioncaracteristicas">1.2.2</A>.
+
+<P>
+La b&#195;&#186;squeda de correspondencia de puntos discretos en im&#195;&#161;genes, puede ser dividida en tres grandes pasos:
+
+<UL>
+<LI>Primeramente, los puntos de inter&#195;&#169;s (esquinas, uniones de tipo T, etc.) son seleccionados como caracter&#195;&#173;sticas distintivas de la imagen. La propiedad m&#195;&#161;s sobresaliente de un detector de puntos de inter&#195;&#169;s es su repetibilidad que expresa la robustez del detector en buscar los mismos puntos de inter&#195;&#169;s bajo diferentes condiciones de visualizaci&#195;&#179;n.
+</LI>
+<LI>Luego, se representa la vecindad de cada punto de inter&#195;&#169;s detectado mediante un vector de caracter&#195;&#173;sticas (vector descriptor). Idealmente, este descriptor debe ser distintivo, robusto al ruido, a la detecci&#195;&#179;n de desplazamientos y a las deformaciones geom&#195;&#169;tricas o fotom&#195;&#169;tricas de la imagen.
+</LI>
+<LI>Finalmente, se buscan las correspondencias entre los vectores descriptores de las im&#195;&#161;genes. Dicha correspondencia, generalmente se encuentra basada en la distancia entre los vectores (por ejemplo: la eucl&#195;&#173;dea). La dimensi&#195;&#179;n del descriptor impacta directamente en el tiempo de c&#195;&#161;lculo. As&#195;&#173;, buscar correspondencias entre vectores de bajas dimensiones resulta m&#195;&#161;s r&#195;&#161;pido, pero a su vez los vectores se hacen menos distintivos. Como contraparte vectores de altas dimensiones involucran altos tiempos de procesamiento logrando mayor distintividad.
+</LI>
+</UL>
+
+<P>
+Cuando se trabaja con caracter&#195;&#173;sticas locales uno de los primeros inconvenientes a resolver es obtener un alto nivel de invarianza. Claramente, esto depende de las deformaciones geom&#195;&#169;tricas y fotom&#195;&#169;tricas que pueda sufrir la imagen. En nuestro caso, nos centraremos en los cambios de escala y la rotaci&#195;&#179;n en el plano, asumiendo que los efectos de segundo orden: inclinaci&#195;&#179;n, perspectiva y anisotrop&#195;&#173;a son cubiertos en cierto grado por la robustez global del descriptor utilizado. En cuanto a las deformaciones fotom&#195;&#169;tricas, se asume un modelo lineal simple con un desplazamiento y un cambio de contraste (factor de escala).
+
+<P>
+En este trabajo, se tratar&#195;&#161; con caracter&#195;&#173;sticas locales, las mismas describen una parte de la imagen; en contraposici&#195;&#179;n con las caracter&#195;&#173;sticas globales que describen la imagen como un todo.
+
+<P>
+Existen diferentes tipos de caracter&#195;&#173;sticas locales: aquellas que se basan en l&#195;&#173;neas o curvas (detectadas por ejemplo con la transformada de Hough (<A
+ HREF="node79.html#Duda:1972:UHT:361237.361242">14</A>)) y otras como las que utilizaremos en este trabajo que se valen de puntos caracter&#195;&#173;sticos, como esquinas, bordes, etc.
+Por ejemplo, para obtener esquinas, uno de los m&#195;&#161;s usados es el detector de esquinas de Harris (<A NAME="tex2html402" target="contents"
+  HREF="node79.html#citeulike:3484001">8</A>,<A NAME="tex2html403" target="contents"
+  HREF="node79.html#Harris88acombined">18</A>), el cual est&#195;&#161; basado en los eigenvalores de la matriz de segundo orden para determinarlas, aunque no resulta invariante a escala. Otros detectores de caracter&#195;&#173;sticas como el detector de regiones extremas m&#195;&#161;s estables (<A
+ HREF="node79.html#DBLP:journals/ivc/MatasCUP04">41</A>) y el de caracter&#195;&#173;sticas por test de segmento acelerado (<A NAME="tex2html404" target="contents"
+  HREF="node79.html#Rosten05fusingpoints">53</A>,<A NAME="tex2html405" target="contents"
+  HREF="node79.html#citeulike:9456628">28</A>) se encuentra tambi&#195;&#169;n en gran parte de la bibliograf&#195;&#173;a.
+
+<P>
+El concepto de selecci&#195;&#179;n de escala autom&#195;&#161;tica (<A
+ HREF="node79.html#springerlink:10.1023/A:1008045108935">36</A>) permiti&#195;&#179; detectar puntos asign&#195;&#161;ndole una escala (tema que ser&#195;&#161; tratado en la Sec. <A HREF="node33.html#sec:invarianza_a_escala">2.3.1</A>) a cada uno de ellos. Para la detecci&#195;&#179;n de los mismos, se experiment&#195;&#179; tanto con el determinante de la matriz hessiana como con el laplaciano (traza de la matriz hessiana). Otros autores (<A
+ HREF="node79.html#conf/iccv/MikolajczykS01">44</A>) refinaron este m&#195;&#169;todo, creando un detector de caracter&#195;&#173;sticas robusto e invariante a escala, logrando una alta repetibilidad. De esta manera, surgi&#195;&#179; el detector <SPAN  CLASS="textit">Harris-Laplace</SPAN> y <SPAN  CLASS="textit">Hessian-Laplace</SPAN>. Para el primero de ellos, se utiliza una medida de harris para seleccionar la ubicaci&#195;&#179;n de la caracter&#195;&#173;stica y el laplaciano para seleccionar la escala. Para el caso del detector <SPAN  CLASS="textit">Hessian-Laplace</SPAN> se utiliza el determinante de la matriz hessiana para seleccionar la ubicaci&#195;&#179;n de la caracter&#195;&#173;stica y el laplaciano para seleccionar la escala.
+
+<P>
+Enfocado en la velocidad, Lowe (<A
+ HREF="node79.html#Lowe1999">40</A>) propuso aproximar el laplaciano del gaussiano (LoG) mediante filtros diferencia de gaussianos (DoG). Otros detectores de puntos de inter&#195;&#169;s invariantes a escala fueron propuestos, el detector de regiones salientes (<A
+ HREF="node79.html#journals/ijcv/KadirB01">23</A>) que utiliza la maximizaci&#195;&#179;n de la entrop&#195;&#173;a en la regi&#195;&#179;n y el detector de regiones basado en bordes (<A
+ HREF="node79.html#conf/cvpr/JurieS04">22</A>) que detecta regiones locales convexas sobre contornos de imagen, entre otros.
+
+<P>
+Del estudio de los detectores existentes y de las comparaciones en diferentes publicaciones (<A NAME="tex2html406" target="contents"
+  HREF="node79.html#bb53077">43</A>,<A NAME="tex2html407" target="contents"
+  HREF="node79.html#journals/ijcv/MikolajczykS04">45</A>), se ha concluido que los detectores basados en el hessiano son los m&#195;&#161;s estables y poseen mayor repetibilidad que los basados en esquinas de harris. Incluso, se han obtenido mejores resultados mediante el uso del determinante de la matriz hessiana en lugar de la traza de la misma (<A
+ HREF="node79.html#journals/ijcv/MikolajczykS04">45</A>). Tambi&#195;&#169;n, se ha observado que las aproximaciones como el DoG pueden aumentar la velocidad a un bajo costo en t&#195;&#169;rminos de precisi&#195;&#179;n. As&#195;&#173;, surgi&#195;&#179; SIFT (<A
+ HREF="node79.html#Lowe:2004:DIF:993451.996342">39</A>) que calcula un histograma de los gradientes orientados localmente alrededor del punto de inter&#195;&#169;s y genera un vector caracter&#195;&#173;stico de 128-dimensiones. Luego, se propusieron varios refinamientos a este esquema b&#195;&#161;sico como el an&#195;&#161;lisis de componentes principales - transformaci&#195;&#179;n de caracter&#195;&#173;sticas invariante a la escala (PCA-SIFT: del ingl&#195;&#169;s, Principal Components Analysis - Scale Invariant Feature Transform) (<A
+ HREF="node79.html#citeulike:3484001">8</A>), (<A
+ HREF="node79.html#bb53077">43</A>) que construye un descriptor de 36 dimensiones. De esta forma es m&#195;&#161;s r&#195;&#161;pido el proceso de buscar coincidencias, aunque pierde distintividad y velocidad en el c&#195;&#161;lculo de caracter&#195;&#173;sticas respecto a SIFT (<A
+ HREF="node79.html#Mikolajczyk:2005:PEL:1083822.1083989">46</A>). De esta manera, el m&#195;&#169;todo SIFT se consolid&#195;&#179; como el m&#195;&#161;s adecuado para usos pr&#195;&#161;cticos, resultando distintivo y relativamente r&#195;&#161;pido lo cual resulta crucial en aplicaciones ``on-line''.
+
+<P>
+M&#195;&#161;s tarde y basados en las ideas de SIFT, se propuso un nuevo detector y descriptor de caracter&#195;&#173;sticas denominado SURF (<A NAME="tex2html408" target="contents"
+  HREF="node79.html#Bay:2008:SRF">4</A>,<A NAME="tex2html409" target="contents"
+  HREF="node79.html#Bay06surf:speeded">5</A>). El mismo, se basa en ideas del SIFT e introduce algunas modificaciones respecto al uso de im&#195;&#161;genes integrales, filtros caja y un m&#195;&#169;todo de indexaci&#195;&#179;n r&#195;&#161;pida para b&#195;&#186;squeda de correspondencias, que permite generar un descriptor de 64 dimensiones que se calcula y compara m&#195;&#161;s r&#195;&#161;pidamente, manteniendo una precisi&#195;&#179;n y distintividad valorable.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html400"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html396"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html390"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html398"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html401"
+  HREF="node14.html">B&#195;&#186;squeda de correspondencias</A>
+<B> Subir:</B> <A NAME="tex2html397"
+  HREF="node8.html">Estado del arte</A>
+<B> Anterior:</B> <A NAME="tex2html391"
+  HREF="node12.html">Propiedades de caracter&#195;&#173;sticas locales</A>
+ &nbsp; <B>  <A NAME="tex2html399"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

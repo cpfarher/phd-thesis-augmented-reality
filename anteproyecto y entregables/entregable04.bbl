@@ -1,0 +1,54 @@
+\begin{thebibliography}{LMGY04}
+
+\bibitem[BK08]{citeulike:3484001}
+Gary Bradski and Adrian Kaehler.
+\newblock {\em {Learning OpenCV: Computer Vision with the OpenCV Library}}.
+\newblock O'Reilly Media, 1st edition, October 2008.
+
+\bibitem[BL97]{Beis:1997:SIU:794189.794431}
+Jeffrey~S. Beis and David~G. Lowe.
+\newblock Shape indexing using approximate nearest-neighbour search in
+  high-dimensional spaces.
+\newblock In {\em Proceedings of the 1997 Conference on Computer Vision and
+  Pattern Recognition (CVPR '97)}, CVPR '97, pages 1000--, Washington, DC, USA,
+  1997. IEEE Computer Society.
+
+\bibitem[Chu05]{Chum-PhD-TR-2005-19}
+Ond\v{r}ej Chum.
+\newblock Two-view geometry estimation by random sample and consensus.
+\newblock Number {CTU--CMP--2005--19}, page~92, Prague, Czech Republic,
+  September 2005.
+
+\bibitem[CKY09]{bb53732}
+S.~Choi, T.~Kim, and W.~Yu.
+\newblock Performance evaluation of {RANSAC} family.
+\newblock In {\em BMVC}, pages xx--yy, 2009.
+
+\bibitem[FB81]{Fischler:1981:RSC:358669.358692}
+Martin~A. Fischler and Robert~C. Bolles.
+\newblock Random sample consensus: a paradigm for model fitting with
+  applications to image analysis and automated cartography.
+\newblock {\em Commun. ACM}, 24(6):381--395, June 1981.
+
+\bibitem[FBF77]{Friedman:1977:AFB:355744.355745}
+Jerome~H. Friedman, Jon~Louis Bentley, and Raphael~Ari Finkel.
+\newblock An algorithm for finding best matches in logarithmic expected time.
+\newblock {\em ACM Trans. Math. Softw.}, 3(3):209--226, September 1977.
+
+\bibitem[HZ04]{bb38231}
+R.~I. Hartley and A.~Zisserman.
+\newblock {\em Multiple View Geometry in Computer Vision}.
+\newblock Cambridge University Press, June 2004.
+
+\bibitem[Lag11]{citeulike:9456628}
+Robert Lagani\`{e}re.
+\newblock {\em {OpenCV 2 Computer Vision Application Programming Cookbook}}.
+\newblock Packt Publishing, June 2011.
+
+\bibitem[LMGY04]{Liu04aninvestigation}
+Ting Liu, Andrew~W. Moore, Alexander Gray, and Ke~Yang.
+\newblock An investigation of practical approximate nearest neighbor
+  algorithms.
+\newblock pages 825--832. MIT Press, 2004.
+
+\end{thebibliography}

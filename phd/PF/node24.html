@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Realce de im&#195;&#161;genes en el dominio espacial</TITLE>
+<META NAME="description" CONTENT="Realce de im&#195;&#161;genes en el dominio espacial">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node30.html">
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node25.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html592"
+  HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html588"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html582"
+  HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html590"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html593"
+  HREF="node25.html">Umbral</A>
+<B> Subir:</B> <A NAME="tex2html589"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html583"
+  HREF="node23.html">Erosi&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html591"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00720000000000000000"></A>
+<A NAME="subsec:mejoras_iluminacion"></A>
+<BR>
+Realce de im&#195;&#161;genes en el dominio espacial
+</H1>
+En esta secci&#195;&#179;n se presentan brevemente algunas t&#195;&#169;cnicas en el dominio espacial. Las mismas, fueron seleccionadas debido a que presentan tiempos de c&#195;&#161;lculo peque&#195;&#177;os y son orientadas a la tarea de realce de detalles o mejora de la iluminaci&#195;&#179;n en las im&#195;&#161;genes.
+
+<P>
+Los m&#195;&#169;todos en el dominio espacial son procedimientos que operan directamente sobre los p&#195;&#173;xeles de la imagen y pueden denotase con la expresi&#195;&#179;n <!-- MATH
+ $g(x,y)=T[f(x,y)]$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ g(x,y)=T[f(x,y)]$"></SPAN>, donde <SPAN CLASS="MATH"><IMG
+ WIDTH="161" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ f(x,y)$"></SPAN> es la imagen de entrada, <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ g(x,y)$"></SPAN> es la imagen resultado de la operaci&#195;&#179;n y <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ T$"></SPAN> es un operador sobre <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ f$"></SPAN> definido sobre alguna vecindad alrededor de <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ (x,y)$"></SPAN> (). 
+
+<P>
+El enfoque principal en la definici&#195;&#179;n de la vecindad alrededor de un punto <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ (x,y)$"></SPAN>, es el uso de una zona de sub imagen cuadrada o rectangular centrada en <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ (x,y)$"></SPAN>. Cuando esta vecindad se establece a un valor de <!-- MATH
+ $1 \times 1$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$ 1 \times 1$"></SPAN> (un p&#195;&#173;xel), <SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$ g$"></SPAN> depende &#195;&#186;nicamente del valor de <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ f$"></SPAN> en <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ (x,y)$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ T$"></SPAN> se convierte en una funci&#195;&#179;n de transformaci&#195;&#179;n de intensidad de la forma <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$ s=T(r)$"></SPAN>. Dado que en este proyecto se trabaja con im&#195;&#161;genes en escala de grises, <SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img38.png"
+ ALT="$ r$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN> son variables que denotan el nivel de gris de <SPAN CLASS="MATH"><IMG
+ WIDTH="161" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ f(x,y)$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ g(x,y)$"></SPAN> en el punto <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ (x,y)$"></SPAN> respectivamente.
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html594"
+  HREF="node25.html">Umbral</A>
+<LI><A NAME="tex2html595"
+  HREF="node26.html">Transformaci&#195;&#179;n logar&#195;&#173;tmica</A>
+<LI><A NAME="tex2html596"
+  HREF="node27.html">Ecualizaci&#195;&#179;n de histograma</A>
+<LI><A NAME="tex2html597"
+  HREF="node28.html">Filtrado pasa altos</A>
+<LI><A NAME="tex2html598"
+  HREF="node29.html">Filtrado de alta potencia</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html592"
+  HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html588"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html582"
+  HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html590"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html593"
+  HREF="node25.html">Umbral</A>
+<B> Subir:</B> <A NAME="tex2html589"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html583"
+  HREF="node23.html">Erosi&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html591"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

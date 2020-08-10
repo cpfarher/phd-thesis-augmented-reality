@@ -1,0 +1,32 @@
+\chapter*{Prefacio}
+\addcontentsline{toc}{chapter}{Prefacio}
+
+El reconocimiento de objetos en imágenes ha sido y es un área de investigación que se ha mantenido en desarrollo y exploración constante. La habilidad de reconocer e identificar objetos en una imagen resulta esencial en áreas como vigilancia por video, imágenes médicas, realidad aumentada, etc.
+
+El desarrollo de un motor propio de reconocimiento de objetos con aplicaciones en realidad aumentada, que sea fácilmente adaptable a aplicaciones específicas resulta de gran interés propio y para el grupo del SINC (Centro de Investigación en señales, sistemas e inteligencia computacional) \footnote{\url{http://fich.unl.edu.ar/sinc/}}. Si bien se puede encontrar software desarrollado, diferentes características de los mismos no lo hacen apropiado para su uso. Además, en el contexto local la realidad aumentada se ha convertido en un tema que constituye un ``nicho tecnológico y de mercado'' que resulta ampliamente atractivo para su desarrollo, investigación y explotación.
+
+El término de realidad aumentada se usa para definir una visualización de un entorno físico del mundo real, cuyos elementos se combinan con elementos virtuales (imágenes, videos, sonidos, etc.), logrando crear una realidad mixta en tiempo real.
+
+En este trabajo se presenta un método para la detección y seguimiento de objetos planos con aplicaciones en realidad aumentada, sin patrones artificiales y en un ambiente controlado. El método desarrollado es aplicado sobre flujo de video en tiempo real capturado con una cámara web estándar. El procedimiento tiene dos etapas principales: en una primera instancia se captura una imagen del objeto patrón, en una segunda etapa se captura flujo de video (imágenes objetivo) en tiempo real, para llevar a cabo la detección del objeto y el cálculo de su posición en la imagen, para luego ``enriquecer la realidad''.
+
+Para llevar a cabo el procedimiento descripto anteriormente, se diseña un método que utiliza un detector rápido de características robustas denominado SURF \cite{Bay:2008:SRF}. El resultado de la detección y descripción de características es usado posteriormente en una etapa de búsqueda de coincidencias entre las características de la imagen patrón y la imagen objetivo. Tras encontrar los potenciales pares coincidentes, se procede a eliminar valores espurios y se calcula la homografía que resulta ser un mapeo perspectivo entre la imagen patrón y la imagen objetivo. Dado que es común que se obtengan falsos positivos al buscar la homografía, se propone un criterio para rechazar transformaciones erróneas provocadas por homografías mal estimadas. Todo este procedimiento es combinado con técnicas heurísticas para lograr un prototipo final optimizado para aplicaciones de realidad aumentada.
+%  En este trabajo nos concentraremos en el reconocimiento y detección de objetos planos tales como imágenes, tapas de libros, logos etc. Este objeto plano será buscado en una secuencia de video capturada por una cámara web para su posterior localización mediante la utilización de búsqueda de homografía entre imágenes, valiéndose esta última des descriptores de características locales obtenidos mediante un método denominado SURF.
+
+En lo que respecta a herramientas utilizadas para la codificación, existe variedad de software y bibliotecas para la manipulación de videos e imágenes. OpenCV (Open Source Computer Vision)\footnote[1]{\url{http://SourceForge.net/projects/opencvlibrary}} es una librería open source\footnote[2]{\url{http://opensource.org}} de visión computacional, escrita en C y C++, la cual puede ser ejecutada sobre diferentes sistemas operativos (Linux, Windows y Mac OS X). La misma, ha sido ampliamente adoptada como la herramienta de desarrollo en la comunidad de investigadores y desarrolladores en el campo de visión computacional \cite{citeulike:9456628}, debido a que fue diseñada para lograr gran eficiencia computacional, haciendo foco en el desarrollo de aplicaciones en tiempo real. Es por ello que, como base para la implementación del código fuente del método presentado, se utiliza la citada librería.
+
+La tesis se encuentra organizada en cinco capítulos, como se explica a continuación.
+
+En el Capítulo 1, se expone la motivación central del desarrollo de este proyecto, seguido de una reseña del estado del arte del reconocimiento de objetos y algunas de sus aplicaciones, haciendo hincapié en realidad aumentada. Posteriormente, se describen los objetivos generales y específicos, seguidos del los alcances del presente trabajo.
+
+En el Capítulo 2, se tratan conceptos y métodos del marco teórico del procesamiento de imágenes, haciendo énfasis en la detección de características invariantes a escala y rotación. % mediante un algoritmo propuesto en la bibliografía.
+
+El Capítulo 3 presenta el diseño del método propuesto basado en los fundamentos teóricos del capítulo anterior y utilizando el método de detección de características propuesto allí. También, se describen detalladamente las etapas del método propuesto, planteando mejoras y optimizaciones para las mismas con el fin de obtener un mejor desempeño en el tiempo de procesamiento, como así también, en la correcta detección del objeto en la escena.
+
+En el Capítulo 4, se detallan los experimentos y los resultados obtenidos, donde se consideran variaciones de la iluminación y diferentes técnicas de realce de detalles sobre la imagen. Luego, se presentan dos experimentos y se propone un prototipo publicitario como resultado final del método desarrollado.
+
+Finalmente, en el Capítulo 5, se exponen las conclusiones finales y los desarrollos futuros para corto, mediano y largo plazo.
+
+\begin{flushright}
+ Christian Nicolás Pfarher\\
+ Santa Fe, Argentina. \\ 02 de Agosto de 2013
+\end{flushright}

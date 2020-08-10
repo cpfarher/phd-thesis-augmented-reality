@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Distancia entre v&#195;&#169;rtices</TITLE>
+<META NAME="description" CONTENT="Distancia entre v&#195;&#169;rtices">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node65.html">
+<LINK REL="up" HREF="node64.html">
+<LINK REL="next" HREF="node67.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1141"
+  HREF="node67.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1137"
+  HREF="node64.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1133"
+  HREF="node65.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1139"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1142"
+  HREF="node67.html">Condici&#195;&#179;n de presencia previa</A>
+<B> Subir:</B> <A NAME="tex2html1138"
+  HREF="node64.html">Detecci&#195;&#179;n de homograf&#195;&#173;as mal</A>
+<B> Anterior:</B> <A NAME="tex2html1134"
+  HREF="node65.html">Convexidad</A>
+ &nbsp; <B>  <A NAME="tex2html1140"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00880200000000000000">
+Distancia entre v&#195;&#169;rtices</A>
+</H3>
+Si bien con el criterio de convexidad se han salvado algunas situaciones, se presentan casos en los que los pol&#195;&#173;gonos tienen una forma convexa y aun as&#195;&#173; son inv&#195;&#161;lidos, y superponer el objeto virtual con esta forma carece de sentido. Un ejemplo de esto puede apreciarse en la Fig. <A HREF="#fig:poligono_convexo_invalido">3.7b</A>. 
+
+<P>
+Para salvar esta situaci&#195;&#179;n, se plante&#195;&#179; una estrategia en las que las coordenadas del pol&#195;&#173;gono resultante de la transformaci&#195;&#179;n obtenida con la matriz homogr&#195;&#161;fica deb&#195;&#173;an estar presentes dentro del &#195;&#161;rea de visualizaci&#195;&#179;n de la ventana, en adelante: ``viewport''. Esta idea, no result&#195;&#179; ser una soluci&#195;&#179;n adecuada, ya que se detectan casos en que el pol&#195;&#173;gono es correcto, pero alguno de sus v&#195;&#169;rtices se sale del viewport. Una ilustraci&#195;&#179;n de esto se puede apreciar en la Fig. <A HREF="#fig:poligono_valido_viewport_fuera">3.7c</A>, donde el pol&#195;&#173;gono marcado con trazo verde es correcto, pero dos v&#195;&#169;rtices del mismo (c&#195;&#173;rculos rojos) se salen del viewport (marco celeste). Para detectar &#195;&#169;stos casos, se propuso un criterio de validaci&#195;&#179;n de v&#195;&#169;rtices del pol&#195;&#173;gono:
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:expresion_validacion_vertices"></A><!-- MATH
+ \begin{equation}
+\resizebox{.8\hsize}{!}{$(| \alpha_x - \gamma_x| < \Delta X) \;\;\vee \;\;(| \beta_x - \lambda_x | < \Delta X) \;\;\vee \;\;| (\alpha_y - \gamma_y | < \Delta Y) \;\;\vee \;\;(|\beta_y - \lambda_y |< \Delta Y),$}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="613" HEIGHT="230" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.png"
+ ALT="$\displaystyle \resizebox{.8\hsize}{!}{$(\vert \alpha_x - \gamma_x\vert &lt; \Delta...
+..._y \vert &lt; \Delta Y) \;\;\vee \;\;(\vert\beta_y - \lambda_y \vert&lt; \Delta Y),$}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+donde:
+
+<UL>
+<LI><!-- MATH
+ $\alpha(x,y)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="449" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \alpha(x,y)$"></SPAN>, <!-- MATH
+ $\beta(x,y)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="60" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.png"
+ ALT="$ \beta(x,y)$"></SPAN>, <!-- MATH
+ $\gamma(x,y)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \gamma(x,y)$"></SPAN> y <!-- MATH
+ $\lambda(x,y)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img306.png"
+ ALT="$ \lambda(x,y)$"></SPAN> son las coordenadas de los v&#195;&#169;rtices del pol&#195;&#173;gono resultante de la transformaci&#195;&#179;n homogr&#195;&#161;fica, con <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img307.png"
+ ALT="$ \alpha$"></SPAN> opuesto a <SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img308.png"
+ ALT="$ \gamma$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ \beta$"></SPAN> opuesto a <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img310.png"
+ ALT="$ \lambda$"></SPAN>,
+</LI>
+<LI><SPAN CLASS="MATH"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.png"
+ ALT="$ y$"></SPAN> son las coordenadas del p&#195;&#173;xel en la imagen para el eje de las abscisas y ordenadas respectivamente,
+</LI>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img311.png"
+ ALT="$ \Delta X$"></SPAN> es la cantidad de p&#195;&#173;xeles a comprobar entre v&#195;&#169;rtices opuestos en el eje de las abscisas, y
+</LI>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img312.png"
+ ALT="$ \Delta Y$"></SPAN> es la cantidad de p&#195;&#173;xeles a comprobar entre v&#195;&#169;rtices opuestos en el eje de las ordenadas.
+</LI>
+</UL>
+
+<P>
+Si se satisface esta condici&#195;&#179;n 
+para <!-- MATH
+ $\Delta X = \Delta Y = 20$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img313.png"
+ ALT="$ \Delta X = \Delta Y = 20$"></SPAN> p&#195;&#173;xeles el pol&#195;&#173;gono es descartado. Los valores de los delta han sido establecidos emp&#195;&#173;ricamente, considerando los mejores resultados obtenidos. Cabe acotar que es posible aplicar este criterio con los valores de deltas mencionados, ya que la detecci&#195;&#179;n de caracter&#195;&#173;sticas en un &#195;&#161;rea tan peque&#195;&#177;a est&#195;&#161; limitada por el dispositivo de adquisici&#195;&#179;n de im&#195;&#161;genes utilizado. 
+
+<DIV ALIGN="CENTER"><A NAME="fig:poligono_concavo_invalido"></A><A NAME="fig:poligono_convexo_invalido"></A><A NAME="fig:poligono_valido_viewport_fuera"></A><A NAME="fig:analisis_poligonos"></A><A NAME="2911"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Pol&#195;&#173;gonos resultantes de la transformaci&#195;&#179;n con la matriz de homograf&#195;&#173;a.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	
+[Pol&#195;&#173;gono c&#195;&#179;ncavo][Pol&#195;&#173;gono c&#195;&#179;ncavo]
+	  <IMG
+ WIDTH="139" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="\includegraphics[scale=0.75]{../figs/validaciones_poligono/concavo_invalido}"> 
+	
+	 
+	
+[Pol&#195;&#173;gono convexo][Pol&#195;&#173;gono convexo]
+	  <IMG
+ WIDTH="342" HEIGHT="257" ALIGN="BOTTOM" BORDER="0"
+ SRC="img315.png"
+ ALT="\includegraphics[scale=0.75]{../figs/validaciones_poligono/convexo_invalido}">
+	
+	 
+	
+[Pol&#195;&#173;gono convexo fuera del &#195;&#161;rea de visualizaci&#195;&#179;n de la ventana][Pol&#195;&#173;gono convexo fuera del &#195;&#161;rea de visualizaci&#195;&#179;n de la ventana.]
+	  <IMG
+ WIDTH="342" HEIGHT="257" ALIGN="BOTTOM" BORDER="0"
+ SRC="img316.png"
+ ALT="\includegraphics[scale=0.75]{../figs/validaciones_poligono/poligoto_fuera_viewport_valida}">
+	
+	
+	</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1141"
+  HREF="node67.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1137"
+  HREF="node64.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1133"
+  HREF="node65.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1139"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1142"
+  HREF="node67.html">Condici&#195;&#179;n de presencia previa</A>
+<B> Subir:</B> <A NAME="tex2html1138"
+  HREF="node64.html">Detecci&#195;&#179;n de homograf&#195;&#173;as mal</A>
+<B> Anterior:</B> <A NAME="tex2html1134"
+  HREF="node65.html">Convexidad</A>
+ &nbsp; <B>  <A NAME="tex2html1140"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

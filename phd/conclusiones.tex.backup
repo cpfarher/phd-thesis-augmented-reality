@@ -1,0 +1,58 @@
+\chapter{Conclusiones y trabajos futuros}
+\label{c:conclusiones}
+
+\vspace{1cm}
+
+En este último capítulo, se describen las conclusiones obtenidas tras reali-zar el Proyecto Final, junto a un conjunto de trabajos futuros que permitan seguir líneas de investigación sobre el mismo, para mejorarlo o adaptarlo a diferentes necesidades.
+
+\section{Conclusiones}
+En el presente proyecto, se ha propuesto un método para detectar objetos planos en un ambiente controlado, mediante la detección de características con una cámara web de computadora. Se introdujo el concepto de realidad aumentada, como así también los tipos de sistemas más conocidos (con y sin marcadores) y los métodos para la detección y seguimiento de objetos basados en localización y/o visualización. Se han mencionado detectores de características comunes reportados en la bibliografía y diferentes herramientas que son válidas para la detección y seguimiento de objetos. Particularmente, se ha descripto en detalle el método SURF (sobre el cual se sustenta el método propuesto) contrastándolo con SIFT, como así también, los pasos para llegar a obtener la homografía para la detección y ubicación de la posición de la imagen patrón.
+
+El proceso general anteriormente mencionado se ha modificado mediante diferentes procesamientos y validaciones para detectar al objeto correctamente y producir transformaciones coherentes, sin afectar al tiempo de procesamiento de forma considerable. Adicionalmente, se han planteado técnicas simples para realce de detalles e iluminación sobre las cuales se han reali-zado algunos experimentos para evaluar su comportamiento, de forma que el usuario pueda considerar la aplicación de alguna de ellas, si la situación lo requiriese. También, se han propuesto estrategias heurísticas para evitar cálculos innecesarios o efectos de ``parpadeos'' del objeto de realidad aumentada, logrando mayor naturalidad en el enriquecimiento de la realidad y considerando operaciones de tiempos acotados de procesamiento. Tras ello, se ha concluido con dos prototipos, uno de los cuales es un prototipo publici-tario sobre el cual se brinda información adicional inherente a un producto.
+
+La codificación del método se realizó mediante el uso de lenguaje C++ y la librería OpenCV que permiten la portabilidad a diferentes sistemas operativos.
+
+Finalmente, el desarrollo de este proyecto final permitió afianzar los conocimientos en el área de visión computacional. El reconocimiento de objetos y la realidad aumentada son temáticas que brindan la posibilidad de ser utilizadas en diversidad de aplicaciones, siendo interesante encarar desarrollos e investigaciones futuras, que esperemos puedan surgir a partir de este trabajo.
+
+% A continuación, se proponen algunos posibles trabajos futuros que permitan mejorar la detección, el rendimiento o incluso la aplicación en otras plataformas dejando la posibilidad de proseguir con un desarrollo futuro en el tema tratado en este trabajo.
+
+%==================================================
+\section{Trabajos futuros}
+%==================================================
+A fin de mejorar el desempeño general, en esta sección se proponen algunas modificaciones que podrían ser aplicadas al método desarrollado o nuevas investigaciones a realizar. Se han identificado algunas de ellas, clasificándolas en trabajos futuros a corto, mediano y largo plazo, los cuales son mencionados a continuación.
+
+\textbf{Corto Plazo:}
+\begin{itemize}
+ \item Implementar el método sobre GPU \cite{Terriberry_gpuaccelerating} y con múltiples hilos de procesamiento \cite{DBLP:journals/ijpp/Zhang10} aplicado al proceso de extracción y descripción de ca-racterísticas. Existen algunas implementaciones en el tema: \url{http://asrl.utias.utoronto.ca/code/gpusurf/index.html},\\ \url{http://www.d2.mpi-inf.mpg.de/surf}.
+ \item Utilizar para la búsqueda de correspondencias una variante de la interfase FLANN implementada por OpenCV que se denomina ``nano flann''. En la página oficial del proyecto de la interfase, se hacen notar bondades de eficiencia en tiempo y consumo de memoria \url{http://code.google.com/p/nanoflann/}.
+ \item Implementar una selección automática del umbral hessiano para la discriminación de puntos.
+\end{itemize}
+
+\textbf{Mediano Plazo:}
+\begin{itemize}
+ \item Usar otros detectores en el proceso de extracción y descripción de ca-racterísticas. Una comparación y pruebas sobre algunas imágenes con diversos detectores pueden observarse en \url{http://bit.ly/hox3gW}.
+ \item Investigar e implementar soluciones para el manejo de la oclusión entre objetos virtuales y el mundo real.
+\end{itemize}
+
+\textbf{Largo Plazo:}
+\begin{itemize}
+ \item Implementar una aplicación con interfaz gráfica orientada a un usuario final, permitiendo reconocer diferentes imágenes patrones para ejecutar acciones de acuerdo al objeto detectado.
+ \item Implementar el sistema en dispositivos móviles (tablets, celulares, etc.).% utilizando ``procesamiento en la nube (cloud computing)''.
+\end{itemize}
+
+% \begin{itemize}
+% \item dibujar  volumen tridimensional (ej: objeto 3D dibujado con OpenGL) - dependiendo del grado de avance que se logre en el proyecto -
+% \end{itemize}
+
+% Largo Plazo:
+% \begin{itemize}
+%   \item Replaced FAST feature with more robust Difference of Gaussian blob features
+%   \item Aplicación en dispositivos móviles como en http://www.chrisevansdev.com/computer-vision-opensurf.html
+%   \item Aplicación con interfaz gráfica.
+% \item Experimentar con diferentes tipos de objeto, disparando diferentes acciones según la marca natural detectada.
+% \end{itemize}
+
+
+% varios internet:
+% porque usar cvFindHomography y no la matriz fundamental: http://opencv-users.1802565.n2.nabble.com/Difference-between-homography-and-fundamental-matrix-td6359087.html
+% usando RANSAC: explicacion entendible: http://www.cc.gatech.edu/~richard/ransacld4/

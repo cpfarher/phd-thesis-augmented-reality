@@ -1,0 +1,87 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WRM{\etalchar{+}}10}
+
+\bibitem[BETV08]{Bay:2008:SRF}
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, and Luc {Van Gool}.
+\newblock Speeded-up {Robust} {Features} {(SURF)}.
+\newblock {\em Computer Vision and Image Understanding: CVIU}, 110(3):346--359,
+  June 2008.
+
+\bibitem[BK08]{citeulike:3484001}
+Gary Bradski and Adrian Kaehler.
+\newblock {\em {Learning OpenCV: Computer Vision with the OpenCV Library}}.
+\newblock O'Reilly Media, 1st edition, October 2008.
+
+\bibitem[JG09]{citeulike:7676197}
+Luo Juan and Oubong Gwon.
+\newblock A comparison of {SIFT}, {PCA}-{SIFT} and {SURF}.
+\newblock {\em International Journal of Image Processing (IJIP)},
+  3(4):143--152, 2009.
+
+\bibitem[Lag11]{citeulike:9456628}
+Robert Lagani\`{e}re.
+\newblock {\em {OpenCV 2 Computer Vision Application Programming Cookbook}}.
+\newblock Packt Publishing, June 2011.
+
+\bibitem[LLLC11]{5739718}
+Ahyun Lee, Jae-Young Lee, Seok-Han Lee, and Jong-Soo Choi.
+\newblock Markerless augmented reality system based on planar object tracking.
+\newblock In {\em Frontiers of Computer Vision (FCV), 2011 17th Korea-Japan
+  Joint Workshop on}, pages 1 --4, feb. 2011.
+
+\bibitem[LS09]{bb48614}
+T.~W.~R. Lo and J.~P. Siebert.
+\newblock Local feature extraction and matching on range images: 2.5{D} {SIFT}.
+\newblock {\em Computer Vision and Image Understanding}, 113(12):1235--1250,,
+  December 2009.
+
+\bibitem[MS05]{bb53077}
+K.~Mikolajczyk and C.~Schmid.
+\newblock A performance evaluation of local descriptors.
+\newblock {\em IEEE Trans. Pattern Analysis and Machine Intelligence},
+  27(10):1615--1630, October 2005.
+
+\bibitem[NA02]{Nixon:2002:FEI}
+Mark~S. Nixon and Alberto~S. Aguado.
+\newblock {\em Feature extraction and image processing}.
+\newblock Newnes, Oxford, 2002.
+
+\bibitem[OBG11]{BouGar}
+\`{O}scar Boullosa~Garc\`{i}a.
+\newblock Estudio comparativo de descriptores visuales para la detección de
+  escenas cuasi-duplicadas.
+\newblock In {\em Proyecto Fin De Carrera, Universidad Autónoma De Madrid
+  Escuela Politécnica Superior}, 2011.
+
+\bibitem[SBHL98]{conf/nips/SimardBHL98}
+Patrice Simard, L{\'e}on Bottou, Patrick Haffner, and Yann LeCun.
+\newblock Boxlets: {A} fast convolution algorithm for signal processing and
+  neural networks.
+\newblock In Michael~J. Kearns, Sara~A. Solla, and David~A. Cohn, editors, {\em
+  NIPS}, pages 571--577. The MIT Press, 1998.
+
+\bibitem[SL04]{conf/ismar/SkrypnykL04}
+Iryna Skrypnyk and David~G. Lowe.
+\newblock Scene modelling, recognition and tracking with invariant image
+  features.
+\newblock In {\em ISMAR}, pages 110--119. IEEE Computer Society, 2004.
+
+\bibitem[TM07]{TuytelaarsM07}
+Tinne Tuytelaars and Krystian Mikolajczyk.
+\newblock Local invariant feature detectors: {A} survey.
+\newblock {\em Foundations and Trends in Computer Graphics and Vision},
+  3(3):177--280, 2007.
+
+\bibitem[VJ01]{viola01boosting}
+P.~Viola and M.~Jones.
+\newblock Rapid object detection using a boosted cascade of simple features.
+\newblock {\em Proc. CVPR}, 1:511--518, 2001.
+
+\bibitem[WRM{\etalchar{+}}10]{journals/tvcg/WagnerRMDS10}
+Daniel Wagner, Gerhard Reitmayr, Alessandro Mulloni, Tom Drummond, and Dieter
+  Schmalstieg.
+\newblock Real-time detection and tracking for augmented reality on mobile
+  phones.
+\newblock {\em IEEE Trans. Vis. Comput. Graph}, 16(3):355--368, 2010.
+
+\end{thebibliography}

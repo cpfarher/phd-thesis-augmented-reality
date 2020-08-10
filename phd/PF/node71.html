@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Definici&#195;&#179;n de im&#195;&#161;genes</TITLE>
+<META NAME="description" CONTENT="Definici&#195;&#179;n de im&#195;&#161;genes">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node72.html">
+<LINK REL="previous" HREF="node70.html">
+<LINK REL="up" HREF="node70.html">
+<LINK REL="next" HREF="node72.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1203"
+  HREF="node72.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1199"
+  HREF="node70.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1193"
+  HREF="node70.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1201"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1204"
+  HREF="node72.html">Experimentos</A>
+<B> Subir:</B> <A NAME="tex2html1200"
+  HREF="node70.html">Experimentos y Resultados</A>
+<B> Anterior:</B> <A NAME="tex2html1194"
+  HREF="node70.html">Experimentos y Resultados</A>
+ &nbsp; <B>  <A NAME="tex2html1202"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00910000000000000000">
+Definici&#195;&#179;n de im&#195;&#161;genes</A>
+</H1> Se pueden identificar tres diferentes tipos de im&#195;&#161;genes utilizadas por el m&#195;&#169;todo y que denominamos: patr&#195;&#179;n, objetivo y objeto de realidad aumentada. Cabe aclarar que el objeto de RA puede ser obtenido de una imagen 2D, una vista de un modelo 3D, etc.
+
+<OL>
+<LI><SPAN  CLASS="textbf">Imagen patr&#195;&#179;n</SPAN>: es la imagen usada como patr&#195;&#179;n que se pretende detectar y seguir en cada fotograma del flujo de video. Luego, en su lugar se superpone el <SPAN  CLASS="textit">objeto de realidad aumentada</SPAN>.
+<A NAME="imagenpatron_restricciones"></A>  La adquisici&#195;&#179;n de la imagen patr&#195;&#179;n cumple con ciertas restricciones pr&#195;&#161;cticas:
+  
+<UL>
+<LI>el tama&#195;&#177;o de la imagen debe ser de <!-- MATH
+ $640 \times 480$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="$ 640 \times 480$"></SPAN> p&#195;&#173;xeles,
+</LI>
+<LI>las condiciones de iluminaci&#195;&#179;n deben ser adecuadas para detectar caracter&#195;&#173;sticas,</LI>
+<LI>la imagen debe ser rica en detalles, es decir que debe poseer bordes o caracter&#195;&#173;sticas identificables y
+</LI>
+<LI>el plano de la imagen debe estar aproximadamente perpendicular al lente de la c&#195;&#161;mara al momento de la captura.
+  
+</LI>
+</UL>
+</LI>
+<LI><SPAN  CLASS="textbf">Imagen objetivo</SPAN>: es un fotograma del flujo de video, adquirido con la c&#195;&#161;mara web en tiempo real. Sobre este fotograma es donde se detecta la imagen patr&#195;&#179;n. Para esta imagen tambi&#195;&#169;n se establecen algunas restricciones pr&#195;&#161;cticas:
+  
+<UL>
+<LI>el frame capturado con la c&#195;&#161;mara web posee un tama&#195;&#177;o de <!-- MATH
+ $640 \times 480$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="$ 640 \times 480$"></SPAN> p&#195;&#173;xeles,
+</LI>
+<LI>las condiciones de iluminaci&#195;&#179;n deben ser adecuadas para detectar caracter&#195;&#173;sticas y
+</LI>
+<LI>la imagen debe ser rica en detalles.
+  
+</LI>
+</UL>
+</LI>
+<LI><SPAN  CLASS="textbf">Objeto de realidad aumentada</SPAN>: es la definici&#195;&#179;n de una imagen (ej: foto, tapa de libro, revista, texto etc.) que es superpuesta en el flujo de video.
+</LI>
+</OL>
+
+<P>
+La captura de la imagen patr&#195;&#179;n y la imagen objetivo, fue realizada con una c&#195;&#161;mara web con una resoluci&#195;&#179;n de <!-- MATH
+ $640 \times 480$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="$ 640 \times 480$"></SPAN> p&#195;&#173;xeles de una computadora port&#195;&#161;til Toshiba Satellite A505-S69803.
+
+<P>
+Para las pruebas se ha utilizado como imagen patr&#195;&#179;n la tapa de una revista de <!-- MATH
+ $22cm. \times 17cm.$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="533" HEIGHT="439" ALIGN="MIDDLE" BORDER="0"
+ SRC="img327.png"
+ ALT="$ 22cm. \times 17cm.$"></SPAN> Tambi&#195;&#169;n, se han propuesto tres condiciones de iluminaci&#195;&#179;n diferentes para evaluar mejoras orientadas a la robustez del m&#195;&#169;todo y que denominamos: 
+  
+<UL>
+<LI><SPAN  CLASS="textbf">Iluminaci&#195;&#179;n normal <SPAN CLASS="MATH"><IMG
+ WIDTH="124" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img328.png"
+ ALT="$ (B_{N})$"></SPAN></SPAN>: se simul&#195;&#179; un ambiente con iluminaci&#195;&#179;n adecuado para la lectura. La habitaci&#195;&#179;n consta de: dos ventanas tras cortinas semitraslucidas ubicadas a <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img329.png"
+ ALT="$ 5$"></SPAN> metros (<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img330.png"
+ ALT="$ d4$"></SPAN>) de la c&#195;&#161;mara web, iluminaci&#195;&#179;n mediante una l&#195;&#161;mpara de bajo consumo de 18 W. (equivalente a 90 W. de una l&#195;&#161;mpara incandescente) situada en el techo de la habitaci&#195;&#179;n a <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img331.png"
+ ALT="$ 1.7$"></SPAN> metros (<SPAN CLASS="MATH"><IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img332.png"
+ ALT="$ d2$"></SPAN>) de la escena y a <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img333.png"
+ ALT="$ 0.4$"></SPAN> metros (<SPAN CLASS="MATH"><IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img334.png"
+ ALT="$ d3$"></SPAN>) por detr&#195;&#161;s del objeto a detectar. &#195;&#137;ste &#195;&#186;ltimo, se situ&#195;&#179; a una distancia de <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img335.png"
+ ALT="$ 0.5$"></SPAN> metros (<SPAN CLASS="MATH"><IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img336.png"
+ ALT="$ d1$"></SPAN>) de la c&#195;&#161;mara web (en la pr&#195;&#161;ctica esta distancia puede variarse entre <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img333.png"
+ ALT="$ 0.4$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img337.png"
+ ALT="$ 0.6$"></SPAN> metros aproximadamente). Un esquema de las distancias descriptas puede observarse en la Fig. <A HREF="#fig:entorno_pruebas">4.1</A>, donde las proporciones de las l&#195;&#173;neas que identifican las cotas respecto a la medidas reales no han sido tenidas en cuenta, ya que s&#195;&#179;lo fue pensado para esquematizar las distancias en el entorno de pruebas. Para esta escena de iluminaci&#195;&#179;n, la l&#195;&#161;mpara direccional no est&#195;&#161; encendida.
+</LI>
+<LI><SPAN  CLASS="textbf">Iluminaci&#195;&#179;n alta <SPAN CLASS="MATH"><IMG
+ WIDTH="28" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img338.png"
+ ALT="$ (B_{H})$"></SPAN></SPAN>: la imagen se captur&#195;&#179; en la misma situaci&#195;&#179;n que la iluminaci&#195;&#179;n normal, con la diferencia que se estableci&#195;&#179; una iluminaci&#195;&#179;n direccional a trav&#195;&#169;s de una l&#195;&#161;mpara incandescente de 60 W., que apunte directamente a la escena situada frente a la c&#195;&#161;mara, como se observa en el esquema de la Fig. <A HREF="#fig:entorno_pruebas">4.1</A>. </LI>
+<LI><SPAN  CLASS="textbf">Iluminaci&#195;&#179;n baja <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.png"
+ ALT="$ (B_{L})$"></SPAN></SPAN>: la imagen se captur&#195;&#179; en la misma habitaci&#195;&#179;n que las pruebas anteriores, pero tanto la l&#195;&#161;mpara de bajo consumo como la l&#195;&#161;mpara direccional est&#195;&#161;n apagadas. Para dar una idea m&#195;&#161;s acabada de la condici&#195;&#179;n de iluminaci&#195;&#179;n, se puede pensar en una escena en la que se dificulta la lectura normal de un documento.
+  
+</LI>
+</UL>
+  
+<DIV ALIGN="CENTER"><A NAME="fig:entorno_pruebas"></A><A NAME="3196"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 4.1:</STRONG>
+Esquema del ambiente en el que se realizaron las pruebas.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	  <IMG
+ WIDTH="45" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img340.png"
+ ALT="\includegraphics[scale=0.5]{../figs/entorno/entorno_pruebas}"></TD></TR>
+</TABLE>
+</DIV>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1203"
+  HREF="node72.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1199"
+  HREF="node70.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1193"
+  HREF="node70.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1201"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1204"
+  HREF="node72.html">Experimentos</A>
+<B> Subir:</B> <A NAME="tex2html1200"
+  HREF="node70.html">Experimentos y Resultados</A>
+<B> Anterior:</B> <A NAME="tex2html1194"
+  HREF="node70.html">Experimentos y Resultados</A>
+ &nbsp; <B>  <A NAME="tex2html1202"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Dise&#195;&#177;o del m&#195;&#169;todo</TITLE>
+<META NAME="description" CONTENT="Dise&#195;&#177;o del m&#195;&#169;todo">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node53.html">
+<LINK REL="previous" HREF="node51.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node53.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html968"
+  HREF="node53.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html964"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html958"
+  HREF="node51.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html966"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html969"
+  HREF="node53.html">Conversi&#195;&#179;n a escala de</A>
+<B> Subir:</B> <A NAME="tex2html965"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html959"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+ &nbsp; <B>  <A NAME="tex2html967"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00810000000000000000">
+Dise&#195;&#177;o del m&#195;&#169;todo</A>
+</H1>
+El m&#195;&#169;todo para el reconocimiento y seguimiento de un objeto en una secuencia de video que se propone en este trabajo consta de dos fases, cada una de ellas compuesta por varios procesos internos. Las fases pueden observarse en los diagramas de las Figs. <A HREF="#fig:diagrama_metodo_entrenamiento">3.1</A> y <A HREF="#fig:diagrama_metodo">3.2</A>  y las hemos definido como:
+
+<UL>
+<LI><SPAN  CLASS="textbf">Configuraci&#195;&#179;n</SPAN>: la configuraci&#195;&#179;n se realiza una sola vez al inicio del algoritmo y es en la que se registra la imagen que posteriormente se detectar&#195;&#161; en el flujo de video. Esta etapa se encuentra representada en la Fig. <A HREF="#fig:diagrama_metodo_entrenamiento">3.1</A>, la cual consta de varios procesos: primeramente, una conversi&#195;&#179;n a escala de grises con una f&#195;&#179;rmula perceptualmente ponderada, luego se realiza un pre-procesamiento de iluminaci&#195;&#179;n y realce de detalles y finalmente, se procede con la extracci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas sobre la imagen.
+</LI>
+<LI><SPAN  CLASS="textbf">Ejecuci&#195;&#179;n</SPAN>: esta etapa contempla la captura de un frame del flujo de video proporcionado por la c&#195;&#161;mara web, el procesamiento para detectar el objeto registrado en la etapa anterior y la posterior superposici&#195;&#179;n de un objeto virtual para enriquecer la realidad. Todo esto est&#195;&#161; representado en la Fig. <A HREF="#fig:diagrama_metodo">3.2</A>, la cual est&#195;&#161; compuesta por diferentes procesos, entre los cuales se encuentran: la detecci&#195;&#179;n de movimiento, la extracci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas, la b&#195;&#186;squeda de correspondencias (que usa como entrada la salida del proceso de configuraci&#195;&#179;n), la detecci&#195;&#179;n de la homograf&#195;&#173;a y las validaciones posteriores para finalmente, en caso que la imagen patr&#195;&#179;n haya sido detectada, obtener un frame con el objeto virtual superpuesto. Estos procesos y otros que por cuestiones de brevedad no se mencionan aqu&#195;&#173;, ser&#195;&#161;n descriptos en las secciones que componen este cap&#195;&#173;tulo.
+</LI>
+</UL>
+
+<DIV ALIGN="CENTER"><A NAME="fig:diagrama_metodo_entrenamiento"></A><A NAME="2759"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Diagrama de flujo de la etapa de Configuraci&#195;&#179;n.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>        <IMG
+ WIDTH="588" HEIGHT="430" ALIGN="BOTTOM" BORDER="0"
+ SRC="img273.png"
+ ALT="\includegraphics[scale=0.7]{../figs/proceso_completo_entrenamiento}">
+    
+</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV ALIGN="CENTER"><A NAME="fig:diagrama_metodo"></A><A NAME="2764"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Diagrama de flujo de la etapa de ejecuci&#195;&#179;n del m&#195;&#169;todo propuesto.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>        <IMG
+ WIDTH="334" HEIGHT="331" ALIGN="BOTTOM" BORDER="0"
+ SRC="img274.png"
+ ALT="\includegraphics[scale=0.57]{../figs/proceso_completo}">
+    
+</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+En la fase de configuraci&#195;&#179;n, la imagen de un objeto conocido es convertida a escala de grises mediante una f&#195;&#179;rmula perceptualmente ponderada de la forma que se expresa en la Sec. <A HREF="node53.html#subsec:conver_escala_grises">3.2</A>. Tras ello, se aplica un proceso para mejorar la iluminaci&#195;&#179;n y resaltar detalles con el objetivo de mejorar la cantidad de puntos detectados, sobre todo en los casos en que la iluminaci&#195;&#179;n es baja. Luego, se procede con el m&#195;&#169;todo para la detecci&#195;&#179;n de caracter&#195;&#173;sticas para obtener los puntos junto con sus descriptores asociados. Este proceso, tiene como salida un vector caracter&#195;&#173;stico asociado a cada punto clave detectado, y es utilizado en la fase de ejecuci&#195;&#179;n para la detecci&#195;&#179;n del objeto.
+
+<P>
+En lo que respecta a la fase de ejecuci&#195;&#179;n, se aplica un proceso similar al anteriormente mencionado y se lleva a cabo sobre la imagen del flujo de video donde se busca el objeto. Un segundo paso consiste en utilizar los puntos claves y sus descriptores para la b&#195;&#186;squeda de correspondencias de caracter&#195;&#173;sticas. El proceso consiste en crear pares entre los descriptores de las im&#195;&#161;genes pertenecientes a las dos fases mencionadas (configuraci&#195;&#179;n y ejecuci&#195;&#179;n) de acuerdo a sus similitudes, utilizando una b&#195;&#186;squeda del vecino m&#195;&#161;s cercano. Adem&#195;&#161;s, con el objetivo de aumentar la confianza respecto a los pares de correspondencias, se aplica un paso de eliminaci&#195;&#179;n de pares irrelevantes o espurios. Una vez que se obtiene un conjunto de correspondencias filtradas y potencialmente v&#195;&#161;lidas, se estima la homograf&#195;&#173;a con la ayuda de un m&#195;&#169;todo estad&#195;&#173;stico que le provee mayor confiabilidad en los resultados. Mediante la homograf&#195;&#173;a, se obtiene un mapeo perspectivo entre la imagen patr&#195;&#179;n y la imagen del flujo de video (imagen objetivo). La existencia de la misma, establece la localizaci&#195;&#179;n de la imagen patr&#195;&#179;n en la imagen objetivo y tambi&#195;&#169;n especifica la transformaci&#195;&#179;n perspectiva que existe entre ellas. A pesar de haber aplicado un proceso para eliminar valores espurios, se presentan casos en que siguen existiendo valores inv&#195;&#161;lidos de correspondencias que conllevan a una mala estimaci&#195;&#179;n de la homograf&#195;&#173;a. Por ello, se establece un criterio para el rechazo de homograf&#195;&#173;as mal estimadas basado en la forma convexa del pol&#195;&#173;gono formado por la proyecci&#195;&#179;n de las esquinas de la imagen patr&#195;&#179;n de forma similar a la propuesta en (<A
+ HREF="node79.html#BenhimaneNGGNM08">27</A>).
+
+<P>
+Cabe aclarar que la extracci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas mediante SURF, la b&#195;&#186;squeda de correspondencias mediante &#195;&#161;rboles KD aleatorios y la estimaci&#195;&#179;n de la homograf&#195;&#173;a mediante RANSAC fueron integrados en el dise&#195;&#177;o del m&#195;&#169;todo de forma similar a la realizaci&#195;&#179;n en (<A
+ HREF="node79.html#BenhimaneNGGNM08">27</A>).
+
+<P>
+A continuaci&#195;&#179;n se presentan en detalle los procesos representados en los bloques de la Fig. <A HREF="#fig:diagrama_metodo">3.2</A>.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html968"
+  HREF="node53.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html964"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html958"
+  HREF="node51.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html966"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html969"
+  HREF="node53.html">Conversi&#195;&#179;n a escala de</A>
+<B> Subir:</B> <A NAME="tex2html965"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html959"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+ &nbsp; <B>  <A NAME="tex2html967"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

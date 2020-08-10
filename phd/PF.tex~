@@ -1,0 +1,242 @@
+\documentclass[12pt,a4paper,twoside]{book}
+%\bfseries\scshape
+%LINUX 
+%\usepackage{isolatin1}
+%WINDOWS
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[sort&compress]{natbib}
+\usepackage[T1]{fontenc} % fuente con codifiaci'on t1 para que el guinoado funcione bien
+\usepackage{lmodern}
+\usepackage{graphicx} % sirve para eps, ps y pdf (poner imagenes sin extension)
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyhdr,fancybox}
+\usepackage[nottoc]{tocbibind}
+\usepackage[rigidchapters]{titlesec}
+\usepackage{courier}
+
+%\mtcselectlanguage{spanish}
+%\setcounter{tocdepth}{1}
+%\setcounter{parttocdepth}{1}
+
+%\usepackage{times}
+%\usepackage{helvet}
+
+\decimalpoint % cambiar comas a puntos en los decimales
+\usepackage[linktocpage]{hyperref}
+\usepackage{breakurl} 
+\usepackage{delarray}
+%\usepackage{psfrag}
+% \usepackage{subfigure}
+\usepackage{subfig}
+\usepackage{floatrow}
+\usepackage{xspace}
+\usepackage{float}
+\usepackage{ifthen}
+%\usepackage{moreverb}
+%\usepackage{hyphenat}
+%\usepackage{longtable}
+\usepackage{pstricks,pst-plot,pst-node}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+%\usepackage[spanish,ruled,vlined,figure]{algorithm2e}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\usepackage{url}
+\usepackage{slashbox}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{lineno}
+%\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{hyperref}
+%\usepackage{bigfoot} %for split long footnotes
+\usepackage{textcomp}
+% 
+% \usepackage{babel}
+%box frame algorithm:
+% \usepackage[charter]{mathdesign}
+%\usepackage{eulervm}
+\usepackage{enumitem}
+\usepackage{xcolor}
+%end box frame algorithm
+%\usepackage{tabularx}
+\usepackage{listings} %for c++ code
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  language=C++,                % the language of the code
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  %numbers=left,                   % where to put the line-numbers
+  %numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  %stepnumber=2,                   % the step between two line-numbers. If it's 1, each line  will be numbered
+  %numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=8,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=false,                % sets automatic line breaking
+  breakatwhitespace=true,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                   % show the filename of files included with \lstinputlisting;
+  basicstyle=\scriptsize,                             % also try caption instead of title
+  keywordstyle=\color{blue},          % keyword style
+  commentstyle=\color{dkgreen},       % comment style
+  stringstyle=\color{mauve},         % string literal style
+  %escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  %morekeywords={*,...}               % if you want to add more keywords to the set
+}
+% 
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\usepackage{makeidx}
+
+\newcommand{\titledframe}[2]{%
+ \boxput*(0,1){\psframebox*{#1}}%
+   {\psframebox[framesep=12pt]{\ttfamily #2}}}
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+
+\newcommand{\mainidx}[1]{{\it #1}}
+\newcommand{\boldidx}[1]{{\bf #1}}
+\makeindex
+
+\graphicspath{{figs/}}
+
+%\hyphenation{gra-dien-te tra-ta-mien-to pers-pec-ti-va de-sa-rro-lla-do a-ce-le-r\'o-me-tros ca-rac-te-r\'is-ti-cas si-mi-la-res m\'e-to-dos co-rres-pon-den-cias des-cri-bi\'o glo-bal ca-rac-te-rís-ti-cos i-rre-le-van-tes i-ma-gen des-crip-tor gaus-sia-nos co-rres-pon-de-r\'an di-fe-ren-tes ni-vel si-guien-te res-pues-tas cons-tru-i-dos re-cha-za-da e-qui-va-len-tes co-li-nea-les su-pe-rar cap-tu-rado me-tros o-pe-ra-cio-nes rea-li-za-do o-pe-ra-ti-vos co-no-ci-mien-tos rea-li-dad rea-li-zar}
+
+% PIE DE PAGINA para la primera pagina de cada capitulo
+\fancypagestyle{plain} {
+   \fancyhead[lrc]{}
+	\renewcommand{\headrulewidth}{0pt}
+   \fancyfoot[l]{}
+   \fancyfoot[c]{}
+   \fancyfoot[r]{\sf{\textbf{\thepage}}}
+}
+
+% ENCABEZADO para el resto de paginas
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO,LE]{\sf{\textbf{\thepage}}}
+\fancyhead[LO]{\sf{\rightmark}}
+\fancyhead[RE]{\sf{\leftmark}}
+\setlength{\headheight}{15pt}
+%\renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter. #1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection. #1}}
+
+\def\fmfont{\fontsize\@xiipt{14.5}\selectfont\sffamily}
+
+% FUENTES
+%\renewcommand{\sfdefault}{phv}
+
+% TITULOS DE CAPITULOS
+\newcommand{\bigrule}{\titlerule[0.5mm]}
+
+
+\titleformat{\chapter}[display]
+{\sffamily\mdseries\Large}
+{\filleft\MakeUppercase{\chaptertitlename} \Huge\bf\sf \thechapter}
+{2ex}
+{\titlerule
+\vspace{4ex}%
+\filright\Huge\sffamily\bfseries}
+[\vspace{2ex}%
+\bigrule]
+
+% TITULOS de secciones y subsecciones
+\titleformat{\section}[display]
+{}{}{2ex}{\sffamily\bfseries\Large \thesection \ }[]
+
+\titleformat{\subsection}[display]
+{}{}{0ex}{\sffamily\bfseries \thesubsection \ }[]
+
+
+% INDENTACION DE TODO EL DOCUMENTO: NULA
+\parindent=0.2in
+% SEPARACION DE PARRAFOS
+\parskip=0.05in
+\newtheorem{def_transf_proyectiva}{Definición}
+%margenes para paginas impares mayores:
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+\selectlanguage{spanish}
+\raggedbottom % para que no deje espacios gigantes entre secciones
+\begin{document}
+
+\thispagestyle{empty}
+\include{portada}
+\rmfamily
+
+\renewcommand{\thepage}{\roman{page}}
+
+% \pagenumbering{roman}
+% 
+% 
+%  \newpage
+%  \thispagestyle{empty}
+%  \mbox{}
+%  \include{dedicatoria}
+% 
+% \newpage
+% \thispagestyle{empty}
+% \mbox{}
+% 
+% \newpage
+% \thispagestyle{fancy}
+% 
+\include{agradecimientos}
+%  \clearpage
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\include{resumen}
+%\clearpage
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\include{prefacio}
+\clearpage
+
+\tableofcontents
+
+\listoffigures
+% \renewcommand{\listtablename}{\'Indice de tablas}
+% \renewcommand{\tablename}{Tabla}
+% \listoftables
+%\linenumbers
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+%\renewcommand{\thepage}{\arabic{page}}
+
+%\dominitoc
+   \include{introduccion}
+   %\include{parte1} %problema y generalidades
+   %\include{parte2} 
+%    \include{parte3} %fundamentos teoricos   
+%    \include{parte4} %desarrollo del metodo
+%    \include{parte5}
+   %\include{parte6}
+%    \include{conclusiones}
+%\include{dudas}
+\bibliographystyle{plain}
+\bibliography{bibtesis,../bib1,../bib2,../bib3,../bib4}
+ % \appendix
+ %    \include{apendiceA}
+
+\end{document}

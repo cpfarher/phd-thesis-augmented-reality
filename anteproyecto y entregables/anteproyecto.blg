@@ -1,0 +1,109 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: anteproyecto.aux
+The style file: alpha.bst
+Database file #1: bib1.bib
+Database file #2: bib2.bib
+Repeated entry---line 3 of file bib2.bib
+ : @book{citeulike:3484001
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 59 of file bib2.bib
+ : @book{citeulike:9456628
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 161 of file bib2.bib
+ : @article{bb53077
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 279 of file bib2.bib
+ : @article{ bb48614
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 305 of file bib2.bib
+ : @book{ Nixon:2002:FEI
+ :                      ,
+I'm skipping whatever remains of this entry
+"," immediately follows an entry type---line 323 of file bib2.bib
+ :  acknowledgement = "Nelson H. F. Beebe, University of Utah, Department of Mathematics, 110 LCB, 155 S 1400 E RM 233, Salt Lake City, UT 84112-0090, USA, Tel: +1 801 581 5254, FAX: +1 801 581 4148, e-mail: \path|beebe@math.utah.edu|
+ :                                                                                                                                                                                                                                        , \path|beebe@acm.org|, \path|beebe@computer.org| (Internet), URL: \path|http://www.math.utah.edu/~beebe/|",
+I'm skipping whatever remains of this entry
+"," immediately follows an entry type---line 323 of file bib2.bib
+ :  acknowledgement = "Nelson H. F. Beebe, University of Utah, Department of Mathematics, 110 LCB, 155 S 1400 E RM 233, Salt Lake City, UT 84112-0090, USA, Tel: +1 801 581 5254, FAX: +1 801 581 4148, e-mail: \path|beebe@math.utah.edu|, \path|beebe@acm.org|
+ :                                                                                                                                                                                                                                                              , \path|beebe@computer.org| (Internet), URL: \path|http://www.math.utah.edu/~beebe/|",
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 323 of file bib2.bib
+ :  acknowledgement = "Nelson H. F. Beebe, University of Utah, Department of Mathematics, 110 LCB, 155 S 1400 E RM 233, Salt Lake City, UT 84112-0090, USA, Tel: +1 801 581 5254, FAX: +1 801 581 4148, e-mail: \path|beebe@math.utah.edu|, \path|beebe@acm.org|, \path|beebe@computer.org| (Internet), URL: 
+ :                                                                                                                                                                                                                                                                                                           \path|http://www.math.utah.edu/~beebe/|",
+I'm skipping whatever remains of this entry
+Repeated entry---line 367 of file bib2.bib
+ : @article{Lowe2004
+ :                  ,
+I'm skipping whatever remains of this entry
+Database file #3: bib3.bib
+Database file #4: bib4.bib
+Repeated entry---line 199 of file bib4.bib
+ : @book{citeulike:3484001
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 255 of file bib4.bib
+ : @book{citeulike:9456628
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--you've nested cross references--entry "conf/icra/2010"
+refers to entry "conf/icra/2010", which also refers to something
+Warning--you've nested cross references--entry "conf/ismar/KleinM07"
+refers to entry "conf/ismar/2007", which also refers to something
+A bad cross reference---entry "conf/ismar/MiyashitaMTOESGGAL08"
+refers to entry "conf/ismar/2008", which doesn't exist
+Warning--you've nested cross references--entry "conf/ismar/2007"
+refers to entry "conf/ismar/2007", which also refers to something
+Warning--you've nested cross references--entry "conf/iswc/2007"
+refers to entry "conf/iswc/2007", which also refers to something
+A bad cross reference---entry "conf/cvpr/HinterstoisserLIFN10"
+refers to entry "conf/cvpr/2010", which doesn't exist
+Warning--you've nested cross references--entry "conf/ismar/2004"
+refers to entry "conf/ismar/2004", which also refers to something
+Warning--I didn't find a database entry for "conf/ismar/2008"
+Warning--I didn't find a database entry for "conf/cvpr/2010"
+You've used 32 entries,
+            2543 wiz_defined-function locations,
+            766 strings with 10649 characters,
+and the built_in function-call counts, 15300 in all, are:
+= -- 1544
+> -- 762
+< -- 23
++ -- 265
+- -- 261
+* -- 1108
+:= -- 2389
+add.period$ -- 99
+call.type$ -- 32
+change.case$ -- 220
+chr.to.int$ -- 31
+cite$ -- 32
+duplicate$ -- 610
+empty$ -- 1086
+format.name$ -- 291
+if$ -- 3232
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 34
+newline$ -- 162
+num.names$ -- 100
+pop$ -- 230
+preamble$ -- 1
+purify$ -- 255
+quote$ -- 0
+skip$ -- 581
+stack$ -- 0
+substring$ -- 906
+swap$ -- 178
+text.length$ -- 23
+text.prefix$ -- 4
+top$ -- 0
+type$ -- 240
+warning$ -- 0
+while$ -- 153
+width$ -- 33
+write$ -- 413
+(There were 13 error messages)

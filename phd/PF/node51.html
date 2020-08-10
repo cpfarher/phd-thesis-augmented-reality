@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>M&#195;&#169;todo propuesto</TITLE>
+<META NAME="description" CONTENT="M&#195;&#169;todo propuesto">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node70.html">
+<LINK REL="previous" HREF="node20.html">
+<LINK REL="up" HREF="PF.html">
+<LINK REL="next" HREF="node52.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html938"
+  HREF="node52.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html934"
+  HREF="PF.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html928"
+  HREF="node50.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html936"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html939"
+  HREF="node52.html">Dise&#195;&#177;o del m&#195;&#169;todo</A>
+<B> Subir:</B> <A NAME="tex2html935"
+  HREF="PF.html">.</A>
+<B> Anterior:</B> <A NAME="tex2html929"
+  HREF="node50.html">Determinaci&#195;&#179;n adaptativa de la</A>
+ &nbsp; <B>  <A NAME="tex2html937"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00800000000000000000"></A>
+<A NAME="c:parte4"></A>
+<BR>
+M&#195;&#169;todo propuesto
+</H1>
+<BR>
+<BR>
+<BR>
+En este cap&#195;&#173;tulo se presenta el dise&#195;&#177;o del m&#195;&#169;todo propuesto sustent&#195;&#161;ndose en el marco te&#195;&#179;rico introducido en el cap&#195;&#173;tulo anterior. Se describen cada una de las etapas involucradas en el m&#195;&#169;todo, plante&#195;&#161;ndose algunas t&#195;&#169;cnicas para el realce de detalles y mejora de la iluminaci&#195;&#179;n de la imagen. Adem&#195;&#161;s, se presentan estrategias utilizadas para mejorar el desempe&#195;&#177;o en el tiempo de procesamiento, como as&#195;&#173; tambi&#195;&#169;n para obtener una correcta detecci&#195;&#179;n del objeto en la escena.
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html940"
+  HREF="node52.html">Dise&#195;&#177;o del m&#195;&#169;todo</A>
+<LI><A NAME="tex2html941"
+  HREF="node53.html">Conversi&#195;&#179;n a escala de grises</A>
+<LI><A NAME="tex2html942"
+  HREF="node54.html">Mejoras en la iluminaci&#195;&#179;n y realce de detalles</A>
+<LI><A NAME="tex2html943"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n de inter&#195;&#169;s</A>
+<UL>
+<LI><A NAME="tex2html944"
+  HREF="node56.html">Diferencia absoluta entre el frame actual y el frame previo</A>
+<LI><A NAME="tex2html945"
+  HREF="node57.html">Umbral Binario</A>
+<LI><A NAME="tex2html946"
+  HREF="node58.html">Erosi&#195;&#179;n y dilataci&#195;&#179;n</A>
+<LI><A NAME="tex2html947"
+  HREF="node59.html">Rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo</A>
+<LI><A NAME="tex2html948"
+  HREF="node60.html">&#195;&#129;rea del rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html949"
+  HREF="node61.html">Extracci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas</A>
+<LI><A NAME="tex2html950"
+  HREF="node62.html">Correspondencia entre puntos claves</A>
+<LI><A NAME="tex2html951"
+  HREF="node63.html">Detecci&#195;&#179;n de homograf&#195;&#173;a</A>
+<LI><A NAME="tex2html952"
+  HREF="node64.html">Detecci&#195;&#179;n de homograf&#195;&#173;as mal estimadas</A>
+<UL>
+<LI><A NAME="tex2html953"
+  HREF="node65.html">Convexidad</A>
+<LI><A NAME="tex2html954"
+  HREF="node66.html">Distancia entre v&#195;&#169;rtices</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html955"
+  HREF="node67.html">Condici&#195;&#179;n de presencia previa</A>
+<LI><A NAME="tex2html956"
+  HREF="node68.html">Realidad aumentada en el flujo de video</A>
+<UL>
+<LI><A NAME="tex2html957"
+  HREF="node69.html">Transformaci&#195;&#179;n Perspectiva</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

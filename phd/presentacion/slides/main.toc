@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@sectionintoc {2}{M\IeC {\'e}todo propuesto}{10}{0}{2}
+\beamer@subsectionintoc {2}{4}{Detecci\IeC {\'o}n de movimiento}{17}{0}{2}
+\beamer@subsectionintoc {2}{5}{Extracci\IeC {\'o}n de Caracter\IeC {\'\i }sticas}{19}{0}{2}
+\beamer@subsectionintoc {2}{6}{Correspondencia de puntos entre im\IeC {\'a}genes}{22}{0}{2}
+\beamer@subsectionintoc {2}{7}{Transformaci\IeC {\'o}n y RA}{24}{0}{2}
+\beamer@sectionintoc {3}{Experimentos y Resultados}{31}{0}{3}
+\beamer@subsectionintoc {3}{1}{Entorno de pruebas e im\IeC {\'a}genes}{32}{0}{3}
+\beamer@subsectionintoc {3}{2}{Experimentos}{36}{0}{3}
+\beamer@subsectionintoc {3}{3}{Implementaci\IeC {\'o}n de prototipos}{48}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones y trabajos futuros}{50}{0}{4}

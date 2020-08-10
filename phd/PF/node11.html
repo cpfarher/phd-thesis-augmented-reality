@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Caracter&#195;&#173;sticas locales</TITLE>
+<META NAME="description" CONTENT="Caracter&#195;&#173;sticas locales">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node10.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html378"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html374"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html368"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html376"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html379"
+  HREF="node12.html">Propiedades de caracter&#195;&#173;sticas locales</A>
+<B> Subir:</B> <A NAME="tex2html375"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+<B> Anterior:</B> <A NAME="tex2html369"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+ &nbsp; <B>  <A NAME="tex2html377"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00622100000000000000"></A>
+<A NAME="c:deteccioncaracteristicas"></A>
+<BR>
+Caracter&#195;&#173;sticas locales
+</H3>
+Una caracter&#195;&#173;stica local puede ser interpretada como un patr&#195;&#179;n de imagen que difiere de su vecindad y puede venir representada por ejemplo por un punto, un borde o peque&#195;&#177;os trozos de la imagen. Es com&#195;&#186;n la realizaci&#195;&#179;n de ciertos c&#195;&#161;lculos sobre una regi&#195;&#179;n alrededor de la caracter&#195;&#173;stica local detectada y su resultado se convierte en un vector num&#195;&#169;rico el cual recibe el nombre de descriptor. Estos &#195;&#186;ltimos pueden ser utilizados para gran variedad de aplicaciones.
+
+<P>
+Se puede hacer una distinci&#195;&#179;n de los detectores de caracter&#195;&#173;sticas, dependiendo del uso que se le de a los mismos:
+
+<UL>
+<LI><SPAN  CLASS="textit">Caracter&#195;&#173;sticas locales espec&#195;&#173;ficas que otorgan una interpretaci&#195;&#179;n sem&#195;&#161;ntica de un contexto limitado espec&#195;&#173;fico</SPAN>, por ejemplo: de bordes detectados en im&#195;&#161;genes a&#195;&#169;reas, se puede decir que com&#195;&#186;nmente corresponden a caminos o rutas.
+</LI>
+<LI><SPAN  CLASS="textit">Caracter&#195;&#173;sticas locales que proveen un conjunto limitado de puntos bien localizados e individualmente identificables</SPAN>. En este caso, lo que representa la caracter&#195;&#173;stica no es realmente relevante. Lo importante es que su ubicaci&#195;&#179;n pueda ser determinada con exactitud y de manera estable en el tiempo, por ejemplo situaciones de correspondencia de puntos y seguimiento de los mismos, calibraci&#195;&#179;n de la c&#195;&#161;mara y reconstrucci&#195;&#179;n 3D.
+</LI>
+</UL>
+
+<P>
+Los dos escenarios aqu&#195;&#173; planteados no resultan ser los &#195;&#186;nicos posibles, pero se exponen con el objetivo de enfatizar las diferentes propiedades requeridas para diversas situaciones. Claramente cada uno de los escenarios, impone restricciones sobre los puntos caracter&#195;&#173;sticos a utilizar. En este trabajo, nos enfocaremos particularmente en el segundo caso (correspondencia de puntos y estabilidad de los mismos).
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html378"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html374"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html368"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html376"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html379"
+  HREF="node12.html">Propiedades de caracter&#195;&#173;sticas locales</A>
+<B> Subir:</B> <A NAME="tex2html375"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+<B> Anterior:</B> <A NAME="tex2html369"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+ &nbsp; <B>  <A NAME="tex2html377"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

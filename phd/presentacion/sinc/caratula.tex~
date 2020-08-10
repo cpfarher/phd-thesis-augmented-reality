@@ -1,0 +1,26 @@
+%-----------------------------------------
+% Datos diapositiva de titulo
+%-----------------------------------------
+\title[Método para detección de objetos]{Método para detección y seguimiento de objetos con aplicaciones en Realidad Aumentada}
+
+\author[C. N. Pfarher]{
+\footnotesize \emph{Christian Nicolás Pfarher}\\
+   Director: \emph{Dr. Albornoz, Enrique Marcelo} \\
+   Co-Director:\emph{Dr. Martínez, Cesar}
+}
+%
+\institute[sinc($i$)-UNL]{
+\hspace{2mm}\includegraphics[height=5.8mm]{imagenes/fichunl}\hs\includegraphics[height=6.2mm]{imagenes/sinc}\\
+\vspace{1mm}
+{\rmfamily
+{\small Centro de {\textcolor{red}{I}}nvestigaci\'on en} {\normalsize {\textcolor{blue}{\bfseries s}}e\~{n}ales}\\[1mm]
+{\normalsize sistemas e {\bfseries in}teligencia {\bfseries c}omputacional} \\
+}
+\vs
+{\scriptsize 
+Ingeniería Informática - Universidad Nacional del Litoral \\
+}
+}
+%
+\date{\tiny 31 de Junio, 2013}
+%-----------------------------------------

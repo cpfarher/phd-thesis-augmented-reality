@@ -1,0 +1,5240 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.6.17)  31 JAN 2014 16:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./images.tex
+(./images.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ga
+lician, catalan, spanish, loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2011/10/06 v5.0k Spanish support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@datefmt=\count89
+\es@quottoks=\toks16
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 496.
+Package babel Info: Making . an active character on input line 599.
+Package babel Info: Making < an active character on input line 644.
+Package babel Info: Making > an active character on input line 644.
+))
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen106
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks19
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks20
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks21
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks28
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+) (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box28
+\shadowsize=\dimen115
+\@Sbox=\box29
+\do@VerbBox=\toks29
+\the@fancyput=\toks30
+\this@fancyput=\toks31
+\EndVerbatimTokens=\toks32
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box30
+\beforetitleunit=\skip60
+\aftertitleunit=\skip61
+\ttl@plus=\dimen116
+\ttl@minus=\dimen117
+\ttl@toksa=\toks33
+\titlewidth=\dimen118
+\titlewidthlast=\dimen119
+\titlewidthfirst=\dimen120
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen121
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count106
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `linktocpage' set `true' on input line 3941.
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count107
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count108
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count109
+\c@Item=\count110
+\c@Hfootnote=\count111
+)
+
+Package hyperref Message: Driver (default): hdvips.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2012/05/13 v6.82q Hyperref driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2012/05/13 v6.82q Hyperref definitions for pdfmark specials
+\pdf@docset=\toks34
+\pdf@box=\box31
+\pdf@toks=\toks35
+\pdf@defaulttoks=\toks36
+\Fld@listcount=\count112
+\c@bookmark@seq@number=\count113
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip62
+)) (/usr/share/texlive/texmf-dist/tex/latex/breakurl/breakurl.sty
+Package: breakurl 2009/01/24 v1.30 Breakable hyperref URLs
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
+\XKV@depth=\count114
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+\burl@toks=\toks39
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
+Package: delarray 1994/03/14 v1.01 array delimiter package (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen124
+\extrarowheight=\dimen125
+\NC@list=\toks40
+\extratabsurround=\skip63
+\backup@length=\skip64
+)) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
+)
+\c@ContinuedFloat=\count115
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count116
+\sf@farskip=\skip65
+\sf@captopadj=\dimen132
+\sf@capskip=\skip66
+\sf@nearskip=\skip67
+\c@subfigure=\count117
+\c@subfigure@save=\count118
+\c@lofdepth=\count119
+\c@subtable=\count120
+\c@subtable@save=\count121
+\c@lotdepth=\count122
+\sf@top=\skip68
+\sf@bottom=\skip69
+) (/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count123
+\float@exts=\toks41
+\float@box=\box32
+\@floatcapt=\box33
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks42
+\flrow@foot=\insert233
+\FB@wd=\dimen133
+\FBo@wd=\dimen134
+\FBc@wd=\dimen135
+\FBo@ht=\skip70
+\FBc@ht=\skip71
+\FBf@ht=\skip72
+\FBo@max=\skip73
+\FBc@max=\skip74
+\FBf@max=\skip75
+\c@FBl@b=\count124
+\floatbox@depth=\count125
+\c@FRobj=\count126
+\c@FRsobj=\count127
+\Xhsize=\skip76
+\sXhsize=\skip77
+\Zhsize=\skip78
+\sZhsize=\skip79
+\flrow@rowbox=\box34
+\FR@Zunitlength=\dimen136
+\c@FBcnt=\count128
+\FPOScnt=\count129
+\LTleft=\skip80
+\LTright=\skip81
+\LTleft=\skip82
+\LTright=\skip83
+\flrow@types=\toks43
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2011/10/31 v0.52 LaTeX wrapper for `PSTricks' (RN,HV)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex (/usr/share/te
+xlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+) (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex `pst-fp' v0.05
+, 2010/01/17 (hv)
+\pstFP@xs=\count130
+\pstFP@xia=\count131
+\pstFP@xib=\count132
+\pstFP@xfa=\count133
+\pstFP@xfb=\count134
+\pstFP@rega=\count135
+\pstFP@regb=\count136
+\pstFP@regs=\count137
+\pstFP@times=\count138
+)
+\psLoopIndex=\count139
+`PSTricks' v2.29  <2012/06/04> (tvz)
+\pst@dima=\dimen137
+\pst@dimb=\dimen138
+\pst@dimc=\dimen139
+\pst@dimd=\dimen140
+\pst@dimg=\dimen141
+\pst@dimh=\dimen142
+\pst@dimm=\dimen143
+\pst@dimn=\dimen144
+\pst@dimo=\dimen145
+\pst@dimp=\dimen146
+\pst@hbox=\box35
+\pst@ibox=\box36
+\pst@boxg=\box37
+\pst@cnta=\count140
+\pst@cntb=\count141
+\pst@cntc=\count142
+\pst@cntd=\count143
+\pst@cntg=\count144
+\pst@cnth=\count145
+\pst@cntm=\count146
+\pst@cntn=\count147
+\pst@cnto=\count148
+\pst@cntp=\count149
+\@zero=\count150
+\pst@toks=\toks44
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen147
+\psxunit=\dimen148
+\psyunit=\dimen149
+\pst@C@@rType=\count151
+\pslinewidth=\dimen150
+\psk@startLW=\dimen151
+\psk@endLW=\dimen152
+\pst@customdefs=\toks45
+\pslinearc=\dimen153
+\pst@symbolStep=\dimen154
+\pst@symbolWidth=\dimen155
+\pst@symbolLinewidth=\dimen156
+\everypsbox=\toks46
+\psframesep=\dimen157
+\pslabelsep=\dimen158
+\pst@shift=\dimen159
+\theoverlaybox=\box38
+)
+File: pstricks.tex 2012/06/04 v2.29 `PSTricks' (tvz,hv)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2012/06/04 v2.29 `PST-fp' (hv)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)) (/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+) (/usr/share/texlive/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+(/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex  v1.42, 2010/05/
+14 <tvz>
+\multido@count=\count152
+\multidocount=\count153
+\multido@stuff=\toks47
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
+(/usr/share/texlive/texmf-dist/tex/generic/pst-plot/pst-plot.tex  v1.42, 2012/0
+5/03 (tvz,hv)
+\pstRadUnit=\dimen160
+\pstRadUnitInv=\dimen161
+\pst@linecnt=\count154
+\psxlabelsep=\dimen162
+\psylabelsep=\dimen163
+\psk@subticksize=\dimen164
+\pst@xticksizeA=\dimen165
+\pst@xticksizeB=\dimen166
+\pst@xticksizeC=\dimen167
+\pst@yticksizeA=\dimen168
+\pst@yticksizeB=\dimen169
+\pst@yticksizeC=\dimen170
+\@digitcounter=\count155
+\psk@llx=\dimen171
+\psk@lly=\dimen172
+\psk@urx=\dimen173
+\psk@ury=\dimen174
+\pst@xunit=\dimen175
+\pst@yunit=\dimen176
+)
+File: pst-plot.tex 2012/05/03 1.42 `pst-plot' (tvz,hv)
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2011/06/05 v1.00 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex  v1.22, 2012/0
+2/12
+\psrow=\count156
+\pscol=\count157
+\psmatrixcnt=\count158
+\psrowsep=\skip84
+\pscolsep=\skip85
+\pst@args=\count159
+\num@pts=\count160
+\pst@argcnt=\count161
+)
+File: pst-node.tex 2012/02/12 1.22 `pst-node' (tvz)
+) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count162
+\@cmidlb=\count163
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count164
+\@lastruleclass=\count165
+\@thisrulewidth=\dimen189
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box39
+\@slashboxb=\box40
+\@slashboxc=\box41
+\@slashboxwd=\count166
+\@slashboxht=\count167
+\@slashsepl=\dimen190
+\@slashsepr=\dimen191
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip86
+\LTright=\skip87
+\LTpre=\skip88
+\LTpost=\skip89
+\LTchunksize=\count168
+\LTcapwidth=\dimen192
+\LT@head=\box42
+\LT@firsthead=\box43
+\LT@foot=\box44
+\LT@lastfoot=\box45
+\LT@cols=\count169
+\LT@rows=\count170
+\c@LT@tables=\count171
+\c@LT@chunks=\count172
+\LT@p@ftn=\toks48
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen193
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks49
+\minrowclearance=\skip90
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count173
+\output=\toks50
+\linenoprevgraf=\count174
+\linenumbersep=\dimen194
+\linenumberwidth=\dimen195
+\c@linenumber=\count175
+\c@pagewiselinenumber=\count176
+\c@LN@truepage=\count177
+\c@internallinenumber=\count178
+\c@internallinenumbers=\count179
+\quotelinenumbersep=\dimen196
+\bframerule=\dimen197
+\bframesep=\dimen198
+\bframebox=\box46
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip91
+\enit@outerparindent=\dimen199
+\enit@toks=\toks51
+\enit@inbox=\box47
+\enitdp@description=\count180
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count181
+\lst@gtempboxa=\box48
+\lst@token=\toks52
+\lst@length=\count182
+\lst@currlwidth=\dimen200
+\lst@column=\count183
+\lst@pos=\count184
+\lst@lostspace=\dimen201
+\lst@width=\dimen202
+\lst@newlines=\count185
+\lst@lineno=\count186
+\lst@maxwidth=\dimen203
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count187
+\lst@skipnumbers=\count188
+\lst@framebox=\box49
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `images.idx'.
+
+Writing index file images.idx
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \titlerule[0.5mm]]
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@def_transf_proyectiva=\count189
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
+
+! LaTeX Error: Option clash for package inputenc.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 
+      
+The package inputenc has already been loaded with options:
+  [utf8]
+There has now been an attempt to load it with options
+  [latin1]
+Adding the global options:
+  utf8,latin1
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+\sizebox=\box50
+\lthtmlwrite=\write5
+(./images.aux
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/portada.aux)
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/agradecimientos.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/resumen.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/prefacio.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/introduccion.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte3.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte4.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte5.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/conclusiones.aux))
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 304.
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 304.
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 304.
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 304.
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 304.
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 304.
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 304.
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 304.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 304.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 304.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 304.
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+\AtBeginShipoutBox=\box51
+Package hyperref Info: Link coloring OFF on input line 304.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count190
+)
+LaTeX Info: Redefining \ref on input line 304.
+LaTeX Info: Redefining \pageref on input line 304.
+LaTeX Info: Redefining \nameref on input line 304.
+\@outlinefile=\write6
+\openout6 = `images.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-subfig.sty
+Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
+\FBsc@max=\skip92
+\FBso@max=\skip93
+) (/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box52
+\flrow@LT@prelastfoot=\box53
+\c@FBLTpage=\count191
+)
+\c@lstlisting=\count192
+
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/PF.aux
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/portada.aux)
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/agradecimientos.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/resumen.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/prefacio.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/introduccion.aux
+
+LaTeX Warning: Label `c:introduccion' multiply defined.
+
+
+LaTeX Warning: Label `fig:Reality-Virtuality Continuum' multiply defined.
+
+
+LaTeX Warning: Label `sec:ptos_caract_descriptores' multiply defined.
+
+
+LaTeX Warning: Label `c:deteccioncaracteristicas' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte3.aux
+
+LaTeX Warning: Label `c:parte3' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_dilatacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_erosion' multiply defined.
+
+
+LaTeX Warning: Label `fig:original_erode_dilate' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:original_erode_dilate' multiply defined.
+
+
+LaTeX Warning: Label `fig:mascara' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:mascara' multiply defined.
+
+
+LaTeX Warning: Label `fig:dilatacion_example' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:dilatacion_example' multiply defined.
+
+
+LaTeX Warning: Label `fig:erosion_example' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:erosion_example' multiply defined.
+
+
+LaTeX Warning: Label `subsec:mejoras_iluminacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:equation_umbral_binario' multiply defined.
+
+
+LaTeX Warning: Label `fig:umbral_curve' multiply defined.
+
+
+LaTeX Warning: Label `subsec:transf_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `eq:logaritmo' multiply defined.
+
+
+LaTeX Warning: Label `fig:log_curve' multiply defined.
+
+
+LaTeX Warning: Label `subsec:iluminacion_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:relacion_probabilidades' multiply defined.
+
+
+LaTeX Warning: Label `eq:cdf_acumulada' multiply defined.
+
+
+LaTeX Warning: Label `suubsec:iluminacion_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `eq:ec_convolucion' multiply defined.
+
+
+LaTeX Warning: Label `subsec:iluminacion_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `eq:form_alta_potencia' multiply defined.
+
+
+LaTeX Warning: Label `sec:detec_ptos_claves' multiply defined.
+
+
+LaTeX Warning: Label `sec:imagenes_integrales' multiply defined.
+
+
+LaTeX Warning: Label `eq:integral_image_1' multiply defined.
+
+
+LaTeX Warning: Label `fig:integral_image_sum' multiply defined.
+
+
+LaTeX Warning: Label `sec:problema_cambio_escala' multiply defined.
+
+
+LaTeX Warning: Label `sec:invarianza_a_escala' multiply defined.
+
+
+LaTeX Warning: Label `sec:matHessiana' multiply defined.
+
+
+LaTeX Warning: Label `fig:church1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:church1' multiply defined.
+
+
+LaTeX Warning: Label `fig:church2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:church2' multiply defined.
+
+
+LaTeX Warning: Label `fig:church_difference_surf' multiply defined.
+
+
+LaTeX Warning: Label `eq:HessianMatrix' multiply defined.
+
+
+LaTeX Warning: Label `eq:det_happrox' multiply defined.
+
+
+LaTeX Warning: Label `fig:pyramidfilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsdiscreted_y' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsdiscreted_y' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsaprox_y' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsaprox_y' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsdiscreted_xy' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsdiscreted_xy' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsaprox_xy' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsaprox_xy' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernels' multiply defined.
+
+
+LaTeX Warning: Label `fig:tamfilters1' multiply defined.
+
+
+LaTeX Warning: Label `fig:maximum_supression3by3by3' multiply defined.
+
+
+LaTeX Warning: Label `sec:descripcion_ptos_claves' multiply defined.
+
+
+LaTeX Warning: Label `sec:orientacion_del_punto' multiply defined.
+
+
+LaTeX Warning: Label `fig:simplekernels1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simplekernels1' multiply defined.
+
+
+LaTeX Warning: Label `fig:simplekernels2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simplekernels2' multiply defined.
+
+
+LaTeX Warning: Label `fig:simplekernels' multiply defined.
+
+
+LaTeX Warning: Label `fig:responsecalculate' multiply defined.
+
+
+LaTeX Warning: Label `fig:squareregionsexample' multiply defined.
+
+
+LaTeX Warning: Label `fig:subdivideregions' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subdivideregions' multiply defined.
+
+
+LaTeX Warning: Label `fig:left_boxfilters' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:left_boxfilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:regioneshaarandresponses' multiply defined.
+
+
+LaTeX Warning: Label `fig:descriptorresponses' multiply defined.
+
+
+LaTeX Warning: Label `sec:correspop_ptos_claves' multiply defined.
+
+
+LaTeX Warning: Label `sec:remocion_corresp_invalidas' multiply defined.
+
+
+LaTeX Warning: Label `eq:mapeo' multiply defined.
+
+
+LaTeX Warning: Label `fig:pinholemodel' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pinholemodel' multiply defined.
+
+
+LaTeX Warning: Label `fig:pinholemodel_geometria' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pinholemodel_geometria' multiply defined.
+
+
+LaTeX Warning: Label `fig:pinholecmaeramodelinterpretation' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_mapeo_matricial' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_mapeo_matricial_notacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:mapeo_general' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_mapeo_matricial_homogeneo' multiply defined.
+
+
+LaTeX Warning: Label `eq:k' multiply defined.
+
+
+LaTeX Warning: Label `eq:mapp_xcam' multiply defined.
+
+
+LaTeX Warning: Label `eq:xcam_homogenea' multiply defined.
+
+
+LaTeX Warning: Label `eq:xcam_homog_combinado' multiply defined.
+
+
+LaTeX Warning: Label `fig:transform_between_spaces' multiply defined.
+
+
+LaTeX Warning: Label `eq:matrix_camera' multiply defined.
+
+
+LaTeX Warning: Label `eq:k_gral' multiply defined.
+
+
+LaTeX Warning: Label `sec:transf_proyectiva_homograph' multiply defined.
+
+
+LaTeX Warning: Label `def:transf_proyectiva' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_cumple_homografia' multiply defined.
+
+
+LaTeX Warning: Label `fig:homografia_esquema' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_ecuacion_rel_homography_ptos' multiply defined.
+
+
+LaTeX Warning: Label `sec:estimacion_ransac_homografia' multiply defined.
+
+
+LaTeX Warning: Label `eq:hxsystem' multiply defined.
+
+
+LaTeX Warning: Label `fig:example_ransac' multiply defined.
+
+
+LaTeX Warning: Label `eq:determineN' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte4.aux
+
+LaTeX Warning: Label `c:parte4' multiply defined.
+
+
+LaTeX Warning: Label `fig:diagrama_metodo_entrenamiento' multiply defined.
+
+
+LaTeX Warning: Label `fig:diagrama_metodo' multiply defined.
+
+
+LaTeX Warning: Label `subsec:conver_escala_grises' multiply defined.
+
+
+LaTeX Warning: Label `eq:formula_conv_grises' multiply defined.
+
+
+LaTeX Warning: Label `sec:mejoras_ilum_detalles_metodo' multiply defined.
+
+
+LaTeX Warning: Label `sec:deteccion_cambiante_imagen' multiply defined.
+
+
+LaTeX Warning: Label `fig:diagrama_procesomovimiento' multiply defined.
+
+
+LaTeX Warning: Label `eq:diferencia_absoluta' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-srcprev' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-srcprev' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-src' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-src' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-absdiff' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-absdiff' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-umbral' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-umbral' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-erode' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-erode' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-dilate' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-dilate' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-boundingrect' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-boundingrect' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:deteccion_movimiento' multiply defined.
+
+
+LaTeX Warning: Label `subsub_ymbral' multiply defined.
+
+
+LaTeX Warning: Label `subsubsec:bounding_rect' multiply defined.
+
+
+LaTeX Warning: Label `subsec:validacion_area_boundingrect' multiply defined.
+
+
+LaTeX Warning: Label `sec:extract_y_descrip_caracteristicas' multiply defined.
+
+
+LaTeX Warning: Label `fig:extraccion800' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:extraccion800' multiply defined.
+
+
+LaTeX Warning: Label `fig:extraccion3000' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:extraccion3000' multiply defined.
+
+
+LaTeX Warning: Label `fig:extraccioncaracteristicas' multiply defined.
+
+
+LaTeX Warning: Label `fig:correspondencias_deteccion_lineas' multiply defined.
+
+
+LaTeX Warning: Label `sec:detec_homografia' multiply defined.
+
+
+LaTeX Warning: Label `sec:salvado_convexidad_vertices' multiply defined.
+
+
+LaTeX Warning: Label `eq:expresion_validacion_vertices' multiply defined.
+
+
+LaTeX Warning: Label `fig:poligono_concavo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:poligono_concavo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `fig:poligono_convexo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:poligono_convexo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `fig:poligono_valido_viewport_fuera' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:poligono_valido_viewport_fuera' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:analisis_poligonos' multiply defined.
+
+
+LaTeX Warning: Label `subsubsec:presente_en_alguno_3_frames_previos' multiply d
+efined.
+
+
+LaTeX Warning: Label `fig:restauracion_transformacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:transf_pespectiva' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte5.aux
+
+LaTeX Warning: Label `c:pruebas_resultados_discusion' multiply defined.
+
+
+LaTeX Warning: Label `imagenpatron_restricciones' multiply defined.
+
+
+LaTeX Warning: Label `fig:entorno_pruebas' multiply defined.
+
+
+LaTeX Warning: Label `subsec:paraqumetros_utilizados' multiply defined.
+
+
+LaTeX Warning: Label `fig:train_normal' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:train_normal' multiply defined.
+
+
+LaTeX Warning: Label `fig:train_brillante' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:train_brillante' multiply defined.
+
+
+LaTeX Warning: Label `fig:train_oscura' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:train_oscura' multiply defined.
+
+
+LaTeX Warning: Label `fig:prueba_iluminacion_realce_detalles_2_imagenes' multip
+ly defined.
+
+
+LaTeX Warning: Label `eq:kernel_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `eq:kernel_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_original' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_original' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_ecyaltapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_ecyaltapotencia' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:mejoras_iluminacion_normal_BN' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_original' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_original' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_ecyaltapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_ecyaltapotencia' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:mejoras_iluminacion_brillante_BH' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_original' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_original' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_ecyaltapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_ecyaltapotencia' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:mejoras_iluminacion_oscura_BL' multiply defined.
+
+
+LaTeX Warning: Label `tabla:tiempos_realce_iluminacion' multiply defined.
+
+
+LaTeX Warning: Label `graph:comparacion_cantptos' multiply defined.
+
+
+LaTeX Warning: Label `graph:graph_tiempos_3500' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_patron_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_patron_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_objetoar_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_objetoar_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia1_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia1_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia2_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia2_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia3_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia3_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia4_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia4_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:secuencia_ejemplo_BN' multiply defined.
+
+
+LaTeX Warning: Label `fig:prototipo_img_detect' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:prototipo_img_detect' multiply defined.
+
+
+LaTeX Warning: Label `fig:protitpo_img_ar' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:protitpo_img_ar' multiply defined.
+
+
+LaTeX Warning: Label `fig:first_detect_protitpo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:first_detect_protitpo' multiply defined.
+
+
+LaTeX Warning: Label `fig:last_detect_prototipo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:last_detect_prototipo' multiply defined.
+
+
+LaTeX Warning: Label `fig:ejemplos_protitipos' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/conclusiones.aux
+
+LaTeX Warning: Label `c:conclusiones' multiply defined.
+
+)
+
+LaTeX Warning: Label `bb77826' multiply defined.
+
+
+LaTeX Warning: Label `AryaEtAl98' multiply defined.
+
+
+LaTeX Warning: Label `Azuma:2001:RAA:616073.618862' multiply defined.
+
+
+LaTeX Warning: Label `Bay:2008:SRF' multiply defined.
+
+
+LaTeX Warning: Label `Bay06surf:speeded' multiply defined.
+
+
+LaTeX Warning: Label `Beis:1997:SIU:794189.794431' multiply defined.
+
+
+LaTeX Warning: Label `conf/visapp/BenhimaneNGGNM08' multiply defined.
+
+
+LaTeX Warning: Label `citeulike:3484001' multiply defined.
+
+
+LaTeX Warning: Label `VLDB95574' multiply defined.
+
+
+LaTeX Warning: Label `1320421' multiply defined.
+
+
+LaTeX Warning: Label `5607509' multiply defined.
+
+
+LaTeX Warning: Label `5672610' multiply defined.
+
+
+LaTeX Warning: Label `conf/icra/2010' multiply defined.
+
+
+LaTeX Warning: Label `Duda:1972:UHT:361237.361242' multiply defined.
+
+
+LaTeX Warning: Label `Friedman:1977:AFB:355744.355745' multiply defined.
+
+
+LaTeX Warning: Label `Fukunaga75' multiply defined.
+
+
+LaTeX Warning: Label `BouGar' multiply defined.
+
+
+LaTeX Warning: Label `Harris88acombined' multiply defined.
+
+
+LaTeX Warning: Label `Silpa_KDTree' multiply defined.
+
+
+LaTeX Warning: Label `conf/cvpr/HinterstoisserLIFN10' multiply defined.
+
+
+LaTeX Warning: Label `bb1919' multiply defined.
+
+
+LaTeX Warning: Label `conf/cvpr/JurieS04' multiply defined.
+
+
+LaTeX Warning: Label `journals/ijcv/KadirB01' multiply defined.
+
+
+LaTeX Warning: Label `5711053' multiply defined.
+
+
+LaTeX Warning: Label `KimPW09' multiply defined.
+
+
+LaTeX Warning: Label `conf/ismar/KleinM07' multiply defined.
+
+
+LaTeX Warning: Label `BenhimaneNGGNM08' multiply defined.
+
+
+LaTeX Warning: Label `citeulike:9456628' multiply defined.
+
+
+LaTeX Warning: Label `5739718' multiply defined.
+
+
+LaTeX Warning: Label `conf/iswc/2007' multiply defined.
+
+
+LaTeX Warning: Label `conf/ismar/2007' multiply defined.
+
+
+LaTeX Warning: Label `bb79759' multiply defined.
+
+
+LaTeX Warning: Label `oai:infoscience.epfl.ch:52666' multiply defined.
+
+
+LaTeX Warning: Label `Lepetit:2005:MMT:1166405.1166406' multiply defined.
+
+
+LaTeX Warning: Label `5478308' multiply defined.
+
+
+LaTeX Warning: Label `springerlink:10.1023/A:1008045108935' multiply defined.
+
+
+LaTeX Warning: Label `Liu04aninvestigation' multiply defined.
+
+
+LaTeX Warning: Label `bb48614' multiply defined.
+
+
+LaTeX Warning: Label `Lowe:2004:DIF:993451.996342' multiply defined.
+
+
+LaTeX Warning: Label `Lowe1999' multiply defined.
+
+
+LaTeX Warning: Label `DBLP:journals/ivc/MatasCUP04' multiply defined.
+
+
+LaTeX Warning: Label `bb23918' multiply defined.
+
+
+LaTeX Warning: Label `bb53077' multiply defined.
+
+
+LaTeX Warning: Label `conf/iccv/MikolajczykS01' multiply defined.
+
+
+LaTeX Warning: Label `journals/ijcv/MikolajczykS04' multiply defined.
+
+
+LaTeX Warning: Label `Mikolajczyk:2005:PEL:1083822.1083989' multiply defined.
+
+
+LaTeX Warning: Label `Milgram94augmentedreality' multiply defined.
+
+
+LaTeX Warning: Label `conf/ismar/MiyashitaMTOESGGAL08' multiply defined.
+
+
+LaTeX Warning: Label `muja_flann_2009' multiply defined.
+
+
+LaTeX Warning: Label `bb78856' multiply defined.
+
+
+LaTeX Warning: Label `Nixon:2002:FEI' multiply defined.
+
+
+LaTeX Warning: Label `bb36798' multiply defined.
+
+
+LaTeX Warning: Label `Rosten05fusingpoints' multiply defined.
+
+
+LaTeX Warning: Label `conf/ismar/2004' multiply defined.
+
+
+LaTeX Warning: Label `Takacs:2008:OAR:1460096.1460165' multiply defined.
+
+
+LaTeX Warning: Label `TuytelaarsM07' multiply defined.
+
+
+LaTeX Warning: Label `WagnerRMDS10' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/portada.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/agradecimientos.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/resumen.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/prefacio.aux)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/introduccion.aux
+
+LaTeX Warning: Label `c:introduccion' multiply defined.
+
+
+LaTeX Warning: Label `fig:Reality-Virtuality Continuum' multiply defined.
+
+
+LaTeX Warning: Label `sec:ptos_caract_descriptores' multiply defined.
+
+
+LaTeX Warning: Label `c:deteccioncaracteristicas' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte3.aux
+
+LaTeX Warning: Label `c:parte3' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_dilatacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_erosion' multiply defined.
+
+
+LaTeX Warning: Label `fig:original_erode_dilate' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:original_erode_dilate' multiply defined.
+
+
+LaTeX Warning: Label `fig:mascara' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:mascara' multiply defined.
+
+
+LaTeX Warning: Label `fig:dilatacion_example' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:dilatacion_example' multiply defined.
+
+
+LaTeX Warning: Label `fig:erosion_example' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:erosion_example' multiply defined.
+
+
+LaTeX Warning: Label `subsec:mejoras_iluminacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:equation_umbral_binario' multiply defined.
+
+
+LaTeX Warning: Label `fig:umbral_curve' multiply defined.
+
+
+LaTeX Warning: Label `subsec:transf_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `eq:logaritmo' multiply defined.
+
+
+LaTeX Warning: Label `fig:log_curve' multiply defined.
+
+
+LaTeX Warning: Label `subsec:iluminacion_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:relacion_probabilidades' multiply defined.
+
+
+LaTeX Warning: Label `eq:cdf_acumulada' multiply defined.
+
+
+LaTeX Warning: Label `suubsec:iluminacion_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `eq:ec_convolucion' multiply defined.
+
+
+LaTeX Warning: Label `subsec:iluminacion_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `eq:form_alta_potencia' multiply defined.
+
+
+LaTeX Warning: Label `sec:detec_ptos_claves' multiply defined.
+
+
+LaTeX Warning: Label `sec:imagenes_integrales' multiply defined.
+
+
+LaTeX Warning: Label `eq:integral_image_1' multiply defined.
+
+
+LaTeX Warning: Label `fig:integral_image_sum' multiply defined.
+
+
+LaTeX Warning: Label `sec:problema_cambio_escala' multiply defined.
+
+
+LaTeX Warning: Label `sec:invarianza_a_escala' multiply defined.
+
+
+LaTeX Warning: Label `sec:matHessiana' multiply defined.
+
+
+LaTeX Warning: Label `fig:church1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:church1' multiply defined.
+
+
+LaTeX Warning: Label `fig:church2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:church2' multiply defined.
+
+
+LaTeX Warning: Label `fig:church_difference_surf' multiply defined.
+
+
+LaTeX Warning: Label `eq:HessianMatrix' multiply defined.
+
+
+LaTeX Warning: Label `eq:det_happrox' multiply defined.
+
+
+LaTeX Warning: Label `fig:pyramidfilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsdiscreted_y' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsdiscreted_y' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsaprox_y' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsaprox_y' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsdiscreted_xy' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsdiscreted_xy' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernelsaprox_xy' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gaussiankernelsaprox_xy' multiply defined.
+
+
+LaTeX Warning: Label `fig:gaussiankernels' multiply defined.
+
+
+LaTeX Warning: Label `fig:tamfilters1' multiply defined.
+
+
+LaTeX Warning: Label `fig:maximum_supression3by3by3' multiply defined.
+
+
+LaTeX Warning: Label `sec:descripcion_ptos_claves' multiply defined.
+
+
+LaTeX Warning: Label `sec:orientacion_del_punto' multiply defined.
+
+
+LaTeX Warning: Label `fig:simplekernels1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simplekernels1' multiply defined.
+
+
+LaTeX Warning: Label `fig:simplekernels2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simplekernels2' multiply defined.
+
+
+LaTeX Warning: Label `fig:simplekernels' multiply defined.
+
+
+LaTeX Warning: Label `fig:responsecalculate' multiply defined.
+
+
+LaTeX Warning: Label `fig:squareregionsexample' multiply defined.
+
+
+LaTeX Warning: Label `fig:subdivideregions' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subdivideregions' multiply defined.
+
+
+LaTeX Warning: Label `fig:left_boxfilters' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:left_boxfilters' multiply defined.
+
+
+LaTeX Warning: Label `fig:regioneshaarandresponses' multiply defined.
+
+
+LaTeX Warning: Label `fig:descriptorresponses' multiply defined.
+
+
+LaTeX Warning: Label `sec:correspop_ptos_claves' multiply defined.
+
+
+LaTeX Warning: Label `sec:remocion_corresp_invalidas' multiply defined.
+
+
+LaTeX Warning: Label `eq:mapeo' multiply defined.
+
+
+LaTeX Warning: Label `fig:pinholemodel' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pinholemodel' multiply defined.
+
+
+LaTeX Warning: Label `fig:pinholemodel_geometria' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pinholemodel_geometria' multiply defined.
+
+
+LaTeX Warning: Label `fig:pinholecmaeramodelinterpretation' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_mapeo_matricial' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_mapeo_matricial_notacion' multiply defined.
+
+
+LaTeX Warning: Label `eq:mapeo_general' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_mapeo_matricial_homogeneo' multiply defined.
+
+
+LaTeX Warning: Label `eq:k' multiply defined.
+
+
+LaTeX Warning: Label `eq:mapp_xcam' multiply defined.
+
+
+LaTeX Warning: Label `eq:xcam_homogenea' multiply defined.
+
+
+LaTeX Warning: Label `eq:xcam_homog_combinado' multiply defined.
+
+
+LaTeX Warning: Label `fig:transform_between_spaces' multiply defined.
+
+
+LaTeX Warning: Label `eq:matrix_camera' multiply defined.
+
+
+LaTeX Warning: Label `eq:k_gral' multiply defined.
+
+
+LaTeX Warning: Label `sec:transf_proyectiva_homograph' multiply defined.
+
+
+LaTeX Warning: Label `def:transf_proyectiva' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_cumple_homografia' multiply defined.
+
+
+LaTeX Warning: Label `fig:homografia_esquema' multiply defined.
+
+
+LaTeX Warning: Label `eq:eq_ecuacion_rel_homography_ptos' multiply defined.
+
+
+LaTeX Warning: Label `sec:estimacion_ransac_homografia' multiply defined.
+
+
+LaTeX Warning: Label `eq:hxsystem' multiply defined.
+
+
+LaTeX Warning: Label `fig:example_ransac' multiply defined.
+
+
+LaTeX Warning: Label `eq:determineN' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte4.aux
+
+LaTeX Warning: Label `c:parte4' multiply defined.
+
+
+LaTeX Warning: Label `fig:diagrama_metodo_entrenamiento' multiply defined.
+
+
+LaTeX Warning: Label `fig:diagrama_metodo' multiply defined.
+
+
+LaTeX Warning: Label `subsec:conver_escala_grises' multiply defined.
+
+
+LaTeX Warning: Label `eq:formula_conv_grises' multiply defined.
+
+
+LaTeX Warning: Label `sec:mejoras_ilum_detalles_metodo' multiply defined.
+
+
+LaTeX Warning: Label `sec:deteccion_cambiante_imagen' multiply defined.
+
+
+LaTeX Warning: Label `fig:diagrama_procesomovimiento' multiply defined.
+
+
+LaTeX Warning: Label `eq:diferencia_absoluta' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-srcprev' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-srcprev' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-src' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-src' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-absdiff' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-absdiff' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-umbral' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-umbral' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-erode' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-erode' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-dilate' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-dilate' multiply defined.
+
+
+LaTeX Warning: Label `fig:deteccion_movimietno-boundingrect' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deteccion_movimietno-boundingrect' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:deteccion_movimiento' multiply defined.
+
+
+LaTeX Warning: Label `subsub_ymbral' multiply defined.
+
+
+LaTeX Warning: Label `subsubsec:bounding_rect' multiply defined.
+
+
+LaTeX Warning: Label `subsec:validacion_area_boundingrect' multiply defined.
+
+
+LaTeX Warning: Label `sec:extract_y_descrip_caracteristicas' multiply defined.
+
+
+LaTeX Warning: Label `fig:extraccion800' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:extraccion800' multiply defined.
+
+
+LaTeX Warning: Label `fig:extraccion3000' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:extraccion3000' multiply defined.
+
+
+LaTeX Warning: Label `fig:extraccioncaracteristicas' multiply defined.
+
+
+LaTeX Warning: Label `fig:correspondencias_deteccion_lineas' multiply defined.
+
+
+LaTeX Warning: Label `sec:detec_homografia' multiply defined.
+
+
+LaTeX Warning: Label `sec:salvado_convexidad_vertices' multiply defined.
+
+
+LaTeX Warning: Label `eq:expresion_validacion_vertices' multiply defined.
+
+
+LaTeX Warning: Label `fig:poligono_concavo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:poligono_concavo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `fig:poligono_convexo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:poligono_convexo_invalido' multiply defined.
+
+
+LaTeX Warning: Label `fig:poligono_valido_viewport_fuera' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:poligono_valido_viewport_fuera' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:analisis_poligonos' multiply defined.
+
+
+LaTeX Warning: Label `subsubsec:presente_en_alguno_3_frames_previos' multiply d
+efined.
+
+
+LaTeX Warning: Label `fig:restauracion_transformacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:transf_pespectiva' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/parte5.aux
+
+LaTeX Warning: Label `c:pruebas_resultados_discusion' multiply defined.
+
+
+LaTeX Warning: Label `imagenpatron_restricciones' multiply defined.
+
+
+LaTeX Warning: Label `fig:entorno_pruebas' multiply defined.
+
+
+LaTeX Warning: Label `subsec:paraqumetros_utilizados' multiply defined.
+
+
+LaTeX Warning: Label `fig:train_normal' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:train_normal' multiply defined.
+
+
+LaTeX Warning: Label `fig:train_brillante' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:train_brillante' multiply defined.
+
+
+LaTeX Warning: Label `fig:train_oscura' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:train_oscura' multiply defined.
+
+
+LaTeX Warning: Label `fig:prueba_iluminacion_realce_detalles_2_imagenes' multip
+ly defined.
+
+
+LaTeX Warning: Label `eq:kernel_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `eq:kernel_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_original' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_original' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BN_ecyaltapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BN_ecyaltapotencia' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:mejoras_iluminacion_normal_BN' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_original' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_original' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BH_ecyaltapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BH_ecyaltapotencia' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:mejoras_iluminacion_brillante_BH' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_original' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_original' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_logaritmica' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_ecualizacion' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_pasaaltos' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_altapotencia' multiply defined.
+
+
+LaTeX Warning: Label `fig:iluminacion_BL_ecyaltapotencia' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:iluminacion_BL_ecyaltapotencia' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:mejoras_iluminacion_oscura_BL' multiply defined.
+
+
+LaTeX Warning: Label `tabla:tiempos_realce_iluminacion' multiply defined.
+
+
+LaTeX Warning: Label `graph:comparacion_cantptos' multiply defined.
+
+
+LaTeX Warning: Label `graph:graph_tiempos_3500' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_patron_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_patron_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_objetoar_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_objetoar_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia1_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia1_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia2_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia2_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia3_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia3_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen_secuencia4_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:imagen_secuencia4_ejemplo' multiply defined.
+
+
+LaTeX Warning: Label `fig:secuencia_ejemplo_BN' multiply defined.
+
+
+LaTeX Warning: Label `fig:prototipo_img_detect' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:prototipo_img_detect' multiply defined.
+
+
+LaTeX Warning: Label `fig:protitpo_img_ar' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:protitpo_img_ar' multiply defined.
+
+
+LaTeX Warning: Label `fig:first_detect_protitpo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:first_detect_protitpo' multiply defined.
+
+
+LaTeX Warning: Label `fig:last_detect_prototipo' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:last_detect_prototipo' multiply defined.
+
+
+LaTeX Warning: Label `fig:ejemplos_protitipos' multiply defined.
+
+)
+(/home/christian/Documentos/universidad/2011/codigo_e_informes/openCV/anteproye
+cto/tesis/conclusiones.aux
+
+LaTeX Warning: Label `c:conclusiones' multiply defined.
+
+)
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=679.8738pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=3.61371pt
+
+latex2htmlLength oddsidemargin=52.0pt
+
+latex2htmlLength evensidemargin=10.0pt
+
+[1
+
+]
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 328.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 328.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 328
+.
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 328
+.
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 328.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 328.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 328.
+LaTeX Font Info:    Try loading font information for U+msa on input line 328.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 328.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+l2hSize :tex2html_wrap_inline10799:8.7pt::8.7pt::17.61252pt.
+[2
+
+
+]
+l2hSize :tex2html_wrap_inline10947:8.7pt::8.7pt::17.61252pt.
+[3
+
+
+]
+l2hSize :tex2html_wrap_inline11095:8.7pt::8.7pt::15.79446pt.
+[4
+
+
+]
+File: figs/fich_unl.eps Graphic file (type eps)
+<figs/fich_unl.eps>
+l2hSize :tex2html_wrap12460:39.64812pt::0.0pt::349.0pt.
+[5
+
+
+]
+
+LaTeX Warning: File `../img_ent1/reality_virtual.eps' not found on input line 3
+61.
+
+
+! LaTeX Error: File `../img_ent1/reality_virtual.eps' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361 ...raphics{../img_ent1/reality_virtual.eps}}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Cannot determine size of graphic in ../img_ent1/reality_virtual.
+eps (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361 ...raphics{../img_ent1/reality_virtual.eps}}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: ../img_ent1/reality_virtual.eps Graphic file (type eps)
+<../img_ent1/reality_virtual.eps>
+l2hSize :tex2html_wrap568:28.90755pt::0.0pt::349.0pt.
+[6
+
+
+]
+l2hSize :tex2html_wrap_inline12509:9.51021pt::0.0pt::14.24161pt.
+[7
+
+
+]
+l2hSize :tex2html_wrap_inline12511:9.5pt::9.5pt::27.8267pt.
+[8
+
+
+]
+l2hSize :tex2html_wrap_inline12513:8.2pt::0.0pt::9.39577pt.
+[9
+
+
+]
+l2hSize :tex2html_wrap_inline12517:9.5pt::9.5pt::58.79955pt.
+[10
+
+
+]
+l2hSize :tex2html_wrap_inline12521:8.25pt::8.25pt::9.92088pt.
+[11
+
+
+]
+l2hSize :tex2html_wrap_inline12523:8.7pt::8.7pt::34.92755pt.
+[12
+
+
+]
+l2hSize :tex2html_wrap_inline12527:8.2pt::0.0pt::10.11938pt.
+[13
+
+
+]
+l2hSize :tex2html_wrap_inline12529:8.2pt::0.0pt::32.2609pt.
+[14
+
+
+]
+l2hSize :tex2html_wrap_inline12539:11.91731pt::11.91731pt::152.80914pt.
+[15
+
+
+]
+l2hSize :tex2html_wrap_inline12543:9.5pt::9.5pt::171.43814pt.
+[16
+
+
+]
+l2hSize :tex2html_wrap_inline12547:9.5pt::9.5pt::57.20515pt.
+[17
+
+
+]
+l2hSize :tex2html_wrap_inline12549:9.5pt::9.5pt::15.9209pt.
+[18
+
+
+]
+l2hSize :tex2html_wrap_inline12562:8.7pt::8.7pt::33.59424pt.
+[19
+
+
+]
+l2hSize :tex2html_wrap_indisplay12564:11.91731pt::11.91731pt::148.06601pt.
+[20
+
+
+]
+l2hSize :tex2html_wrap_inline12579:8.7pt::8.7pt::33.59424pt.
+[21
+
+
+]
+l2hSize :tex2html_wrap_indisplay12581:9.5pt::9.5pt::122.26045pt.
+[22
+
+
+]
+l2hSize :tex2html_wrap_inline12587:7.75pt::0.0pt::6.58052pt.
+[23
+
+
+]
+File: ../figs/erode_dilate/orig.eps Graphic file (type eps)
+<../figs/erode_dilate/orig.eps>
+l2hSize :tex2html_wrap12594:166.7088pt::0.0pt::349.0pt.
+[24
+
+
+]
+l2hSize :tex2html_wrap_inline12596:8.25pt::8.25pt::27.0041pt.
+[25
+
+
+]
+File: ../figs/mascara.eps Graphic file (type eps)
+<../figs/mascara.eps>
+l2hSize :tex2html_wrap12597:91.24333pt::0.0pt::349.0pt.
+[26
+
+
+]
+l2hSize :tex2html_wrap_inline12599:8.25pt::8.25pt::9.92088pt.
+[27
+
+
+]
+File: ../figs/erode_dilate/2dilate.eps Graphic file (type eps)
+<../figs/erode_dilate/2dilate.eps>
+l2hSize :tex2html_wrap12600:166.7088pt::0.0pt::349.0pt.
+[28
+
+
+]
+File: ../figs/erode_dilate/2erode.eps Graphic file (type eps)
+<../figs/erode_dilate/2erode.eps>
+l2hSize :tex2html_wrap12603:166.7088pt::0.0pt::349.0pt.
+[29
+
+
+]
+l2hSize :tex2html_wrap_inline12607:8.25pt::8.25pt::15.79587pt.
+[30
+
+
+]
+l2hSize :tex2html_wrap_inline12613:9.5pt::9.5pt::99.11719pt.
+[31
+
+
+]
+l2hSize :tex2html_wrap_inline12615:9.5pt::9.5pt::34.89957pt.
+[32
+
+
+]
+l2hSize :tex2html_wrap_inline12617:9.5pt::9.5pt::33.88359pt.
+[33
+
+
+]
+l2hSize :tex2html_wrap_inline12619:8.2pt::0.0pt::9.10619pt.
+[34
+
+
+]
+l2hSize :tex2html_wrap_inline12621:8.83331pt::8.83331pt::7.66039pt.
+[35
+
+
+]
+l2hSize :tex2html_wrap_inline12629:8.25pt::8.25pt::27.0041pt.
+[36
+
+
+]
+l2hSize :tex2html_wrap_inline12631:8.25pt::8.25pt::6.64441pt.
+[37
+
+
+]
+l2hSize :tex2html_wrap_inline12639:9.5pt::9.5pt::45.20659pt.
+[38
+
+
+]
+l2hSize :tex2html_wrap_inline12641:7.75pt::0.0pt::6.209pt.
+[39
+
+
+]
+l2hSize :tex2html_wrap_inline12643:7.75pt::0.0pt::6.12221pt.
+[40
+
+
+]
+l2hSize :tex2html_wrap_inline12652:8.25pt::8.25pt::23.20088pt.
+[41
+
+
+]
+l2hSize :tex2html_wrap_inline12654:8.25pt::8.25pt::23.44048pt.
+[42
+
+
+]
+l2hSize :tex2html_wrap_inline12660:7.75pt::0.0pt::7.27495pt.
+[43
+
+
+]
+l2hSize :tex2html_wrap_indisplay12667:21.50018pt::21.50018pt::304.76202pt.
+[44
+
+
+]
+File: ../figs/iluminacion/umbral.eps Graphic file (type eps)
+<../figs/iluminacion/umbral.eps>
+l2hSize :tex2html_wrap12671:122.45747pt::0.0pt::349.0pt.
+[45
+
+
+]
+l2hSize :tex2html_wrap_inline12678:8.25pt::8.25pt::28.08391pt.
+[46
+
+
+]
+l2hSize :tex2html_wrap_inline12680:7.75pt::0.0pt::5.6444pt.
+[47
+
+
+]
+l2hSize :tex2html_wrap_inline12682:7.75pt::0.0pt::27.32495pt.
+[48
+
+
+]
+l2hSize :tex2html_wrap_indisplay12684:9.5pt::9.5pt::84.15846pt.
+[49
+
+
+]
+File: ../figs/iluminacion/logaritmo.eps Graphic file (type eps)
+<../figs/iluminacion/logaritmo.eps>
+l2hSize :tex2html_wrap12688:123.46123pt::0.0pt::349.0pt.
+[50
+
+
+]
+l2hSize :tex2html_wrap_inline12691:7.75pt::0.0pt::7.60133pt.
+[51
+
+
+]
+l2hSize :tex2html_wrap_inline12693:8.25pt::8.25pt::6.4847pt.
+[52
+
+
+]
+l2hSize :tex2html_wrap_inline12695:8.2pt::0.0pt::8.5819pt.
+[53
+
+
+]
+l2hSize :tex2html_wrap_inline12699:8.33331pt::0.0pt::7.10136pt.
+[54
+
+
+]
+l2hSize :tex2html_wrap_inline12701:8.25pt::8.25pt::11.02156pt.
+[55
+
+
+]
+l2hSize :tex2html_wrap_inline12703:10.38028pt::10.38028pt::122.41982pt.
+[56
+
+
+]
+l2hSize :tex2html_wrap_inline12705:9.5pt::9.5pt::30.62921pt.
+[57
+
+
+]
+l2hSize :tex2html_wrap_indisplay12707:21.50018pt::21.50018pt::218.50044pt.
+[58
+
+
+]
+l2hSize :tex2html_wrap_indisplay12709:21.50018pt::21.50018pt::340.48769pt.
+[59
+
+
+]
+l2hSize :tex2html_wrap_inline12712:9.5pt::9.5pt::73.62178pt.
+[60
+
+
+]
+l2hSize :tex2html_wrap_inline12714:9.5pt::9.5pt::33.48984pt.
+[61
+
+
+]
+l2hSize :tex2html_wrap_indisplay12716:17.94449pt::17.94449pt::206.8462pt.
+[62
+
+
+]
+l2hSize :tex2html_wrap_inline12719:8.7pt::8.7pt::31.27068pt.
+[63
+
+
+]
+l2hSize :tex2html_wrap_inline12723:9.5pt::9.5pt::62.77559pt.
+[64
+
+
+]
+l2hSize :tex2html_wrap_inline12729:8.2pt::0.0pt::31.07632pt.
+[65
+
+
+]
+l2hSize :displaymath12732:39.49998pt::0.0pt::349.0pt.
+[66
+
+
+]
+l2hSize :tex2html_wrap_inline12736:9.5pt::9.5pt::32.54945pt.
+[67
+
+
+]
+l2hSize :tex2html_wrap_inline12738:10.32137pt::10.32137pt::57.50687pt.
+[68
+
+
+]
+l2hSize :tex2html_wrap_inline12740:8.38399pt::0.0pt::6.7352pt.
+[69
+
+
+]
+l2hSize :tex2html_wrap_inline12742:7.75pt::0.0pt::7.83286pt.
+[70
+
+
+]
+l2hSize :tex2html_wrap_indisplay12744:20.51563pt::20.51563pt::126.88414pt.
+[71
+
+
+]
+
+! LaTeX Error: File `./figs/sumintegralimages2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.782 ...ics[scale=0.6]{./figs/sumintegralimages2}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12748:0.0pt::0.0pt::349.0pt.
+[72
+
+
+]
+l2hSize :tex2html_wrap_inline12753:7.75pt::0.0pt::7.69649pt.
+[73
+
+
+]
+
+! LaTeX Error: File `../img_ent2/surfinchurch1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.796 ...s[scale=0.338]{../img_ent2/surfinchurch1}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12758:0.0pt::0.0pt::349.0pt.
+[74
+
+
+]
+
+! LaTeX Error: File `../img_ent2/surfinchurch2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.802 ...ics[scale=0.3]{../img_ent2/surfinchurch2}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12759:0.0pt::0.0pt::349.0pt.
+[75
+
+
+]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 809.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+l2hSize :tex2html_wrap_indisplay12765:27.85841pt::27.85841pt::229.29494pt.
+[76
+
+
+]
+l2hSize :tex2html_wrap_inline12767:9.5pt::9.5pt::51.13228pt.
+[77
+
+
+]
+l2hSize :tex2html_wrap_inline12771:8.25pt::8.25pt::8.08752pt.
+[78
+
+
+]
+l2hSize :tex2html_wrap_indisplay12775:18.50014pt::18.50014pt::179.6066pt.
+[79
+
+
+]
+l2hSize :tex2html_wrap_inline12777:9.5pt::9.5pt::43.981pt.
+[80
+
+
+]
+l2hSize :tex2html_wrap_inline12779:11.91476pt::11.91476pt::39.20596pt.
+[81
+
+
+]
+l2hSize :tex2html_wrap_inline12785:9.5pt::9.5pt::43.99275pt.
+[82
+
+
+]
+l2hSize :tex2html_wrap_inline12787:11.91476pt::11.91476pt::44.47784pt.
+[83
+
+
+]
+l2hSize :tex2html_wrap_inline12793:9.5pt::9.5pt::44.20375pt.
+[84
+
+
+]
+l2hSize :tex2html_wrap_inline12795:11.91476pt::11.91476pt::38.90967pt.
+[85
+
+
+]
+
+! LaTeX Error: File `./figs/pyramidfilters' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.869 ...raphics[scale=0.6]{./figs/pyramidfilters}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12803:0.0pt::0.0pt::349.0pt.
+[86
+
+
+]
+l2hSize :tex2html_wrap_indisplay12805:10.6102pt::10.6102pt::197.79659pt.
+[87
+
+
+]
+l2hSize :tex2html_wrap_inline12807:7.75pt::0.0pt::40.12904pt.
+[88
+
+
+]
+l2hSize :tex2html_wrap_inline12809:8.88399pt::8.88399pt::19.51805pt.
+[89
+
+
+]
+l2hSize :tex2html_wrap_inline12811:8.88399pt::8.88399pt::18.92546pt.
+[90
+
+
+]
+l2hSize :tex2html_wrap_inline12813:8.88399pt::8.88399pt::19.22176pt.
+[91
+
+
+]
+l2hSize :tex2html_wrap_inline12815:7.75pt::0.0pt::9.30965pt.
+[92
+
+
+]
+l2hSize :tex2html_wrap_inline12819:8.7pt::8.7pt::18.05885pt.
+[93
+
+
+]
+l2hSize :tex2html_wrap_inline12821:8.7pt::8.7pt::19.82024pt.
+[94
+
+
+]
+l2hSize :tex2html_wrap_inline12823:8.7pt::8.7pt::18.35515pt.
+[95
+
+
+]
+l2hSize :tex2html_wrap_inline12825:8.7pt::8.7pt::20.11653pt.
+[96
+
+
+]
+
+! LaTeX Error: File `../img_ent2/gaussiankernelsdiscrete_y' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.935 ...5]{../img_ent2/gaussiankernelsdiscrete_y}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12826:0.0pt::0.0pt::349.0pt.
+[97
+
+
+]
+
+! LaTeX Error: File `../img_ent2/gaussiankernelsaprox_y' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.941 ...0.45]{../img_ent2/gaussiankernelsaprox_y}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12827:0.0pt::0.0pt::349.0pt.
+[98
+
+
+]
+
+! LaTeX Error: File `../img_ent2/gaussiankernelsdiscrete_xy' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.947 ...]{../img_ent2/gaussiankernelsdiscrete_xy}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12828:0.0pt::0.0pt::349.0pt.
+[99
+
+
+]
+
+! LaTeX Error: File `../img_ent2/gaussiankernelsaprox_xy' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.953 ....45]{../img_ent2/gaussiankernelsaprox_xy}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12829:0.0pt::0.0pt::349.0pt.
+[100
+
+
+]
+l2hSize :tex2html_wrap_inline12834:8.25pt::8.25pt::27.0041pt.
+[101
+
+
+]
+l2hSize :tex2html_wrap_inline12836:7.75pt::0.0pt::38.51588pt.
+[102
+
+
+]
+l2hSize :tex2html_wrap_inline12838:7.75pt::0.0pt::36.9416pt.
+[103
+
+
+]
+l2hSize :tex2html_wrap_inline12842:8.25pt::8.25pt::38.75407pt.
+[104
+
+
+]
+l2hSize :tex2html_wrap_inline12844:8.25pt::8.25pt::38.75407pt.
+[105
+
+
+]
+l2hSize :tex2html_wrap_inline12846:8.25pt::8.25pt::38.75407pt.
+[106
+
+
+]
+l2hSize :tex2html_wrap_inline12850:7.75pt::0.0pt::38.51588pt.
+[107
+
+
+]
+l2hSize :tex2html_wrap_inline12852:8.25pt::8.25pt::38.75407pt.
+[108
+
+
+]
+l2hSize :tex2html_wrap_inline12854:7.75pt::0.0pt::38.51588pt.
+[109
+
+
+]
+l2hSize :tex2html_wrap_inline12856:8.25pt::8.25pt::38.75407pt.
+[110
+
+
+]
+
+! LaTeX Error: File `./figs/tamfilters1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1019 ...graphics[scale=0.32]{./figs/tamfilters1}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12860:0.0pt::0.0pt::349.0pt.
+[111
+
+
+]
+l2hSize :tex2html_wrap_inline12863:8.25pt::8.25pt::27.0041pt.
+[112
+
+
+]
+l2hSize :tex2html_wrap_inline12865:8.25pt::8.25pt::47.5457pt.
+[113
+
+
+]
+l2hSize :tex2html_wrap_inline12869:8.33331pt::0.0pt::30.0159pt.
+[114
+
+
+]
+l2hSize :tex2html_wrap_inline12871:10.38028pt::10.38028pt::36.6659pt.
+[115
+
+
+]
+l2hSize :tex2html_wrap_inline12873:8.33331pt::0.0pt::35.89088pt.
+[116
+
+
+]
+
+! LaTeX Error: File `./figs/333nonmaximum' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1056 ...aphics[scale=0.35]{./figs/333nonmaximum}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12875:0.0pt::0.0pt::349.0pt.
+[117
+
+
+]
+l2hSize :tex2html_wrap_inline12879:7.75pt::0.0pt::11.9972pt.
+[118
+
+
+]
+l2hSize :tex2html_wrap_inline12885:7.75pt::0.0pt::11.9972pt.
+[119
+
+
+]
+l2hSize :tex2html_wrap_inline12887:7.75pt::0.0pt::34.91173pt.
+[120
+
+
+]
+
+! LaTeX Error: File `../img_ent2/simplekernels1harn' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1082 ...ale=0.4]{../img_ent2/simplekernels1harn}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12888:0.0pt::0.0pt::349.0pt.
+[121
+
+
+]
+
+! LaTeX Error: File `../img_ent2/simplekernels2harn' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1088 ...ale=0.4]{../img_ent2/simplekernels2harn}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12889:0.0pt::0.0pt::349.0pt.
+[122
+
+
+]
+l2hSize :tex2html_wrap_inline12893:7.75pt::0.0pt::7.26456pt.
+[123
+
+
+]
+l2hSize :tex2html_wrap_inline12895:8.25pt::8.25pt::6.74718pt.
+[124
+
+
+]
+l2hSize :tex2html_wrap_inline12898:8.33331pt::0.0pt::13.37006pt.
+[125
+
+
+]
+l2hSize :tex2html_wrap_inline12900:8.83331pt::8.83331pt::12.85268pt.
+[126
+
+
+]
+l2hSize :tex2html_wrap_inline12902:9.5pt::9.5pt::19.43323pt.
+[127
+
+
+]
+l2hSize :tex2html_wrap_inline12906:8.66922pt::8.66922pt::8.15564pt.
+[128
+
+
+]
+
+! LaTeX Error: File `./figs/responsecalculate' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1130 ...cs[scale=0.45]{./figs/responsecalculate}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12908:0.0pt::0.0pt::349.0pt.
+[129
+
+
+]
+l2hSize :tex2html_wrap_inline12911:7.75pt::0.0pt::17.87218pt.
+[130
+
+
+]
+
+! LaTeX Error: File `./figs/squareregionsexample' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1143 ...[scale=0.4]{./figs/squareregionsexample}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12915:0.0pt::0.0pt::349.0pt.
+[131
+
+
+]
+
+! LaTeX Error: File `./figs/subdivideregions' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1149 ...ics[scale=0.30]{./figs/subdivideregions}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12916:0.0pt::0.0pt::349.0pt.
+[132
+
+
+]
+
+! LaTeX Error: File `./figs/respuestaswavelethaar' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1155 ...cale=0.30]{./figs/respuestaswavelethaar}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12917:0.0pt::0.0pt::349.0pt.
+[133
+
+
+]
+
+! LaTeX Error: File `./figs/descriptorresponses' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1161 ...[scale=0.60]{./figs/descriptorresponses}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap12924:0.0pt::0.0pt::349.0pt.
+[134
+
+
+]
+l2hSize :tex2html_wrap_inline12926:8.25pt::8.25pt::27.0041pt.
+[135
+
+
+]
+l2hSize :tex2html_wrap_inline12928:8.25pt::8.25pt::27.0041pt.
+[136
+
+
+]
+l2hSize :tex2html_wrap_inline12930:8.25pt::8.25pt::27.0041pt.
+[137
+
+
+]
+l2hSize :tex2html_wrap_inline12934:9.5pt::9.5pt::20.03674pt.
+[138
+
+
+]
+l2hSize :tex2html_wrap_inline12938:9.5pt::9.5pt::19.51936pt.
+[139
+
+
+]
+l2hSize :tex2html_wrap_inline12940:8.83331pt::8.83331pt::11.9778pt.
+[140
+
+
+]
+l2hSize :tex2html_wrap_inline12942:8.83331pt::8.83331pt::11.6815pt.
+[141
+
+
+]
+l2hSize :tex2html_wrap_inline12944:7.75pt::0.0pt::11.9972pt.
+[142
+
+
+]
+l2hSize :tex2html_wrap_inline12950:7.75pt::0.0pt::44.05057pt.
+[143
+
+
+]
+l2hSize :tex2html_wrap_inline12960:7.75pt::0.0pt::7.74886pt.
+[144
+
+
+]
+l2hSize :tex2html_wrap_inline12962:9.5pt::9.5pt::157.00868pt.
+[145
+
+
+]
+l2hSize :tex2html_wrap_inline12964:7.75pt::0.0pt::12.3375pt.
+[146
+
+
+]
+l2hSize :tex2html_wrap_inline12968:8.25pt::8.25pt::32.87909pt.
+[147
+
+
+]
+l2hSize :tex2html_wrap_inline12972:9.5pt::9.5pt::31.20004pt.
+[148
+
+
+]
+l2hSize :tex2html_wrap_inline12976:8.83331pt::8.83331pt::24.53336pt.
+[149
+
+
+]
+l2hSize :tex2html_wrap_inline12981:9.5pt::9.5pt::71.60616pt.
+[150
+
+
+]
+l2hSize :tex2html_wrap_inline12983:8.2pt::0.0pt::13.20828pt.
+[151
+
+
+]
+l2hSize :tex2html_wrap_inline12985:8.7pt::8.7pt::33.51509pt.
+[152
+
+
+]
+l2hSize :tex2html_wrap_inline12987:8.25pt::8.25pt::6.22775pt.
+[153
+
+
+]
+l2hSize :tex2html_wrap_inline12989:8.2pt::0.0pt::9.79301pt.
+[154
+
+
+]
+l2hSize :tex2html_wrap_inline12993:8.2pt::0.0pt::11.44577pt.
+[155
+
+
+]
+l2hSize :tex2html_wrap_inline12995:8.2pt::0.0pt::33.12633pt.
+[156
+
+
+]
+l2hSize :tex2html_wrap_inline12998:8.2pt::0.0pt::10.66966pt.
+[157
+
+
+]
+l2hSize :tex2html_wrap_inline13000:8.2pt::0.0pt::32.35022pt.
+[158
+
+
+]
+l2hSize :tex2html_wrap_inline13007:8.25pt::8.25pt::10.14946pt.
+[159
+
+
+]
+l2hSize :tex2html_wrap_inline13009:7.86708pt::0.0pt::51.08174pt.
+[160
+
+
+]
+l2hSize :tex2html_wrap_inline13017:8.25pt::8.25pt::15.82994pt.
+[161
+
+
+]
+l2hSize :tex2html_wrap_inline13025:8.83331pt::8.83331pt::34.29099pt.
+[162
+
+
+]
+l2hSize :tex2html_wrap_inline13027:8.83331pt::8.83331pt::34.29099pt.
+[163
+
+
+]
+l2hSize :tex2html_wrap_inline13029:8.83331pt::8.83331pt::11.44302pt.
+[164
+
+
+]
+l2hSize :tex2html_wrap_inline13031:8.83331pt::8.83331pt::11.44302pt.
+[165
+
+
+]
+l2hSize :tex2html_wrap_inline13035:10.78033pt::10.78033pt::122.80197pt.
+[166
+
+
+]
+l2hSize :tex2html_wrap_inline13037:7.75pt::0.0pt::36.90549pt.
+[167
+
+
+]
+l2hSize :tex2html_wrap_inline13043:8.0825pt::0.0pt::10.33752pt.
+[168
+
+
+]
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 137
+7.
+(/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+l2hSize :tex2html_wrap_inline13045:8.83331pt::8.83331pt::30.64644pt.
+[169
+
+
+]
+l2hSize :tex2html_wrap_inline13049:10.4102pt::10.4102pt::75.70602pt.
+[170
+
+
+]
+l2hSize :tex2html_wrap_inline13051:8.0825pt::0.0pt::10.78151pt.
+[171
+
+
+]
+l2hSize :tex2html_wrap_inline13053:8.2pt::0.0pt::9.85576pt.
+[172
+
+
+]
+l2hSize :tex2html_wrap_inline13057:10.4102pt::10.4102pt::110.12137pt.
+[173
+
+
+]
+l2hSize :tex2html_wrap_inline13059:9.51021pt::0.0pt::14.00421pt.
+[174
+
+
+]
+l2hSize :tex2html_wrap_inline13061:9.51021pt::0.0pt::14.00421pt.
+[175
+
+
+]
+l2hSize :tex2html_wrap_indisplay13063:11.0102pt::11.0102pt::139.47768pt.
+[176
+
+
+]
+File: ../figs/sizzerman/pinholemodel.eps Graphic file (type eps)
+<../figs/sizzerman/pinholemodel.eps>
+l2hSize :tex2html_wrap13064:117.43994pt::0.0pt::349.0pt.
+[177
+
+
+]
+File: ../figs/sizzerman/pinholemodelgeometria.eps Graphic file (type eps)
+<../figs/sizzerman/pinholemodelgeometria.eps>
+l2hSize :tex2html_wrap13065:97.56548pt::0.0pt::349.0pt.
+[178
+
+
+]
+l2hSize :tex2html_wrap_indisplay13070:32.49997pt::32.49997pt::237.27342pt.
+[179
+
+
+]
+l2hSize :tex2html_wrap_inline13074:10.4102pt::10.4102pt::60.84528pt.
+[180
+
+
+]
+l2hSize :tex2html_wrap_inline13080:8.25pt::8.25pt::27.0041pt.
+[181
+
+
+]
+l2hSize :tex2html_wrap_indisplay13082:8.7pt::8.7pt::46.30176pt.
+[182
+
+
+]
+l2hSize :tex2html_wrap_inline13084:10.4102pt::10.4102pt::43.36311pt.
+[183
+
+
+]
+l2hSize :tex2html_wrap_indisplay13086:11.0102pt::11.0102pt::196.79529pt.
+[184
+
+
+]
+l2hSize :tex2html_wrap_inline13090:9.5pt::9.5pt::26.06047pt.
+[185
+
+
+]
+l2hSize :tex2html_wrap_inline13094:8.2pt::0.0pt::6.71318pt.
+[186
+
+
+]
+l2hSize :tex2html_wrap_inline13096:9.5pt::9.5pt::33.60143pt.
+[187
+
+
+]
+l2hSize :tex2html_wrap_inline13098:7.75pt::0.0pt::7.33752pt.
+[188
+
+
+]
+l2hSize :tex2html_wrap_indisplay13100:25.24998pt::25.24998pt::101.17621pt.
+[189
+
+
+]
+l2hSize :tex2html_wrap_indisplay13102:9.5pt::9.5pt::89.64249pt.
+[190
+
+
+]
+l2hSize :tex2html_wrap_inline13104:8.5825pt::8.5825pt::26.99654pt.
+[191
+
+
+]
+l2hSize :tex2html_wrap_inline13108:8.333pt::0.0pt::7.768pt.
+[192
+
+
+]
+l2hSize :tex2html_wrap_inline13113:10.47258pt::0.0pt::10.78151pt.
+[193
+
+
+]
+l2hSize :tex2html_wrap_inline13115:10.97258pt::10.97258pt::26.99654pt.
+[194
+
+
+]
+l2hSize :tex2html_wrap_inline13117:10.47258pt::0.0pt::10.33752pt.
+[195
+
+
+]
+l2hSize :tex2html_wrap_inline13119:8.2pt::0.0pt::9.62982pt.
+[196
+
+
+]
+l2hSize :tex2html_wrap_inline13123:10.97258pt::10.97258pt::95.59367pt.
+[197
+
+
+]
+l2hSize :tex2html_wrap_indisplay13125:32.49997pt::32.49997pt::246.0203pt.
+[198
+
+
+]
+l2hSize :tex2html_wrap_indisplay13127:11.3317pt::11.3317pt::94.80312pt.
+[199
+
+
+]
+File: ../figs/sizzerman/transform_between_spaces.eps Graphic file (type eps)
+<../figs/sizzerman/transform_between_spaces.eps>
+l2hSize :tex2html_wrap13131:108.20377pt::0.0pt::349.0pt.
+[200
+
+
+]
+l2hSize :tex2html_wrap_inline13138:9.5pt::9.5pt::48.74153pt.
+[201
+
+
+]
+l2hSize :tex2html_wrap_inline13150:11.3317pt::11.3317pt::81.76065pt.
+[202
+
+
+]
+l2hSize :tex2html_wrap_indisplay13152:10.97258pt::10.97258pt::142.8439pt.
+[203
+
+
+]
+l2hSize :tex2html_wrap_inline13154:8.25pt::8.25pt::16.14996pt.
+[204
+
+
+]
+l2hSize :tex2html_wrap_inline13156:8.25pt::8.25pt::15.85367pt.
+[205
+
+
+]
+l2hSize :tex2html_wrap_inline13162:8.83331pt::8.83331pt::51.7867pt.
+[206
+
+
+]
+l2hSize :tex2html_wrap_inline13164:8.83331pt::8.83331pt::51.1941pt.
+[207
+
+
+]
+l2hSize :tex2html_wrap_inline13170:9.5pt::9.5pt::64.57672pt.
+[208
+
+
+]
+l2hSize :tex2html_wrap_inline13172:8.25pt::8.25pt::54.56451pt.
+[209
+
+
+]
+l2hSize :tex2html_wrap_inline13174:8.25pt::8.25pt::53.02399pt.
+[210
+
+
+]
+l2hSize :tex2html_wrap_indisplay13178:25.24998pt::25.24998pt::112.49588pt.
+[211
+
+
+]
+l2hSize :tex2html_wrap_inline13181:8.33331pt::0.0pt::7.35135pt.
+[212
+
+
+]
+l2hSize :tex2html_wrap_inline13183:9.51021pt::0.0pt::12.67087pt.
+[213
+
+
+]
+l2hSize :tex2html_wrap_inline13185:8.25pt::8.25pt::45.39627pt.
+[214
+
+
+]
+l2hSize :tex2html_wrap_inline13187:9.5pt::9.5pt::93.10376pt.
+[215
+
+
+]
+l2hSize :tex2html_wrap_inline13198:9.51021pt::0.0pt::43.4208pt.
+[216
+
+
+]
+l2hSize :tex2html_wrap_inline13202:8.26648pt::0.0pt::9.30952pt.
+[217
+
+
+]
+l2hSize :tex2html_wrap_inline13208:9.5pt::9.5pt::55.50826pt.
+[218
+
+
+]
+l2hSize :tex2html_wrap_inline13214:8.26648pt::0.0pt::16.55486pt.
+[219
+
+
+]
+l2hSize :tex2html_wrap_inline13216:9.5pt::9.5pt::48.30011pt.
+[220
+
+
+]
+l2hSize :tex2html_wrap_inline13218:9.5pt::9.5pt::48.30011pt.
+[221
+
+
+]
+l2hSize :tex2html_wrap_indisplay13220:25.24998pt::25.24998pt::250.23235pt.
+[222
+
+
+]
+l2hSize :tex2html_wrap_inline13226:8.79916pt::0.0pt::10.07011pt.
+[223
+
+
+]
+l2hSize :tex2html_wrap_inline13228:7.75pt::0.0pt::7.6833pt.
+[224
+
+
+]
+l2hSize :tex2html_wrap_inline13230:8.79916pt::0.0pt::10.48886pt.
+[225
+
+
+]
+l2hSize :tex2html_wrap_inline13232:8.79916pt::0.0pt::42.41132pt.
+[226
+
+
+]
+File: ../figs/sizzerman/homografia_esquema.eps Graphic file (type eps)
+<../figs/sizzerman/homografia_esquema.eps>
+l2hSize :tex2html_wrap13234:127.17455pt::0.0pt::349.0pt.
+[227
+
+
+]
+l2hSize :tex2html_wrap_indisplay13243:25.24998pt::25.24998pt::84.72229pt.
+[228
+
+
+]
+l2hSize :tex2html_wrap_inline13257:9.29916pt::9.29916pt::39.29117pt.
+[229
+
+
+]
+l2hSize :tex2html_wrap_inline13259:9.29916pt::9.29916pt::46.72713pt.
+[230
+
+
+]
+l2hSize :tex2html_wrap_inline13261:9.29916pt::9.29916pt::10.63841pt.
+[231
+
+
+]
+l2hSize :tex2html_wrap_inline13263:8.76648pt::8.76648pt::20.87067pt.
+[232
+
+
+]
+l2hSize :tex2html_wrap_inline13265:10.4102pt::10.4102pt::80.00499pt.
+[233
+
+
+]
+l2hSize :tex2html_wrap_inline13267:10.4102pt::10.4102pt::80.06972pt.
+[234
+
+
+]
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 1779
+.
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+l2hSize :tex2html_wrap_inline13269:25.24998pt::25.24998pt::70.70395pt.
+[235
+
+
+]
+l2hSize :tex2html_wrap_inline13271:9.9102pt::0.0pt::16.7875pt.
+[236
+
+
+]
+l2hSize :tex2html_wrap_inline13273:7.86708pt::0.0pt::4.59593pt.
+[237
+
+
+]
+l2hSize :tex2html_wrap_indisplay13279:25.24998pt::25.24998pt::182.83351pt.
+[238
+
+
+]
+l2hSize :tex2html_wrap_inline13281:8.94449pt::8.94449pt::42.87862pt.
+[239
+
+
+]
+l2hSize :tex2html_wrap_inline13283:8.7pt::8.7pt::12.78972pt.
+[240
+
+
+]
+l2hSize :tex2html_wrap_inline13287:8.44449pt::0.0pt::8.12085pt.
+[241
+
+
+]
+l2hSize :tex2html_wrap_inline13289:8.25pt::8.25pt::27.0041pt.
+[242
+
+
+]
+l2hSize :tex2html_wrap_inline13291:8.25pt::8.25pt::27.0041pt.
+[243
+
+
+]
+l2hSize :tex2html_wrap_inline13297:8.44449pt::0.0pt::39.48466pt.
+[244
+
+
+]
+l2hSize :tex2html_wrap_inline13299:9.5pt::9.5pt::24.12947pt.
+[245
+
+
+]
+l2hSize :tex2html_wrap_inline13302:9.29916pt::9.29916pt::58.18872pt.
+[246
+
+
+]
+l2hSize :tex2html_wrap_inline13304:7.75pt::0.0pt::4.83054pt.
+[247
+
+
+]
+l2hSize :tex2html_wrap_inline13306:8.94449pt::8.94449pt::45.12083pt.
+[248
+
+
+]
+l2hSize :tex2html_wrap_inline13308:8.94449pt::8.94449pt::45.12083pt.
+[249
+
+
+]
+File: ../figs/robust_line_estimation.eps Graphic file (type eps)
+<../figs/robust_line_estimation.eps>
+Overfull \hbox (25.99527pt too wide) detected at line 1874
+ [] 
+ []
+
+l2hSize :tex2html_wrap13312:95.55553pt::0.0pt::349.0pt.
+[250
+
+
+]
+l2hSize :tex2html_wrap_inline13317:8.2pt::0.0pt::8.51245pt.
+[251
+
+
+]
+l2hSize :tex2html_wrap_inline13320:110.2999pt::110.2999pt::365.58752pt.
+
+Overfull \hbox (19.97249pt too wide) in paragraph at lines 1893--1894
+[]|[] 
+ []
+
+[252
+
+
+]
+l2hSize :tex2html_wrap_inline13324:8.2pt::0.0pt::11.24997pt.
+[253
+
+
+]
+l2hSize :tex2html_wrap_inline13330:10.82214pt::10.82214pt::133.94049pt.
+[254
+
+
+]
+l2hSize :tex2html_wrap_inline13332:8.79916pt::0.0pt::36.55034pt.
+[255
+
+
+]
+l2hSize :tex2html_wrap_inline13334:8.79916pt::0.0pt::42.41132pt.
+[256
+
+
+]
+l2hSize :tex2html_wrap_inline13336:10.82214pt::10.82214pt::43.3526pt.
+[257
+
+
+]
+l2hSize :tex2html_wrap_inline13338:10.82214pt::10.82214pt::43.54716pt.
+[258
+
+
+]
+l2hSize :tex2html_wrap_inline13346:9.5pt::9.5pt::24.12947pt.
+[259
+
+
+]
+l2hSize :tex2html_wrap_inline13348:9.51021pt::0.0pt::58.13388pt.
+[260
+
+
+]
+l2hSize :tex2html_wrap_inline13354:9.5pt::9.5pt::66.35023pt.
+[261
+
+
+]
+l2hSize :tex2html_wrap_inline13364:8.25pt::8.25pt::43.17908pt.
+[262
+
+
+]
+l2hSize :tex2html_wrap_inline13368:8.25pt::8.25pt::50.40121pt.
+[263
+
+
+]
+l2hSize :tex2html_wrap_inline13374:10.32137pt::10.32137pt::93.76355pt.
+[264
+
+
+]
+l2hSize :tex2html_wrap_indisplay13378:9.5pt::9.5pt::174.65195pt.
+[265
+
+
+]
+l2hSize :tex2html_wrap_inline13380:7.75pt::0.0pt::27.80276pt.
+[266
+
+
+]
+l2hSize :tex2html_wrap_inline13382:9.5pt::9.5pt::44.67944pt.
+[267
+
+
+]
+l2hSize :tex2html_wrap_inline13386:7.75pt::0.0pt::5.33192pt.
+[268
+
+
+]
+l2hSize :tex2html_wrap_inline13395:7.75pt::0.0pt::36.15132pt.
+[269
+
+
+]
+l2hSize :tex2html_wrap_inline13397:9.5pt::9.5pt::24.12947pt.
+[270
+
+
+]
+l2hSize :tex2html_wrap_inline13399:7.75pt::0.0pt::36.15132pt.
+[271
+
+
+]
+l2hSize :tex2html_wrap_inline13418:72.03244pt::72.03244pt::365.58752pt.
+
+Overfull \hbox (19.97249pt too wide) in paragraph at lines 2026--2027
+[]|[] 
+ []
+
+[272
+
+
+]
+l2hSize :tex2html_wrap_inline13419:132.81491pt::132.81491pt::365.58752pt.
+
+Overfull \hbox (19.97249pt too wide) in paragraph at lines 2044--2045
+[]|[] 
+ []
+
+[273
+
+
+]
+File: ../figs/proceso_completo_entrenamiento.eps Graphic file (type eps)
+<../figs/proceso_completo_entrenamiento.eps>
+l2hSize :tex2html_wrap13425:208.6787pt::0.0pt::349.0pt.
+[274
+
+
+]
+File: ../figs/proceso_completo.eps Graphic file (type eps)
+<../figs/proceso_completo.eps>
+Overfull \hbox (40.63063pt too wide) detected at line 2059
+ [] 
+ []
+
+l2hSize :tex2html_wrap13429:555.55263pt::0.0pt::349.0pt.
+[275
+
+
+]
+l2hSize :tex2html_wrap_inline13435:8.2pt::0.0pt::9.85577pt.
+[276
+
+
+]
+l2hSize :tex2html_wrap_indisplay13441:8.7pt::8.7pt::162.86092pt.
+[277
+
+
+]
+File: ../figs/procesomovimiento.eps Graphic file (type eps)
+<../figs/procesomovimiento.eps>
+l2hSize :tex2html_wrap13447:214.64992pt::0.0pt::349.0pt.
+[278
+
+
+]
+File: ../figs/preprocess/srcPrev.eps Graphic file (type eps)
+<../figs/preprocess/srcPrev.eps>
+l2hSize :tex2html_wrap13448:125.12114pt::0.0pt::349.0pt.
+[279
+
+
+]
+File: ../figs/preprocess/src.eps Graphic file (type eps)
+<../figs/preprocess/src.eps>
+l2hSize :tex2html_wrap13449:125.12114pt::0.0pt::349.0pt.
+[280
+
+
+]
+File: ../figs/preprocess/absDiff.eps Graphic file (type eps)
+<../figs/preprocess/absDiff.eps>
+l2hSize :tex2html_wrap13450:125.12114pt::0.0pt::349.0pt.
+[281
+
+
+]
+File: ../figs/preprocess/threshold.eps Graphic file (type eps)
+<../figs/preprocess/threshold.eps>
+l2hSize :tex2html_wrap13451:125.12114pt::0.0pt::349.0pt.
+[282
+
+
+]
+File: ../figs/preprocess/erode.eps Graphic file (type eps)
+<../figs/preprocess/erode.eps>
+l2hSize :tex2html_wrap13454:125.12114pt::0.0pt::349.0pt.
+[283
+
+
+]
+File: ../figs/preprocess/dilate.eps Graphic file (type eps)
+<../figs/preprocess/dilate.eps>
+l2hSize :tex2html_wrap13457:125.12114pt::0.0pt::349.0pt.
+[284
+
+
+]
+File: ../figs/preprocess/boundingrect.eps Graphic file (type eps)
+<../figs/preprocess/boundingrect.eps>
+l2hSize :tex2html_wrap13458:125.12114pt::0.0pt::349.0pt.
+[285
+
+
+]
+l2hSize :tex2html_wrap_inline13464:8.2pt::0.0pt::9.82565pt.
+[286
+
+
+]
+l2hSize :tex2html_wrap_inline13468:8.25pt::8.25pt::25.37213pt.
+[287
+
+
+]
+l2hSize :tex2html_wrap_indisplay13470:9.5pt::9.5pt::223.36873pt.
+[288
+
+
+]
+l2hSize :tex2html_wrap_inline13474:8.83331pt::8.83331pt::156.33276pt.
+[289
+
+
+]
+l2hSize :tex2html_wrap_inline13476:9.5pt::9.5pt::130.97246pt.
+[290
+
+
+]
+l2hSize :tex2html_wrap_inline13481:8.25pt::8.25pt::56.871pt.
+[291
+
+
+]
+l2hSize :tex2html_wrap_inline13483:7.75pt::0.0pt::34.83049pt.
+[292
+
+
+]
+l2hSize :tex2html_wrap_inline13499:9.5pt::9.5pt::36.46277pt.
+[293
+
+
+]
+l2hSize :tex2html_wrap_inline13501:8.33331pt::0.0pt::64.05104pt.
+[294
+
+
+]
+l2hSize :tex2html_wrap_inline13503:8.2pt::0.0pt::19.16168pt.
+[295
+
+
+]
+l2hSize :tex2html_wrap_inline13507:7.75pt::0.0pt::29.96245pt.
+[296
+
+
+]
+l2hSize :tex2html_wrap_inline13509:8.25pt::8.25pt::50.50404pt.
+[297
+
+
+]
+l2hSize :tex2html_wrap_inline13511:8.25pt::8.25pt::50.50404pt.
+[298
+
+
+]
+
+! LaTeX Error: File `./figs/extraccion/800' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2210 ...aphics[scale=0.5]{./figs/extraccion/800}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap13513:0.0pt::0.0pt::349.0pt.
+[299
+
+
+]
+
+! LaTeX Error: File `./figs/extraccion/3000' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2216 ...phics[scale=0.5]{./figs/extraccion/3000}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+l2hSize :tex2html_wrap13514:0.0pt::0.0pt::349.0pt.
+[300
+
+
+]
+l2hSize :tex2html_wrap_inline13520:8.38399pt::0.0pt::127.98232pt.
+[301
+
+
+]
+File: ../figs/extraccion/correspondencias.eps Graphic file (type eps)
+<../figs/extraccion/correspondencias.eps>
+Overfull \hbox (36.14279pt too wide) detected at line 2231
+ [] 
+ []
+
+l2hSize :tex2html_wrap13526:144.54146pt::0.0pt::349.0pt.
+[302
+
+
+]
+l2hSize :tex2html_wrap_indisplay13534:8.25pt::8.25pt::279.80267pt.
+[303
+
+
+]
+l2hSize :tex2html_wrap_inline13536:9.5pt::9.5pt::35.37663pt.
+[304
+
+
+]
+l2hSize :tex2html_wrap_inline13538:9.5pt::9.5pt::35.12524pt.
+[305
+
+
+]
+l2hSize :tex2html_wrap_inline13540:9.5pt::9.5pt::34.57414pt.
+[306
+
+
+]
+l2hSize :tex2html_wrap_inline13542:9.5pt::9.5pt::34.6808pt.
+[307
+
+
+]
+l2hSize :tex2html_wrap_inline13544:7.75pt::0.0pt::8.13745pt.
+[308
+
+
+]
+l2hSize :tex2html_wrap_inline13546:8.25pt::8.25pt::7.33496pt.
+[309
+
+
+]
+l2hSize :tex2html_wrap_inline13548:8.83331pt::8.83331pt::7.88606pt.
+[310
+
+
+]
+l2hSize :tex2html_wrap_inline13550:8.33331pt::0.0pt::7.44162pt.
+[311
+
+
+]
+l2hSize :tex2html_wrap_inline13556:8.38399pt::0.0pt::21.07458pt.
+[312
+
+
+]
+l2hSize :tex2html_wrap_inline13558:8.38399pt::0.0pt::19.8079pt.
+[313
+
+
+]
+l2hSize :tex2html_wrap_inline13560:8.38399pt::0.0pt::83.65608pt.
+[314
+
+
+]
+File: ../figs/validaciones_poligono/concavo_invalido.eps Graphic file (type eps
+)
+<../figs/validaciones_poligono/concavo_invalido.eps>
+l2hSize :tex2html_wrap13561:162.60748pt::0.0pt::349.0pt.
+[315
+
+
+]
+File: ../figs/validaciones_poligono/convexo_invalido.eps Graphic file (type eps
+)
+<../figs/validaciones_poligono/convexo_invalido.eps>
+l2hSize :tex2html_wrap13562:162.60748pt::0.0pt::349.0pt.
+[316
+
+
+]
+File: ../figs/validaciones_poligono/poligoto_fuera_viewport_valida.eps Graphic 
+file (type eps)
+<../figs/validaciones_poligono/poligoto_fuera_viewport_valida.eps>
+l2hSize :tex2html_wrap13563:173.89966pt::0.0pt::349.0pt.
+[317
+
+
+]
+l2hSize :tex2html_wrap_inline13573:8.83331pt::8.83331pt::9.94864pt.
+[318
+
+
+]
+l2hSize :tex2html_wrap_inline13575:8.83331pt::8.83331pt::19.4538pt.
+[319
+
+
+]
+l2hSize :tex2html_wrap_inline13577:8.36708pt::8.36708pt::73.35936pt.
+[320
+
+
+]
+l2hSize :tex2html_wrap_inline13581:8.83331pt::8.83331pt::20.80984pt.
+[321
+
+
+]
+l2hSize :tex2html_wrap_inline13583:8.83331pt::8.83331pt::20.80984pt.
+[322
+
+
+]
+l2hSize :tex2html_wrap_inline13585:8.83331pt::8.83331pt::9.94864pt.
+[323
+
+
+]
+File: ../figs/restauracion_transfromacion.eps Graphic file (type eps)
+<../figs/restauracion_transfromacion.eps>
+Overfull \hbox (3.51834pt too wide) detected at line 2368
+ [] 
+ []
+
+l2hSize :tex2html_wrap13589:142.93454pt::0.0pt::349.0pt.
+[324
+
+
+]
+l2hSize :tex2html_wrap_inline13593:8.2pt::0.0pt::11.24997pt.
+[325
+
+
+]
+l2hSize :tex2html_wrap_inline13597:10.01021pt::10.01021pt::31.74985pt.
+[326
+
+
+]
+File: ../figs/transfperspectiva.eps Graphic file (type eps)
+<../figs/transfperspectiva.eps>
+l2hSize :tex2html_wrap13603:277.03497pt::0.0pt::349.0pt.
+[327
+
+
+]
+l2hSize :tex2html_wrap_inline13615:8.25pt::8.25pt::75.95085pt.
+[328
+
+
+]
+l2hSize :tex2html_wrap_inline13617:9.5pt::9.5pt::26.75119pt.
+[329
+
+
+]
+l2hSize :tex2html_wrap_inline13619:7.75pt::0.0pt::6.46251pt.
+[330
+
+
+]
+l2hSize :tex2html_wrap_inline13621:8.33331pt::0.0pt::12.56801pt.
+[331
+
+
+]
+l2hSize :tex2html_wrap_inline13623:7.75pt::0.0pt::15.60135pt.
+[332
+
+
+]
+l2hSize :tex2html_wrap_inline13625:8.33331pt::0.0pt::12.56801pt.
+[333
+
+
+]
+l2hSize :tex2html_wrap_inline13627:7.75pt::0.0pt::15.60135pt.
+[334
+
+
+]
+l2hSize :tex2html_wrap_inline13629:8.33331pt::0.0pt::12.56801pt.
+[335
+
+
+]
+l2hSize :tex2html_wrap_inline13631:7.75pt::0.0pt::15.60135pt.
+[336
+
+
+]
+l2hSize :tex2html_wrap_inline13633:8.33331pt::0.0pt::12.56801pt.
+[337
+
+
+]
+l2hSize :tex2html_wrap_inline13637:7.75pt::0.0pt::15.60135pt.
+[338
+
+
+]
+l2hSize :tex2html_wrap_inline13639:9.5pt::9.5pt::26.75119pt.
+[339
+
+
+]
+l2hSize :tex2html_wrap_inline13641:9.5pt::9.5pt::24.93314pt.
+[340
+
+
+]
+File: ../figs/entorno/entorno_pruebas.eps Graphic file (type eps)
+<../figs/entorno/entorno_pruebas.eps>
+l2hSize :tex2html_wrap13645:209.78374pt::0.0pt::349.0pt.
+[341
+
+
+]
+File: ../exp1/train_normal_BN/train_normal.eps Graphic file (type eps)
+<../exp1/train_normal_BN/train_normal.eps>
+l2hSize :tex2html_wrap13662:135.50624pt::0.0pt::349.0pt.
+[342
+
+
+]
+File: ../exp1/train_brillante_BH/train_brillante.eps Graphic file (type eps)
+<../exp1/train_brillante_BH/train_brillante.eps>
+l2hSize :tex2html_wrap13665:135.50624pt::0.0pt::349.0pt.
+[343
+
+
+]
+File: ../exp1/train_oscura_BL/train_oscura.eps Graphic file (type eps)
+<../exp1/train_oscura_BL/train_oscura.eps>
+l2hSize :tex2html_wrap13668:135.50624pt::0.0pt::349.0pt.
+[344
+
+
+]
+l2hSize :tex2html_wrap_inline13685:7.75pt::0.0pt::6.46251pt.
+[345
+
+
+]
+l2hSize :tex2html_wrap_indisplay13687:25.24998pt::25.24998pt::86.79535pt.
+[346
+
+
+]
+l2hSize :tex2html_wrap_inline13689:8.2pt::0.0pt::31.07632pt.
+[347
+
+
+]
+l2hSize :tex2html_wrap_indisplay13691:25.24998pt::25.24998pt::81.9624pt.
+[348
+
+
+]
+File: ../exp1/train_normal_BN/train_normal_grises.eps Graphic file (type eps)
+<../exp1/train_normal_BN/train_normal_grises.eps>
+l2hSize :tex2html_wrap13694:135.50624pt::0.0pt::349.0pt.
+[349
+
+
+]
+File: ../exp1/train_normal_BN/train_normal_515.eps Graphic file (type eps)
+<../exp1/train_normal_BN/train_normal_515.eps>
+l2hSize :tex2html_wrap13695:135.50624pt::0.0pt::349.0pt.
+[350
+
+
+]
+File: ../exp1/train_normal_BN/keypoints2.eps Graphic file (type eps)
+<../exp1/train_normal_BN/keypoints2.eps>
+l2hSize :tex2html_wrap13696:135.50624pt::0.0pt::349.0pt.
+[351
+
+
+]
+File: ../exp1/train_normal_BN/keypoints3.eps Graphic file (type eps)
+<../exp1/train_normal_BN/keypoints3.eps>
+l2hSize :tex2html_wrap13697:135.50624pt::0.0pt::349.0pt.
+[352
+
+
+]
+File: ../exp1/train_normal_BN/keypoints4.eps Graphic file (type eps)
+<../exp1/train_normal_BN/keypoints4.eps>
+l2hSize :tex2html_wrap13698:135.50624pt::0.0pt::349.0pt.
+[353
+
+
+]
+File: ../exp1/train_normal_BN/keypoints5.eps Graphic file (type eps)
+<../exp1/train_normal_BN/keypoints5.eps>
+l2hSize :tex2html_wrap13699:135.50624pt::0.0pt::349.0pt.
+[354
+
+
+]
+File: ../exp1/train_brillante_BH/train_brillante_grises.eps Graphic file (type 
+eps)
+<../exp1/train_brillante_BH/train_brillante_grises.eps>
+l2hSize :tex2html_wrap13709:135.50624pt::0.0pt::349.0pt.
+[355
+
+
+]
+File: ../exp1/train_brillante_BH/train_brillante622.eps Graphic file (type eps)
+
+<../exp1/train_brillante_BH/train_brillante622.eps>
+l2hSize :tex2html_wrap13710:135.50624pt::0.0pt::349.0pt.
+[356
+
+
+]
+File: ../exp1/train_brillante_BH/keypoints2.eps Graphic file (type eps)
+<../exp1/train_brillante_BH/keypoints2.eps>
+l2hSize :tex2html_wrap13711:135.50624pt::0.0pt::349.0pt.
+[357
+
+
+]
+File: ../exp1/train_brillante_BH/keypoints3.eps Graphic file (type eps)
+<../exp1/train_brillante_BH/keypoints3.eps>
+l2hSize :tex2html_wrap13712:135.50624pt::0.0pt::349.0pt.
+[358
+
+
+]
+File: ../exp1/train_brillante_BH/keypoints4.eps Graphic file (type eps)
+<../exp1/train_brillante_BH/keypoints4.eps>
+l2hSize :tex2html_wrap13713:135.50624pt::0.0pt::349.0pt.
+[359
+
+
+]
+File: ../exp1/train_brillante_BH/keypoints5.eps Graphic file (type eps)
+<../exp1/train_brillante_BH/keypoints5.eps>
+l2hSize :tex2html_wrap13714:135.50624pt::0.0pt::349.0pt.
+[360
+
+
+]
+File: ../exp1/train_oscura_BL/train_oscura_grises.eps Graphic file (type eps)
+<../exp1/train_oscura_BL/train_oscura_grises.eps>
+l2hSize :tex2html_wrap13724:135.50624pt::0.0pt::349.0pt.
+[361
+
+
+]
+File: ../exp1/train_oscura_BL/train_oscura453.eps Graphic file (type eps)
+<../exp1/train_oscura_BL/train_oscura453.eps>
+l2hSize :tex2html_wrap13725:135.50624pt::0.0pt::349.0pt.
+[362
+
+
+]
+File: ../exp1/train_oscura_BL/keypoints2.eps Graphic file (type eps)
+<../exp1/train_oscura_BL/keypoints2.eps>
+l2hSize :tex2html_wrap13726:135.50624pt::0.0pt::349.0pt.
+[363
+
+
+]
+File: ../exp1/train_oscura_BL/keypoints3.eps Graphic file (type eps)
+<../exp1/train_oscura_BL/keypoints3.eps>
+l2hSize :tex2html_wrap13727:135.50624pt::0.0pt::349.0pt.
+[364
+
+
+]
+File: ../exp1/train_oscura_BL/keypoints4.eps Graphic file (type eps)
+<../exp1/train_oscura_BL/keypoints4.eps>
+l2hSize :tex2html_wrap13728:135.50624pt::0.0pt::349.0pt.
+[365
+
+
+]
+File: ../exp1/train_oscura_BL/keypoints5.eps Graphic file (type eps)
+<../exp1/train_oscura_BL/keypoints5.eps>
+l2hSize :tex2html_wrap13729:135.50624pt::0.0pt::349.0pt.
+[366
+
+
+]
+l2hSize :tex2html_wrap_inline13740:7.75pt::0.0pt::18.21248pt.
+[367
+
+
+]
+File: ../pruebas_modif/graph_ptos_realces.eps Graphic file (type eps)
+<../pruebas_modif/graph_ptos_realces.eps>
+Overfull \hbox (46.97935pt too wide) detected at line 2638
+ [] 
+ []
+
+l2hSize :tex2html_wrap13805:222.07968pt::0.0pt::349.0pt.
+[368
+
+
+]
+l2hSize :tex2html_wrap_inline13850:8.7pt::8.7pt::46.73506pt.
+[369
+
+
+]
+l2hSize :tex2html_wrap_inline13854:7.75pt::0.0pt::21.47633pt.
+[370
+
+
+]
+l2hSize :tex2html_wrap_inline13856:7.75pt::0.0pt::27.35132pt.
+[371
+
+
+]
+File: ../pruebas_modif/3500_sinproc/graph_tiempos_3500_presentacion1.eps Graphi
+c file (type eps)
+<../pruebas_modif/3500_sinproc/graph_tiempos_3500_presentacion1.eps>
+l2hSize :tex2html_wrap13866:246.61969pt::0.0pt::349.0pt.
+[372
+
+
+]
+File: ../pruebas_modif/capturas/usables/train_normal.eps Graphic file (type eps
+)
+<../pruebas_modif/capturas/usables/train_normal.eps>
+l2hSize :tex2html_wrap13871:135.50624pt::0.0pt::349.0pt.
+[373
+
+
+]
+File: ../pruebas_modif/capturas/usables/pinguino.eps Graphic file (type eps)
+<../pruebas_modif/capturas/usables/pinguino.eps>
+l2hSize :tex2html_wrap13872:135.50624pt::0.0pt::349.0pt.
+[374
+
+
+]
+File: ../pruebas_modif/capturas/usables/captured154.eps Graphic file (type eps)
+
+<../pruebas_modif/capturas/usables/captured154.eps>
+l2hSize :tex2html_wrap13873:135.50624pt::0.0pt::349.0pt.
+[375
+
+
+]
+File: ../pruebas_modif/capturas/usables/captured135.eps Graphic file (type eps)
+
+<../pruebas_modif/capturas/usables/captured135.eps>
+l2hSize :tex2html_wrap13874:135.50624pt::0.0pt::349.0pt.
+[376
+
+
+]
+File: ../pruebas_modif/capturas/usables/captured141.eps Graphic file (type eps)
+
+<../pruebas_modif/capturas/usables/captured141.eps>
+l2hSize :tex2html_wrap13875:135.50624pt::0.0pt::349.0pt.
+[377
+
+
+]
+File: ../pruebas_modif/capturas/usables/captured207.eps Graphic file (type eps)
+
+<../pruebas_modif/capturas/usables/captured207.eps>
+l2hSize :tex2html_wrap13876:135.50624pt::0.0pt::349.0pt.
+[378
+
+
+]
+File: ../imgvitina/vitina.eps Graphic file (type eps)
+<../imgvitina/vitina.eps>
+l2hSize :tex2html_wrap13883:135.50624pt::0.0pt::349.0pt.
+[379
+
+
+]
+File: ../imgvitina/preciosvirtuales.eps Graphic file (type eps)
+<../imgvitina/preciosvirtuales.eps>
+l2hSize :tex2html_wrap13884:135.50624pt::0.0pt::349.0pt.
+[380
+
+
+]
+File: ../imgvitina/captured87,000000.eps Graphic file (type eps)
+<../imgvitina/captured87,000000.eps>
+l2hSize :tex2html_wrap13885:135.50624pt::0.0pt::349.0pt.
+[381
+
+
+]
+File: ../imgvitina/captured94,000000.eps Graphic file (type eps)
+<../imgvitina/captured94,000000.eps>
+l2hSize :tex2html_wrap13886:135.50624pt::0.0pt::349.0pt.
+[382
+
+
+]
+File: ../imgvitina/captured146,000000.eps Graphic file (type eps)
+<../imgvitina/captured146,000000.eps>
+l2hSize :tex2html_wrap13887:135.50624pt::0.0pt::349.0pt.
+[383
+
+
+]
+File: ../imgvitina/captured176,000000.eps Graphic file (type eps)
+<../imgvitina/captured176,000000.eps>
+l2hSize :tex2html_wrap13888:135.50624pt::0.0pt::349.0pt.
+[384
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2742.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2742.
+(./images.aux
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2742.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2742.
+
+
+Package rerunfilecheck Warning: File `images.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `images.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2742.
+ ) 
+Here is how much of TeX's memory you used:
+ 15879 strings out of 494998
+ 239202 string characters out of 3180115
+ 391920 words of memory out of 3000000
+ 18567 multiletter control sequences out of 15000+200000
+ 94709 words of font info for 62 fonts, out of 3000000 for 9000
+ 40 hyphenation exceptions out of 8191
+ 61i,15n,97p,564b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on images.dvi (384 pages, 253136 bytes).

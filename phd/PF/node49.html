@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Homograf&#195;&#173;a con RANSAC.</TITLE>
+<META NAME="description" CONTENT="Homograf&#195;&#173;a con RANSAC.">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node48.html">
+<LINK REL="up" HREF="node47.html">
+<LINK REL="next" HREF="node50.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html915"
+  HREF="node50.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html911"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html907"
+  HREF="node48.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html913"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html916"
+  HREF="node50.html">Determinaci&#195;&#179;n adaptativa de la</A>
+<B> Subir:</B> <A NAME="tex2html912"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<B> Anterior:</B> <A NAME="tex2html908"
+  HREF="node48.html">Transformaci&#195;&#179;n lineal directa.</A>
+ &nbsp; <B>  <A NAME="tex2html914"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H4><A NAME="SECTION00763120000000000000">
+Homograf&#195;&#173;a con RANSAC.</A>
+</H4>
+El objetivo que se plantea aqu&#195;&#173;, es el de determinar un conjunto de correspondencias (eliminando valores espurios) de forma que la homograf&#195;&#173;a pueda ser estimada de manera &#195;&#179;ptima a partir de las mismas mediante la transformaci&#195;&#179;n lineal directa descripta.
+
+<P>
+Para explicar y entender el algoritmo RANSAC, primero se presenta un problema que puede ser f&#195;&#161;cilmente visualizado el cual consiste en estimar una l&#195;&#173;nea recta a partir de un conjunto de puntos 2D. Este problema, tambi&#195;&#169;n puede pensarse sobre como realizar la estimaci&#195;&#179;n de una transformaci&#195;&#179;n af&#195;&#173;n 1D del tipo <SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img245.png"
+ ALT="$ x'=ax+b$"></SPAN> entre puntos correspondientes que est&#195;&#161;n sobre dos l&#195;&#173;neas. 
+
+<P>
+El problema, se encuentra ilustrado en la Fig. <A HREF="#fig:example_ransac">2.18</A>(a) (los puntos negros son v&#195;&#161;lidos y los blancos son espurios) donde se puede ver que el ajuste por m&#195;&#173;nimos cuadrados de los puntos (regresi&#195;&#179;n ortogonal), es afectado de forma severa por los valores espurios. As&#195;&#173;, dado un conjunto de puntos 2D, se debe buscar la l&#195;&#173;nea que minimiza la suma de los cuadrados de las distancias perpendiculares, de tal forma que ninguno de los puntos v&#195;&#161;lidos se desv&#195;&#173;e de la l&#195;&#173;nea por m&#195;&#161;s de <SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.png"
+ ALT="$ t$"></SPAN> unidades. Aqu&#195;&#173;, se presentan dos inconvenientes: la l&#195;&#173;nea se debe ajustar a los datos y se deben clasificar los puntos en v&#195;&#161;lidos o espurios.
+
+<P>
+Existen muchos tipos de algoritmos robustos y la selecci&#195;&#179;n de uno u otro depende de la proporci&#195;&#179;n de los valores espurios (). Aqu&#195;&#173; se describe el estimador robusto RANSAC que es capaz de hacer frente a una gran proporci&#195;&#179;n de valores at&#195;&#173;picos.
+
+<P>
+Se empieza mediante la selecci&#195;&#179;n aleatoria de dos puntos; estos puntos definen una l&#195;&#173;nea. El <SPAN  CLASS="textit">soporte</SPAN> para esta l&#195;&#173;nea, es medido por la cantidad de puntos que se encuentran bajo un umbral de distancia. Luego, la selecci&#195;&#179;n aleatoria es repetida varias veces y la l&#195;&#173;nea con mayor soporte es considerada como el mejor ajuste. Los puntos que est&#195;&#161;n por debajo del umbral de distancia son considerados v&#195;&#161;lidos y constituyen el <SPAN  CLASS="textit">conjunto consensuado</SPAN>. Como se observa en la Fig. <A HREF="#fig:example_ransac">2.18</A>(b), si un punto no es v&#195;&#161;lido, la l&#195;&#173;nea posee menos soporte lo cual favorece a un mejor ajuste. Por ejemplo, el soporte para la l&#195;&#173;nea <!-- MATH
+ $<\mathbf{a},\mathbf{b}>$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img247.png"
+ ALT="$ &lt;\mathbf{a},\mathbf{b}&gt;$"></SPAN> en la Fig. <A HREF="#fig:example_ransac">2.18</A>(b) es 10, mientras que para la l&#195;&#173;nea <!-- MATH
+ $<\mathbf{a},\mathbf{d}>$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.png"
+ ALT="$ &lt;\mathbf{a},\mathbf{d}&gt;$"></SPAN> en el que los puntos de ejemplo son vecinos, es 4. Consecuentemente y a pesar que ambas l&#195;&#173;neas contienen valores v&#195;&#161;lidos, se selecciona la l&#195;&#173;nea <!-- MATH
+ $<\mathbf{a},\mathbf{b}>$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img247.png"
+ ALT="$ &lt;\mathbf{a},\mathbf{b}&gt;$"></SPAN> por tener mayor soporte.
+
+<DIV ALIGN="CENTER"><A NAME="fig:example_ransac"></A><A NAME="1650"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Estimaci&#195;&#179;n robusta de una l&#195;&#173;nea. (a) Ajuste por m&#195;&#173;nimos cuadrados. (b) Algoritmo RANSAC (las l&#195;&#173;neas punteadas denotan el umbral de distancia). (Figura tomada de ()).</CAPTION>
+<TR><TD>
+<DIV CLASS="centerline" ID="par13311" ALIGN="CENTER">
+<IMG
+ WIDTH="77" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img249.png"
+ ALT="\includegraphics[scale=0.4]{../figs/robust_line_estimation}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Generalizando lo anteriormente descripto, podemos decir que deseamos ajustar un <SPAN  CLASS="textit">modelo</SPAN> (en el ejemplo, una l&#195;&#173;nea) a los datos y la muestra aleatoria consiste en un subconjunto m&#195;&#173;nimo de datos (2 puntos en el ejemplo) suficientes para determinar el modelo. En el caso en el que el modelo es una homograf&#195;&#173;a plana y los datos son un conjunto de correspondencias 2D, el subconjunto m&#195;&#173;nimo est&#195;&#161; compuesto por cuatro correspondencias.
+
+<P>
+El algoritmo RANSAC tiene como objetivo el ajuste robusto de un modelo para un conjunto de datos <SPAN CLASS="MATH"><IMG
+ WIDTH="595" HEIGHT="152" ALIGN="BOTTOM" BORDER="0"
+ SRC="img250.png"
+ ALT="$ S$"></SPAN> que contiene valores espurios. RANSAC requiere de una cantidad m&#195;&#173;nima de puntos <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN> para instanciar los par&#195;&#161;metros libres del modelo y sigue los siguientes pasos:
+
+<P>
+<SPAN ID="fcol1684"><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$\textstyle \parbox{365pt}{%
+\noindent %\textbf{Eksempel.}
+\begin{enumerate}[nol...
+...eccionado y se estima el modelo usando este conjunto de datos.
+\end{enumerate}}$"></SPAN>
+
+<P>
+donde <SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.png"
+ ALT="$ t$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ T$"></SPAN> son:
+
+<UL>
+<LI><SPAN  CLASS="textbf">Umbral de distancia <SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.png"
+ ALT="$ t$"></SPAN>:</SPAN> Existen diferentes medidas de distancias, como la de transferencia del error sim&#195;&#169;trico, la del error de Sampson y la del error de reproyecci&#195;&#179;n que resulta la m&#195;&#161;s adecuada en el caso de la estimaci&#195;&#179;n de la homograf&#195;&#173;a entre dos im&#195;&#161;genes (). La f&#195;&#179;rmula del error de reproyecci&#195;&#179;n, viene dada por la ecuaci&#195;&#179;n <!-- MATH
+ ${d_{\perp}}^{2}=d(\mathbf{x},\mathbf{\hat{x}})^2+d(\mathbf{x^\prime},\mathbf{\hat{x}^\prime})^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img253.png"
+ ALT="$ {d_{\perp}}^{2}=d(\mathbf{x},\mathbf{\hat{x}})^2+d(\mathbf{x^\prime},\mathbf{\hat{x}^\prime})^2$"></SPAN> donde <!-- MATH
+ $\mathbf{x} \leftrightarrow \mathbf{x^\prime}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="217" HEIGHT="43" ALIGN="BOTTOM" BORDER="0"
+ SRC="img254.png"
+ ALT="$ \mathbf{x} \leftrightarrow \mathbf{x^\prime}$"></SPAN> es la correspondencia de puntos y <!-- MATH
+ $\mathbf{\hat{x}^\prime}=\textit{H}\mathbf{\hat{x}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="62" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img255.png"
+ ALT="$ \mathbf{\hat{x}^\prime}=\textit{H}\mathbf{\hat{x}}$"></SPAN> es la correspondencia exacta. Aquellos puntos que cumplan la condici&#195;&#179;n <!-- MATH
+ ${d_{\perp}}^{2}>t^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img256.png"
+ ALT="$ {d_{\perp}}^{2}&gt;t^2$"></SPAN> son considerados como espurios y los que cumplan con <!-- MATH
+ ${d_{\perp}}^{2} \leq t^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.png"
+ ALT="$ {d_{\perp}}^{2} \leq t^2$"></SPAN> son considerados v&#195;&#161;lidos. Es usual que en la pr&#195;&#161;ctica el valor de <SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.png"
+ ALT="$ t$"></SPAN> sea seleccionado emp&#195;&#173;ricamente, sin embargo si se asume que la medida del error tiene una distribuci&#195;&#179;n gaussiana con media 0 y desviaci&#195;&#179;n est&#195;&#161;ndar <SPAN CLASS="MATH"></SPAN> puede calcularse el valor de <SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.png"
+ ALT="$ t$"></SPAN>. Por ejemplo, para el caso de la homograf&#195;&#173;a, con una una probabilidad del <SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.png"
+ ALT="$ 95\%$"></SPAN> de que la correspondencia sea v&#195;&#161;lida se utiliza <!-- MATH
+ $t^2=5.99\sigma^2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img259.png"
+ ALT="$ t^2=5.99\sigma^2$"></SPAN>. Para m&#195;&#161;s destalles se puede consultar (, p. 119).
+</LI>
+<LI><SPAN  CLASS="textbf">Tama&#195;&#177;o del Conjunto consensuado <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ T$"></SPAN>:</SPAN> la regla es terminar el algoritmo si el tama&#195;&#177;o del conjunto consensuado es similar a la cantidad de valores v&#195;&#161;lidos que se cree que est&#195;&#161; presente en el conjunto de datos, dada la premisa de la proporci&#195;&#179;n de valores espurios que, por ejemplo, para <SPAN CLASS="MATH"><IMG
+ WIDTH="218" HEIGHT="194" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$ n$"></SPAN> puntos es <!-- MATH
+ $T=(1-\epsilon)n$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img260.png"
+ ALT="$ T=(1-\epsilon)n$"></SPAN>.
+</LI>
+<LI><SPAN  CLASS="textbf">Cantidad de muestras <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN>:</SPAN> es computacionalmente innecesario e ineficiente probar cada muestra posible. Por eso, se selecciona una cantidad de muestras <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> lo suficientemente alta para asegurar con una probabilidad <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$ p$"></SPAN>, que por lo menos una de las muestras aleatorias de <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN> puntos, no contiene puntos espurios. Usualmente se establece a <SPAN CLASS="MATH"><IMG
+ WIDTH="109" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img261.png"
+ ALT="$ p=0.99$"></SPAN> (). Si suponemos que <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img91.png"
+ ALT="$ w$"></SPAN> es la probabilidad que cualquier punto seleccionado de los datos es un punto v&#195;&#161;lido, implica que <!-- MATH
+ $\epsilon=1-w$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img262.png"
+ ALT="$ \epsilon=1-w$"></SPAN> representa la probabilidad que sea un punto espurio. Luego, se necesitan <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> selecciones, cada una de <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN> puntos, donde <!-- MATH
+ $(1-w^s)^{N}=1-p$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.png"
+ ALT="$ (1-w^s)^{N}=1-p$"></SPAN>. As&#195;&#173;, <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> queda definida como:
+  <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:determineN"></A><!-- MATH
+ \begin{equation}
+N=\log(1-p)/\log{(1-(1-\epsilon)^s)}.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="153" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$\displaystyle N=\log(1-p)/\log{(1-(1-\epsilon)^s)}.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">27</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Para <SPAN CLASS="MATH"><IMG
+ WIDTH="281" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img265.png"
+ ALT="$ s=4$"></SPAN> muestras, con una proporci&#195;&#179;n de valores espurios del <!-- MATH
+ $\epsilon=50\%$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$ \epsilon=50\%$"></SPAN>, son necesarias 72 muestras para asegurarse con una probabilidad de <SPAN CLASS="MATH"><IMG
+ WIDTH="109" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img261.png"
+ ALT="$ p=0.99$"></SPAN>, que al menos una de las muestras no contiene valores espurios. Como se observa en la ecuaci&#195;&#179;n (<A HREF="#eq:determineN">2.27</A>), la cantidad de muestras est&#195;&#161; relacionada con la proporci&#195;&#179;n de valores espurios, de forma que la cantidad de muestras requeridas debe ser menor que la cantidad de valores espurios. Consecuentemente, el costo computacional de las muestras es aceptable a&#195;&#186;n cuando la cantidad de valores espurios resulta elevado. Por otro lado, la cantidad de muestras se incrementa con la cantidad m&#195;&#173;nima del subconjunto (para un <SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img267.png"
+ ALT="$ \epsilon$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$ p$"></SPAN> dado). De aqu&#195;&#173;, se puede decir que usar m&#195;&#161;s del m&#195;&#173;nimo que se requiere (4 o m&#195;&#161;s puntos en el caso de la homograf&#195;&#173;a), contribuir&#195;&#161; a una mejor estimaci&#195;&#179;n y el soporte determinado reflejar&#195;&#161; con mayor precisi&#195;&#179;n al verdadero soporte. Pero se debe tener en cuenta que esta ventaja, incrementa el costo computacional debido al incremento del n&#195;&#186;mero de muestras.
+</LI>
+</UL>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html917"
+  HREF="node50.html">Determinaci&#195;&#179;n adaptativa de la cantidad de muestras</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html915"
+  HREF="node50.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html911"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html907"
+  HREF="node48.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html913"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html916"
+  HREF="node50.html">Determinaci&#195;&#179;n adaptativa de la</A>
+<B> Subir:</B> <A NAME="tex2html912"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<B> Anterior:</B> <A NAME="tex2html908"
+  HREF="node48.html">Transformaci&#195;&#179;n lineal directa.</A>
+ &nbsp; <B>  <A NAME="tex2html914"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

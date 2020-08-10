@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Asignaci&#195;&#179;n de la orientaci&#195;&#179;n</TITLE>
+<META NAME="description" CONTENT="Asignaci&#195;&#179;n de la orientaci&#195;&#179;n">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node38.html">
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="up" HREF="node36.html">
+<LINK REL="next" HREF="node38.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html753"
+  HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html749"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html743"
+  HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html751"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html754"
+  HREF="node38.html">Creaci&#195;&#179;n del descriptor</A>
+<B> Subir:</B> <A NAME="tex2html750"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html744"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+ &nbsp; <B>  <A NAME="tex2html752"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00741000000000000000"></A>
+    <A NAME="sec:orientacion_del_punto"></A>
+<BR>
+Asignaci&#195;&#179;n de la orientaci&#195;&#179;n
+</H2>
+     Para definir la orientaci&#195;&#179;n, primeramente se calculan las respuestas con los filtros presentados en la Fig. <A HREF="#fig:simplekernels">2.10</A> sobre un &#195;&#161;rea circular de radio <SPAN CLASS="MATH"></SPAN> alrededor del punto clave, siendo <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN> la escala en que se detect&#195;&#179; el punto. Tanto el muestreo como el tama&#195;&#177;o de los filtros son dependientes de la escala y se establecen a <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img118.png"
+ ALT="$ 4s$"></SPAN> respectivamente (a mayor escala, mayor es la dimensi&#195;&#179;n de las wavelets). La evaluaci&#195;&#179;n de los filtros realizada aqu&#195;&#173;, se vale nuevamente de las im&#195;&#161;genes integrales para realizar los c&#195;&#161;lculos m&#195;&#161;s r&#195;&#161;pidamente. Tras el c&#195;&#161;lculo de las respuestas, las mismas son ponderadas con una gaussiana de valor <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img119.png"
+ ALT="$ \sigma=2s$"></SPAN> centrada en el punto clave.  
+    
+<DIV ALIGN="CENTER"><A NAME="fig:simplekernels1"></A><A NAME="fig:simplekernels2"></A><A NAME="fig:simplekernels"></A><A NAME="1579"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 2.10:</STRONG>
+Filtros Wavelets Haar para calcular las respuestas en la direcci&#195;&#179;n <SPAN CLASS="MATH"></SPAN> fig:simplekernels1 e <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.png"
+ ALT="$ y$"></SPAN> fig:simplekernels2.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>       
+[]
+
+<IMG
+ WIDTH="61" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img120.png"
+ ALT="\includegraphics[scale=0.4]{../img_ent2/simplekernels1harn}">
+        
+       
+[]
+
+
+        
+</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Luego, las respuestas son representadas como puntos en el espacio (respuestas horizontales a lo largo del eje de abscisas <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img124.png"
+ ALT="$ dx$"></SPAN> y verticales <SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$ dy$"></SPAN> en el de ordenadas) y la orientaci&#195;&#179;n dominante se determina mediante la suma de todas las respuestas en una ventana deslizante orientada de tama&#195;&#177;o <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img126.png"
+ ALT="$ \pi/3$"></SPAN>, como puede observarse en la Fig. <A HREF="#fig:responsecalculate">2.11</A>. As&#195;&#173;, las respuestas horizontales y verticales dentro de la ventana son sumadas constituyendo un vector de orientaci&#195;&#179;n local. La orientaci&#195;&#179;n final para el punto clave, es aquella en la que el vector resulta ser el m&#195;&#161;s largo entre todas las ventanas.
+
+<DIV ALIGN="CENTER"><A NAME="fig:responsecalculate"></A><A NAME="1580"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Asignaci&#195;&#179;n de la orientaci&#195;&#179;n para un punto clave con una ventana deslizante orientada de tama&#195;&#177;o <!-- MATH
+ $\frac{\pi}{3}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.png"
+ ALT="$ \frac{\pi}{3}$"></SPAN>. (Figura tomada de (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	    <IMG
+ WIDTH="19" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img128.png"
+ ALT="\includegraphics[scale=0.45]{./figs/responsecalculate}">
+	
+</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html753"
+  HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html749"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html743"
+  HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html751"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html754"
+  HREF="node38.html">Creaci&#195;&#179;n del descriptor</A>
+<B> Subir:</B> <A NAME="tex2html750"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html744"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+ &nbsp; <B>  <A NAME="tex2html752"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

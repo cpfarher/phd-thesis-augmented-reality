@@ -1,0 +1,105 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WRM{\etalchar{+}}10}
+
+\bibitem[ABB{\etalchar{+}}01]{Azuma:2001:RAA:616073.618862}
+Ronald Azuma, Yohan Baillot, Reinhold Behringer, Steven Feiner, Simon Julier,
+  and Blair MacIntyre.
+\newblock Recent advances in augmented reality.
+\newblock {\em IEEE Comput. Graph. Appl.}, 21(6):34--47, November 2001.
+
+\bibitem[BETV08]{Bay:2008:SRF}
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, and Luc {Van Gool}.
+\newblock Speeded-up {Robust} {Features} {(SURF)}.
+\newblock {\em Computer Vision and Image Understanding: CVIU}, 110(3):346--359,
+  June 2008.
+
+\bibitem[BK08]{citeulike:3484001}
+Gary Bradski and Adrian Kaehler.
+\newblock {\em {Learning OpenCV: Computer Vision with the OpenCV Library}}.
+\newblock O'Reilly Media, 1st edition, October 2008.
+
+\bibitem[But11]{1320421}
+Ben Butchart.
+\newblock Augmented reality for smartphones - a guide for developers and
+  content publishers.
+\newblock In {\em JISC Observatory}, 2011.
+
+\bibitem[CD10]{conf/icra/2010}
+Daniel Conrad and Guilherme~N. DeSouza.
+\newblock Homography-based ground plane detection for mobile robot navigation
+  using a modified {EM} algorithm.
+\newblock In {\em ICRA\/} \cite{conf/icra/2010}, pages 910--915.
+
+\bibitem[H07]{conf/iswc/2007}
+Taehee~Lee 0002 and Tobias H{\"o}llerer.
+\newblock Handy {AR}: Markerless inspection of augmented reality objects using
+  fingertip tracking.
+\newblock In {\em ISWC\/} \cite{conf/iswc/2007}, pages 83--90.
+
+\bibitem[hCMW08]{Chen_markerlessaugmented}
+Ian~Y h~Chen, Bruce Macdonald, and Burkhard W{\"u}nsche.
+\newblock Markerless augmented reality for robots in unprepared environments,
+  2008.
+
+\bibitem[JH00]{bb1919}
+B.~Jahne and H.~W. Haussecker.
+\newblock {\em Computer Vision and Applications: {A} Guide for Students and
+  Practitioners}.
+\newblock Academic Press, April 2000.
+
+\bibitem[Lag11]{citeulike:9456628}
+Robert Lagani\`{e}re.
+\newblock {\em {OpenCV 2 Computer Vision Application Programming Cookbook}}.
+\newblock Packt Publishing, June 2011.
+
+\bibitem[LLLC11]{5739718}
+Ahyun Lee, Jae-Young Lee, Seok-Han Lee, and Jong-Soo Choi.
+\newblock Markerless augmented reality system based on planar object tracking.
+\newblock In {\em Frontiers of Computer Vision (FCV), 2011 17th Korea-Japan
+  Joint Workshop on}, pages 1 --4, feb. 2011.
+
+\bibitem[LS09]{bb48614}
+T.~W.~R. Lo and J.~P. Siebert.
+\newblock Local feature extraction and matching on range images: 2.5{D} {SIFT}.
+\newblock {\em Computer Vision and Image Understanding}, 113(12):1235--1250,,
+  December 2009.
+
+\bibitem[MS05]{bb53077}
+K.~Mikolajczyk and C.~Schmid.
+\newblock A performance evaluation of local descriptors.
+\newblock {\em IEEE Trans. Pattern Analysis and Machine Intelligence},
+  27(10):1615--1630, October 2005.
+
+\bibitem[MTUK94]{Milgram94augmentedreality}
+Paul Milgram, Haruo Takemura, Akira Utsumi, and Fumio Kishino.
+\newblock Augmented reality: A class of displays on the reality-virtuality
+  continuum.
+\newblock pages 282--292, 1994.
+
+\bibitem[OBG11]{BouGar}
+\`{O}scar Boullosa~Garc\`{i}a.
+\newblock Estudio comparativo de descriptores visuales para la detección de
+  escenas cuasi-duplicadas.
+\newblock In {\em Proyecto Fin De Carrera, Universidad Autónoma De Madrid
+  Escuela Politécnica Superior}, 2011.
+
+\bibitem[SL04]{conf/ismar/2004}
+Iryna Skrypnyk and David~G. Lowe.
+\newblock Scene modelling, recognition and tracking with invariant image
+  features.
+\newblock In {\em ISMAR\/} \cite{conf/ismar/2004}, pages 110--119.
+
+\bibitem[TM07]{TuytelaarsM07}
+Tinne Tuytelaars and Krystian Mikolajczyk.
+\newblock Local invariant feature detectors: {A} survey.
+\newblock {\em Foundations and Trends in Computer Graphics and Vision},
+  3(3):177--280, 2007.
+
+\bibitem[WRM{\etalchar{+}}10]{WagnerRMDS10}
+Daniel Wagner, Gerhard Reitmayr, Alessandro Mulloni, Tom Drummond, and Dieter
+  Schmalstieg.
+\newblock Real-time detection and tracking for augmented reality on mobile
+  phones.
+\newblock {\em IEEE Trans. Vis. Comput. Graph}, 16(3):355--368, 2010.
+
+\end{thebibliography}

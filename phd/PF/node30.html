@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Detecci&#195;&#179;n de puntos claves</TITLE>
+<META NAME="description" CONTENT="Detecci&#195;&#179;n de puntos claves">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node36.html">
+<LINK REL="previous" HREF="node24.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node31.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html667"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html663"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html657"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html665"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html668"
+  HREF="node31.html">Im&#195;&#161;genes integrales</A>
+<B> Subir:</B> <A NAME="tex2html664"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html658"
+  HREF="node29.html">Filtrado de alta potencia</A>
+ &nbsp; <B>  <A NAME="tex2html666"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00730000000000000000"></A>
+  <A NAME="sec:detec_ptos_claves"></A>
+<BR>
+Detecci&#195;&#179;n de puntos claves
+</H1>
+  En visi&#195;&#179;n computacional, el concepto de puntos de inter&#195;&#169;s es ampliamente usado como se ha descripto en la Sec. <A HREF="node10.html#sec:ptos_caract_descriptores">1.2.2</A>. El m&#195;&#169;todo SURF fue desarrollado por Herbert Bay et. al (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>) como un detector y descriptor robusto de puntos.
+
+<P>
+La selecci&#195;&#179;n del detector SURF, se ve fundamentada por ser un detector y descriptor de puntos de inter&#195;&#169;s r&#195;&#161;pido, invariante a escala (concepto que ser&#195;&#161; descripto en la Sec. <A HREF="node33.html#sec:invarianza_a_escala">2.3.1</A>) y rotaci&#195;&#179;n que provee ganancia en velocidad debido al uso de im&#195;&#161;genes integrales (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>). Este tipo de im&#195;&#161;genes permite reducir dr&#195;&#161;sticamente el n&#195;&#186;mero de operaciones para convoluciones con los filtros tipo caja, independientemente del tama&#195;&#177;o de escala. Adem&#195;&#161;s, SURF utiliza una aproximaci&#195;&#179;n a la matriz hessiana para la detecci&#195;&#179;n de puntos de inter&#195;&#169;s la cual resulta comparable con los detectores de puntos de inter&#195;&#169;s del estado del arte, o a&#195;&#186;n incluso, se obtiene mejores resultados en ciertos casos (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>). En lo que respecta al descriptor, al estar basado en la suma de las componentes de las Wavelets Haar, la naturalidad de descripci&#195;&#179;n del patr&#195;&#179;n de intensidad subyacente a la imagen resulta ser m&#195;&#161;s distintiva que los enfoques basados en histogramas. 
+<P>
+SURF, se basa en las ideas planteadas en el m&#195;&#169;todo denominado SIFT, pero con algunas diferencias que se presentan resumidas a continuaci&#195;&#179;n:
+        
+<UL>
+<LI>SURF posee una velocidad de c&#195;&#161;lculo superior sin perder rendimiento de manera considerable, &#195;&#169;sto es logrado mediante la reducci&#195;&#179;n en la dimensi&#195;&#179;n de los vectores descriptores y reduciendo la complejidad de c&#195;&#161;lculo en los mismos mediante el uso de im&#195;&#161;genes integrales () y filtros tipo caja (del ingl&#195;&#169;s, Box filters)(),
+</LI>
+<LI>la gran velocidad de c&#195;&#161;lculo resulta ser un factor positivo, a pesar de una tolerable p&#195;&#169;rdida de robustez,
+</LI>
+<LI>el c&#195;&#161;lculo de la posici&#195;&#179;n y la escala de puntos claves se realiza utilizando una aproximaci&#195;&#179;n a la matriz hessiana (que se detallar&#195;&#161; en la Sec. <A HREF="node34.html#sec:matHessiana">2.3.2</A>), </LI>
+<LI>utiliza siempre la imagen original para el an&#195;&#161;lisis del espacio escala, a diferencia de SIFT que realiza un redimensionamiento de la imagen en cada paso,
+</LI>
+<LI>la longitud de los vectores caracter&#195;&#173;sticos para SURF es la mitad que para SIFT (64 y 128 valores, respectivamente).
+       
+</LI>
+</UL>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><A NAME="tex2html669"
+  HREF="node31.html">Im&#195;&#161;genes integrales</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html670"
+  HREF="node32.html">El problema de cambio de escala</A>
+<UL>
+<LI><A NAME="tex2html671"
+  HREF="node33.html">Invarianza a escala</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html672"
+  HREF="node34.html">Puntos claves basados en la matriz hessiana</A>
+<LI><A NAME="tex2html673"
+  HREF="node35.html">Determinaci&#195;&#179;n de la localizaci&#195;&#179;n de puntos claves</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html667"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html663"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html657"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html665"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html668"
+  HREF="node31.html">Im&#195;&#161;genes integrales</A>
+<B> Subir:</B> <A NAME="tex2html664"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html658"
+  HREF="node29.html">Filtrado de alta potencia</A>
+ &nbsp; <B>  <A NAME="tex2html666"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Conversi&#195;&#179;n a escala de grises</TITLE>
+<META NAME="description" CONTENT="Conversi&#195;&#179;n a escala de grises">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node54.html">
+<LINK REL="previous" HREF="node52.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node54.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html980"
+  HREF="node54.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html976"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html970"
+  HREF="node52.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html978"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html981"
+  HREF="node54.html">Mejoras en la iluminaci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html977"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html971"
+  HREF="node52.html">Dise&#195;&#177;o del m&#195;&#169;todo</A>
+ &nbsp; <B>  <A NAME="tex2html979"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00820000000000000000"></A>
+<A NAME="subsec:conver_escala_grises"></A>
+<BR>
+Conversi&#195;&#179;n a escala de grises con una f&#195;&#179;rmula perceptualmente ponderada
+</H1>
+Una imagen puede poseer varios canales de colores. En el caso del presente proyecto, la imagen que proviene del flujo de video es una imagen de tres canales (RGB). Debido a que el algoritmo utilizado para la extracci&#195;&#179;n de caracter&#195;&#173;sticas utiliza im&#195;&#161;genes en tonos de grises de 8 bits, se aplica una conversi&#195;&#179;n antes de procesar la imagen.
+
+<P>
+Para el c&#195;&#161;lculo del valor de gris se usa la f&#195;&#179;rmula perceptualmente ponderada definida en la ecuaci&#195;&#179;n (<A HREF="#eq:formula_conv_grises">3.1</A>) donde <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ R$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="620" HEIGHT="883" ALIGN="BOTTOM" BORDER="0"
+ SRC="img275.png"
+ ALT="$ G$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN> representan los canales rojo, verde y azul de la imagen de entrada respectivamente, e <SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img185.png"
+ ALT="$ I$"></SPAN> representa la imagen resultado convertida a tonos de grises:<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:formula_conv_grises"></A><!-- MATH
+ \begin{equation}
+I=0.299R+0.587G+0.114B.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$\displaystyle I=0.299R+0.587G+0.114B.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+<BR><HR>
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

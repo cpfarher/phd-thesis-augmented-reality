@@ -1,0 +1,70 @@
+\chapter{Preguntas y aclaraciones}
+\label{c:parte6}
+
+\vspace{1cm}
+
+\newpage
+
+\section{Transormación AFIN}
+Para áreas planas hay dos sabores de transformaciones geométricas: las que usan matrices de 2x3 que son llamadas \textbf{transformaciones afines}; y las transformaciones basadas en matrices de 3x3 que se llaman \textbf{transformaciones perspectivas u homografias}.
+
+Una \textbf{transformación afín} es cualquier transformación que pude ser expresada como una multiplicación de matrices seguida de la adición de un vector. Las transformaciones afines pueden convertir rectángulos en paralelogramos (los lados se mantienen paralelos, la figura puede rotar o escalarse).
+
+Las transformaciones perspectivas ofrecen más flexibilidad pudiendo transformar un rectángulo en un trapezoide y como un paralelogramo es también un trapezoide, una transformación afín es un subconjunto de las transformaciones perspectivas.
+
+\section{Porqué para mejoramiento de la iluminación no se uso filtro homomórfico?}
+El filtro homomórfico (FH) simultáneamente normaliza el brillo e incrementa el contraste. Pero utiliza la transformada de Fourier para pasar al dominio de las frecuencias y luego la inversa de la transformada. Esto lo hace lento cuando se lo quiere aplicar y por ello no se tuvo en cuenta en el trabajo.
+
+\section{Error de reproyección}
+c
+\subsection{En opencv el que usé}
+a
+\subsection{En la teoría}
+b
+\subsection{En los libros}
+c
+\section{Cuan bien realiza la ubicación el método}
+a
+\section{Matriz hessiana}
+Si se tiene una matriz de n variables, se obtiene una matriz hessiana de $n \times n$.
+
+\textbf{Traza de la matriz:} En álgebra lineal, la traza de una matriz cuadrada A de nxn está definida como la suma de los elementos de la diagonal principal de A. $tr(A)=a_{11}+a_{22}+a_{33}+...+a_{nn}$.
+
+Ejemplo de calculo del determinante hessiano: \url{http://blog.utp.edu.co/alejandropinto/files/2010/11/Discriminante-o-Hessiano.pdf}.
+
+\textbf{Determinante de la hessiana como determinar el umbral}
+
+\subsection{surf porque y donde detecta los puntos}
+a
+\subsection{surf deteccion puntos en el espacio escala}
+a
+\section{cuantos grados de libertad tiene el proyecto}
+
+\section{Que tipo de deformaciones fotométricas se asumen}
+
+\section{Donde se calculan las wavelets?}
+
+\section{parámetros extrínsecos e intrínsecos míos? o en H?}
+\begin{itemize}
+  \item \textbf{Extrínsecos:} $[R, t]$ posición y orientación respecto a la escena.
+  \item \textbf{Intrínsecos:} 
+    \begin{itemize}
+      \item características propias físicas y ópticas de la cámara.
+      \item distancia focal
+      \item la dimensión imagen y escala
+      \item el punto principal en la imagen en unidades de modelo 
+      \item se ignora la distorsión provocada por la lente
+      \item la misma cámara en diferentes posiciones tienen los mismo parámetros intrínsecos.
+    \end{itemize}
+\end{itemize}
+
+\section{imagenes integrales}
+\url{http://www.aishack.in/2010/07/integral-images/}
+
+\section{Homografía iteraciones}
+\url{http://www.cc.gatech.edu/~richard/ransacld4/}.
+0.8 es la distancia establecida para el PnP, con 0.6 mas rápido pero menos estable.
+Esta a 5 píxeles de distancia el reprojection error de ransactReprojThreshold: cvfindhomography
+
+\textbf{ransacReprojThreshold (Double)}
+The maximum allowed reprojection error to treat a point pair as an inlier. The parameter is only used in RANSAC-based homography estimation. E.g. if dst\_points coordinates are measured in pixels with pixel-accurate precision, it makes sense to set this parameter somewhere in the range $~1..3$.

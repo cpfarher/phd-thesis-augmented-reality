@@ -1,0 +1,4462 @@
+#LyX file created by tex2lyx 2.0.1
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref 0
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+chapter{Parte 3}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "c:parte3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+En este capÃ­tulo se presenta, en primer lugar, la motivaciÃ³n central de este trabajo: algo.
+\end_layout
+
+\begin_layout Standard
+
+A continuaciÃ³n, .....
+\end_layout
+
+\begin_layout Standard
+
+Finalmente, se exponen los objetivos generales y especÃ­ficos de esta tesis.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+AdquisiciÃ³n de imÃ¡genes (prototipos) para realizar las pruebas.
+\end_layout
+
+\begin_layout Standard
+
+El proceso de adquisiciÃ³n de imÃ¡genes es aplicado en tres diferentes instancias, segÃºn la situaciÃ³n: 
+\end_layout
+
+\begin_layout Enumerate
+
+
+\series bold
+Imagen patrÃ³n
+\series default
+: es la adquisiciÃ³n de la imagen que serÃ¡ usada como patrÃ³n para su posterior detecciÃ³n y seguimiento y sobre la cuÃ¡l se sobre impondrÃ¡ el 
+\series bold
+Objeto de Realidad Aumentada
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+La imagen, serÃ¡ adquirida con la misma cÃ¡mara web utilizada para la captura de la 
+\series bold
+Imagen Live
+\series default
+, aunque no se descarta la posibilidad del uso de otro dispositivo que permita obtener una imagen de caracterÃ­sticas similares a la obtenida con la cÃ¡mara web utilizada.
+\end_layout
+
+\begin_layout Standard
+
+La adquisiciÃ³n de la imagen objeto, deberÃ¡ cumplir ciertas restricciones prÃ¡cticas, entre las cuales se puede nombrar: el tamaÃ±o de la imagen, las condiciones de iluminaciÃ³n, el nivel de detalle (cantidad de detalles mÃ­nimos), entre otras.
+\begin_inset CommandInset label
+LatexCommand label
+name "imagenpatron_restricciones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{la imagen patrÃ³n debe ser plana}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{debe ocupar la totalidad de la imagen. esto se va a entender???} el tamaÃ±o de la imagen
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{las condiciones de iluminaciÃ³n deben ser uniformes y sin sombras}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{no debe existir oclusiÃ³n sobre el objeto.}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{la imagen debe ser tomada de forma que la normal al plano de la imagen sea ortogonal o aproximadamente ortogonal a la normal del centro de la cÃ¡mara,}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{la imagen no tendrÃ¡ blurring.}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{la imagen deberÃ¡ poseer textura o caracterÃ­sticas suficientes para ser identificada.}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{no debe haber brillos o reflexiones sobre la imagen -> objetos de plastico por ejemplo con luz...}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{si es muy chico o muy grande el objeto,.. no funciona!.... o sea si le saco a un papel de caramelo y depues lo pongo a 40 cm, no me lo detecta... a eso me refiero.. no se como se deberÃ­a poner...  -- minimo de tamaÃ±o 640x480.?}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{textured plannar target}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+item 
+\backslash
+colorbox{yellow}{segÃºn esto: objetivo perdido, oclusion, inclinaciÃ³n, blur motion, relection}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+
+\series bold
+Imagen Live o Flujo de Video
+\series default
+: es la obtenciÃ³n de un fotograma del Flujo de Video adquirido en tiempo real con la cÃ¡mara web, con las mismas restricciones prÃ¡cticas mencionadas anteriormente. Sobre este fotograma, se detectarÃ¡ la 
+\series bold
+Imagen PatrÃ³n
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+La adquisiciÃ³n se realizarÃ¡ con una cÃ¡mara web con una resoluciÃ³n de 640x480 pÃ­xeles de una computadora portÃ¡til Toshiba Satellite A505-S6803.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+
+\series bold
+Objeto de Realidad Aumentada
+\series default
+: es la definiciÃ³n de una imagen (ej: foto, tapa de libro, revista, etc.) o volumen tridimensional (ej: objeto 3D dibujado con OpenGL) - dependiendo del grado de avance que se logre en el proyecto - que serÃ¡ sobre impuesto en el 
+\series bold
+Flujo de Video
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bigskip
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+textbf{Referencias de la secciÃ³n:
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% % 
+\backslash
+cite{cita66}, %Paul Milgram et al., 1994 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% % 
+\backslash
+cite{cita65}, %Ben Butchart, 2011
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% % 
+\backslash
+cite{cita36}, %Taehee Lee et al., 2007 6dof
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% % 
+\backslash
+cite{cita64}, %Ronald Azuma et al., 2001
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% % 
+\backslash
+cite{5739718}.% Ahyun Lee et al., 2010  sift lkt
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+MÃ©todos de extracciÃ³n de caracterÃ­sticas en imÃ¡genes parte 1 (AnÃ¡lisis/estudio del mÃ©todo).
+\end_layout
+
+\begin_layout Standard
+
+En visiÃ³n computacional, el concepto de puntos de interÃ©s, puntos claves (Keypoints) o puntos caracterÃ­sticos (Feature Points) es usado ampliamente en diversidad de tareas tales como: el reconocimiento de objetos, la identificaciÃ³n de imÃ¡genes, seguimiento de objetivos, reconstrucciÃ³n de escenas 3D, etc. La idea consiste en seleccionar algunos puntos especiales de la imagen, para realizar un anÃ¡lisis sobre ellos. Esta aproximaciÃ³n es vÃ¡lida, en la medida en que se detecten la cantidad de puntos suficientes de tal forma que los mismos sean distinguibles y ademÃ¡s, formen un conjunto de caracterÃ­sticas estables que permitan ser precisamente localizadas en prÃ³ximas observaciones.
+\end_layout
+
+\begin_layout Standard
+
+Cuando se trata de hacer coincidir caracterÃ­sticas entre diferentes imÃ¡genes (por ejemplo para el reconocimiento de las mismas), el problema del cambio de escala se hace presente. Al ser analizadas distintas imÃ¡genes, Ã©stas, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%Esto es, diferentes imÃ¡genes a ser analizadas, 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+pueden estar tomadas a diferentes distancias respecto al objeto de interÃ©s, de tal forma que los objetos aparecen de diferentes tamaÃ±os en la imagen. Es asÃ­ que, si se trata de hacer coincidir las mismas caracterÃ­sticas entre dos imÃ¡genes usando un tamaÃ±o fijo de pÃ­xeles vecinos, la intensidad de los patrones no coincidirÃ¡ debido al cambio de escala presente en las mismas y por lo tanto, el reconocimiento fallarÃ¡.
+\end_layout
+
+\begin_layout Standard
+
+Para solucionar este problema, el concepto de caracterÃ­sticas invariantes a la escala es introducido en visiÃ³n computacional. La idea central es tener un factor de escala asociada con cada punto caracterÃ­stico detectado.
+\end_layout
+
+\begin_layout Standard
+
+Un detector de puntos de interÃ©s usado recientemente y basado en estas ideas es el algoritmo SURF: Speeded Up Robust Features (Detector rÃ¡pido de caracterÃ­sticas robustas) 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "citeulike:9456628, citeulike:7676197, Bay:2008:SRF, bb53077, TuytelaarsM07, Bay:2008:SRF, BouGar"
+
+\end_inset
+
+. Ãste estÃ¡ basado en conceptos del algoritmo SIFT: Scale Invariant Feature Transform (TransformaciÃ³n de caracterÃ­sticas invariante a la escala) 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "citeulike:3484001, citeulike:9456628, citeulike:7676197, bb53077, journals/tvcg/WagnerRMDS10, TuytelaarsM07, bb48614, Nixon:2002:FEI, BouGar, 5739718, conf/ismar/SkrypnykL04"
+
+\end_inset
+
+. El mÃ©todo SURF, no solamente tiene la caracterÃ­stica de ser invariante a escala, sino que ademÃ¡s, posee la ventaja de calcular eficientemente los resultados asociando una orientaciÃ³n con cada caracterÃ­stica (indicado en la imagen de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:church_difference_surf"
+
+\end_inset
+
+ con una lÃ­nea radial dentro de cada cÃ­rculo), con el objetivo de lograr invariancia respecto a la rotaciÃ³n.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% El tamaÃ±o de los cÃ­rculos de los puntos claves que se pueden observar en la figura 
+\backslash
+ref{fig:church_difference_surf}, resulta ser proporcional a la escala de cada caracterÃ­stica.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Float figure
+placement tbhp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----primera subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:church1"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la primera subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/surfinchurch1.eps
+	scale 33.8
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+hspace{0.1
+\backslash
+linewidth}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----segunda subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:church2"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la segunda subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/surfinchurch2.eps
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption
+
+
+\begin_layout Standard
+
+
+\begin_inset OptArg
+status collapsed
+
+\begin_layout Standard
+
+CaracterÃ­sticas - FotografÃ­a tomada a diferentes escalas de la misma escena
+\end_layout
+
+\end_inset
+
+FotografÃ­a tomada a diferentes escalas de la misma escena. (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:church1"
+
+\end_inset
+
+) - (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:church2"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:church_difference_surf"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la figura entera
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+Si se observa cuidadosamente los puntos detectados en la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:church_difference_surf"
+
+\end_inset
+
+, se puede ver que el cambio en el tamaÃ±o de los cÃ­rculos, es proporcional a los cambios de escala. Por ejemplo, si se considera la parte inferior de la ventana superior derecha de la fotografÃ­a, tanto en la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:church1"
+
+\end_inset
+
+ como en la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:church2"
+
+\end_inset
+
+, la caracterÃ­stica SURF ha sido detectada en la misma ubicaciÃ³n y los cÃ­rculos correspondientes (de diferentes tamaÃ±os) contienen los mismos elementos visuales. Si bien este caso no se da para todas las caracterÃ­sticas, la razÃ³n de repeticiÃ³n es lo suficientemente alta para permitir buenas coincidencias entre dos imÃ¡genes. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+SURF - DetecciÃ³n de puntos claves
+\end_layout
+
+\begin_layout Standard
+
+La derivada de una imagen puede ser estimada mediante el uso de filtros Gaussianos, los mismos utilizan un parÃ¡metro 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ que representa la desviaciÃ³n estÃ¡ndar de la curva Gaussiana y que define la apertura del kernel. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%Un filtro con un valor de $
+\backslash
+sigma$ grande, suaviza los detalles mÃ¡s finos de la imagen.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Si se calcula el Laplaciano de un punto en una imagen usando filtros Gaussianos a diferentes escalas, se obtienen diferentes valores. Si miramos la evoluciÃ³n de las respuestas del filtro para diferentes factores de escala, se obtiene una curva que alcanza un valor mÃ¡ximo en algÃºn valor de 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ especÃ­fico. ExtrayÃ©ndose este valor mÃ¡ximo para dos imÃ¡genes del mismo objeto (tomadas a dos escalas diferentes), la relaciÃ³n que existe entre los 
+\begin_inset Formula $\sigma
+$
+\end_inset
+
+ mÃ¡ximos se corresponderÃ¡n en relaciÃ³n con las escalas en que fueron tomadas cada una de las fotografÃ­as. Esta observaciÃ³n, es el nÃºcleo del proceso de extracciÃ³n de caracterÃ­sticas invariantes a la escala. Es decir, que las caracterÃ­sticas invariantes a escalas, pueden ser detectadas como mÃ¡ximos locales en el espacio imagen (localizaciÃ³n) y en el espacio escala (obtenido de la aplicaciÃ³n de filtros a diferentes escalas).
+\end_layout
+
+\begin_layout Standard
+
+SURF implementa la misma idea. Primeramente para detectar las caracterÃ­sticas, se calcula la Matriz Hessiana (Hessian matrix) para cada pÃ­xel. Esta matriz mide la curvatura local de una funciÃ³n y tiene la forma de la matriz de la expresiÃ³n (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "HessianMatrix"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Formula \begin{equation}
+H(x,y)=\begin{bmatrix}\frac{\partial^{2}I}{\partial x\text{\texttwosuperior}} & \frac{\partial^{2}I}{\partial x\partial y}\\
+ & \\
+\frac{\partial^{2}I}{\partial x\partial y} & \frac{\partial^{2}I}{\partial y\text{\texttwosuperior}}
+\end{bmatrix}\label{HessianMatrix}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%El determinante de la matriz Hessiana, da la intensidad de la curva.%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+La idea es por lo tanto, definir 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%esquinas como 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+puntos de imÃ¡genes con valores de curvatura altos (esto es, alta variaciÃ³n en mÃ¡s de una direcciÃ³n). Debido que la matriz estÃ¡ compuesta por derivadas de segundo orden, la misma puede ser calculada usando kernels Gaussianos Laplacianos de diferentes escalas 
+\begin_inset Formula $\sigma$
+\end_inset
+
+. AsÃ­, el Hessiano pasa a ser una funciÃ³n de tres variables: 
+\begin_inset Formula $H(x,y,\sigma)$
+\end_inset
+
+. Una caracterÃ­stica invariante a la escala es identificada cuando el determinante del Hessiano alcanza un mÃ¡ximo local en ambos espacios (imagen y escala). 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%(esto es, 3x3x3 no-maximos  necesitan removerse.).%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+El cÃ¡lculo de todas las derivadas a diferentes escalas resulta ser costoso computacionalmente, por eso, para que el proceso resulte mÃ¡s eficiente se usa una aproximaciÃ³n a los Kernels Gaussianos conocidos como filtros caja (Boxlets filters) 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "conf/nips/SimardBHL98"
+
+\end_inset
+
+ que se pueden observar en la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernels"
+
+\end_inset
+
+, de forma tal que el cÃ¡lculo, sÃ³lo involucre algunas operaciones de adiciÃ³n de enteros, reduciendo de esta forma la complejidad y permitiendo el uso de una tÃ©cnica conocida como imÃ¡genes integrales 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "viola01boosting"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Float figure
+placement tbhp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----primera subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gaussiankernelsdiscreted_y"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la primera subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/gaussiankernelsdiscrete_y.eps
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+hspace{0.1
+\backslash
+linewidth}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----segunda subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gaussiankernelsaprox_y"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la segunda subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/gaussiankernelsaprox_y.eps
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+hspace{0.1
+\backslash
+linewidth}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----tercera subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gaussiankernelsdiscreted_xy"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la segunda subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/gaussiankernelsdiscrete_xy.eps
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+hspace{0.1
+\backslash
+linewidth}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----cuarta subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gaussiankernelsaprox_xy"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la segunda subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/gaussiankernelsaprox_xy.eps
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+hspace{0.1
+\backslash
+linewidth}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption
+
+
+\begin_layout Standard
+
+Derivadas parciales Gaussianas de segundo orden discretizadas y aproximadas mediante el uso de filtros caja. Las regiones grises de la imagen son iguales a cero. - (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernelsdiscreted_y"
+
+\end_inset
+
+) discretizada en la direcciÃ³n 
+\begin_inset Quotes eld
+\end_inset
+
+y
+\begin_inset Quotes erd
+\end_inset
+
+, (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernelsaprox_y"
+
+\end_inset
+
+) aproximada en la direcciÃ³n 
+\begin_inset Quotes eld
+\end_inset
+
+y
+\begin_inset Quotes erd
+\end_inset
+
+; (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernelsdiscreted_xy"
+
+\end_inset
+
+) discretizada en la direcciÃ³n 
+\begin_inset Quotes eld
+\end_inset
+
+x-y
+\begin_inset Quotes erd
+\end_inset
+
+, (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernelsaprox_xy"
+
+\end_inset
+
+) aproximada en la direcciÃ³n 
+\begin_inset Quotes eld
+\end_inset
+
+x-y
+\begin_inset Quotes erd
+\end_inset
+
+. 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la figura entera
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gaussiankernels"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+El kernel de la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernels"
+
+\end_inset
+
+.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernelsaprox_xy"
+
+\end_inset
+
+ es usado para estimar las derivadas parciales segundas, mientras que el de la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernels"
+
+\end_inset
+
+.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernelsaprox_y"
+
+\end_inset
+
+ estima la derivada segunda en la direcciÃ³n vertical. Una versiÃ³n rotada de este Ãºltimo, estima la derivada segunda en la direcciÃ³n horizontal. Los kernels mÃ¡s chicos (como lo de las Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gaussiankernels"
+
+\end_inset
+
+ tienen un tamaÃ±o de 9x9 pÃ­xeles, correspondiente a un 
+\begin_inset Formula $\sigma \approx 1.2$
+\end_inset
+
+ y representa la escala mÃ¡s pequeÃ±a (mÃ¡xima resoluciÃ³n espacial). 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Kernels de tamaÃ±os mayores son sucesivamente aplicados.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+La cantidad de filtros aplicados es especificado como un parÃ¡metro del mÃ©todo. Por defecto, se usan 12 diferentes tamaÃ±os de kernels (alcanzando un tamaÃ±o de 99x99). 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%Note que de hecho las imÃ¡genes integrales que son usadas, garantizan que la suma dentro de cada lob puede ser calculada usando solo 3 adiciones independientemente del tamaÃ±o del filtro.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Una vez que el mÃ¡ximo local es identificado, la posiciÃ³n precisa de cada punto de interÃ©s es obtenida a travÃ©s de interpolaciÃ³n en ambos espacios (escala e imagen). El resultado es un conjunto de puntos caracterÃ­sticos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%localizados con precisiÃ³n sub-pixel 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+al que se le asocia una valor de escala.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 1
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\series bold
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+underline{
+\backslash
+emph{Nota:}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ Anteriormente se ha mencionado que el algoritmo SURF ha sido desarrollado como una variante del detector de caracterÃ­sticas SIFT. Este Ãºltimo, tambiÃ©n detecta caracterÃ­sticas como mÃ¡ximos locales en el espacio imagen y escala, pero usa las respuestas del filtro Laplaciano, en vez de el Determinante Hessiano. Este Laplaciano es calculado a diferentes escalas usando el filtro de Diferencia de Gaussianos. Como el cÃ¡lculo de los puntos caracterÃ­sticos esta basado en Kernels de punto flotante, el algoritmo SIFT, es considerado generalmente mÃ¡s preciso que SURF en tÃ©rminos de localizaciÃ³n de las caracterÃ­sticas en el espacio imagen y escala, pero resulta computacionalmente mÃ¡s costoso.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+bigskip
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\end_layout
+
+\begin_layout Subsection
+
+DescripciÃ³n de las caracterÃ­sticas SURF - Vector descriptor
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Como se mencionÃ³ anteriormente, el algoritmo SURF define la localizaciÃ³n y escala para cada una de las caracterÃ­sticas detectadas. Este factor de escala, puede ser usado para definir el tamaÃ±o de una ventana alrededor de cada punto caracterÃ­stico, de tal manera de poder definir un Ã¡rea vecina que incluya la misma informaciÃ³n visual, sin importar la escala en que el objeto fue fotografiado. AsÃ­, esta informaciÃ³n visual incluida en esa vecindad, resulta Ãºtil para caracterizar el punto y ayuda en la distinciÃ³n del mismo de otros similares.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%Este capÃ­tulo, le mostrarÃ¡ como describir el vecindario 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+Para describir el Ã¡rea vecina de los puntos caracterÃ­sticos, se usan descriptores, que usualmente (en el caso de comparaciÃ³n entre imÃ¡genes) son vectores N-dimensionales que resultan ser invariantes a cambios de iluminaciÃ³n (en el caso ideal) y a pequeÃ±as deformaciones de perspectivas. AdemÃ¡s, resultan potencialmente usables para ser comparados mediante el uso de una mÃ©trica de distancia, como por ejemplo: la distancia euclÃ­dea. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%de los puntos caracterÃ­siticos usando ddescriptores compactos.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%En matching feature, 
+\backslash
+textbf{feature descriptors} son usualmente vectores N-dimensionales que describen un punto caraccterÃ­sticio,
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% idealmente de una manera que es invariante a cambios en la iluminaciÃ³n y a deformaciones perspectivas pequeÃ±as. 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%AdemÃ¡s decriptores buenos pueden ser comparados mediante el uso de una mÃ©trica de distancia simple como es la distancia eculdiea por ejemplo. de hecho, esta constituye una herramienta poderosa usada en algotritmos de matching.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+En el caso del algoritmo SURF, el descriptor por defecto 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%es de un tamaÃ±o de 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+posee 64 elementos (SIFT utiliza 128 elementos) y este vector caracteriza el 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%patrÃ³n de intensidad %
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+Ã¡rea que rodea a un punto caracterÃ­stico. Cuanto mÃ¡s similares sean los 2 puntos caracterÃ­sticos, mÃ¡s cercanos serÃ¡n sus vectores descriptores.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% paper original:
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+El buen desempeÃ±o de SIFT en comparaciÃ³n con otros descriptores es notable. Su mezcla de informaciÃ³n de localizaciÃ³n 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%cruda
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+y la distribuciÃ³n de las caracterÃ­sticas relacionadas con el gradiente, lo hacen poderoso para lograr la diferenciaciÃ³n de caracterÃ­sticas, mientras sufre errores de localizaciÃ³n en tÃ©rminos de espacio y escala. El uso de los puntos fuertes mencionados, junto con la orientaciÃ³n del gradiente, reduce los efectos de los cambios fotomÃ©tricos. El descriptor SURF, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%propuesto % 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+se basa en propiedades similares, pero con su complejidad simplificada. El primer paso, consiste en fijar una orientaciÃ³n reproducible basada en la informaciÃ³n de una regiÃ³n circular alrededor del punto de interÃ©s. Luego, se construye una regiÃ³n cuadrada alineada con la orientaciÃ³n seleccionada, y se extrae el descriptor SURF de ella. 
+\size default
+
+\end_layout
+
+\begin_layout Subsubsection
+
+AsignaciÃ³n de la orientaciÃ³n
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "asignacion_orientacion_susbsection"
+
+\end_inset
+
+ Con el objetivo de lograr invariancia a la rotaciÃ³n, se identifica una orientaciÃ³n que sea reproducible para los puntos de interÃ©s. Para este propÃ³sito, primeramente se calculan las respuestas de la Wavelet Harr en la direcciÃ³n 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+y
+\begin_inset Quotes erd
+\end_inset
+
+ con los kernels de la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:simplekernels"
+
+\end_inset
+
+ en una vecindad circular de radio 
+\begin_inset Formula $6\sigma$
+\end_inset
+
+ alrededor del punto de interÃ©s (donde 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ representa la escala a la que fue detectado el punto de interÃ©s).
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%imÃ¡genes integrales y algo de la escala aclara en el paper ...
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+Una vez que han sido calculadas las respuestas wavelets y ponderadas por una Gaussiana centrada en el punto de interÃ©s (con un valor de 
+\begin_inset Formula $2.5\sigma$
+\end_inset
+
+) estas son representadas mediante un vector en el espacio, con las respuestas de intensidad horizontales a lo largo de la abscisa y las verticales a lo largo de la ordenada. Para una orientaciÃ³n dada, las respuestas dentro de un intervalo angular (
+\begin_inset Formula $\pi/3$
+\end_inset
+
+) se suman, y la orientaciÃ³n que da el mayor vector es definido como la orientaciÃ³n dominante.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%La orientaciÃ³n dominante, es calculada como la suma de todas las respuestas dentro de una ventana deslizante con un Ã¡ngulo de $
+\backslash
+pi/3$. Las respuestas verticales y horizontales dentro de la ventana son sumadas%. Las dos respuestas sumas construyen %
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%construyÃ©ndose asÃ­ un nuevo vector. El mayor vector de entre ellos, representa la orientaciÃ³n del punto de interÃ©s.%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+Cabe aclarar que el tamaÃ±o de la ventana deslizante es un parÃ¡metro seleccionado experimentalmente. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\end_layout
+
+\begin_layout Subsubsection
+
+Componentes del descriptor
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Para la extracciÃ³n del descriptor, el primer paso consiste en construir una regiÃ³n cuadrada centrada alrededor del punto de interÃ©s y orientada en la direcciÃ³n de la orientaciÃ³n calculada en la subsecciÃ³n 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "asignacion_orientacion_susbsection"
+
+\end_inset
+
+. El tamaÃ±o de la ventana es 
+\begin_inset Formula $20\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%Esta regiÃ³n cuadrada, es dividida en sub-regiones mÃ¡s pequeÃ±as de 4x4 (muestras experimentales indican que este tamaÃ±o es con el que se obtiene mejor performance). 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%Para cada sub-regiÃ³n, las respuestas del kernel $dx$ y $dy$ son calculadas en un Ã¡rea localizada y regularmente espaciada de 5x5 (el tamaÃ±o del kernel es $2
+\backslash
+sigma$).
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+La regiÃ³n es dividida regularmente en subregiones cuadradas mÃ¡s pequeÃ±as de 4x4. Estas mantienen informaciÃ³n espacial importante en ellas. Por razones de simplicidad, llamaremos 
+\begin_inset Formula $dx$
+\end_inset
+
+ a la respuesta de la wavelet Harr en la direcciÃ³n horizontal Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:simplekernels1"
+
+\end_inset
+
+ y 
+\begin_inset Formula $dy$
+\end_inset
+
+ la respuesta en la direcciÃ³n vertical Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:simplekernels2"
+
+\end_inset
+
+ (tamaÃ±o del filtro: 
+\begin_inset Formula $2\sigma$
+\end_inset
+
+). 
+\begin_inset Quotes eld
+\end_inset
+
+Horizontal
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+Vertical
+\begin_inset Quotes erd
+\end_inset
+
+ aquÃ­ son definidas en relaciÃ³n a la orientaciÃ³n seleccionada del punto. Para incrementar la robustez frente a deformaciones geomÃ©tricas y errores de localizaciÃ³n, las repuestas 
+\begin_inset Formula $dx$
+\end_inset
+
+ y 
+\begin_inset Formula $dy$
+\end_inset
+
+ son primero ponderadas con un gaussiano (
+\begin_inset Formula $3.3\sigma$
+\end_inset
+
+) centrado en el punto de interÃ©s.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Para cada sub-regiÃ³n, se calculan algunas caracterÃ­sticas cada 5x5 puntos de muestreo que son mencionadas a continuaciÃ³n. 
+\begin_inset Float figure
+placement tbhp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----primera subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:simplekernels1"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la primera subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/simplekernels1har.eps
+	scale 35
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+hspace{0.1
+\backslash
+linewidth}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----segunda subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:simplekernels2"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la segunda subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/simplekernels2har.eps
+	scale 35
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset OptArg
+status collapsed
+
+\begin_layout Standard
+
+\size footnotesize
+
+Kernels aplicados para el cÃ¡lculo de la respuestas Haar
+\end_layout
+
+\end_inset
+
+Kernels aplicados en la vecindad de un punto caracterÃ­stico.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:simplekernels"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la figura entera
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Las respuestas wavelet 
+\begin_inset Formula $dx$
+\end_inset
+
+ y 
+\begin_inset Formula $dy$
+\end_inset
+
+ son sumadas sobre cada subregiÃ³n y forman un primer conjunto de entradas para el vector de caracterÃ­sticas. Con el propÃ³sito de dar informaciÃ³n acerca de la polaridad de los cambios de intensidad, tambiÃ©n se extrae la suma de los valores absolutos de las respuestas: 
+\begin_inset Formula $\left|dx\right|$
+\end_inset
+
+ y 
+\begin_inset Formula $\left|dy\right|$
+\end_inset
+
+. AsÃ­, cada subregiÃ³n tiene un vector descriptor de cuatro dimensiones cuya expresiÃ³n es: 
+\begin_inset Formula \begin{equation}
+\left[\sum dx\qquad\sum dy\qquad\sum \left|dx\right|\qquad\sum \left|dy\right|\right]
+\label{equation_suma} 
+\end{equation}
+\end_inset
+
+ Esto, resulta en un vector descriptor para todas las subregiones de 4x4 de un tamaÃ±o de 64 elementos. Se debe tener en cuenta que las respuestas de las wavelets son invariantes a un sesgo en la iluminaciÃ³n y que la invariancia de contraste (un factor de escala) se consigue transformando el vector en uno unidad.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+La Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:respuesta_descriptor"
+
+\end_inset
+
+, muestra las propiedades del descriptor para tres imÃ¡genes distintas, con diferentes patrones de intensidad, en una subregiÃ³n. Una combinaciÃ³n de dichos patrones locales de intensidad, darÃ­a como resultado un descriptor posible de distinguir.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset Float figure
+placement tbhp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename ../img_ent2/egharrresponses.eps
+	scale 40
+
+\end_inset
+
+ 
+\begin_inset Caption
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset OptArg
+status collapsed
+
+\begin_layout Standard
+
+\size footnotesize
+
+Respuestas del descriptor SURF
+\end_layout
+
+\end_inset
+
+Las entradas del descriptor de una subregiÃ³n, representan la naturaleza del patrÃ³n de intensidad subyacente. Izquierda: en el caso de una regiÃ³n homogÃ©nea, todos los valores son relativamente bajos. Centro: En presencia de frecuencias en la direcciÃ³n 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+, el valor 
+\begin_inset Formula $\sum \left|dx\right|$
+\end_inset
+
+ es alto, mientras los demÃ¡s son bajos. Derecha: Si la intensidad se incrementa gradualmente en la direcciÃ³n 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+, ambos valores: 
+\begin_inset Formula $\sum dx$
+\end_inset
+
+ y 
+\begin_inset Formula $\sum \left|dx\right|$
+\end_inset
+
+ son altos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:respuesta_descriptor"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la figura entera
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Se consideran buenos descriptores de caracterÃ­sticas, a aquellos que son invariantes a pequeÃ±os cambios de iluminaciÃ³n, puntos de vista (perspectiva) y presencia de ruido en la imagen. Es por esto que con frecuencia, estÃ¡n basados en diferencias locales de intensidad. Este es el caso de los descriptores SURF, que aplican los kernels de la figura 
+\backslash
+ref{fig:simplekernels} dentro de un Ã¡rea determinada %grande%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% alrededor de un punto.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  El tamaÃ±o de la vecindad usado para extraer los vectores caracterÃ­sticos es definido como 20 veces el factor de escala de la caracterÃ­sticas (esto es, $20
+\backslash
+sigma$). Esta regiÃ³n cuadrada, luego es dividida en sub-regiones mÃ¡s pequeÃ±as de 4x4. Para cada sub-regiÃ³n, las respuestas del kernel $dx$ y $dy$ son calculadas en un Ã¡rea localizada y regularmente espaciada de 5x5 (el tamaÃ±o del kernel es $2
+\backslash
+sigma$). Todas estas respuestas son sumadas mediante la expresiÃ³n 
+\backslash
+ref{equation_suma} con el objetivo de extraer cuatro valores descriptivos para cada sub-regiÃ³n.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Debido a que son $4x4=16$ sub-regiones, tenemos un descriptor con un total de 64 valores. Con el objetivo de dar mas importancia a los pÃ­xeles vecinos mas cercanos al punto clave, las respuestas del kernel se ponderan con un Gaussiano centrado en el punto clave (con $
+\backslash
+sigma=3.3$).
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Las respuestas $dx$ y $dy$, son tambiÃ©n usadas para estimar la orientaciÃ³n de las caracterÃ­sticas. Estos valores son calculados (con un kernel de tamaÃ±o $4
+\backslash
+sigma$) en una vecindad circular de radio $6
+\backslash
+sigma$ en puntos regularmente espaciados por intervalos $
+\backslash
+sigma$. Para una orientaciÃ³n dada, las respuestas dentro de un intervalo angular ($
+\backslash
+pi/3$) se suman, y la orientaciÃ³n que da el mayor vector es definido como la orientaciÃ³n dominante.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+De esta forma, buscar correspondencias con invariancia a escala entre imÃ¡genes es alcanzable mediante las caracterÃ­sticas y descriptores que se obtiene con SURF. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 1
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\series bold
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+underline{
+\backslash
+emph{AclaraciÃ³n respecto del algoritmo SIFT:}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ El algoritmo SIFT, tambiÃ©n define su propio descriptor. Se basa en la magnitud del gradiente y orientaciÃ³n calculado en la escala del punto clave considerado. Como en el caso de los descriptores SURF, el Ã¡rea vecina escalada del punto clave es dividido en 4x4 subregiones. Para cada una de estas regiones, se construye un histograma de 8 clases de las orientaciones del gradiente (ponderados por su magnitud y por una ventana gaussiana global centrada en el punto clave). Luego, el vector descriptor es construido de las entradas de este histograma. Hay 4x4 regiones y 8 clases por histograma, lo que nos da un descriptor de una longitud de 128 elementos.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+En cuanto a la detecciÃ³n de caracterÃ­sticas, la diferencia entre los descriptores SIFT y SURF es principalmente la velocidad y precisiÃ³n. Mientras que los descriptores SURF estÃ¡n mayormente basados en diferencias de intensidades, son mÃ¡s rÃ¡pidos de calcular; por otro lado, los descriptores SIFT son considerados generalmente mÃ¡s precisos en buscar la caracterÃ­stica correcta (coincidencia mÃ¡s exacta), pero llevando mÃ¡s tiempo de cÃ¡lculo.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  Local Feature View Clustering for 3D Object Recognition - paper David LOWE
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Cada caracterÃ­stica SIFT es representada por un vector con medidas locales de la imagen, de tal manera de ser invariante a la traslaciÃ³n, escalado y rotaciÃ³n y parcialmente invariante a cambios de iluminaciÃ³n y deformaciones locales. Una imagen tÃ­pica producirÃ¡ gran cantidad de caracterÃ­sticas que se sobre solapen en un rango de varias escalas  que formaran una representaciÃ³n redundante de la imagen original. La naturaleza local y multi escala de la caracterÃ­sticas la harÃ¡ insensitiva al ruido, desorden y oclusiones, mientras que las propiedades de los detalles locales de la imagen representados por las caracterÃ­sticas la harÃ¡n altamente selectivas para realizar un match con grandes bases de datos de caracterÃ­sticas previamente almacenadas.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% La localizaciÃ³n de las caracterÃ­sticas SIFT son eficientemente detectadas identificando el mÃ¡ximo y mÃ­nimo de una funciÃ³n diferencia de gaussianos en el espacio escala. En cada localizaciÃ³n, una orientaciÃ³n es seleccionada como el pico del histograma del gradiente de las orientaciones de la imagen local. Un vector de caracterÃ­sticas es asÃ­ construido mediante la medida de gradientes locales en la imagen en una regiÃ³n alrededor de cada punto localizando en coordenadas relativas a la localizaciÃ³n, escala y orientaciÃ³n de la caracterÃ­stica. La localizaciÃ³n del gradiente son borroneadas para reducir la sensibilidad a pequeÃ±as deformaciones locales de la imagen, como ser un cambio del punto de vista. Resumiendo, el enfoque de SIFT transforma las caracterÃ­sticas locales de la imagen en relaciÃ³n con marcos de coordenadas que se espera que sean estables a travÃ©s de mÃºltiples puntos de vista de un objeto.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% El tamaÃ±o de la regiÃ³n de la imagen que es muestreada por cada caracterÃ­stica es variable, pero los experimentos de este paper usan vectores de 128 elementos por cada caracterÃ­stica para muestrear ocho orientaciones de gradientes sobre una regiÃ³n de 4x4. El uso de 128 elementos (un vector largo) es Ãºtil para dar un grado mayor de selectividad al hacer un maching de caracterÃ­sticas con una base de datos, resultando en mejore precisiÃ³n y eficiencia.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bigskip
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+textbf{Referencias de la secciÃ³n: 
+\backslash
+cite{citeulike:3484001}, %Gary Bradsky et al., 2008 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{citeulike:9456628}, %Robert LaganiÃ¨re, 2011
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{Bay:2008:SRF},% Herbert Bay et al., 2008 surf
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{TuytelaarsM07}, %Tuytelaars et al., 2008 harris, surf, klt, sitf
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{bb53077}, %Krystian Mikolajczyk et al., 2005 sift, pca-sift
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{journals/tvcg/WagnerRMDS10}, %Daniel Wagner et al., 2010  sift, phony sift ferns
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{bb48614}, %Tsz-Wai Rachel Lo et al., 2009 sift
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{cita24},% Ian Y-H Chen et al., 2008 slam OK
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{Bay:2008:SRF}, %Herbert Bay et al., 2007 surf
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{conf/ismar/SkrypnykL04}, %Iryna Skrypnyk et al., 2004 sift, klf
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{BouGar},% Ãscar Boullosa GarcÃ­a et al., 2011  sift surf
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+cite{5739718}.% Ahyun Lee et al., 2010  sift lkt
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\end_layout
+
+\begin_layout Section
+
+SURF: Speeded-Up Robust Feature
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+SURF es un algoritmo que sirve para la representaciÃ³n y comparaciÃ³n local de imÃ¡genes. Similarmente a SIFT 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Lowe2004"
+
+\end_inset
+
+, este mÃ©todo selecciona los puntos caracterÃ­sticos mÃ¡s destacadas de una imagen en una representaciÃ³n de espacio-escala lineal y construye caracterÃ­sticas locales basados en la distribuciÃ³n del gradiente de la imagen. Una de las principales caracterÃ­sticas de SURF sobre SIFT, radica en que calcula mÃ¡s rÃ¡pidamente los operadores diferenciales aproximados en el espacio-escala, basado en la RepresentaciÃ³n de ImÃ¡genes Integrales y en los filtros tipo caja o Box 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "conf/nips/SimardBHL98"
+
+\end_inset
+
+ lo cual permite realizar aplicaciones en tiempo real aplicadas al seguimiento y reconocimiento de objetos.
+\end_layout
+
+\begin_layout Subsection
+
+Esquema del algoritmo
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+El algoritmo SURF esta compuesto de tres pasos consecutivos: 
+\end_layout
+
+\begin_layout Enumerate
+
+\size footnotesize
+
+detecciÃ³n de puntos de interÃ©s 
+\end_layout
+
+\begin_layout Enumerate
+
+\size footnotesize
+
+descripciÃ³n de los puntos de interÃ©s 
+\end_layout
+
+\begin_layout Enumerate
+
+\size footnotesize
+
+emparejamiento o matching de las caracterÃ­sticas. 
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Los primeros dos pasos (al igual que con el mÃ©todo SIFT), recaen sobre la representaciÃ³n espacio-escala 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Lindeberg94scale-spacetheory"
+
+\end_inset
+
+ y los operadores diferenciales de primer y segundo orden. La originalidad del mÃ©todo surf, es que se ha incrementado la velocidad de cÃ¡lculo con estos operadores a travÃ©s del uso de imÃ¡genes integrales y filtros tipo caja o box filters.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+En el paso de detecciÃ³n, los mÃ¡ximos locales del operador determinante Hessiano aplicado al espacio-escala es calculado para seleccionar los puntos candidatos destacados. Estos luego son validados si la respuesta esta por encima de un valor de umbral determinado. Luego tanto la escala como la localizaciÃ³n de estos candidatos son refinados usando un procedimiento iterativo para adaptarse a una funciÃ³n cuadrÃ¡tica.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+El propÃ³sito del segundo paso es construir un descriptor que sea invariante a cambios de punto de vista sobre un vecindario local del punto de interÃ©s detectado. Recordemos que la localizaciÃ³n de este punto en el espacio-escala provee invarianza a cambios de escala y traslaciÃ³n. Para obtener invarianza a rotaciÃ³n, una orientaciÃ³n dominante es definida mediante la distribuciÃ³n de la orientaciÃ³n del gradiente local estimado mediante las wavelets Haar. Haciendo uso de la grilla de localizaciÃ³n espacial, se construye un descriptor de 64-dimensional, correspondiente al histograma local de las respuetas de las wavelets Haar.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Clasicamente, el tercer paso compara los descriptores de dos imÃ¡genes para encontrar coincidencias. La comparaciÃ³n exhaustiva es calculada mediante la distancia euclÃ­dea entre todos los potenciales pares y mediante el uso de una relaciÃ³n de distancia para reducir los falsos macheos. AdemÃ¡s esto se combina con uan tÃ©cnica basada en RANSAC para corroborar la consistencia geomÃ©trica (geometrÃ­a epipolar). Luego de que estos filtros eliminan todas las coincidencias sospechosamente falsas, uno puede estar mÃ¡s seguro que las coincidencias restantes son reales y corresponden a la misma escena vista desde diferentes putnos de vistas. 
+\size default
+
+\end_layout
+
+\begin_layout Subsection
+
+Algoritmo paso por paso
+\end_layout
+
+\begin_layout Enumerate
+
+\size footnotesize
+
+Calculo de la imagen integral de la imagen de entrada. 
+\end_layout
+
+\begin_layout Enumerate
+
+\size footnotesize
+
+DetecciÃ³n de puntos de interÃ©s: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size footnotesize
+
+CÃ¡lculo del operador Hessiano discreto a diferentes escalas usando Filtros caja. 
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+
+SelecciÃ³n de las respuestas mÃ¡ximas del determinante de la matriz hessiana en el espacio escala. 
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+
+Refinamiento de la localizaciÃ³n de los puntos de interÃ©s mediante interpolaciÃ³n cuadrÃ¡tica 
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+
+Guardado de los puntos de interÃ©s con el signo del Laplaciano. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size footnotesize
+
+ConstrucciÃ³n del descriptor local: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size footnotesize
+
+EstimaciÃ³n de la orientaciÃ³n dominante de cada punto de interÃ©s. 
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+
+CÃ¡lculo del descriptor (vector de 16x4) correspondiente a la vecindad escalada y orientada del punto de interÃ©s. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size footnotesize
+
+Correspondencia de imÃ¡genes: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size footnotesize
+
+Correspondencia de los descriptores SURF de dos imÃ¡genes mediante un criterio de bÃºsqueda del vecino mÃ¡s cercano (inspirado en el algoritmo SIFT), aumentando la velocidad debido a que el signo del laplaciano impuesto a priori debe ser coincidente para los descriptores correspondientes. 
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+
+descarte de correspondencias invalidas basado en la comprobaciÃ³n de consistencia geomÃ©trica (ORSA). 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+
+AproximaciÃ³n de espacio-escala mediante filtros caja
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Definir un mÃ©todo el cual resulte invariante a los cambios de escala es clÃ¡sicamente logrado mediante la simulaciÃ³n de varios ampliaciones (zoom-outs) de la imagen considerada. Esta representaciÃ³n espacio escala puede ser obtenidas mediante la convoluciÃ³n gaussiana de la imÃ¡gen a diferentes escalas (ver SIFT). Para acelerar el tiempo de consumo de este procedimeinto (es 
+\begin_inset Formula $\mathcal(M log(M))$
+\end_inset
+
+), donde 
+\begin_inset Formula $M$
+\end_inset
+
+ es el tamaÃ±o del kernel, SURF aproxima los kernels gaussiandos y sus derivadas espaciales mediante funciones rectangulares (referidas como cajas o box), para las cuales la complejidad de la convoluciÃ³n resulta lineal (
+\begin_inset Formula $\mathcal(WH)=\mathcal(N))$
+\end_inset
+
+) usando las imÃ¡genes integrales.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+En esta secciÃ³n, primeramente recordaremos la definiciÃ³n de imagen integral y la convoluciÃ³n con los filtros caja. Una comparaciÃ³n entre el espacio-escala lineal los filtros caja es luego brevemente descripta e ilustrada, con una discussion sobre el muestreo espacio-escala SURF. La aproximaciÃ³n de las derivadas gaussaianas mediante filtros cajas propuesta por SURF es finalmente detallada en el Ãºltimo pÃ¡rrafo. 
+\size default
+
+\end_layout
+
+\begin_layout Subsubsection
+
+Imagenes integrales y filtros caja
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Sea 
+\begin_inset Formula $u$
+\end_inset
+
+ la imagen digital definida sobre una grilla de pixeles 
+\begin_inset Formula $\Omega$
+\end_inset
+
+. A continuaciÃ³n solo se consideran valores de grises de las imÃ¡genes (valores tomados en el rango 0 a 255), que es una forma simple de ser robusto a modificaciones de color (tal como la correcciÃ³n de balance de blancos). La imagen integral de 
+\begin_inset Formula $u$
+\end_inset
+
+ viene definida como se expresa en 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:integral_image"
+
+\end_inset
+
+. 
+\begin_inset Formula \begin{equation}
+\label{eq:integral_image}
+ U(x,y)=\sum_{\substack{i\le x, j\le y}} u(i,j)
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Ahora nos ocuparemos de la convoluciÃ³n de 
+\begin_inset Formula $u$
+\end_inset
+
+ con una funciÃ³n rectangular 2-D 
+\begin_inset Formula $B_\Gamma$
+\end_inset
+
+ con el soporte rectangular 
+\begin_inset Formula $\Gamma = \left[-W,W\right] \times \left[-H,H\right]$
+\end_inset
+
+ 
+\begin_inset Formula \begin{equation*}
+B_{\Gamma}(x,y)=\begin{cases}
+1 & si\:(x,y)\in\left[-W,W\right]\times\left[-H,H\right],\\
+0 & \text{en otro caso}
+\end{cases}
+\end{equation*}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+El precalculo de las imÃ¡genes integrales 
+\begin_inset Formula $U$
+\end_inset
+
+ permite convolucionar 
+\begin_inset Formula $u$
+\end_inset
+
+ con la caja 
+\begin_inset Formula $B_\Gamma$
+\end_inset
+
+ en tres operaciones y cuatro accesos de memoria usando la formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:convolution_in_tree_operations"
+
+\end_inset
+
+. 
+\begin_inset Formula \begin{equation}
+\label{eq:convolution_in_tree_operations}
+\left(B_{\Gamma}*u\right)\left(x,y\right)=U(x-W,y-H)+U(x+W,y+H)-U(x-W,y+H)-U(x+W,y-H)
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset Float figure
+placement tbhp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figs/integral_image.eps
+	scale 40
+
+\end_inset
+
+ 
+\begin_inset Caption
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset OptArg
+status collapsed
+
+\begin_layout Standard
+
+\size footnotesize
+
+Ejemplo de Imagen integral
+\end_layout
+
+\end_inset
+
+Ejemplo de Imagen integral: RepresentaciÃ³n de la ecuaciÃ³n 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:convolution_in_tree_operations"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:integral_image"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la figura entera
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+SimetrizaciÃ³n
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+Para realizar la convoluciÃ³n a travÃ©s de los bordes de las imagenes, se debe tener un cuidado especial para que no se produzcan efectos visuales no deseados y por consiguiente la detecciÃ³n de puntos de interÃ©s invalidos. Para esto, se consideran condiciones de borde simÃ©tricas, es decir que la imagen original es extendida simÃ©tricamente hacia cada uno de sus lados utilizando el tamaÃ±o del filtro caja mÃ¡s grande antes de calcular la imagen integral como se puede apreciar en la Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:symetrized_image"
+
+\end_inset
+
+. 
+\begin_inset Float figure
+placement tbhp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----primera subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:lena"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la primera subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figs/lena.eps
+	scale 35
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+hspace{0.1
+\backslash
+linewidth}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%----segunda subfigura----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+subfloat
+\end_layout
+
+\end_inset
+
+[]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:symetrized_lena"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la segunda subfigura
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figs/symetrized_lena.eps
+	scale 35
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset OptArg
+status collapsed
+
+\begin_layout Standard
+
+\size footnotesize
+
+Condiciones de borde simÃ©tricos para la imagen
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:lena"
+
+\end_inset
+
+: Imagen de 
+\begin_inset Quotes eld
+\end_inset
+
+lena
+\begin_inset Quotes erd
+\end_inset
+
+ original. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:symetrized_lena"
+
+\end_inset
+
+:Imagen de 
+\begin_inset Quotes eld
+\end_inset
+
+lena
+\begin_inset Quotes erd
+\end_inset
+
+ extendida simÃ©tricamente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:symetrized_image"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% Etiqueta para la figura entera
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+ComparaciÃ³n con el espacio-escala Gaussiano
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+
+La representaciÃ³n espacio-escala de una imÃ¡gen 
+\begin_inset Formula $u$
+\end_inset
+
+ puede ser obtenida mediante la convoluciÃ³n con un kernel gaussiano como se aprecia en 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:convolution_scalar_space_kernel_gauss"
+
+\end_inset
+
+ 
+\begin_inset Formula \begin{equation}
+\label{eq:convolution_scalar_space_kernel_gauss}
+u_\sigma=g_\sigma * u
+\end{equation}
+\end_inset
+
+ donde 
+\begin_inset Formula $g_\sigma$
+\end_inset
+
+ es el kernel gaussiano 2-D (centrado) que viene definido por 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:kernel_gaussiano_scale_space"
+
+\end_inset
+
+ y siendo 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ el parÃ¡metro que representa la escala. 
+\begin_inset Formula \begin{equation}
+\label{eq:kernel_gaussiano_scale_space}
+g_{\sigma}(x,y)=\frac{1}{2\pi\sigma^{2}}e^{-\frac{x^{2}+y^{2}}{2\sigma^{2}}}
+\end{equation}
+\end_inset
+
+ Haciendo uso de la tÃ©cnica de filtros caja mencionados, la representaciÃ³n 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:kernel_gaussiano_scale_space"
+
+\end_inset
+
+ puede ser aproximada mediante la convoluciÃ³n discreta 
+\begin_inset Formula $\tilde{u}_{\sigma}=B_{L}*u$
+\end_inset
+
+, donde 
+\begin_inset Formula $B_L$
+\end_inset
+
+ es el filtro caja con ancho de banda 
+\begin_inset Formula $L$
+\end_inset
+
+, esto es con un soporte cuadrado 
+\begin_inset Formula $\left[-\frac{L}{2},\frac{L}{2}\right]\times\left[-\frac{L}{2},\frac{L}{2}\right]$
+\end_inset
+
+. En la configuraciÃ³n discreta, los valores tomados por 
+\begin_inset Formula $L$
+\end_inset
+
+ son enteros y pares 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "conf/scalespace/GwosdekGBW11"
+
+\end_inset
+
+. Luego, los valores correspondientes a 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, vienen dados por 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sigma_posible_values"
+
+\end_inset
+
+. 
+\begin_inset Formula \begin{equation}
+\label{eq:sigma_posible_values}
+\sigma\text{\texttwosuperior=\ensuremath{\frac{L\text{\texttwosuperior-1}}{12}}}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

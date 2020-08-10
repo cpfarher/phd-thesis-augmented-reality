@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformaci&#195;&#179;n Perspectiva</TITLE>
+<META NAME="description" CONTENT="Transformaci&#195;&#179;n Perspectiva">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node68.html">
+<LINK REL="up" HREF="node68.html">
+<LINK REL="next" HREF="node70.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1174"
+  HREF="node70.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1170"
+  HREF="node68.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1166"
+  HREF="node68.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1172"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1175"
+  HREF="node70.html">Experimentos y Resultados</A>
+<B> Subir:</B> <A NAME="tex2html1171"
+  HREF="node68.html">Realidad aumentada en el</A>
+<B> Anterior:</B> <A NAME="tex2html1167"
+  HREF="node68.html">Realidad aumentada en el</A>
+ &nbsp; <B>  <A NAME="tex2html1173"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION008101000000000000000">
+Transformaci&#195;&#179;n Perspectiva</A>
+</H2>
+La transformaci&#195;&#179;n perspectiva es un tipo de transformaci&#195;&#179;n geom&#195;&#169;trica, que nos permite realizar un dimensionamiento no uniforme y rotaci&#195;&#179;n al objeto de RA que vamos a incluir en la escena.
+
+<P>
+La transformaci&#195;&#179;n perspectiva est&#195;&#161; estrechamente relacionada con la proyecci&#195;&#179;n perspectiva. Recordemos que esta &#195;&#186;ltima, mapea puntos del sistema f&#195;&#173;sico de coordenadas tridimensionales globales en puntos del plano de la imagen en dos dimensiones, a trav&#195;&#169;s de un conjunto de l&#195;&#173;neas de proyecci&#195;&#179;n que se intersectan en un punto en com&#195;&#186;n llamado centro de proyecci&#195;&#179;n.
+La transformaci&#195;&#179;n perspectiva es un tipo espec&#195;&#173;fico de homograf&#195;&#173;a (homograf&#195;&#173;a plana), que relaciona dos im&#195;&#161;genes diferentes, las cuales son proyecciones alternativas del mismo objeto tridimensional sobre dos planos proyectivos diferentes.
+<P>
+El objetivo aqu&#195;&#173; es transformar la imagen ``objeto de realidad aumentada'' para luego sobreimprimir en la escena y lograr enriquecer la realidad. La homograf&#195;&#173;a <SPAN CLASS="MATH"><IMG
+ WIDTH="561" HEIGHT="227" ALIGN="BOTTOM" BORDER="0"
+ SRC="img324.png"
+ ALT="$ H$"></SPAN> calculada anteriormente, mapea puntos de una primer imagen a puntos en una segunda imagen. Lo que se necesita para transferir los puntos de la primer imagen a la segunda es la homograf&#195;&#173;a inversa. Sabemos que a partir de la detecci&#195;&#179;n del objeto en el flujo de video se obtiene una estimaci&#195;&#179;n de <SPAN CLASS="MATH"><IMG
+ WIDTH="561" HEIGHT="227" ALIGN="BOTTOM" BORDER="0"
+ SRC="img324.png"
+ ALT="$ H$"></SPAN>, luego para superponer la imagen virtual en la perspectiva correcta en el flujo de video  se utiliza la inversa <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img325.png"
+ ALT="$ (H^{-1})$"></SPAN>. Un esquema del proceso puede ser observado en la Fig. <A HREF="#fig:transf_pespectiva">3.9</A>. Como es necesario transformar los p&#195;&#173;xeles de una imagen en una posici&#195;&#179;n a otra, se debe tener en cuenta una interpolaci&#195;&#179;n para dibujar todos los p&#195;&#173;xeles en la nueva posici&#195;&#179;n.
+
+<DIV ALIGN="CENTER"><A NAME="fig:transf_pespectiva"></A><A NAME="2938"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Esquema de transformaci&#195;&#179;n perspectiva utilizando la homograf&#195;&#173;a <SPAN CLASS="MATH"><IMG
+ WIDTH="561" HEIGHT="227" ALIGN="BOTTOM" BORDER="0"
+ SRC="img324.png"
+ ALT="$ H$"></SPAN>.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>        <IMG
+ WIDTH="56" HEIGHT="41" ALIGN="BOTTOM" BORDER="0"
+ SRC="img326.png"
+ ALT="\includegraphics[scale=0.75]{../figs/transfperspectiva}"></TD></TR>
+</TABLE>
+</DIV>
+Para realizar la transformaci&#195;&#179;n perspectiva se utiliz&#195;&#179; <SPAN  CLASS="textit">cvWarpPerspective</SPAN> <A NAME="tex2html38"
+  HREF="footnode.html#foot2957"><SUP><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN></SUP></A> (librer&#195;&#173;a OpenCV) que permite transformar los puntos dada la matriz de homograf&#195;&#173;a, realizando la interpolaci&#195;&#179;n mencionada.
+   
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1174"
+  HREF="node70.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1170"
+  HREF="node68.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1166"
+  HREF="node68.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1172"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1175"
+  HREF="node70.html">Experimentos y Resultados</A>
+<B> Subir:</B> <A NAME="tex2html1171"
+  HREF="node68.html">Realidad aumentada en el</A>
+<B> Anterior:</B> <A NAME="tex2html1167"
+  HREF="node68.html">Realidad aumentada en el</A>
+ &nbsp; <B>  <A NAME="tex2html1173"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

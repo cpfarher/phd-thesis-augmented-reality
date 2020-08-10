@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Diferencia absoluta entre el frame actual y el frame previo</TITLE>
+<META NAME="description" CONTENT="Diferencia absoluta entre el frame actual y el frame previo">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node57.html">
+<LINK REL="previous" HREF="node55.html">
+<LINK REL="up" HREF="node55.html">
+<LINK REL="next" HREF="node57.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1025"
+  HREF="node57.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1021"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1015"
+  HREF="node55.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1023"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1026"
+  HREF="node57.html">Umbral Binario</A>
+<B> Subir:</B> <A NAME="tex2html1022"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+<B> Anterior:</B> <A NAME="tex2html1016"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html1024"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00840100000000000000">
+Diferencia absoluta entre el frame actual y el frame previo</A>
+</H3>
+La diferencia de im&#195;&#161;genes es utilizada en el estudio del movimiento para detectar el cambio producido entre im&#195;&#161;genes captadas en instantes de tiempo diferentes. Aqu&#195;&#173; se aplica con el objetivo de distinguir el cambio en la imagen cuadro a cuadro, y consiste en calcular el valor absoluto de la diferencia entre el cuadro <SPAN CLASS="MATH"><IMG
+ WIDTH="198" HEIGHT="151" ALIGN="BOTTOM" BORDER="0"
+ SRC="img285.png"
+ ALT="$ F$"></SPAN> del flujo de video capturado en el tiempo <SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.png"
+ ALT="$ t$"></SPAN> (actual) Fig. <A HREF="node55.html#fig:deteccion_movimietno-src">3.4b</A> y el capturado en <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$ t-1$"></SPAN> (anterior) Fig. <A HREF="node55.html#fig:deteccion_movimietno-srcprev">3.4a</A>:
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:diferencia_absoluta"></A><!-- MATH
+ \begin{equation}
+D(x,y)=|F_{t}(x,y)-F_{t-1}(x,y)|\;\forall\; x,y\;\in F.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.png"
+ ALT="$\displaystyle D(x,y)=\vert F_{t}(x,y)-F_{t-1}(x,y)\vert\;\forall\; x,y\;\in F.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+El resultado de la operaci&#195;&#179;n es una imagen <SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img156.png"
+ ALT="$ D$"></SPAN> (Fig. <A HREF="node55.html#fig:deteccion_movimietno-absdiff">3.4c</A>) en la que se observa la parte que ha cambiado de una imagen a otra. Cabe aclarar que se utiliza el valor absoluto de la diferencia, ya que usar la resta produce resultados fuera del rango de valores que se utilizan en las im&#195;&#161;genes. 
+<P>
+Si bien se utiliza la ecuaci&#195;&#179;n (<A HREF="#eq:diferencia_absoluta">3.2</A>) para la diferencia de im&#195;&#161;genes, el ``frame anterior'' no representa siempre el previo al actual procesado (n&#195;&#179;tese la asignaci&#195;&#179;n <!-- MATH
+ $framePrevio=frameActual$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="359" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$ framePrevio=frameActual$"></SPAN> dentro del condicional <!-- MATH
+ $area(BR)>areaUmbral$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="252" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$ area(BR)&gt;areaUmbral$"></SPAN> en la Fig. <A HREF="node52.html#fig:diagrama_metodo">3.2</A>). Es decir que la diferencia, se hace entre el fotograma actual y el &#195;&#186;ltimo en el que se detect&#195;&#179; movimiento. Esta decisi&#195;&#179;n, se ve fundamentada en el hecho que la diferencia entre frames sucesivos, donde el desplazamiento es muy peque&#195;&#177;o, genera informaci&#195;&#179;n espuria. Cabe agregar que &#195;&#169;sto tambi&#195;&#169;n beneficia al tiempo promedio de operaci&#195;&#179;n del sistema, ya que se ignora el c&#195;&#179;mputo de frames irrelevantes para la aplicaci&#195;&#179;n.
+
+<P>
+Como se puede observar en la Fig. <A HREF="node55.html#fig:deteccion_movimietno-absdiff">3.4c</A>, existe presencia de ruido y ``patrones speckle'' en partes de la imagen donde no hay movimiento. Estos efectos indeseados, se tratar&#195;&#161;n de eliminar mediante una combinaci&#195;&#179;n de t&#195;&#169;cnicas que se describen a continuaci&#195;&#179;n.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1025"
+  HREF="node57.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1021"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1015"
+  HREF="node55.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1023"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1026"
+  HREF="node57.html">Umbral Binario</A>
+<B> Subir:</B> <A NAME="tex2html1022"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+<B> Anterior:</B> <A NAME="tex2html1016"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html1024"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

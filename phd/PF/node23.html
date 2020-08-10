@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Erosi&#195;&#179;n</TITLE>
+<META NAME="description" CONTENT="Erosi&#195;&#179;n">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node22.html">
+<LINK REL="up" HREF="node21.html">
+<LINK REL="next" HREF="node24.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html580"
+  HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html576"
+  HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html572"
+  HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html578"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html581"
+  HREF="node24.html">Realce de im&#195;&#161;genes en</A>
+<B> Subir:</B> <A NAME="tex2html577"
+  HREF="node21.html">Operaciones morfol&#195;&#179;gicas en im&#195;&#161;genes</A>
+<B> Anterior:</B> <A NAME="tex2html573"
+  HREF="node22.html">Dilataci&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html579"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00712000000000000000">
+Erosi&#195;&#179;n</A>
+</H2>
+Sea un conjunto <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN> de <SPAN CLASS="MATH"></SPAN>, la erosi&#195;&#179;n de <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> por <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN>, denotada como <!-- MATH
+ $A \ominus B$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="239" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$ A \ominus B$"></SPAN> queda definida como
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:eq_erosion"></A><!-- MATH
+ \begin{equation}
+A \ominus B=\{z|(B)_{z} \subseteq A\}.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$\displaystyle A \ominus B=\{z\vert(B)_{z} \subseteq A\}.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+De la ecuaci&#195;&#179;n (<A HREF="#eq:eq_erosion">2.2</A>) se puede interpretar que la erosi&#195;&#179;n de <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> por <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN> es el conjunto de todos los puntos <SPAN CLASS="MATH"><IMG
+ WIDTH="198" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="$ z$"></SPAN> tales que <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN>, trasladados por <SPAN CLASS="MATH"><IMG
+ WIDTH="198" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="$ z$"></SPAN>, est&#195;&#161;n contenidos en <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN>.
+
+<P>
+Uno de los usos m&#195;&#161;s simples de la erosi&#195;&#179;n es la eliminaci&#195;&#179;n de detalles irrelevantes (en t&#195;&#169;rminos de tama&#195;&#177;o) de una imagen binaria. En una imagen erosionada, el tama&#195;&#177;o de los objetos se ve reducido y el ruido o detalles irrelevantes (aislados) es eliminado. Un ejemplo de erosi&#195;&#179;n sobre la imagen de la Fig. <A HREF="#fig:original_erode_dilate">2.1a</A> utilizando el kernel de la Fig. <A HREF="#fig:mascara">2.1b</A>, se puede observar en la Fig. <A HREF="#fig:erosion_example">2.1d</A> (se realizaron 2 erosiones para resaltar el efecto de la operaci&#195;&#179;n).
+
+<DIV ALIGN="CENTER"><A NAME="fig:original_erode_dilate"></A><A NAME="fig:mascara"></A><A NAME="fig:dilatacion_example"></A><A NAME="fig:erosion_example"></A><A NAME="1540"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Efecto de la operaci&#195;&#179;n de erosi&#195;&#179;n y dilataci&#195;&#179;n sobre la imagen fig:original_erode_dilate. fig:mascara M&#195;&#161;scara o kernel utilizado para cada una de las operaciones. fig:dilatacion_example Resultado de aplicar la dilataci&#195;&#179;n (<SPAN CLASS="MATH"><IMG
+ WIDTH="249" HEIGHT="257" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ \times2$"></SPAN>). fig:erosion_example Resultado de aplicar la erosi&#195;&#179;n (<SPAN CLASS="MATH"><IMG
+ WIDTH="249" HEIGHT="257" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ \times2$"></SPAN>).
+</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>[][Imagen sobre la que se realizan las operaciones (Figura tomada de ()).]<IMG
+ WIDTH="16" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="\includegraphics[width=2.3in]{../figs/erode_dilate/orig}">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[][Kernel o m&#195;&#161;scara de <SPAN CLASS="MATH"><IMG
+ WIDTH="262" HEIGHT="262" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ 3\times3$"></SPAN>.]<IMG
+ WIDTH="48" HEIGHT="36" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.png"
+ ALT="\includegraphics[width=1.0in]{../figs/mascara}">
+<BR>[][Dilataci&#195;&#179;n (<SPAN CLASS="MATH"><IMG
+ WIDTH="115" HEIGHT="135" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \times$"></SPAN>2).]<IMG
+ WIDTH="21" HEIGHT="36" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.png"
+ ALT="\includegraphics[width=2.3in]{../figs/erode_dilate/2dilate}">
+[][Erosi&#195;&#179;n (<SPAN CLASS="MATH"><IMG
+ WIDTH="115" HEIGHT="135" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \times$"></SPAN>2).]<IMG
+ WIDTH="265" HEIGHT="265" ALIGN="BOTTOM" BORDER="0"
+ SRC="img28.png"
+ ALT="\includegraphics[width=2.3in]{../figs/erode_dilate/2erode}"></TD></TR>
+</TABLE>
+</DIV>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html580"
+  HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html576"
+  HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html572"
+  HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html578"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html581"
+  HREF="node24.html">Realce de im&#195;&#161;genes en</A>
+<B> Subir:</B> <A NAME="tex2html577"
+  HREF="node21.html">Operaciones morfol&#195;&#179;gicas en im&#195;&#161;genes</A>
+<B> Anterior:</B> <A NAME="tex2html573"
+  HREF="node22.html">Dilataci&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html579"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

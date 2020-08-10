@@ -1,0 +1,7 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}M\IeC {\'e}todos de extracci\IeC {\'o}n de caracter\IeC {\'\i }sticas en im\IeC {\'a}genes parte 2}{3}
+\contentsline {section}{\numberline {2}Correspondencia de caracter\IeC {\'\i }sticas entre im\IeC {\'a}genes}{5}
+\contentsline {subsection}{\numberline {2.1}B\IeC {\'u}squeda del vecino m\IeC {\'a}s cercano}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}K-vecinos m\IeC {\'a}s cercanos}{6}
+\contentsline {subsection}{\numberline {2.2}El algoritmo de \IeC {\'a}rboles KD aleatorio}{6}
+\contentsline {subsection}{\numberline {2.3}B\IeC {\'u}squeda de correspondencia - Implementaci\IeC {\'o}n}{7}

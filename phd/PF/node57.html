@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Umbral Binario</TITLE>
+<META NAME="description" CONTENT="Umbral Binario">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node58.html">
+<LINK REL="previous" HREF="node56.html">
+<LINK REL="up" HREF="node55.html">
+<LINK REL="next" HREF="node58.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1037"
+  HREF="node58.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1033"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1027"
+  HREF="node56.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1035"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1038"
+  HREF="node58.html">Erosi&#195;&#179;n y dilataci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html1034"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+<B> Anterior:</B> <A NAME="tex2html1028"
+  HREF="node56.html">Diferencia absoluta entre el</A>
+ &nbsp; <B>  <A NAME="tex2html1036"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00840200000000000000"></A>
+<A NAME="subsub_ymbral"></A>
+<BR>
+Umbral Binario
+</H3>
+A partir de la imagen diferencia <SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img156.png"
+ ALT="$ D$"></SPAN> obtenida anteriormente, se procede con la aplicaci&#195;&#179;n de un umbral binario de la forma que se expres&#195;&#179; en la ecuaci&#195;&#179;n (<A HREF="node25.html#eq:equation_umbral_binario">2.3</A>) para remover valores de intensidad bajos (ruido y ``patrones speckle'' pueden ser observados debajo de la esquina inferior izquierda de la revista en la Fig. <A HREF="node55.html#fig:deteccion_movimietno-absdiff">3.4c</A>). Se asigna el valor <!-- MATH
+ $s_{max}=255$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="212" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ s_{max}=255$"></SPAN> a los p&#195;&#173;xeles que superen el umbral con un valor definido emp&#195;&#173;ricamente (<SPAN CLASS="MATH"><IMG
+ WIDTH="94" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img291.png"
+ ALT="$ u=50$"></SPAN>) y <SPAN CLASS="MATH">0</SPAN> a los dem&#195;&#161;s p&#195;&#173;xeles, obteni&#195;&#169;ndose como resultado una nueva imagen <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN>, ver Fig. <A HREF="node55.html#fig:deteccion_movimietno-umbral">3.4d</A>.
+
+<P>
+A pesar de haber eliminado gran parte del ruido en la imagen, en la pr&#195;&#161;ctica se dan casos en los que puntos aislados contin&#195;&#186;an apareciendo en la imagen. Variar el l&#195;&#173;mite (<SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img42.png"
+ ALT="$ u$"></SPAN>) establecido para la umbralizaci&#195;&#179;n no brinda una soluci&#195;&#179;n a este problema, ya que al aumentar <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img42.png"
+ ALT="$ u$"></SPAN> se elimina informaci&#195;&#179;n importante y al disminuirlo, aumenta la informaci&#195;&#179;n espuria. Es por esto que fue necesario proponer dos procesos que se mencionan a continuaci&#195;&#179;n.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1037"
+  HREF="node58.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1033"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1027"
+  HREF="node56.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1035"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1038"
+  HREF="node58.html">Erosi&#195;&#179;n y dilataci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html1034"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+<B> Anterior:</B> <A NAME="tex2html1028"
+  HREF="node56.html">Diferencia absoluta entre el</A>
+ &nbsp; <B>  <A NAME="tex2html1036"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

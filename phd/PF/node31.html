@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Im&#195;&#161;genes integrales</TITLE>
+<META NAME="description" CONTENT="Im&#195;&#161;genes integrales">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node30.html">
+<LINK REL="up" HREF="node30.html">
+<LINK REL="next" HREF="node32.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html682"
+  HREF="node32.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html678"
+  HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html674"
+  HREF="node30.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html680"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html683"
+  HREF="node32.html">El problema de cambio</A>
+<B> Subir:</B> <A NAME="tex2html679"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html675"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+ &nbsp; <B>  <A NAME="tex2html681"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00730100000000000000"></A>
+      <A NAME="sec:imagenes_integrales"></A>
+<BR>
+Im&#195;&#161;genes integrales
+</H3>
+      Las im&#195;&#161;genes integrales () permiten calcular m&#195;&#161;s r&#195;&#161;pidamente la convoluci&#195;&#179;n con filtros tipo caja. La imagen de entrada <!-- MATH
+ $\mathit{I_{\sum}(\mathbf{x})}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="440" HEIGHT="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$ \mathit{I_{\sum}(\mathbf{x})}$"></SPAN> en la posici&#195;&#179;n <!-- MATH
+ $\mathbf{x}=(x,y)^{T}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.png"
+ ALT="$ \mathbf{x}=(x,y)^{T}$"></SPAN> representa la suma de todos los p&#195;&#173;xeles de la imagen de entrada <!-- MATH
+ $\mathit{I}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img68.png"
+ ALT="$ \mathit{I}$"></SPAN> dentro de una regi&#195;&#179;n rectangular formada por el origen y <!-- MATH
+ $\mathbf{x}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img69.png"
+ ALT="$ \mathbf{x}$"></SPAN>.
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:integral_image_1"></A><!-- MATH
+ \begin{equation}
+\mathit{I}_{\sum}(\mathbf{x})=\sum_{i=0}^{i\leq x}\quad\sum_{j=0}^{j\leq y}I(i,j).
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.png"
+ ALT="$\displaystyle \mathit{I}_{\sum}(\mathbf{x})=\sum_{i=0}^{i\leq x}\quad\sum_{j=0}^{j\leq y}I(i,j).$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Una vez que la imagen integral se ha calculado, son necesarias tres sumas y cuatro operaciones de acceso a memoria para calcular la suma de las intensidades sobre cualquier &#195;&#161;rea rectangular vertical independientemente de su tama&#195;&#177;o (ve&#195;&#161;se la Fig. <A HREF="#fig:integral_image_sum">2.4</A>). El tiempo de c&#195;&#161;lculo resulta independiente del tama&#195;&#177;o del filtro, lo cual es favorable en la aproximaci&#195;&#179;n de SURF en la que se utilizan filtros de grandes tama&#195;&#177;os.
+      
+<DIV ALIGN="CENTER"><A NAME="fig:integral_image_sum"></A><A NAME="793"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Suma de intensidades en un rect&#195;&#161;ngulo usando im&#195;&#161;genes integrales.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	      <IMG
+ WIDTH="207" HEIGHT="75" ALIGN="BOTTOM" BORDER="0"
+ SRC="img71.png"
+ ALT="\includegraphics[scale=0.6]{./figs/sumintegralimages2}">
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+En las secciones siguientes, se presenta en detalle los pasos mediante los que se lleva a cabo la detecci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas mediante SURF, introduciendo brevemente el concepto de invarianza a escala.
+  
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html682"
+  HREF="node32.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html678"
+  HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html674"
+  HREF="node30.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html680"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html683"
+  HREF="node32.html">El problema de cambio</A>
+<B> Subir:</B> <A NAME="tex2html679"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html675"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+ &nbsp; <B>  <A NAME="tex2html681"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

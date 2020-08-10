@@ -1,0 +1,78 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Parte 4}{44}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{c:parte4}{{4}{44}{Parte 4\relax }{chapter.4}{}}
+\citation{Bay:2008:SRF}
+\citation{AryaEtAl98}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}mejoras de iluminaci\IeC {\'o}n discusion}{45}{section.4.1}}
+\newlabel{subsec:discucion_mejoras_iluminacion}{{4.1}{45}{mejoras de iluminación discusion\relax }{section.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Correspondencia de caracter\IeC {\'\i }sticas entre im\IeC {\'a}genes}{45}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}B\IeC {\'u}squeda del vecino m\IeC {\'a}s cercano}{45}{subsection.4.2.1}}
+\citation{Beis:1997:SIU:794189.794431}
+\citation{Muja09fastapproximate}
+\citation{AryaEtAl98}
+\citation{Beis:1997:SIU:794189.794431}
+\citation{conf/nips/LiuMGY04}
+\citation{Beis:1997:SIU:794189.794431}
+\citation{friedman-an-algorithm-toms-77}
+\citation{bb23918}
+\citation{AryaEtAl98}
+\citation{Beis:1997:SIU:794189.794431}
+\citation{VLDB95574}
+\citation{Fukunaga75}
+\citation{bb78856}
+\citation{bb79759}
+\citation{conf/nips/LiuMGY04}
+\citation{bb77826}
+\citation{Silpa_KDTree}
+\citation{bb77826}
+\citation{Muja09fastapproximate}
+\citation{friedman-an-algorithm-toms-77}
+\@writefile{toc}{\contentsline {subsubsection}{K-vecinos m\IeC {\'a}s cercanos}{46}{subsubsection*.29}}
+\citation{Muja09fastapproximate}
+\citation{Silpa_KDTree}
+\citation{bb77826}
+\citation{Muja09fastapproximate}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}El algoritmo de \IeC {\'a}rboles KD aleatorio}{47}{subsection.4.2.2}}
+\@setckpt{parte4}{
+\setcounter{page}{49}
+\setcounter{equation}{0}
+\setcounter{enumi}{3}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{1}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{2}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{parentequation}{0}
+\setcounter{Item}{3}
+\setcounter{Hfootnote}{4}
+\setcounter{ContinuedFloat}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{7}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{0}
+\setcounter{lotdepth}{1}
+\setcounter{float@type}{8}
+\setcounter{FBl@b}{0}
+\setcounter{FRobj}{-15}
+\setcounter{FRsobj}{0}
+\setcounter{FBcnt}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{lstnumber}{1}
+\setcounter{section@level}{0}
+\setcounter{FBLTpage}{0}
+\setcounter{lstlisting}{0}
+}

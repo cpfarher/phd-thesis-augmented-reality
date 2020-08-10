@@ -1,0 +1,82 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{AMN{\etalchar{+}}98}
+
+\bibitem[AH08]{bb77826}
+C.~Silpa Anan and R.~I. Hartley.
+\newblock Optimised {KD}-trees for fast image descriptor matching.
+\newblock In {\em CVPR}, pages 1--8, 2008.
+
+\bibitem[AMN{\etalchar{+}}98]{AryaEtAl98}
+Arya, Mount, Netanyahu, Silverman, and Wu.
+\newblock An optimal algorithm for approximate nearest neighbor searching fixed
+  dimensions.
+\newblock {\em JACM: Journal of the ACM}, 45, 1998.
+
+\bibitem[BETV08]{Bay:2008:SRF}
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, and Luc {Van Gool}.
+\newblock Speeded-up {Robust} {Features} {(SURF)}.
+\newblock {\em Computer Vision and Image Understanding: CVIU}, 110(3):346--359,
+  June 2008.
+
+\bibitem[BL97]{Beis:1997:SIU:794189.794431}
+Jeffrey~S. Beis and David~G. Lowe.
+\newblock Shape indexing using approximate nearest-neighbour search in
+  high-dimensional spaces.
+\newblock In {\em Proceedings of the 1997 Conference on Computer Vision and
+  Pattern Recognition (CVPR '97)}, CVPR '97, pages 1000--, Washington, DC, USA,
+  1997. IEEE Computer Society.
+
+\bibitem[Bri95]{VLDB95574}
+S.~Brin.
+\newblock Near neighbor search in large metric spaces.
+\newblock In {\em Proceedings of the 21st International Conference on Very
+  Large Data Bases ({VLDB} '95)}, pages 574--584, San Francisco, Ca., USA,
+  September 1995. Morgan Kaufmann Publishers, Inc.
+
+\bibitem[FBF77]{friedman-an-algorithm-toms-77}
+Jerome~H. Friedman, Jon~Louis Bentley, and Raphael~Ari Finkel.
+\newblock An algorithm for finding best matches in logarithmic expected time.
+\newblock {\em ACM Transactions on Mathematical Software}, 3(3):209--226,
+  September 1977.
+
+\bibitem[FN75]{Fukunaga75}
+Keinosuke Fukunaga and Patrenahalli~M. Narendra.
+\newblock A branch and bound algorithm for computing k-nearest neighbors.
+\newblock {\em IEEE Transactions on Computers (TOC)}, C-24(7):750--753, July
+  1975.
+
+\bibitem[LMGY04]{conf/nips/LiuMGY04}
+Ting Liu, Andrew~W. Moore, Alexander~G. Gray, and Ke~Yang.
+\newblock An investigation of practical approximate nearest neighbor
+  algorithms.
+\newblock In {\em NIPS}, 2004.
+
+\bibitem[LMS06]{bb79759}
+B.~Leibe, K.~Mikolajczyk, and B.~Schiele.
+\newblock Efficient clustering and matching for object class recognition.
+\newblock In {\em BMVC}, page II:789, 2006.
+
+\bibitem[ML09]{Muja09fastapproximate}
+Marius Muja and David~G. Lowe.
+\newblock Fast approximate nearest neighbors with automatic algorithm
+  configuration.
+\newblock In {\em In VISAPP International Conference on Computer Vision Theory
+  and Applications}, pages 331--340, 2009.
+
+\bibitem[MM07]{bb23918}
+K.~Mikolajczyk and J.~G. Matas.
+\newblock Improving descriptors for fast tree matching by optimal linear
+  projection.
+\newblock In {\em ICCV}, pages 1--8, 2007.
+
+\bibitem[NS06]{bb78856}
+D.~Nister and H.~Stewenius.
+\newblock Scalable recognition with a vocabulary tree.
+\newblock In {\em CVPR}, pages II: 2161--2168, 2006.
+
+\bibitem[Ric04]{Silpa_KDTree}
+Richard.
+\newblock {Localisation using an image-map}.
+\newblock 2004.
+
+\end{thebibliography}

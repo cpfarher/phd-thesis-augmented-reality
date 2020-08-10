@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Operaciones morfol&#195;&#179;gicas en im&#195;&#161;genes</TITLE>
+<META NAME="description" CONTENT="Operaciones morfol&#195;&#179;gicas en im&#195;&#161;genes">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node24.html">
+<LINK REL="previous" HREF="node20.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node22.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html556"
+  HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html552"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html546"
+  HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html554"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html557"
+  HREF="node22.html">Dilataci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html553"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html547"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+ &nbsp; <B>  <A NAME="tex2html555"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00710000000000000000">
+Operaciones morfol&#195;&#179;gicas en im&#195;&#161;genes</A>
+</H1>
+El procesamiento morfol&#195;&#179;gico en im&#195;&#161;genes es un tipo de procesamiento en el cual la forma espacial o estructura de los objetos en la imagen es modificada. La erosi&#195;&#179;n y dilataci&#195;&#179;n son dos operaciones morfol&#195;&#179;gicas fundamentales que pueden ser aplicadas a im&#195;&#161;genes en escala de grises o im&#195;&#161;genes binarias. En esta secci&#195;&#179;n se describen tanto la erosi&#195;&#179;n como la dilataci&#195;&#179;n enfoc&#195;&#161;ndose en im&#195;&#161;genes binarias que son las utilizadas en este trabajo.
+
+<P>
+El lenguaje de la morfolog&#195;&#173;a matem&#195;&#161;tica es el de la teor&#195;&#173;a de conjuntos y la misma representa objetos en las im&#195;&#161;genes. Por ejemplo, el conjunto de todos los p&#195;&#173;xeles negros en una imagen binaria es una descripci&#195;&#179;n morfol&#195;&#179;gica completa de la imagen. En im&#195;&#161;genes binarias, el conjunto en cuesti&#195;&#179;n es miembro de un espacio entero 2-D <SPAN CLASS="MATH"></SPAN>, donde cada elemento del conjunto es una tupla (vector 2-D) cuyas coordenadas son las coordenadas <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="22" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ (x,y)$"></SPAN> de un p&#195;&#173;xel negro (o blanco, dependiendo de la convenci&#195;&#179;n) de la imagen.
+
+<P>
+A continuaci&#195;&#179;n, definiremos algunas notaciones que ser&#195;&#161;n utilizadas para definir posteriormente la erosi&#195;&#179;n y la dilataci&#195;&#179;n: nos referiremos con <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> a un conjunto en <SPAN CLASS="MATH"></SPAN>, <!-- MATH
+ $a=(a_1,a_2)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ a=(a_1,a_2)$"></SPAN> un elemento de <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN>, <!-- MATH
+ $\varnothing$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="97" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \varnothing$"></SPAN> un conjunto vac&#195;&#173;o, <!-- MATH
+ $A \subseteq B$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ A \subseteq B$"></SPAN> para denotar que <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> es un subconjunto de <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN>,  <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ A \cap B$"></SPAN> para indicar la intersecci&#195;&#179;n entre <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN> (el conjunto de elementos que corresponde tanto a <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> como a <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN>), <!-- MATH
+ $\hat{B}=\{w|w=-b, \; \textrm{para} \; b \in B\}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \hat{B}=\{w\vert w=-b, \; \textrm{para} \; b \in B\}$"></SPAN> para indicar la reflexi&#195;&#179;n del conjunto <SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ B$"></SPAN>,  <!-- MATH
+ $(A)_{z}=\{c|c=a+z,\; \textrm{para}\; a \in A\}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="247" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ (A)_{z}=\{c\vert c=a+z,\; \textrm{para}\; a \in A\}$"></SPAN> para indicar la traslaci&#195;&#179;n del conjunto <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ A$"></SPAN> por <!-- MATH
+ $z=(z_1, z_2)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="276" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$ z=(z_1, z_2)$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="94" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \{\cdot\}$"></SPAN> la notaci&#195;&#179;n de un conjunto.
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html558"
+  HREF="node22.html">Dilataci&#195;&#179;n</A>
+<LI><A NAME="tex2html559"
+  HREF="node23.html">Erosi&#195;&#179;n</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html556"
+  HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html552"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html546"
+  HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html554"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html557"
+  HREF="node22.html">Dilataci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html553"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html547"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+ &nbsp; <B>  <A NAME="tex2html555"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

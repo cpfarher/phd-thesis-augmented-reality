@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ecualizaci&#195;&#179;n de histograma</TITLE>
+<META NAME="description" CONTENT="Ecualizaci&#195;&#179;n de histograma">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node26.html">
+<LINK REL="up" HREF="node24.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html633"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html629"
+  HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html623"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html631"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html634"
+  HREF="node28.html">Filtrado pasa altos</A>
+<B> Subir:</B> <A NAME="tex2html630"
+  HREF="node24.html">Realce de im&#195;&#161;genes en</A>
+<B> Anterior:</B> <A NAME="tex2html624"
+  HREF="node26.html">Transformaci&#195;&#179;n logar&#195;&#173;tmica</A>
+ &nbsp; <B>  <A NAME="tex2html632"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00723000000000000000"></A>
+<A NAME="subsec:iluminacion_ecualizacion"></A>
+<BR>
+Ecualizaci&#195;&#179;n de histograma
+</H2>
+El histograma es una funci&#195;&#179;n discreta que describe de manera global la apariencia de una imagen y puede ser interpretada como el n&#195;&#186;mero de p&#195;&#173;xeles en funci&#195;&#179;n de las intensidades de grises.
+
+<P>
+La ecualizaci&#195;&#179;n del histograma de una imagen de grises es una transformaci&#195;&#179;n que pretende obtener el mismo n&#195;&#186;mero de p&#195;&#173;xeles para cada nivel de gris de la imagen, logrando obtener as&#195;&#173; un histograma con una distribuci&#195;&#179;n que se aproxima a la uniforme. Como resultado de esta transformaci&#195;&#179;n global que redistribuye los grises de la imagen original para que abarque una gama m&#195;&#161;s completa de los grises disponibles, se obtiene una expansi&#195;&#179;n en el rango din&#195;&#161;mico de la imagen.
+
+<P>
+Si se tienen im&#195;&#161;genes digitales (valores discretos) con intensidades entre 0 y 1, y sea:
+
+<UL>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="218" HEIGHT="194" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$ n$"></SPAN> la cantidad de p&#195;&#173;xeles de la imagen,
+</LI>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$ p$"></SPAN> el n&#195;&#186;mero de bits de resoluci&#195;&#179;n de la imagen,
+</LI>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img52.png"
+ ALT="$ L$"></SPAN> el m&#195;&#161;ximo nivel de gris, dado por el valor de <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$ p$"></SPAN>,
+</LI>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$ k$"></SPAN> el nivel de gris,
+</LI>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$ r_k$"></SPAN> el nivel de gris normalizado a 1, con valores <!-- MATH
+ $r_{k}=0,\frac{1}{2^{p}-1},\frac{2}{2^{p}-1},\ldots,1.$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ r_{k}=0,\frac{1}{2^{p}-1},\frac{2}{2^{p}-1},\ldots,1.$"></SPAN>
+</LI>
+<LI><!-- MATH
+ $p_{r}(r_{k})$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="198" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$ p_{r}(r_{k})$"></SPAN> la probabilidad de un nivel de gris en la imagen calculado como:
+</LI>
+</UL>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:relacion_probabilidades"></A><!-- MATH
+ \begin{equation}
+p_{r}(r_{k})=\frac{n_{k}}{n},\; \textrm{con}\begin{cases}
+\begin{array}{c}
+0\leq r_{k}\leq1\\
+k=0,1,\ldots,L-1
+\end{array},\end{cases}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="52" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$\displaystyle p_{r}(r_{k})=\frac{n_{k}}{n},\; \textrm{con}\begin{cases}\begin{array}{c} 0\leq r_{k}\leq1\\ k=0,1,\ldots,L-1 \end{array},\end{cases}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+la funci&#195;&#179;n de transformaci&#195;&#179;n utilizada es la Funci&#195;&#179;n de Distribuci&#195;&#179;n Acumulada:<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:cdf_acumulada"></A><!-- MATH
+ \begin{equation}
+s_{k}(r_{k})=T(r_{k})=\sum_{j=0}^{k}\frac{n_{j}}{n}=\sum_{j=0}^{k}p_{r}(r_{j}),\; \textrm{con}\begin{cases}
+\begin{array}{c}
+0\leq r_{k}\leq1\\
+k=0,1,\ldots,L-1
+\end{array}.\end{cases}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="351" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.png"
+ ALT="$\displaystyle s_{k}(r_{k})=T(r_{k})=\sum_{j=0}^{k}\frac{n_{j}}{n}=\sum_{j=0}^{k...
+...es}\begin{array}{c} 0\leq r_{k}\leq1\\ k=0,1,\ldots,L-1 \end{array}.\end{cases}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html633"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html629"
+  HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html623"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html631"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html634"
+  HREF="node28.html">Filtrado pasa altos</A>
+<B> Subir:</B> <A NAME="tex2html630"
+  HREF="node24.html">Realce de im&#195;&#161;genes en</A>
+<B> Anterior:</B> <A NAME="tex2html624"
+  HREF="node26.html">Transformaci&#195;&#179;n logar&#195;&#173;tmica</A>
+ &nbsp; <B>  <A NAME="tex2html632"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

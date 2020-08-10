@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Detecci&#195;&#179;n de la regi&#195;&#179;n de inter&#195;&#169;s</TITLE>
+<META NAME="description" CONTENT="Detecci&#195;&#179;n de la regi&#195;&#179;n de inter&#195;&#169;s">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node61.html">
+<LINK REL="previous" HREF="node54.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node56.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1004"
+  HREF="node56.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1000"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html994"
+  HREF="node54.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1002"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1005"
+  HREF="node56.html">Diferencia absoluta entre el</A>
+<B> Subir:</B> <A NAME="tex2html1001"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html995"
+  HREF="node54.html">Mejoras en la iluminaci&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html1003"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00840000000000000000"></A>
+<A NAME="sec:deteccion_cambiante_imagen"></A>
+<BR>
+Detecci&#195;&#179;n de la regi&#195;&#179;n de inter&#195;&#169;s
+</H1>
+En esta secci&#195;&#179;n, se proponen algunos procesos orientados a obtener un menor tiempo de procesamiento y consecuentemente un menor tiempo de ejecuci&#195;&#179;n.
+
+<P>
+Como es sabido, tanto el uso del m&#195;&#169;todo SURF para la extracci&#195;&#179;n de ca-racter&#195;&#173;sticas como la b&#195;&#186;squeda de coincidencias entre im&#195;&#161;genes, conllevan un gran tiempo de procesamiento, el cual se convierte en un factor clave a la hora de lograr fluidez en la reproducci&#195;&#179;n del flujo de video (<A NAME="tex2html1011" target="contents"
+  HREF="node79.html#Liu04aninvestigation">37</A>,<A NAME="tex2html1012" target="contents"
+  HREF="node79.html#Beis:1997:SIU:794189.794431">6</A>,<A NAME="tex2html1013" target="contents"
+  HREF="node79.html#Friedman:1977:AFB:355744.355745">15</A>,<A NAME="tex2html1014" target="contents"
+  HREF="node79.html#citeulike:9456628">28</A>). Para ata-car este problema, se propone detectar la regi&#195;&#179;n de inter&#195;&#169;s (parte cambiante del flujo de video) y as&#195;&#173; aplicar el procesamiento s&#195;&#179;lo a una regi&#195;&#179;n de la imagen capturada. Para ello, se utilizan diferentes t&#195;&#169;cnicas de procesamiento de im&#195;&#161;genes en el siguiente orden: diferencia de im&#195;&#161;genes, umbral, erosi&#195;&#179;n, dilataci&#195;&#179;n y detecci&#195;&#179;n del rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo. Estas herramientas, fueron elegidas debido a su simplicidad y al bajo tiempo de procesamiento que requieren, para no incrementar significativamente el tiempo de proceso total del algoritmo.
+
+<P>
+El objetivo es entonces, detectar la parte cambiante de la imagen entre un ciclo y el siguiente para realizar la extracci&#195;&#179;n de caracter&#195;&#173;sticas en la zona de la escena que ha cambiado, asumi&#195;&#169;ndose un sistema en el que la c&#195;&#161;mara web se encuentra fija y lo que se mueve es el objeto en la escena. Para esto, se llevan a cabo una serie de pasos que se observan en la Fig. <A HREF="#fig:diagrama_procesomovimiento">3.3</A>, a fin de determinar un &#195;&#161;rea que contenga el cambio de la imagen. A continuaci&#195;&#179;n, se describen cada una de las operaciones realizadas, cuyos resultados parciales pueden verse en la Fig. <A HREF="#fig:deteccion_movimiento">3.4</A>.
+
+<DIV ALIGN="CENTER"><A NAME="fig:diagrama_procesomovimiento"></A><A NAME="2943"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Detalle del proceso de detecci&#195;&#179;n de movimiento introducido en el diagrama <A HREF="node52.html#fig:diagrama_metodo">3.2</A>.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>        <IMG
+ WIDTH="265" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img277.png"
+ ALT="\includegraphics[scale=0.65]{../figs/procesomovimiento}">
+    
+</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV ALIGN="CENTER"><A NAME="fig:deteccion_movimietno-srcprev"></A><A NAME="fig:deteccion_movimietno-src"></A><A NAME="fig:deteccion_movimietno-absdiff"></A><A NAME="fig:deteccion_movimietno-umbral"></A><A NAME="fig:deteccion_movimietno-erode"></A><A NAME="fig:deteccion_movimietno-dilate"></A><A NAME="fig:deteccion_movimietno-boundingrect"></A><A NAME="fig:deteccion_movimiento"></A><A NAME="2806"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Resultado de los procesos aplicados para la detecci&#195;&#179;n de movimiento.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>[][Frame Previo]<IMG
+ WIDTH="369" HEIGHT="341" ALIGN="BOTTOM" BORDER="0"
+ SRC="img278.png"
+ ALT="\includegraphics[width=2.3in]{../figs/preprocess/srcPrev}">
+[][Frame Actual]<IMG
+ WIDTH="264" HEIGHT="199" ALIGN="BOTTOM" BORDER="0"
+ SRC="img279.png"
+ ALT="\includegraphics[width=2.3in]{../figs/preprocess/src}">
+<BR>[][Diferencia absoluta]<IMG
+ WIDTH="264" HEIGHT="199" ALIGN="BOTTOM" BORDER="0"
+ SRC="img280.png"
+ ALT="\includegraphics[width=2.3in]{../figs/preprocess/absDiff}">
+[][Umbral binario]<IMG
+ WIDTH="264" HEIGHT="199" ALIGN="BOTTOM" BORDER="0"
+ SRC="img281.png"
+ ALT="\includegraphics[width=2.3in]{../figs/preprocess/threshold}">
+<BR>[][Erosi&#195;&#179;n <SPAN CLASS="MATH"><IMG
+ WIDTH="249" HEIGHT="257" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ \times2$"></SPAN>]<IMG
+ WIDTH="264" HEIGHT="199" ALIGN="BOTTOM" BORDER="0"
+ SRC="img282.png"
+ ALT="\includegraphics[width=2.3in]{../figs/preprocess/erode}">
+[][Dilataci&#195;&#179;n <SPAN CLASS="MATH"><IMG
+ WIDTH="249" HEIGHT="257" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ \times2$"></SPAN>]<IMG
+ WIDTH="264" HEIGHT="199" ALIGN="BOTTOM" BORDER="0"
+ SRC="img283.png"
+ ALT="\includegraphics[width=2.3in]{../figs/preprocess/dilate}">
+<BR>[][Rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo]<IMG
+ WIDTH="264" HEIGHT="199" ALIGN="BOTTOM" BORDER="0"
+ SRC="img284.png"
+ ALT="\includegraphics[width=2.3in]{../figs/preprocess/boundingrect}">
+
+</TD></TR>
+</TABLE>
+</DIV>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><A NAME="tex2html1006"
+  HREF="node56.html">Diferencia absoluta entre el frame actual y el frame previo</A>
+<LI><A NAME="tex2html1007"
+  HREF="node57.html">Umbral Binario</A>
+<LI><A NAME="tex2html1008"
+  HREF="node58.html">Erosi&#195;&#179;n y dilataci&#195;&#179;n</A>
+<LI><A NAME="tex2html1009"
+  HREF="node59.html">Rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html1010"
+  HREF="node60.html">&#195;&#129;rea del rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1004"
+  HREF="node56.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1000"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html994"
+  HREF="node54.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1002"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1005"
+  HREF="node56.html">Diferencia absoluta entre el</A>
+<B> Subir:</B> <A NAME="tex2html1001"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html995"
+  HREF="node54.html">Mejoras en la iluminaci&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html1003"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

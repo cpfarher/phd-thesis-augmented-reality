@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: entregable01.aux
+The style file: alpha.bst
+Database file #1: bib1.bib
+Database file #2: bib4.bib
+Repeated entry---line 199 of file bib4.bib
+ : @book{citeulike:3484001
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 255 of file bib4.bib
+ : @book{citeulike:9456628
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--you've nested cross references--entry "conf/iswc/2007"
+refers to entry "conf/iswc/2007", which also refers to something
+Warning--you've nested cross references--entry "conf/ismar/2004"
+refers to entry "conf/ismar/2004", which also refers to something
+Warning--you've nested cross references--entry "conf/icra/2010"
+refers to entry "conf/icra/2010", which also refers to something
+Warning--empty booktitle in Milgram94augmentedreality
+You've used 17 entries,
+            2543 wiz_defined-function locations,
+            668 strings with 7438 characters,
+and the built_in function-call counts, 7331 in all, are:
+= -- 731
+> -- 369
+< -- 8
++ -- 128
+- -- 127
+* -- 541
+:= -- 1182
+add.period$ -- 50
+call.type$ -- 17
+change.case$ -- 111
+chr.to.int$ -- 17
+cite$ -- 18
+duplicate$ -- 283
+empty$ -- 518
+format.name$ -- 144
+if$ -- 1504
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 19
+newline$ -- 88
+num.names$ -- 51
+pop$ -- 114
+preamble$ -- 1
+purify$ -- 130
+quote$ -- 0
+skip$ -- 265
+stack$ -- 0
+substring$ -- 416
+swap$ -- 58
+text.length$ -- 8
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 124
+warning$ -- 1
+while$ -- 74
+width$ -- 18
+write$ -- 213
+(There were 2 error messages)

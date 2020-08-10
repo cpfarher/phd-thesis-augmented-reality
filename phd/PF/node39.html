@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Correspondencia entre puntos claves</TITLE>
+<META NAME="description" CONTENT="Correspondencia entre puntos claves">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node42.html">
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node40.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html775"
+  HREF="node40.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html771"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html765"
+  HREF="node38.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html773"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html776"
+  HREF="node40.html">El algoritmo de &#195;&#161;rboles</A>
+<B> Subir:</B> <A NAME="tex2html772"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html766"
+  HREF="node38.html">Creaci&#195;&#179;n del descriptor</A>
+ &nbsp; <B>  <A NAME="tex2html774"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00750000000000000000"></A>
+<A NAME="sec:correspop_ptos_claves"></A>
+<BR>
+Correspondencia entre puntos claves
+</H1>
+El t&#195;&#169;rmino correspondencia entre puntos o entre im&#195;&#161;genes se puede interpretar como el c&#195;&#161;lculo de un valor que represente el grado de similitud entre dos im&#195;&#161;genes. Para ello, la correspondencia entre los puntos claves de dos im&#195;&#161;genes es buscada mediante el c&#195;&#161;lculo de la distancia eucl&#195;&#173;dea entre los vectores caracter&#195;&#173;sticos asociados a los puntos claves detectados en cada una de las im&#195;&#161;genes. Es decir que el problema que se plantea aqu&#195;&#173;, es el de comparar los descriptores de los puntos claves de las im&#195;&#161;genes para determinar coincidencias de puntos y as&#195;&#173; afirmar o no la presencia del objeto buscado.
+
+<P>
+El m&#233;todo de b&#195;&#186;squeda del vecino m&#195;&#161;s cercano (NNS: del ingl&#195;&#169;s, Nearest Neighbor Search) (<A
+ HREF="node79.html#AryaEtAl98">2</A>) es un m&#195;&#169;todo de gran utilidad. Se ha aplicado a gran variedad de aplicaciones como el reconocimiento de im&#195;&#161;genes, la compresi&#195;&#179;n de datos, los sistemas de recuperaci&#195;&#179;n de documentos, estad&#195;&#173;sticas y an&#195;&#161;lisis de datos, entre otros. NNS es un problema de optimizaci&#195;&#179;n que intenta buscar los puntos m&#195;&#161;s cercanos en un espacio m&#195;&#169;trico: dado un conjunto de puntos <!-- MATH
+ $P=\left\{ p_{1,...,}p_{n}\right\}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="$ P=\left\{ p_{1,...,}p_{n}\right\}$"></SPAN> en un espacio m&#195;&#169;trico <SPAN CLASS="MATH"><IMG
+ WIDTH="118" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img150.png"
+ ALT="$ M$"></SPAN> y un punto de consulta <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img151.png"
+ ALT="$ q \in M$"></SPAN>, encontrar el punto m&#195;&#161;s cercano a <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.png"
+ ALT="$ q$"></SPAN> en <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img153.png"
+ ALT="$ P$"></SPAN> de forma eficiente, donde <SPAN CLASS="MATH"><IMG
+ WIDTH="118" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img150.png"
+ ALT="$ M$"></SPAN> es un espacio eucl&#195;&#173;deo d-dimensional y las distancia es medida por ejemplo mediante la distancia eucl&#195;&#173;dea.
+
+<P>
+Existe una variante al algoritmo NNS denominada k-NN (k-Nearest Neighbor) que a diferencia del anterior, eval&#195;&#186;a a qu&#195;&#169; clase pertenecen los <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ K$"></SPAN> vecinos m&#195;&#161;s cercanos para decidir la clase. As&#195;&#173;, en el caso <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img155.png"
+ ALT="$ K=1$"></SPAN> se est&#195;&#161; en presencia del algoritmo NNS que se describi&#195;&#179; anteriormente
+
+<P>
+Resolver problemas de b&#195;&#186;squeda de vecinos m&#195;&#161;s cercanos, no resulta trivial en espacios de grandes dimensiones (<A
+ HREF="node79.html#muja_flann_2009">49</A>). No es usual encontrar algoritmos que posean un rendimiento mayor al de la b&#195;&#186;squeda lineal (tambi&#195;&#169;n conocida como ``b&#195;&#186;squeda por fuerza bruta''), la cual resulta costosa computacionalmente y hasta a veces, imposible de usar en muchas aplicaciones. Es por esto, que se ha generado un gran inter&#195;&#169;s en algoritmos que puedan realizar la b&#195;&#186;squeda del vecino m&#195;&#161;s cercano de forma aproximada, con lo cual es posible lograr mejoras significativas en tiempo de ejecuci&#195;&#179;n con errores de precisi&#195;&#179;n relativamente peque&#195;&#177;os y aceptables (<A NAME="tex2html779" target="contents"
+  HREF="node79.html#Beis:1997:SIU:794189.794431">6</A>,<A NAME="tex2html780" target="contents"
+  HREF="node79.html#muja_flann_2009">49</A>). 
+<P>
+En el trabajo de Slipa-Anan y Hartley (<A NAME="tex2html781" target="contents"
+  HREF="node79.html#bb77826">1</A>,<A NAME="tex2html782" target="contents"
+  HREF="node79.html#Silpa_KDTree">19</A>), se propuso la creaci&#195;&#179;n de una estructura de m&#195;&#186;ltiples &#195;&#161;rboles KD o K-dimensionales aleatorios conocidos por su t&#195;&#169;rmino en ingl&#195;&#169;s como <SPAN  CLASS="textbf">Randomized KD-Tree</SPAN>, que brinda la posibilidad de obtener resultados satisfactorios en un amplio rango de problemas (<A
+ HREF="node79.html#muja_flann_2009">49</A>). M&#195;&#161;s espec&#195;&#173;ficamente, para casos en los que se trata con vectores similares a los presentados en la Sec. <A HREF="node36.html#sec:descripcion_ptos_claves">2.4</A> resulta una alternativa aceptable. Por ello, se utilizar&#195;&#161; el m&#195;&#169;todo descripto en (<A NAME="tex2html783" target="contents"
+  HREF="node79.html#bb77826">1</A>,<A NAME="tex2html784" target="contents"
+  HREF="node79.html#Silpa_KDTree">19</A>) con los par&#195;&#161;metros estudiados que se describen en (<A
+ HREF="node79.html#muja_flann_2009">49</A>).
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html777"
+  HREF="node40.html">El algoritmo de &#195;&#161;rboles KD aleatorio</A>
+<LI><A NAME="tex2html778"
+  HREF="node41.html">Remoci&#195;&#179;n de correspondencias no v&#195;&#161;lidas</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html775"
+  HREF="node40.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html771"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html765"
+  HREF="node38.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html773"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html776"
+  HREF="node40.html">El algoritmo de &#195;&#161;rboles</A>
+<B> Subir:</B> <A NAME="tex2html772"
+  HREF="node20.html">Fundamentos te&#195;&#179;ricos</A>
+<B> Anterior:</B> <A NAME="tex2html766"
+  HREF="node38.html">Creaci&#195;&#179;n del descriptor</A>
+ &nbsp; <B>  <A NAME="tex2html774"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Conceptos en realidad aumentada</TITLE>
+<META NAME="description" CONTENT="Conceptos en realidad aumentada">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html343"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html339"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html333"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html341"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html344"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+<B> Subir:</B> <A NAME="tex2html340"
+  HREF="node8.html">Estado del arte</A>
+<B> Anterior:</B> <A NAME="tex2html334"
+  HREF="node8.html">Estado del arte</A>
+ &nbsp; <B>  <A NAME="tex2html342"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00621000000000000000">
+Conceptos en realidad aumentada</A>
+</H2>
+La RA permite enriquecer la perspectiva superponiendo objetos virtuales (2D o 3D) en el mundo real, con el objetivo de lograr persuadir al 
+observador y dando la sensaci&#195;&#179;n de que el objeto virtual forma parte del ambiente real. De esta forma, se puede interpretar
+la RA, como una mezcla entre un mundo real y uno virtual tal como se visualiza en el Diagrama continuo de Realidad-Virtualidad propuesto en (<A
+ HREF="node79.html#Milgram94augmentedreality">47</A>) y mostrado en la Fig. <A HREF="#fig:Reality-Virtuality_Continuum">1.1</A>.
+
+<DIV ALIGN="CENTER"><A NAME="fig:Reality-Virtuality_Continuum"></A><A NAME="543"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 1.1:</STRONG>
+Diagrama continuo de Realidad-Virtualidad (Figura adaptada de (<A
+ HREF="node79.html#Milgram94augmentedreality">47</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><!-- MATH
+ $\scalebox{0.4}{\includegraphics{../img_ent1/reality_virtual.eps}}$
+ -->
+<IMG
+ WIDTH="125" HEIGHT="63" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="\scalebox{0.4}{\includegraphics{../img_ent1/reality_virtual.eps}}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Algunos de los conceptos que se manejan en realidad aumentada son los siguientes:
+<DL>
+<DT><STRONG>Vista real</STRONG></DT>
+<DD>Se refiere a la secuencia o flujo de video producido por la c&#195;&#161;mara. La aplicaci&#195;&#179;n de RA captura im&#195;&#161;genes desde esta secuencia de video, aument&#195;&#161;ndolas con objetos virtuales para crear una ``vista aumentada''. (<A
+ HREF="node79.html#1320421">10</A>)
+  
+</DD>
+<DT><STRONG>Identificaci&#195;&#179;n y seguimiento (registration &amp; tracking)</STRONG></DT>
+<DD>Describe los
+<BR>
+m&#195;&#169;todos disponibles para alinear un objeto virtual con un sistema de coordenadas 
+  en tres dimensiones en una vista real. En el seguimiento, se pueden distinguir entre diferentes m&#195;&#169;todos: <SPAN  CLASS="textit">seguimiento basado en localizaci&#195;&#179;n</SPAN> y <SPAN  CLASS="textit">seguimiento &#195;&#179;ptico</SPAN> o una combinaci&#195;&#179;n de ambos (<A NAME="tex2html345" target="contents"
+  HREF="node79.html#conf/iswc/2007">30</A>,<A NAME="tex2html346" target="contents"
+  HREF="node79.html#1320421">10</A>).
+  </DD>
+<DT><STRONG>Punto de inter&#195;&#169;s (POI)</STRONG></DT>
+<DD>Es un elemento de informaci&#195;&#179;n asociado con una ubicaci&#195;&#179;n geogr&#195;&#161;fica (longitud, latitud, altura) o un patr&#195;&#179;n visual (marcador, tapa de libro (sin marcadores), etc.) que se puede representar de alguna forma por la aplicaci&#195;&#179;n de RA (<A NAME="tex2html347" target="contents"
+  HREF="node79.html#1320421">10</A>,<A NAME="tex2html348" target="contents"
+  HREF="node79.html#Azuma:2001:RAA:616073.618862">3</A>).
+  </DD>
+<DT><STRONG>Objeto virtual</STRONG></DT>
+<DD>Es alg&#195;&#186;n tipo de contenido digital que es dibujado por la aplicaci&#195;&#179;n de RA y es superpuesto en la vista real. 
+  Por lo general, incluye modelos 3D, im&#195;&#161;genes 2D, iconos, textos, o incluso elementos no visuales como audio, entre otros (<A
+ HREF="node79.html#conf/iswc/2007">30</A>), (<A
+ HREF="node79.html#1320421">10</A>). 
+  
+</DD>
+<DT><STRONG>RA basadas/no basadas en marcadores</STRONG></DT>
+<DD>Cuando es utilizado el reconocimiento de im&#195;&#161;genes para alinear un objeto virtual (seguimiento &#195;&#179;ptico), hay una distinci&#195;&#179;n entre sistemas:
+  los que identifican un <SPAN  CLASS="textit">marcador artificial</SPAN> como un c&#195;&#179;digo matricial 2D colocado en un lugar determinado o sobre alg&#195;&#186;n objeto del mundo real y los que utilizan la <SPAN  CLASS="textit">detecci&#195;&#179;n de caracter&#195;&#173;sticas naturales de los objetos</SPAN>, para identificar objetos del mundo real inalterados (como tapas de libros, posters, etc.), los cuales no poseen marcas artificiales que asistan en el reconocimiento del objeto.
+  En ambos casos, el objeto virtual 2D o 3D, aparece ``pegado'' al marcador o caracter&#195;&#173;stica natural cuando se ve a trav&#195;&#169;s de la ventana gr&#195;&#161;fica de RA (<A
+ HREF="node79.html#conf/iswc/2007">30</A>), (<A
+ HREF="node79.html#1320421">10</A>).
+  
+</DD>
+<DT><STRONG>Reconocimiento basado en localizaci&#195;&#179;n</STRONG></DT>
+<DD>Se refiere al reconocimiento basado en informaci&#195;&#179;n de geo-localizaci&#195;&#179;n, obtenida a partir de dispositivos o sensores de localizaci&#195;&#179;n presentes en el dispositivo de adquisici&#195;&#179;n de im&#195;&#161;genes. Mediante estos sensores, los dispositivos (por ejemplo: tel&#195;&#169;fonos celulares, tabletas digitales, etc.) pueden tener informaci&#195;&#179;n de la posici&#195;&#179;n del objeto a detectar, mostrando informaci&#195;&#179;n relacionada mediante realidad aumentada.
+  El t&#195;&#169;rmino, es usado para hacer una distinci&#195;&#179;n entre sistemas que usan sensores de localizaci&#195;&#179;n, en contraste con los que hacen seguimiento &#195;&#179;ptico del objeto usando t&#195;&#169;cnicas de reconocimiento de imagen. El reconocimiento basado en localizaci&#195;&#179;n, es aplicado sobre todo en ambientes exteriores (<A NAME="tex2html349" target="contents"
+  HREF="node79.html#1320421">10</A>,<A NAME="tex2html350" target="contents"
+  HREF="node79.html#Azuma:2001:RAA:616073.618862">3</A>).
+  
+</DD>
+<DT><STRONG>Seis grados de libertad (del ingl&#195;&#169;s, Six Degrees of Freedom -6DoF)</STRONG></DT>
+<DD>Se refiere a la capacidad del sistema de seguimiento para mantener la alineaci&#195;&#179;n de un objeto del mundo real en un espacio tridimensional. Esto es, la capacidad de moverse hacia delante/atr&#195;&#161;s, arriba/abajo, izquierda/derecha (traslaci&#195;&#179;n en tres ejes perpendiculares), combinados con la rotaci&#195;&#179;n sobre tres ejes perpendiculares.
+
+<P>
+La reconstrucci&#195;&#179;n de la posici&#195;&#179;n de la c&#195;&#161;mara con 6DoF es el objetivo m&#195;&#161;s importante en RA, ya que de esta manera se determina la posici&#195;&#179;n de la c&#195;&#161;mara y, en consecuencia se obtiene la posibilidad de poder dibujar los objetos virtuales en una perspectiva correcta (<A NAME="tex2html351" target="contents"
+  HREF="node79.html#conf/iswc/2007">30</A>,<A NAME="tex2html352" target="contents"
+  HREF="node79.html#1320421">10</A>,<A NAME="tex2html353" target="contents"
+  HREF="node79.html#Azuma:2001:RAA:616073.618862">3</A>).
+</DD>
+</DL>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html343"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html339"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html333"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html341"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html344"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+<B> Subir:</B> <A NAME="tex2html340"
+  HREF="node8.html">Estado del arte</A>
+<B> Anterior:</B> <A NAME="tex2html334"
+  HREF="node8.html">Estado del arte</A>
+ &nbsp; <B>  <A NAME="tex2html342"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

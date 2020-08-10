@@ -1,0 +1,46 @@
+\sffamily\mdseries{
+\begin{large}
+\begin{center}
+\mbox{
+ \includegraphics[scale=0.5]{fich_unl.eps}
+}
+
+  \textbf{Universidad Nacional del Litoral}\\
+\vspace{0.5cm}
+  \textbf{Facultad de Ingeniería y Ciencias Hídricas} \\
+\textbf{Ingeniería en Informática} \\
+\bigskip
+Proyecto Final de Carrera
+\end{center}
+\end{large}
+
+\vspace{1cm}
+
+%\begin{center}
+%  \includegraphics[scale=0.3]{logounl}
+%\end{center}
+
+%\vspace{1cm}
+\begin{LARGE}
+\hspace{1cm}
+\begin{center}
+\textbf{Método para detección y seguimiento de objetos con aplicaciones en Realidad Aumentada}
+\end{center}
+\end{LARGE}
+
+
+\vspace{2cm}
+\hspace{3cm}
+\begin{large}
+\begin{tabular}{rl}
+   Autor: & Pfarher, Christian Nicolás \\
+   Director:& Dr. Albornoz, Enrique Marcelo \\
+   Co-Director:& Dr. Martínez, Cesar 
+\end{tabular}
+
+\begin{center}
+\vspace{2cm}
+\today
+\end{center}
+\end{large}
+}

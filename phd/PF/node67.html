@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Condici&#195;&#179;n de presencia previa</TITLE>
+<META NAME="description" CONTENT="Condici&#195;&#179;n de presencia previa">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node68.html">
+<LINK REL="previous" HREF="node64.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node68.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1153"
+  HREF="node68.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1149"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1143"
+  HREF="node66.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1151"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1154"
+  HREF="node68.html">Realidad aumentada en el</A>
+<B> Subir:</B> <A NAME="tex2html1150"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html1144"
+  HREF="node66.html">Distancia entre v&#195;&#169;rtices</A>
+ &nbsp; <B>  <A NAME="tex2html1152"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00890000000000000000"></A>
+<A NAME="subsubsec:presente_en_alguno_3_frames_previos"></A>
+<BR>
+Condici&#195;&#179;n de presencia previa
+</H1>
+Se puede pensar que en el caso de no cumplirse la ``condici&#195;&#179;n de &#195;&#161;rea'' establecida anteriormente, es l&#195;&#179;gico reiniciar el proceso capturando una nueva imagen del flujo de video. Sin embargo, esta acci&#195;&#179;n no resulta del todo adecuada por lo que se explicar&#195;&#161; a continuaci&#195;&#179;n. Se pueden analizar diferentes situaciones:
+
+<UL>
+<LI>no hay movimiento o el &#195;&#161;rea del <SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img294.png"
+ ALT="$ BR$"></SPAN> detectado es demasiado peque&#195;&#177;a,</LI>
+<LI>la homograf&#195;&#173;a no ha sido detectada, </LI>
+<LI>la homograf&#195;&#173;a ha sido detectada pero la condici&#195;&#179;n de la Sec. <A HREF="node64.html#sec:salvado_convexidad_vertices">3.8</A> no se satisface.
+</LI>
+</UL>
+
+<P>
+Si ante estas situaciones, se reinicia el proceso de detecci&#195;&#179;n volviendo al inicio del diagrama de la Fig. <A HREF="node52.html#fig:diagrama_metodo">3.2</A>, se 
+deja de superponer el objeto virtual aunque el objeto a&#195;&#186;n permanezca en la escena. A&#195;&#186;n m&#195;&#161;s, si se pierde la detecci&#195;&#179;n del objeto entre un par de frames sucesivos, se produce un efecto de ``parpadeo'' del objeto virtual dibujado. Ambas situaciones claramente son indeseadas y para dar soluci&#195;&#179;n a las mismas, teniendo como fin brindar la mayor fluidez en el flujo de video resultante, se propone un proceso que restaura la &#195;&#186;ltima transformaci&#195;&#179;n v&#195;&#161;lida sobre las &#195;&#186;ltimas tres im&#195;&#161;genes procesadas (Fig. <A HREF="node52.html#fig:diagrama_metodo">3.2</A>). De lo mencionado, se deduce que ante la no detecci&#195;&#179;n de una transformaci&#195;&#179;n durante tres frames consecutivos, se deja de superponer el objeto.
+
+<P>
+En la Fig. <A HREF="#fig:restauracion_transformacion">3.8</A> se esquematiza una secuencia de im&#195;&#161;genes capturadas del flujo de video en diferentes de instantes de tiempo <SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="38" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.png"
+ ALT="$ t$"></SPAN>. El frame actual capturado se representa por <SPAN CLASS="MATH"><IMG
+ WIDTH="374" HEIGHT="275" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.png"
+ ALT="$ f_t$"></SPAN> y los previos mediante <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ f_{t-i}$"></SPAN> con <!-- MATH
+ $i=1,2,3 \ldots n$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.png"
+ ALT="$ i=1,2,3 \ldots n$"></SPAN>. El buffer de transformaciones para la restauraci&#195;&#179;n est&#195;&#161; compuesto por los &#195;&#186;ltimos tres frames como se indica en el gr&#195;&#161;fico. En este se puede observar que en el frame actual (<SPAN CLASS="MATH"><IMG
+ WIDTH="374" HEIGHT="275" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.png"
+ ALT="$ f_t$"></SPAN>) y en el antepen&#195;&#186;ltimo (<SPAN CLASS="MATH"><IMG
+ WIDTH="120" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ f_{t-2}$"></SPAN>), no se han detectado las transformaciones y como resultado se restaura la transformaci&#195;&#179;n detectada en <SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img321.png"
+ ALT="$ f_{t-1}$"></SPAN> sobre el frame actual <SPAN CLASS="MATH"><IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img322.png"
+ ALT="$ f_{t}$"></SPAN>, ya que se ha detectado al menos una transformaci&#195;&#179;n en el buffer de transformaciones.
+
+<DIV ALIGN="CENTER"><A NAME="fig:restauracion_transformacion"></A><A NAME="2928"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Esquema de restauraci&#195;&#179;n de la &#195;&#186;ltima transformaci&#195;&#179;n v&#195;&#161;lida.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>        <IMG
+ WIDTH="21" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img323.png"
+ ALT="\includegraphics[scale=0.8]{../figs/restauracion_transfromacion}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Para el caso donde no se detecta la transformaci&#195;&#179;n en ninguno de los &#195;&#186;ltimos tres frames procesados, no se altera el flujo de video y se reinicia el procedimiento capturando una nueva imagen del flujo de video y comenzando as&#195;&#173; un nuevo ciclo en el m&#195;&#169;todo.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1153"
+  HREF="node68.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1149"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1143"
+  HREF="node66.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1151"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1154"
+  HREF="node68.html">Realidad aumentada en el</A>
+<B> Subir:</B> <A NAME="tex2html1150"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html1144"
+  HREF="node66.html">Distancia entre v&#195;&#169;rtices</A>
+ &nbsp; <B>  <A NAME="tex2html1152"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

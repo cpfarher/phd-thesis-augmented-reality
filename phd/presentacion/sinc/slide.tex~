@@ -1,0 +1,592 @@
+%-----------------------------------------
+% Autor:  Pfarher
+%-----------------------------------------
+\documentclass[11pt,t,xcolor]{beamer}
+\usepackage{beamerprosper}
+%\usepackage[framesassubsections]{beamerprosper}
+\usepackage{colortbl}
+\usepackage[latin1]{inputenc}
+% \usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{multicol,multirow}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[T1]{fontenc} % fix some warnings with fonts
+\usepackage{fix-cm}      % fix some warnings with fonts
+\graphicspath{{figs/}}
+\usepackage{booktabs}
+%-----------------------------------------
+% Configuraciï¿½n del tema p/ beamer
+%-----------------------------------------
+\usetheme{Darmstadt}
+\usefonttheme[onlymath]{serif}
+\usefonttheme[onlysmall]{structurebold}
+\useoutertheme{tsam}
+\setbeamercovered{dynamic}
+\logo{\includegraphics[height=0.40cm,angle=90]{imagenes/sinc}}
+\AtBeginSection[]{\frame{\frametitle{Contenido}\tableofcontents[current]}}
+
+%-----------------------------------------
+% Definiciï¿½n de comandos ï¿½tiles
+%-----------------------------------------
+\newcommand{\RR}{{\mathbb{R}}}
+\newcommand{\NN}{{\mathbb{N}}}
+\newcommand{\ZZ}{{\mathbb{Z}}}
+\newcommand{\vs}{{\vspace{5mm}}}
+\newcommand{\vts}{{\vspace{15mm}}}
+\newcommand{\hs}{{\hspace{5mm}}}
+\newcommand{\hts}{{\hspace{15mm}}}
+\newcommand{\vv}[1]{{\mathbf{#1}}}
+\newcommand{\expected}[2][\!]{\:\mathop{\mathcal{E}}\limits_{#1}\!\left[{#2}\right]}
+\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
+
+%-----------------------------------------
+% Datos diapositiva de titulo
+%-----------------------------------------
+\title[Método para detección de objetos]{Método para detección y seguimiento de objetos con aplicaciones en Realidad Aumentada}
+
+\author[C. N. Pfarher]{
+\footnotesize \emph{Christian Nicolás Pfarher}\\
+   Director: \emph{Dr. Albornoz, Enrique Marcelo} \\
+   Co-Director:\emph{Dr. Martínez, Cesar}\\
+% \vs
+}
+%
+\institute[sinc($i$)-UNL]{
+\hspace{2mm}\includegraphics[height=5.8mm]{imagenes/fichunl}\hs\includegraphics[height=6.2mm]{imagenes/sinc}\\
+\vspace{1mm}
+{\rmfamily
+{\small Centro de {\textcolor{red}{I}}nvestigaci\'on en} {\normalsize {\textcolor{blue}{\bfseries s}}e\~{n}ales}\\[1mm]
+{\normalsize sistemas e {\bfseries in}teligencia {\bfseries c}omputacional} \\
+}
+\vs
+{\scriptsize 
+Ingeniería Informática - Universidad Nacional del Litoral \\
+}
+}
+%
+\date{\tiny 31 de Junio, 2013}
+%-----------------------------------------
+
+\begin{document}
+\frame[plain]{\section*{}\titlepage}
+\frame{\frametitle{Contenido}\tableofcontents}
+
+\newcommand{\wa} { \hspace{0.1cm} }
+\newcommand{\wb} { \hspace{0.2cm} }
+\newcommand{\wc} { \hspace{0.4cm} }
+\newcommand{\we} { \hspace{0.01cm} }
+\newcommand{\wf} { \hspace{0.004cm} }
+
+\section{Introducci\'on}
+\subsection{}
+\frame{
+  \frametitle{Reconocimiento automático del habla}
+  \vspace{0.5cm}
+  \only<1>{
+    \begin{center}
+    \includegraphics[width=0.85\textwidth]{imagenes/sinc} 
+    \end{center}
+  }
+  \only<2>{
+    \begin{center}
+    \includegraphics[width=0.85\textwidth]{imagenes/sinc} 
+    \end{center}
+  }
+}
+
+\frame{
+\frametitle{Reconocimiento automático del habla}
+\vspace{-0.3cm}
+\begin{footnotesize}
+\begin{block}{}
+Modelo ac\'{u}stico y diccionario fon\'{e}tico:
+\vspace{-0.2cm}
+
+\begin{center}
+\includegraphics[width=0.55\textwidth]{imagenes/sinc}
+\end{center}
+Modelo de Lenguaje y Red de palabras:
+\vspace{-0.2cm}
+
+\begin{center}
+\includegraphics[width=0.55\textwidth]{imagenes/sinc}                                                           
+\end{center}
+\end{block}
+\end{footnotesize}
+}
+
+
+\frame{
+\frametitle{Estructuración del habla y rasgos prosódicos}
+\begin{center}
+\only<1>{
+\includegraphics[scale=0.17]{imagenes/sinc} 
+}
+\only<2>{
+\includegraphics[scale=0.17]{imagenes/sinc} 
+
+\includegraphics[scale=0.3]{imagenes/sinc} 
+}\end{center}
+
+}
+
+
+
+\frame{
+\frametitle{Rasgos prosódicos}
+
+\begin{block}{}
+El término prosodia refiere principalmente a tres características físicas del lenguaje hablado:
+
+\begin{itemize}
+\item Energía
+\vspace{0.2cm}
+\item Frecuencia fundamental ($F_{0}$)\begin{footnotesize}*\end{footnotesize}
+\vspace{0.2cm}
+\item Duración del núcleo vocálico 
+\vspace{0.2cm}
+\item y otras ...
+\end{itemize}
+
+\end{block}
+\vspace{0.1cm}
+
+\begin{footnotesize}*La sensación auditiva de la $F_{0}$ es el tono de la voz o entonación.\end{footnotesize}
+
+
+}
+
+
+% \subsection{Motivación}
+
+%%% Exposicion!! 
+% acordace de mencionar que ese es el caso de "palabras aisladas" y que no se cumple tan directamente en el discurso continuo
+\frame{
+\frametitle{Motivación: rasgos prosódicos}
+% \vspace{0.4cm}
+Comparación: \textbf{papá} y \textbf{capa}
+\begin{flushleft}
+\only<1>{
+% \includegraphics[width=8cm]{imagenes/ruge0163_1.eps}
+% \includegraphics[width=8cm]{imagenes/byge3098_1.eps}
+\hspace{0.5cm}\includegraphics[width=0.85\textwidth]{imagenes/sinc}
+\pause
+}
+\only<2>{
+\hspace{0.5cm}\includegraphics[width=0.85\textwidth]{imagenes/sinc}
+}
+\end{flushleft}
+}
+
+
+\frame{
+\frametitle{Antecedentes}
+\vspace{-0.3cm}
+\begin{footnotesize} 
+\begin{block}{}
+\textcolor{blue}{[Milone et al., 2003]}: 
+combinación de rasgos prosódicos ($F_0$, energía, duración temporal del núcleo vocálico, etc.) y la acentuación según las reglas ortográficas españolas.
+\vspace*{0.3cm}
+
+\textcolor{blue}{[Chen et al., 2003]}: HMM para modelar explícitamente la duración. Reetiquetando palabras y fonemas que estén al inicio y al final de frase generan un nuevo modelo de lenguaje. 
+\vspace*{0.3cm}
+
+\textcolor{blue}{[Szaszák and Vicsi, 2007]}:.
+HMM entrenados con rasgos prosódicos, usado para segmentar unidades prosódicas. El sistema de RAH utiliza una red de palabras adicional ajustada en base a la salida del segmentador prosódico. 
+\vspace*{0.3cm}
+
+\textcolor{blue}{[Ananthakrishnan and \upshape{N}arayanan, 2007]}: 
+clasificador binario de acentuación silábico en base a la prosodia, 
+luego las secuencias acentuales de una palabra son comparadas con las de la acentuación ToBI. 
+Ésto en un RAH es estándar se usa para refinar las $N$-best. %$N$ hipótesis más pobables ($N$-best). 
+\vspace*{0.3cm} 
+
+\textcolor{blue}{[Huang and Renals, 2008]}: 
+se categorizan las características prosódicas a nivel de sílabas con cuantización vectorial y las palabras 
+son concatenación de éstas. 
+Estas definiciones componen un modelo de lenguaje adicional.
+\end{block}
+\end{footnotesize}
+}
+
+
+
+\begin{frame}
+\frametitle{Objetivos}
+\begin{block}{}
+\begin{itemize}
+\item Analizar los errores cometidos por un sistema de RAH est\'andar.
+\vspace{0.4cm}
+\item Enfocar el estudio a los segmentos ac\'usticos conflictivos para el sistema de RAH.
+\vspace{0.4cm}
+\item Generar una nueva base de datos remuestreando el Corpus original.
+\vspace{0.4cm}
+\item Dise\~nar un m\'etodo para clasificar hi\'potesis verdaderas y falsas.
+\vspace{0.4cm}
+\item Comprobar la capacidad del m\'etodo de clasificaci\'on.
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % %   ->>>> Metodo propuesto
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\section{Método propuesto}%{Trabajos previos}
+\subsection{}
+\frame{
+\frametitle{Corpus y definici\'on de un nuevo corpus}
+\pause
+\begin{small}
+\begin{block}{Base de datos}
+%Corpus de emociones:}
+\begin{itemize}
+\item Corpus Geogr\'afico de la base de datos de habla Albayzin.
+\item Entrenamiento: 4400 elocuciones de 88 hablantes.
+\item Prueba: 2400 elocuciones de 48 hablantes.
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Remuestreo del corpus}
+\begin{itemize}
+	\item Se utiliza el sistema de RAH entrenado.
+	\item Se obtienen los N-best de cada frase y se segmenta por cada hip\'otesis.
+	\item Si coincide con la etiqueta real, es una hip\'otesis verdadera.
+	\item Si no coincide con la etiqueta real, es una hip\'otesis falsa.
+	\item Se realiz\'o un remuestreo para balancear el nuevo corpus.
+\end{itemize}
+\end{block}
+% * Se utilizaron 12 de las palabras que m\'as usualmente confunde el sistema de RAH.
+\end{small}
+}
+
+\frame{
+\frametitle{Corpus y definici\'on de un nuevo corpus}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{imagenes/sinc}
+\end{center}}
+
+
+\frame{
+\frametitle{Clasificaci\'on de hip\'otesis}
+\vspace*{-0.4cm}
+\begin{small}
+\begin{block}{Caracter\'isticas}
+\begin{itemize}
+  \item Par\'ametros prosódicos: $F_0$, Energía, $F_1$, ancho de banda de $F_1$, $F_2$ y ancho de banda de $F_2$. 
+  \item Los $FV$ tienen: valores mínimos, medios, máximos, desviación estándar, asimetría y curtosis. 
+  \item Se incluy\'o: la distancia mínima y máxima entre $F_1$ y $F_2$, el ECM entre $F_1$ y $F_2$, y las pendientes de $F_0$, $F_1$ y $F_2$.
+\end{itemize}
+\end{block}
+\end{small}
+\pause
+\begin{small}
+\begin{block}{Clasificadores}
+\begin{itemize}
+  \item Vectores de caracter\'isticas usando categorizaci\'on seg\'un capacidad de discriminaci\'on (F-Score).
+  \item Support Vector Machines. Validaci\'on cruzada con datos de entrenamiento.
+  \item Entrenamiento y prueba del mejor modelo SVM por cada palabra.
+\end{itemize}
+\end{block}
+\end{small}
+}
+
+
+% 
+% 
+% %%%%%%%%%%------Resultados
+% 
+\section{Experimentos y resultados}
+\subsection{} % {Experiments}
+\begin{frame}
+\frametitle{Experimentos: extracci\'on de caracter\'isticas}
+\begin{block}{}
+% 
+% % We first discuss how we have chosen the feature vectors and the best SVM model for each word. 
+% % Then, we report on the tests that we have carried out using these models, with data partitions not observed in the training. 
+\begin{footnotesize}
+\begin{itemize}
+\item Se seleccionaron 12 de las palabras que m\'as confunde el sistema de RAH. 
+\item Los errores se calcularon en la etapa de extracci\'on de N-Best. 
+\pause
+\item Se utiliz\'o la biblioteca Praat para extraer los rasgos pros\'odicos. 
+\pause
+\item Para cada palabra, se genera una partici\'on balanceada de entrenamiento y prueba (80\%-20\%). 
+\pause
+\item Se realizaron experimentos con datos crudos y normalizados\footnote{Cada dimensi\'on se normaliz\'o de forma independiente, utilizando su m\'aximo y m\'inimo. Los factores de escala se usaron en la prueba.}.
+\end{itemize}
+\end{footnotesize}
+
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{F-Score: capacidad discriminativa}
+\begin{block}{}
+
+\begin{footnotesize}
+\begin{itemize}
+\item Para cada palabra se mide el F-Score, para categorizar las caracter\'isticas en base a su capacidad discriminativa.
+\pause
+\item Dados los vectores de caracter\'isticas $FV_k$, % here $k=1,...,42$, 
+la puntuaci\'on se computa considerando las instancias Verdaderas ($N_T$) y las Falsas ($N_F$):                                                                                               \end{itemize}
+\end{footnotesize}
+
+\begin{footnotesize}
+\begin{equation*}
+F(i) = \dfrac{\left( \bar{x}_i^{(T)} - \bar{x}_i \right)^2 + \left( \bar{x}_i^{(F)} - \bar{x}_i \right)^2}
+{\frac{1}{N_T-1} \displaystyle\sum_{j=1}^{N_T} \left( x_{j,i}^{(T)} - \bar{x}_i^{(T)} \right)^2 + 
+\textstyle\frac{1}{N_F-1} \displaystyle\sum_{j=1}^{N_F} \left( x_{j,i}^{(F)} - \bar{x}_i^{(F)} \right)^2
+}
+\end{equation*} 
+\end{footnotesize}
+\begin{footnotesize}
+\noindent donde $\bar{x_i}$ es el promedio de la $i$-\'esima caracter\'istica, $\bar{x_i}^{(F)}$ y $\bar{x_i}^{(T)}$ son los promedios de las instancias Falsas y Verdaderas respectivamente, y $x_{j,i}$ es la $i$-\'esima caracter\'istica en la $j$-\'esima instancia. 
+\end{footnotesize}
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Primer experimento}
+\begin{block}{}
+\begin{footnotesize}
+\begin{itemize}
+\item Se crean 12 conjuntos de caracter\'isticas en base a la categorizaci\'on.
+\pause
+\item Para cada conjunto se buscan los par\'ametros que definan el mejor modelo de clasificaci\'on.
+\pause
+\item Los SVM utilizan un kernel de funciones de base radial y su precisi\'on se mide usando un esquema de validaci\'on cruzada de 5 particiones.
+\pause
+\item Finalmente, se obtienen los SVM definidos por los mejores par\'ametros para cada conjunto de caracter\'isticas, usando datos de entrenamiento.
+\pause
+\item Se utilizaron datos en crudo y normalizados.
+\end{itemize}
+\end{footnotesize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Resultados para datos de entrenamiento en crudo}
+\begin{block}{}
+\begin{center}
+\begin{scriptsize}
+\begin{tabular}{m{1.7cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}}
+Word		&$\;\;$\textit{42}		&$\;\;$\textit{32}		&$\;\;$\textit{26}		&$\;\;$\textit{21}		&$\;\;$\textit{16}		&$\;\;$\textit{14}		&$\;\;$\textit{12}		&$\;\;$\textit{10}		&$\;\;$\textit{8}		&$\;\;$\textit{6}		&$\;\;$\textit{4}		&$\;\;$\textit{2}\\
+\midrule
+CABO		&61.11	&63.89	&63.89	&63.89	&63.89	&63.89	&70.83	&76.39	&77.78	&\textcolor{red}{\textbf{79.17}}	&76.39	&62.50\\
+CAUDAL		&76.52	&80.30	&80.30	&80.68	&80.68	&79.55	&80.68	&\textcolor{red}{\textbf{85.61}}	&84.85	&84.47	&80.30	&77.65\\
+DESEMBOCA	&80.38	&80.38	&80.38	&80.38	&80.38	&80.38	&80.38	&80.38	&80.38	&\textcolor{red}{\textbf{84.21}}	&80.38	&74.64\\
+DESEMBOCAN	&79.79	&79.79	&79.79	&83.94	&84.72	&84.72	&84.72	&84.72	&84.72	&\textcolor{red}{\textbf{85.49}}	&\textbf{85.49}	&63.73\\
+MENOR		&\textcolor{red}{\textbf{75.76}}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&\textbf{75.76}	&74.89\\
+MENOS		&\textcolor{red}{\textbf{81.63}}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}	&\textbf{81.63}\\
+NOMBRE		&86.75	&86.75	&87.73	&87.83	&\textcolor{red}{\textbf{87.93}}	&87.73	&87.54	&87.63	&87.63	&86.95	&86.75	&79.49\\
+NUMERO		&84.85	&84.85	&84.85	&84.85	&84.85	&84.85	&84.85	&84.85	&84.85	&84.85	&\textcolor{red}{\textbf{89.39}}	&87.88\\
+PASA		&79.17	&79.17	&80.11	&80.11	&80.30	&80.11	&79.36	&79.36	&79.36	&79.55	&\textcolor{red}{\textbf{80.49}}	&73.48\\
+PASAN		&56.22	&56.22	&56.22	&56.22	&56.22	&56.22	&56.22	&56.22	&57.25	&59.33	&61.66	&\textcolor{red}{\textbf{65.80}}\\
+TIENE		&52.66	&52.66	&52.66	&52.66	&52.66	&52.66	&52.66	&\textcolor{red}{\textbf{76.86}}	&75.27	&73.27	&71.94	&65.82\\
+TIENEN		&69.08	&69.08	&69.08	&71.60	&72.27	&72.10	&\textcolor{red}{\textbf{73.95}}	&73.45	&73.61	&70.92	&68.57	&64.71\\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\end{center}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resultados para datos de entrenamiento normalizados}
+\begin{block}{}
+\begin{center}
+\begin{scriptsize}
+\begin{tabular}{m{1.7cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}m{.40cm}}
+Word		&$\;\;$\textit{42}		&$\;\;$\textit{32}		&$\;\;$\textit{26}		&$\;\;$\textit{21}		&$\;\;$\textit{16}		&$\;\;$\textit{14}		&$\;\;$\textit{12}		&$\;\;$\textit{10}		&$\;\;$\textit{8}		&$\;\;$\textit{6}		&$\;\;$\textit{4}		&$\;\;$\textit{2}\\
+\midrule
+CABO		&77.78	&81.94	&77.78	&81.94	&86.11	&86.11	&\textcolor{red}{\textbf{90.28}}	&73.61	&75.00	&75.00	&75.00	&66.67\\
+CAUDAL		&\textcolor{red}{\textbf{89.77}}	&89.02	&87.50	&85.61	&83.33	&82.95	&84.47	&86.36	&85.23	&81.82	&76.14	&74.62\\
+DESEMBOCA	&84.93	&\textcolor{red}{\textbf{85.65}}	&85.41	&82.78	&84.21	&82.78	&83.49	&81.34	&81.82	&71.05	&65.79	&61.24\\
+DESEMBOCAN	&80.83	&80.05	&\textcolor{red}{\textbf{81.87}}	&79.53	&79.02	&78.50	&77.72	&75.13	&78.24	&69.95	&62.69	&58.55\\
+MENOR		&88.31	&88.31	&\textcolor{red}{\textbf{89.18}}	&85.71	&87.01	&86.58	&85.28	&86.15	&84.85	&83.12	&75.32	&73.16\\
+MENOS		&86.39	&\textcolor{red}{\textbf{87.07}}	&85.71	&86.39	&86.39	&85.71	&85.71	&85.03	&82.99	&84.35	&82.31	&73.47\\
+NOMBRE		&\textcolor{red}{\textbf{88.32}}	&\textbf{88.32}	&88.22	&87.34	&85.87	&86.46	&83.91	&80.77	&79.39	&73.80	&72.42	&71.64\\
+NUMERO		&\textcolor{red}{\textbf{89.39}}	&86.36	&84.85	&86.36	&80.30	&78.79	&83.33	&84.85	&81.82	&81.82	&81.82	&75.76\\
+PASA		&84.28	&83.90	&\textcolor{red}{\textbf{84.47}}	&83.14	&81.82	&79.73	&79.17	&77.46	&74.43	&74.05	&69.89	&69.32\\
+PASAN		&74.61	&\textcolor{red}{\textbf{76.42}}	&74.35	&75.13	&72.80	&74.09	&75.13	&74.61	&72.54	&68.13	&69.43	&65.54\\
+TIENE		&\textcolor{red}{\textbf{78.19}}	&77.79	&75.93	&76.46	&73.01	&73.54	&73.40	&71.68	&69.81	&68.35	&66.22	&63.16\\
+TIENEN		&\textcolor{red}{\textbf{75.97}}	&74.62	&72.61	&72.94	&72.61	&70.42	&71.26	&66.22	&67.56	&64.37	&63.53	&64.20\\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\end{center}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Segundo experimento}
+\begin{block}{}
+\begin{footnotesize}
+\begin{itemize}
+\item Se entren\'o un modelo SVM con todos los datos de entrenamiento para cada palabra, utilizando las configuraciones que obtuvieron mejores resultados en el \textit{experimento 1}.
+\pause
+\item Todos estos modelos SVM fueron probados con la partici\'on de prueba.
+% \pause
+% \item Nuevamente se utilizaron datos en crudo y normalizados.
+\pause
+\item El promedio de clasificaci\'on fue de $77.66\%$ y $82.12\%$ utilizando datos crudos y normalizados respectivamente.
+\end{itemize}
+\end{footnotesize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resultados para datos de test con datos crudos}
+\vspace{0.1cm}
+\begin{block}{}%{Clasificaci\'on promedio \textbf{82.12}}
+\vspace{0.2cm}
+\begin{center}
+\begin{footnotesize}
+\begin{tabular}{l c c}
+Palabra & Vector de caracter\'isticas & Clasificaci\'on[\%]\\
+\midrule
+CABO		&6	&66.67\\
+CAUDAL		&10	&74.24\\
+DESEMBOCA	&6	&89.42\\
+DESEMBOCAN	&6	&85.42\\
+MENOR		&42	&77.19\\
+MENOS		&42	&67.57\\
+NOMBRE		&16	&90.20\\
+NUMERO		&4	&75.00\\
+PASA		&4	&81.06\\
+PASAN		&2	&56.25\\
+TIENE		&10	&82.98\\
+TIENEN		&12	&85.91\\
+\bottomrule
+Promedio & &\textbf{77.66}
+\end{tabular}
+\end{footnotesize}
+\end{center}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Resultados para datos de test con datos normalizados}
+\vspace{0.1cm}
+\begin{block}{}%{Clasificaci\'on promedio \textbf{82.12}}
+\vspace{0.2cm}
+\begin{center}
+\begin{footnotesize}
+\begin{tabular}{l c c}
+Palabra & Vector de caracter\'isticas & Clasificaci\'on[\%]\\
+\midrule
+CABO		&12	&66.67\\
+CAUDAL		&42	&84.85\\
+DESEMBOCA	&32	&89.42\\
+DESEMBOCAN	&26	&82.29\\
+MENOR		&26	&91.23\\
+MENOS		&32	&83.78\\
+NOMBRE		&42	&85.49\\
+NUMERO		&42	&81.25\\
+PASA		&26	&81.82\\
+PASAN		&32	&77.08\\
+TIENE		&42	&75.00\\
+TIENEN		&42	&86.57\\
+\bottomrule
+Promedio & &\textbf{82.12}
+\end{tabular}
+\end{footnotesize}
+\end{center}
+\end{block}
+\end{frame}
+\include{conclusiones}
+% %%%%%%-----  conclusiones
+\section{Conclusiones}
+\subsection{} % {Conclusions}
+% \subsection{Future works}
+\begin{frame}
+\frametitle{Conclusiones}
+% \vspace{0.1cm}
+\begin{block}{}
+\begin{small}
+\begin{itemize}
+\item Se present\'o un m\'etodo dirigido a mejorar el rendimiento de un sistema de RAH, el cual considera las redes de palabras y la informaci\'on pros\'odica.
+
+\vspace*{0.2cm}
+\pause
+\item El m\'etodo extrae las hip\'otesis de palabras de las redes de palabras generadas por un sistema de RAH est\'andar. \'Estas representan las entradas de clasificadores de palabras que distinguen entre hip\'otesis verdaderas y falsas, utilizando informaci\'on pros\'odica.
+
+\vspace*{0.2cm}
+\pause
+\item Los resultados experimentales informan una tasa de clasificaci\'on promedio de 82\% sobre el conjunto de palabras seleccionado del corpus Albayzin. 
+
+\vspace*{0.2cm}
+\pause
+\item Este m\'etodo puede ser aplicado en cualquier idioma, de similares caracter\'isticas, ya que no incluye reglas espec\'ificas del espa\~nol.
+\end{itemize}
+\end{small}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Trabajos futuros}
+% \vspace{0.1cm}
+\begin{block}{}
+\begin{small}
+\begin{itemize}
+
+\item Integrar este m\'etodo en un sistema de RAH est\'andar para incrementar las probabilidades de las hip\'otesis verdaderas en la red de palabras.
+\vspace*{0.5cm}
+\pause
+\item Desarrollar un sistema de RAH que incluya este m\'etodo en \textit{una sola pasada}, de forma que se consideren  los alineamientos de las hip\'otesis luego de su identificaci\'on ac\'ustica.
+
+\end{itemize}
+\end{small}
+\end{block}
+\end{frame}
+
+% 
+% 
+% \frame[plain]{\frametitle{Muchas gracias!}
+% \begin{center}
+% \vspace{-5mm}
+%   \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+%     \usebeamerfont{title}Método para detección de objetos]{Método para detección y seguimiento\\ de objetos con aplicaciones en Realidad Aumentada\\
+%   \end{beamercolorbox}
+% \vs
+% \footnotesize \emph{Christian Nicolás Pfarher}\\
+% \email{c.pfarher\_at\_gmail.com}\\[2mm]
+% \vs
+% \includegraphics[scale=1.2]{imagenes/sinc}\\
+% \hspace{2mm}\includegraphics[height=5.8mm]{imagenes/fichunl}\includegraphics[height=6.2mm]{imagenes/conicet}\includegraphics[height=6.2mm]{imagenes/sinc}\\
+% \vspace{1mm}
+% {\rmfamily
+% {\small Centro de {\textcolor{red}{I}}nvestigaci\'on en} {\normalsize {\textcolor{blue}{\bfseries s}}e\~{n}ales}\\[1mm]
+% {\normalsize sistemas e {\bfseries in}teligencia {\bfseries c}omputacional} \\
+% }
+% \vs
+% {\scriptsize 
+% {\scriptsize 
+% Ingeniería Informática - Universidad Nacional del Litoral \\
+% }
+% \end{center}
+% }
+% 
+% 
+% \begin{frame}
+% \frametitle{Incorporaci\'on al sistema de RAH}
+% 
+% \begin{block}{}
+% \begin{center}
+% \includegraphics[width=0.90\textwidth]{imagenes/Dia_ALG_SVM} 
+% \end{center}
+% \end{block}
+% 
+% \end{frame}
+
+\end{document}

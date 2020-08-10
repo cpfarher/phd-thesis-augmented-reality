@@ -1,0 +1,44 @@
+%-----------------------------------------
+% Hierarchical Classifiers
+%
+% Autor:  Pfarher (Noviembre de 2011)
+%-----------------------------------------
+\documentclass[11pt,t,xcolor]{beamer}
+\usepackage{beamerprosper}
+%\usepackage[framesassubsections]{beamerprosper}
+\usepackage{colortbl}
+\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{multicol,multirow}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[T1]{fontenc} % fix some warnings with fonts
+\usepackage{fix-cm}      % fix some warnings with fonts
+\graphicspath{{figs/}}
+\usepackage{booktabs}
+%-----------------------------------------
+% Configuraciï¿œn del tema p/ beamer
+%-----------------------------------------
+\usetheme{Darmstadt}
+\usefonttheme[onlymath]{serif}
+\usefonttheme[onlysmall]{structurebold}
+\useoutertheme{tsam}
+\setbeamercovered{dynamic}
+\logo{\includegraphics[height=0.40cm,angle=90]{imagenes/sinc}}
+\AtBeginSection[]{\frame{\frametitle{Contenido}\tableofcontents[current]}}
+
+%-----------------------------------------
+% Definiciï¿œn de comandos ï¿œtiles
+%-----------------------------------------
+\newcommand{\RR}{{\mathbb{R}}}
+\newcommand{\NN}{{\mathbb{N}}}
+\newcommand{\ZZ}{{\mathbb{Z}}}
+\newcommand{\vs}{{\vspace{5mm}}}
+\newcommand{\vts}{{\vspace{15mm}}}
+\newcommand{\hs}{{\hspace{5mm}}}
+\newcommand{\hts}{{\hspace{15mm}}}
+\newcommand{\vv}[1]{{\mathbf{#1}}}
+\newcommand{\expected}[2][\!]{\:\mathop{\mathcal{E}}\limits_{#1}\!\left[{#2}\right]}
+\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}

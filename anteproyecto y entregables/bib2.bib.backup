@@ -1,0 +1,190 @@
+@COMMENT cita01
+@book{citeulike:3484001,
+    author = {Bradski, Gary and Kaehler, Adrian},
+    citeulike-article-id = {3484001},
+    citeulike-linkout-0 = {http://www.amazon.ca/exec/obidos/redirect?tag=citeulike09-20\&amp;path=ASIN/0596516134},
+    citeulike-linkout-1 = {http://www.amazon.de/exec/obidos/redirect?tag=citeulike01-21\&amp;path=ASIN/0596516134},
+    citeulike-linkout-2 = {http://www.amazon.fr/exec/obidos/redirect?tag=citeulike06-21\&amp;path=ASIN/0596516134},
+    citeulike-linkout-3 = {http://www.amazon.jp/exec/obidos/ASIN/0596516134},
+    citeulike-linkout-4 = {http://www.amazon.co.uk/exec/obidos/ASIN/0596516134/citeulike00-21},
+    citeulike-linkout-5 = {http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20\&path=ASIN/0596516134},
+    citeulike-linkout-6 = {http://www.worldcat.org/isbn/0596516134},
+    citeulike-linkout-7 = {http://books.google.com/books?vid=ISBN0596516134},
+    citeulike-linkout-8 = {http://www.amazon.com/gp/search?keywords=0596516134\&index=books\&linkCode=qs},
+    citeulike-linkout-9 = {http://www.librarything.com/isbn/0596516134},
+    day = {01},
+    edition = {1st},
+    howpublished = {Paperback},
+    keywords = {opencv},
+    month = oct,
+    posted-at = {2011-11-19 17:05:28},
+    priority = {2},
+    publisher = {O'Reilly Media},
+    title = {{Learning OpenCV: Computer Vision with the OpenCV Library}},
+    url = {http://www.worldcat.org/isbn/0596516134},
+    year = {2008}
+}
+
+@COMMENT cita02
+@book{citeulike:9456628,
+    author = {Lagani\`{e}re, Robert},
+    day = {30},
+    howpublished = {Paperback},
+    keywords = {opencv},
+    month = jun,
+    posted-at = {2011-11-19 17:05:39},
+    priority = {2},
+    publisher = {Packt Publishing},
+    title = {{OpenCV 2 Computer Vision Application Programming Cookbook}},
+    url = {http://www.worldcat.org/isbn/1849513244},
+    year = {2011}
+}
+
+@article{citeulike:7676197,
+    abstract = {This paper summarizes the three robust feature detection methods: {ScaleInvariant} Feature Transform ({SIFT}), Principal Component Analysis ({PCA})–{SIFTand} Speeded Up Robust Features ({SURF}). This paper uses {KNN} ({K-NearestNeighbor}) and Random Sample Consensus ({RANSAC}) to the three methods inorder to analyze the results of the methods' application in recognition. {KNN} isused to find the matches, and {RANSAC} to reject inconsistent matches fromwhich the inliers can take as correct matches. The performance of the robustfeature detection methods are compared for scale changes, rotation, blur,illumination changes and affine transformations. All the experiments userepeatability measurement and the number of correct matches for the evaluationmeasurements. {SIFT} presents its stability in most situations although it's {slow.SURF} is the fastest one with good performance as the same as {SIFT}. {PCA}-{SIFTshow} its advantages in rotation and illumination changes},
+    author = {Juan, Luo and Gwon, Oubong},
+    citeulike-article-id = {7676197},
+    citeulike-linkout-0 = {http://www.cscjournals.org/csc/manuscript/Journals/IJIP/volume3/Issue4/IJIP-51.pdf},
+    citeulike-linkout-1 = {http://www.doaj.org/doaj?func=abstract\&\#38;id=509434},
+    journal = {International Journal of Image Processing (IJIP)},
+    keywords = {detectors, knn, pca-sift, ransac, robust, sift, surf},
+    number = {4},
+    pages = {143--152},
+    posted-at = {2010-08-18 01:16:57},
+    priority = {2},
+    title = {A Comparison of {SIFT}, {PCA}-{SIFT} and {SURF}},
+    url = {http://www.cscjournals.org/csc/manuscript/Journals/IJIP/volume3/Issue4/IJIP-51.pdf},
+    volume = {3},
+    year = {2009}
+}
+
+@Article{citeulike:7676197,
+	title = {{A Comparison of SIFT, PCA-SIFT and SURF}},
+	author = {Luo Juan and Oubong Gwon},
+	journal = {International Journal of Image Processing (IJIP)},
+	pages = {143--152},
+	volume = {3},
+	number = {4},
+	year = {2009},
+	abstract = {{This paper summarizes the three robust feature detection methods: ScaleInvariant Feature Transform (SIFT), Principal Component Analysis (PCA)--SIFTand Speeded Up Robust Features (SURF). This paper uses KNN (K-NearestNeighbor) and Random Sample Consensus (RANSAC) to the three methods inorder to analyze the results of the methods' application in recognition. KNN isused to find the matches, and RANSAC to reject inconsistent matches fromwhich the inliers can take as correct matches. The performance of the robustfeature detection methods are compared for scale changes, rotation, blur,illumination changes and affine transformations. All the experiments userepeatability measurement and the number of correct matches for the evaluationmeasurements. SIFT presents its stability in most situations although it's slow.SURF is the fastest one with good performance as the same as SIFT. PCA-SIFTshow its advantages in rotation and illumination changes}},
+	keywords = {detectors, knn, pca-sift, ransac, robust, sift, surf},
+	url = {http://www.cscjournals.org/csc/manuscript/Journals/IJIP/volume3/Issue4/IJIP-51.pdf},
+	citeulike-article-id = {7676197},
+	citeulike-linkout-0 = {http://www.cscjournals.org/csc/manuscript/Journals/IJIP/volume3/Issue4/IJIP-51.pdf},
+	citeulike-linkout-1 = {http://www.doaj.org/doaj?func=abstract\&\\#38;id=509434},
+	posted-at = {2010-08-18 01:16:57},
+	priority = {2}
+}
+
+@Article{bb53077,
+	title = {A Performance Evaluation of Local Descriptors},
+	author = {K. Mikolajczyk and C. Schmid},
+	journal = {IEEE Trans. Pattern Analysis and Machine Intelligence},
+	pages = {1615--1630},
+	volume = {27},
+	number = {10},
+	month = oct,
+	year = {2005},
+	url = {http://dx.doi.org/10.1109/TPAMI.2005.188},
+	bibsource = {http://www.visionbib.com/bibliography/match593.html#TT50453}
+}
+
+@article{Mikolajczyk:2005:PEL:1083822.1083989,
+ author = {Mikolajczyk, Krystian and Schmid, Cordelia},
+ title = {A Performance Evaluation of Local Descriptors},
+ journal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+ issue_date = {October 2005},
+ volume = {27},
+ number = {10},
+ month = oct,
+ year = {2005},
+ pages = {1615--1630},
+ numpages = {16},
+ url = {http://dx.doi.org/10.1109/TPAMI.2005.188},
+ doi = {10.1109/TPAMI.2005.188},
+ acmid = {1083989},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Index Terms- Local descriptors, Index Terms- Local descriptors, interest points, interest regions, invariance, matching, recognition., interest points, interest regions, invariance, matching, recognition.},
+} 
+
+@Article{ journals/tvcg/WagnerRMDS10,
+	title = {Real-Time Detection and Tracking for Augmented Reality on Mobile Phones},
+	author = {Daniel Wagner and Gerhard Reitmayr and Alessandro Mulloni and Tom Drummond and Dieter Schmalstieg},
+	journal = {IEEE Trans. Vis. Comput. Graph},
+	pages = {355--368},
+	volume = {16},
+	number = {3},
+	year = {2010},
+	url = {http://doi.ieeecomputersociety.org/10.1109/TVCG.2009.99},
+	bibdate = {2010-04-20},
+	bibsource = {DBLP, http://dblp.uni-trier.de/db/journals/tvcg/tvcg16.html#WagnerRMDS10}
+}
+
+@article{10.1109/TVCG.2009.99,
+author = {Daniel Wagner and Gerhard Reitmayr and Alessandro Mulloni and Tom Drummond and Dieter Schmalstieg},
+title = {Real-Time Detection and Tracking for Augmented Reality on Mobile Phones},
+journal ={IEEE Transactions on Visualization and Computer Graphics},
+volume = {16},
+year = {2010},
+pages = {355-368},
+doi = {http://doi.ieeecomputersociety.org/10.1109/TVCG.2009.99},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+}
+
+@Article{ bb48614,
+	title = {Local feature extraction and matching on range images: 2.5{D} {SIFT}},
+	author = {T. W. R. Lo and J. P. Siebert},
+	journal = {Computer Vision and Image Understanding},
+	pages = {1235--1250},
+	volume = {113},
+	number = {12},
+	month = dec,
+	year = {2009},
+	url = {http://dx.doi.org/10.1016/j.cviu.2009.06.005},
+	bibsource = {http://www.visionbib.com/bibliography/match-pl5383dsurf.html#TT46319}
+}
+
+@Book{ Nixon:2002:FEI,
+	title = {Feature extraction and image processing},
+	author = {Mark S. Nixon and Alberto S. Aguado},
+	publisher = {Newnes},
+	address = {Oxford},
+	pages = {xii + 350},
+	year = {2002},
+	keywords = {Matlab},
+	acknowledgement = {Nelson H. F. Beebe, University of Utah, Department of Mathematics, 110 LCB, 155 S 1400 E RM 233, Salt Lake City, UT 84112-0090, USA, Tel: +1 801 581 5254, FAX: +1 801 581 4148, e-mail: \path|beebe@math.utah.edu|, \path|beebe@acm.org|, \path|beebe@computer.org| (Internet), URL: \path|http://www.math.utah.edu/~beebe/|",
+	bibdate = "Wed Nov 16 14:29:16 MST 2005},
+	bibsource = {http://www.math.utah.edu/pub/tex/bib/matlab.bib; z3950.loc.gov:7090/Voyager},
+	LCCN = {TA1637 .N58 2002},
+	subject = {Image processing; Traitement d'images}
+}
+
+@Article{ viola01boosting,
+	title = {Rapid object detection using a boosted cascade of simple features},
+	author = {P. Viola and M. Jones},
+	journal = {Proc. CVPR},
+	pages = {511--518},
+	volume = {1},
+	year = {2001}
+}
+
+@InProceedings{conf/nips/SimardBHL98,
+	title = {Boxlets: {A} Fast Convolution Algorithm for Signal Processing and Neural Networks},
+	booktitle = {NIPS},
+	author = {Patrice Simard and L{\'e}on Bottou and Patrick Haffner and Yann LeCun},
+	editor = {Michael J. Kearns and Sara A. Solla and David A. Cohn},
+	publisher = {The MIT Press},
+	pages = {571--577},
+	year = {1998},
+	crossref = {conf/nips/1998},
+	url = {http://nips.djvuzone.org/djvu/nips11/0571.djvu},
+	bibdate = {2003-05-26},
+	bibsource = {DBLP, http://dblp.uni-trier.de/db/conf/nips/nips1998.html#SimardBHL98}
+}
+@misc{Lindeberg94scale-spacetheory,
+    author = {Tony Lindeberg},
+    title = {Scale-Space Theory in Computer Vision},
+    year = {1994}
+}

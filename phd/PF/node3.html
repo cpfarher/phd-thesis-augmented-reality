@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Prefacio</TITLE>
+<META NAME="description" CONTENT="Prefacio">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="PF.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html177"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html173"
+  HREF="PF.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html167"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html175"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html178"
+  HREF="node4.html">&#205;ndice General</A>
+<B> Subir:</B> <A NAME="tex2html174"
+  HREF="PF.html">.</A>
+<B> Anterior:</B> <A NAME="tex2html168"
+  HREF="node2.html">Resumen</A>
+ &nbsp; <B>  <A NAME="tex2html176"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00300000000000000000">
+Prefacio</A>
+</H1>
+
+<P>
+El reconocimiento de objetos en im&#195;&#161;genes ha sido y es un &#195;&#161;rea de investigaci&#195;&#179;n que se ha mantenido en desarrollo y exploraci&#195;&#179;n constante. La habilidad de reconocer e identificar objetos en una imagen resulta esencial en &#195;&#161;reas como vigilancia por video, im&#195;&#161;genes m&#195;&#169;dicas, realidad aumentada, etc.
+
+<P>
+El desarrollo de un motor propio de reconocimiento de objetos con aplicaciones en realidad aumentada, que sea f&#195;&#161;cilmente adaptable a aplicaciones espec&#195;&#173;ficas resulta de gran inter&#195;&#169;s propio y para el grupo del SINC (Centro de Investigaci&#195;&#179;n en se&#195;&#177;ales, sistemas e inteligencia computacional) <A NAME="tex2html1"
+  HREF="footnode.html#foot354"><SUP><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN></SUP></A>. Si bien se puede encontrar software desarrollado, diferentes caracter&#195;&#173;sticas de los mismos no lo hacen apropiado para su uso. Adem&#195;&#161;s, en el contexto local la realidad aumentada se ha convertido en un tema que constituye un ``nicho tecnol&#195;&#179;gico y de mercado'' que resulta ampliamente atractivo para su desarrollo, investigaci&#195;&#179;n y explotaci&#195;&#179;n.
+
+<P>
+El t&#195;&#169;rmino de realidad aumentada se usa para definir una visualizaci&#195;&#179;n de un entorno f&#195;&#173;sico del mundo real, cuyos elementos se combinan con elementos virtuales (im&#195;&#161;genes, videos, sonidos, etc.), logrando crear una realidad mixta en tiempo real.
+
+<P>
+En este trabajo se presenta un m&#195;&#169;todo para la detecci&#195;&#179;n y seguimiento de objetos planos con aplicaciones en realidad aumentada, sin patrones artificiales y en un ambiente controlado. El m&#195;&#169;todo desarrollado es aplicado sobre flujo de video en tiempo real capturado con una c&#195;&#161;mara web est&#195;&#161;ndar. El procedimiento tiene dos etapas principales: en una primera instancia se captura una imagen del objeto patr&#195;&#179;n, en una segunda etapa se captura flujo de video (im&#195;&#161;genes objetivo) en tiempo real, para llevar a cabo la detecci&#195;&#179;n del objeto y el c&#195;&#161;lculo de su posici&#195;&#179;n en la imagen, para luego ``enriquecer la realidad''.
+
+<P>
+Para llevar a cabo el procedimiento descripto anteriormente, se dise&#195;&#177;a un m&#195;&#169;todo que utiliza un detector r&#195;&#161;pido de caracter&#195;&#173;sticas robustas denominado SURF (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>). El resultado de la detecci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas es usado posteriormente en una etapa de b&#195;&#186;squeda de coincidencias entre las caracter&#195;&#173;sticas de la imagen patr&#195;&#179;n y la imagen objetivo. Tras encontrar los potenciales pares coincidentes, se procede a eliminar valores espurios y se calcula la homograf&#195;&#173;a que resulta ser un mapeo perspectivo entre la imagen patr&#195;&#179;n y la imagen objetivo. Dado que es com&#195;&#186;n que se obtengan falsos positivos al buscar la homograf&#195;&#173;a, se propone un criterio para rechazar transformaciones err&#195;&#179;neas provocadas por homograf&#195;&#173;as mal estimadas. Todo este procedimiento es combinado con t&#195;&#169;cnicas heur&#195;&#173;sticas para lograr un prototipo final optimizado para aplicaciones de realidad aumentada.
+
+<P>
+En lo que respecta a herramientas utilizadas para la codificaci&#195;&#179;n, existe variedad de software y bibliotecas para la manipulaci&#195;&#179;n de videos e im&#195;&#161;genes. OpenCV (Open Source Computer Vision)<A NAME="tex2html3"
+  HREF="footnode.html#foot355"><SUP><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN></SUP></A> es una librer&#195;&#173;a open source<A NAME="tex2html5"
+  HREF="footnode.html#foot356"><SUP><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN></SUP></A> de visi&#195;&#179;n computacional, escrita en C y C++, la cual puede ser ejecutada sobre diferentes sistemas operativos (Linux, Windows y Mac OS X). La misma, ha sido ampliamente adoptada como la herramienta de desarrollo en la comunidad de investigadores y desarrolladores en el campo de visi&#195;&#179;n computacional (<A
+ HREF="node79.html#citeulike:9456628">28</A>), debido a que fue dise&#195;&#177;ada para lograr gran eficiencia computacional, haciendo foco en el desarrollo de aplicaciones en tiempo real. Es por ello que, como base para la implementaci&#195;&#179;n del c&#195;&#179;digo fuente del m&#195;&#169;todo presentado, se utiliza la citada librer&#195;&#173;a.
+
+<P>
+La tesis se encuentra organizada en cinco cap&#195;&#173;tulos, como se explica a continuaci&#195;&#179;n.
+
+<P>
+En el Cap&#195;&#173;tulo 1, se expone la motivaci&#195;&#179;n central del desarrollo de este proyecto, seguido de una rese&#195;&#177;a del estado del arte del reconocimiento de objetos y algunas de sus aplicaciones, haciendo hincapi&#195;&#169; en realidad aumentada. Posteriormente, se describen los objetivos generales y espec&#195;&#173;ficos, seguidos del los alcances del presente trabajo.
+
+<P>
+En el Cap&#195;&#173;tulo 2, se tratan conceptos y m&#195;&#169;todos del marco te&#195;&#179;rico del procesamiento de im&#195;&#161;genes, haciendo &#195;&#169;nfasis en la detecci&#195;&#179;n de caracter&#195;&#173;sticas invariantes a escala y rotaci&#195;&#179;n. 
+<P>
+El Cap&#195;&#173;tulo 3 presenta el dise&#195;&#177;o del m&#195;&#169;todo propuesto basado en los fundamentos te&#195;&#179;ricos del cap&#195;&#173;tulo anterior y utilizando el m&#195;&#169;todo de detecci&#195;&#179;n de caracter&#195;&#173;sticas propuesto all&#195;&#173;. Tambi&#195;&#169;n, se describen detalladamente las etapas del m&#195;&#169;todo propuesto, planteando mejoras y optimizaciones para las mismas con el fin de obtener un mejor desempe&#195;&#177;o en el tiempo de procesamiento, como as&#195;&#173; tambi&#195;&#169;n, en la correcta detecci&#195;&#179;n del objeto en la escena.
+
+<P>
+En el Cap&#195;&#173;tulo 4, se detallan los experimentos y los resultados obtenidos, donde se consideran variaciones de la iluminaci&#195;&#179;n y diferentes t&#195;&#169;cnicas de realce de detalles sobre la imagen. Luego, se presentan dos experimentos y se propone un prototipo publicitario como resultado final del m&#195;&#169;todo desarrollado.
+
+<P>
+Finalmente, en el Cap&#195;&#173;tulo 5, se exponen las conclusiones finales y los desarrollos futuros para corto, mediano y largo plazo.
+
+<P>
+<DIV ALIGN="RIGHT">
+Christian Nicol&#195;&#161;s Pfarher
+<BR>
+Santa Fe, Argentina. 
+<BR>
+02 de Agosto de 2013
+
+</DIV>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html177"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html173"
+  HREF="PF.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html167"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html175"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html178"
+  HREF="node4.html">&#205;ndice General</A>
+<B> Subir:</B> <A NAME="tex2html174"
+  HREF="PF.html">.</A>
+<B> Anterior:</B> <A NAME="tex2html168"
+  HREF="node2.html">Resumen</A>
+ &nbsp; <B>  <A NAME="tex2html176"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

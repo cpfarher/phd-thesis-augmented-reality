@@ -1,0 +1,41 @@
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+ \begin{itemize}
+ \item Afianzamiento de los conocimientos en el área de visión computacional.
+ \item Se presentó un método para detectar objetos planos (sin marcadores) en un ambiente controlado, mediante la detección de características sobre imágenes obtenidas con una cámara web de computadora,
+ \item Introducción de conceptos de RA, detectores de características relevantes y herramientas para detección y seguimiento de objetos,
+ \end{itemize}
+\end{frame}
+%
+\begin{frame}{Conclusiones}
+ \begin{itemize}
+ \item Técnicas simples para realce de detalles e iluminación, de forma que el usuario pueda considerar la aplicación de alguna de ellas de ser necesario,
+ \item Aplicación de estrategias y optimización para una correcta detección, sin afectar al tiempo de procesamiento de forma considerable,
+ \item Codificación en C++ y utilización de librería OpenCV que permiten la portabilidad a diferentes sistemas operativos,
+ \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Trabajos futuros}
+\textbf{Corto Plazo:}
+\begin{itemize}
+ \item GPU y múltiples hilos de procesamiento aplicado al proceso de extracción y descripción de características.
+ \item Utilizar para la búsqueda de correspondencias ``nano flann'' en vez de FLANN: eficiencia en tiempo y consumo de memoria.
+ \item Selección automática del umbral hessiano para la discriminación de puntos.
+\end{itemize}
+\end{frame}
+%
+\begin{frame}{Trabajos futuros}
+\textbf{Mediano Plazo:}
+\begin{itemize}
+ \item Usar otros detectores en el proceso de extracción y descripción de características: MSER, FAST, etc. Comparación en \url{http://bit.ly/hox3gW}.
+ \item Investigar e implementar soluciones para el manejo de la oclusión.
+\end{itemize}
+\end{frame}
+%
+\begin{frame}{Trabajos futuros}
+\textbf{Largo Plazo:}
+\begin{itemize}
+ \item Implementar una aplicación con interfaz gráfica orientada a un usuario final. Reconocer diferentes imágenes patrón de una BD y llevar a cabo una acción particular para el enriquecimiento de la realidad.
+ \item Implementar el sistema en dispositivos móviles (tablets, celulares, etc.).% utilizando ``procesamiento en la nube (cloud computing)''.
+\end{itemize}
+\end{frame}

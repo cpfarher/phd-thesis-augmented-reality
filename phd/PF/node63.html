@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Detecci&#195;&#179;n de homograf&#195;&#173;a</TITLE>
+<META NAME="description" CONTENT="Detecci&#195;&#179;n de homograf&#195;&#173;a">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node64.html">
+<LINK REL="previous" HREF="node62.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node64.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1105"
+  HREF="node64.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1101"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1095"
+  HREF="node62.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1103"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1106"
+  HREF="node64.html">Detecci&#195;&#179;n de homograf&#195;&#173;as mal</A>
+<B> Subir:</B> <A NAME="tex2html1102"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html1096"
+  HREF="node62.html">Correspondencia entre puntos claves</A>
+ &nbsp; <B>  <A NAME="tex2html1104"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00870000000000000000"></A>
+<A NAME="sec:detec_homografia"></A>
+<BR>
+Detecci&#195;&#179;n de homograf&#195;&#173;a
+</H1>
+La transformaci&#195;&#179;n proyectiva u homograf&#195;&#173;a es la proyecci&#195;&#179;n perspectiva entre dos im&#195;&#161;genes y es derivada de las posiciones de los puntos claves en la imagen patr&#195;&#179;n y los puntos coincidentes detectados en la imagen objetivo, de acuerdo a como se ha explicado en la Sec. <A HREF="node46.html#sec:transf_proyectiva_homograph">2.6.3</A>. En este trabajo, la existencia de la homograf&#195;&#173;a entre los puntos en la imagen patr&#195;&#179;n y los de la imagen objetivo significa que el objeto (representado por la imagen patr&#195;&#179;n) existe en la imagen objetivo.
+
+<P>
+Como se ha mencionado en la Sec. <A HREF="node47.html#sec:estimacion_ransac_homografia">2.6.3</A>, existen diferentes opciones para llevar a cabo la estimaci&#195;&#179;n. En el presente trabajo, se usar&#195;&#161; el algoritmo RANSAC, ya que este brinda mejores resultados cuando hay varios puntos de correspondencia espurios, lo que es com&#195;&#186;n en el caso de localizar objetos planos en la escena (<A
+ HREF="node79.html#BenhimaneNGGNM08">27</A>). La desventaja de usar el algoritmo RANSAC recae en que, dados m&#195;&#161;s de cuatro puntos, siempre se encuentra la homograf&#195;&#173;a independientemente si &#195;&#169;sta tiene sentido. Es decir, que si el objeto no se halla en la escena, pero se encuentran coincidencias que son espurias, la homograf&#195;&#173;a ser&#195;&#161; detectada y producir&#195;&#161; resultados indeseables. 
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1105"
+  HREF="node64.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1101"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1095"
+  HREF="node62.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1103"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1106"
+  HREF="node64.html">Detecci&#195;&#179;n de homograf&#195;&#173;as mal</A>
+<B> Subir:</B> <A NAME="tex2html1102"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html1096"
+  HREF="node62.html">Correspondencia entre puntos claves</A>
+ &nbsp; <B>  <A NAME="tex2html1104"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

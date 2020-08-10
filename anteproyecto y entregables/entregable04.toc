@@ -1,0 +1,17 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Pre-procesamiento para lograr posibles mejoras de velocidad, en tiempo de ejecuci\IeC {\'o}n}{3}
+\contentsline {subsection}{\numberline {1.1}Conversi\IeC {\'o}n a escala de grises}{3}
+\contentsline {subsection}{\numberline {1.2}Diferencia de im\IeC {\'a}genes}{3}
+\contentsline {subsection}{\numberline {1.3}Threshold}{3}
+\contentsline {subsection}{\numberline {1.4}Erosi\IeC {\'o}n y dilataci\IeC {\'o}n}{4}
+\contentsline {subsection}{\numberline {1.5}Bounding Box}{4}
+\contentsline {section}{\numberline {2}An\IeC {\'a}lisis homogr\IeC {\'a}fico, proyecciones y transformaciones}{5}
+\contentsline {subsection}{\numberline {2.1}Introducci\IeC {\'o}n}{5}
+\contentsline {subsection}{\numberline {2.2}Formaci\IeC {\'o}n de la imagen}{6}
+\contentsline {subsection}{\numberline {2.3}Calibraci\IeC {\'o}n de la c\IeC {\'a}mara}{7}
+\contentsline {subsection}{\numberline {2.4}Matriz fundamental de un par de im\IeC {\'a}genes}{9}
+\contentsline {subsection}{\numberline {2.5}Correspondencia de im\IeC {\'a}genes}{11}
+\contentsline {subsubsection}{\numberline {2.5.1}RANSAC}{13}
+\contentsline {subsection}{\numberline {2.6}Homograf\IeC {\'\i }a}{13}
+\contentsline {subsubsection}{\numberline {2.6.1}Implementaci\IeC {\'o}n}{15}
+\contentsline {section}{\numberline {3}Superposici\IeC {\'o}n de imagen virtual}{16}

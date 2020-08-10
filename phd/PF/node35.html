@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Determinaci&#195;&#179;n de la localizaci&#195;&#179;n de puntos claves</TITLE>
+<META NAME="description" CONTENT="Determinaci&#195;&#179;n de la localizaci&#195;&#179;n de puntos claves">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node34.html">
+<LINK REL="up" HREF="node30.html">
+<LINK REL="next" HREF="node36.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html727"
+  HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html723"
+  HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html719"
+  HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html725"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html728"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+<B> Subir:</B> <A NAME="tex2html724"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html720"
+  HREF="node34.html">Puntos claves basados en</A>
+ &nbsp; <B>  <A NAME="tex2html726"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00733000000000000000">
+Determinaci&#195;&#179;n de la localizaci&#195;&#179;n de puntos claves</A>
+</H2> Como se ha visto en la secci&#195;&#179;n anterior, se construye una ``pir&#195;&#161;mide de respuestas'' con diferentes niveles de escalas dentro de las octavas. La localizaci&#195;&#179;n de los puntos claves como su escala, se determinan hallando los extremos entre los 8 vecinos en el nivel evaluado y los <!-- MATH
+ $2 \times 9$
+ -->
+<SPAN CLASS="MATH"></SPAN> vecinos en el nivel inmediatamente superior e inferior mediante la supresi&#195;&#179;n de no-m&#195;&#161;ximos en la vecindad de <!-- MATH
+ $3 \times 3 \times 3$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.png"
+ ALT="$ 3 \times 3 \times 3$"></SPAN>. Un esquema puede ser observado en la Fig. <A HREF="#fig:maximum_supression3by3by3">2.9</A> donde se demarca dicha vecindad.
+      
+<DIV ALIGN="CENTER"><A NAME="fig:maximum_supression3by3by3"></A><A NAME="1576"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Representaci&#195;&#179;n de una octava compuesta por tres niveles de escala <SPAN CLASS="MATH"><IMG
+ WIDTH="79" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img113.png"
+ ALT="$ \sigma=k$"></SPAN>, <!-- MATH
+ $\sigma=\frac{3}{2}k$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="51" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="$ \sigma=\frac{3}{2}k$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="62" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \sigma=2k$"></SPAN>.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	      <IMG
+ WIDTH="63" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img116.png"
+ ALT="\includegraphics[scale=0.35]{./figs/333nonmaximum}">
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Una vez que el m&#195;&#161;ximo local es identificado, la posici&#195;&#179;n precisa de cada punto clave es obtenida a trav&#195;&#169;s de interpolaci&#195;&#179;n y el resultado es un conjunto de puntos claves localizados con precisi&#195;&#179;n sub-p&#195;&#173;xel, los cuales est&#195;&#161;n asociados a un valor de escala ().
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html727"
+  HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html723"
+  HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html719"
+  HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html725"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html728"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+<B> Subir:</B> <A NAME="tex2html724"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html720"
+  HREF="node34.html">Puntos claves basados en</A>
+ &nbsp; <B>  <A NAME="tex2html726"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

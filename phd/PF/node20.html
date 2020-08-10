@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fundamentos te&#195;&#179;ricos</TITLE>
+<META NAME="description" CONTENT="Fundamentos te&#195;&#179;ricos">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node51.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="PF.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html515"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html511"
+  HREF="PF.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html505"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html513"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html516"
+  HREF="node21.html">Operaciones morfol&#195;&#179;gicas en im&#195;&#161;genes</A>
+<B> Subir:</B> <A NAME="tex2html512"
+  HREF="PF.html">.</A>
+<B> Anterior:</B> <A NAME="tex2html506"
+  HREF="node19.html">Alcances del Proyecto Final</A>
+ &nbsp; <B>  <A NAME="tex2html514"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00700000000000000000"></A>
+<A NAME="c:parte3"></A>
+<BR>
+Fundamentos te&#195;&#179;ricos
+</H1>
+<BR>
+<BR>
+<BR>
+En este cap&#195;&#173;tulo, se presentan los fundamentos te&#195;&#179;ricos sobre los cuales se sustenta el proyecto y particularmente el m&#195;&#169;todo luego utilizado. Primeramente se describen algunas operaciones morfol&#195;&#179;gicas sobre im&#195;&#161;genes y algunas t&#195;&#169;cnicas de realce sobre las mismas. Tras ello, se explica un m&#195;&#169;todo de detecci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas en im&#195;&#161;genes. Tambi&#195;&#169;n, se presenta una t&#195;&#169;cnica para b&#195;&#186;squeda de correspondencias entre puntos caracter&#195;&#173;sticos de im&#195;&#161;genes, que sirve como base para encontrar la relaci&#195;&#179;n entre dos im&#195;&#161;genes de un mismo objeto fotografiado desde diferentes perspectivas.
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html517"
+  HREF="node21.html">Operaciones morfol&#195;&#179;gicas en im&#195;&#161;genes</A>
+<UL>
+<LI><A NAME="tex2html518"
+  HREF="node22.html">Dilataci&#195;&#179;n</A>
+<LI><A NAME="tex2html519"
+  HREF="node23.html">Erosi&#195;&#179;n</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html520"
+  HREF="node24.html">Realce de im&#195;&#161;genes en el dominio espacial</A>
+<UL>
+<LI><A NAME="tex2html521"
+  HREF="node25.html">Umbral</A>
+<LI><A NAME="tex2html522"
+  HREF="node26.html">Transformaci&#195;&#179;n logar&#195;&#173;tmica</A>
+<LI><A NAME="tex2html523"
+  HREF="node27.html">Ecualizaci&#195;&#179;n de histograma</A>
+<LI><A NAME="tex2html524"
+  HREF="node28.html">Filtrado pasa altos</A>
+<LI><A NAME="tex2html525"
+  HREF="node29.html">Filtrado de alta potencia</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html526"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+<UL>
+<LI><A NAME="tex2html527"
+  HREF="node31.html">Im&#195;&#161;genes integrales</A>
+<LI><A NAME="tex2html528"
+  HREF="node32.html">El problema de cambio de escala</A>
+<UL>
+<LI><A NAME="tex2html529"
+  HREF="node33.html">Invarianza a escala</A>
+</UL>
+<LI><A NAME="tex2html530"
+  HREF="node34.html">Puntos claves basados en la matriz hessiana</A>
+<LI><A NAME="tex2html531"
+  HREF="node35.html">Determinaci&#195;&#179;n de la localizaci&#195;&#179;n de puntos claves</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html532"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+<UL>
+<LI><A NAME="tex2html533"
+  HREF="node37.html">Asignaci&#195;&#179;n de la orientaci&#195;&#179;n</A>
+<LI><A NAME="tex2html534"
+  HREF="node38.html">Creaci&#195;&#179;n del descriptor</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html535"
+  HREF="node39.html">Correspondencia entre puntos claves</A>
+<UL>
+<LI><A NAME="tex2html536"
+  HREF="node40.html">El algoritmo de &#195;&#161;rboles KD aleatorio</A>
+<LI><A NAME="tex2html537"
+  HREF="node41.html">Remoci&#195;&#179;n de correspondencias no v&#195;&#161;lidas</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html538"
+  HREF="node42.html">Formaci&#195;&#179;n de la imagen y transformaci&#195;&#179;n proyectiva</A>
+<UL>
+<LI><A NAME="tex2html539"
+  HREF="node43.html">Introducci&#195;&#179;n</A>
+<LI><A NAME="tex2html540"
+  HREF="node44.html">El modelo de c&#195;&#161;mara oscura</A>
+<UL>
+<LI><A NAME="tex2html541"
+  HREF="node45.html">Par&#195;&#161;metros extr&#195;&#173;nsecos e intr&#195;&#173;nsecos</A>
+</UL>
+<LI><A NAME="tex2html542"
+  HREF="node46.html">Transformaci&#195;&#179;n proyectiva y estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<UL>
+<LI><A NAME="tex2html543"
+  HREF="node47.html">Estimaci&#195;&#179;n de la homograf&#195;&#173;a</A>
+<UL>
+<LI><A NAME="tex2html544"
+  HREF="node48.html">Transformaci&#195;&#179;n lineal directa.</A>
+<LI><A NAME="tex2html545"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+</UL></UL></UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

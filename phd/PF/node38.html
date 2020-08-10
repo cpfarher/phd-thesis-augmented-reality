@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Creaci&#195;&#179;n del descriptor</TITLE>
+<META NAME="description" CONTENT="Creaci&#195;&#179;n del descriptor">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node37.html">
+<LINK REL="up" HREF="node36.html">
+<LINK REL="next" HREF="node39.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html763"
+  HREF="node39.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html759"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html755"
+  HREF="node37.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html761"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html764"
+  HREF="node39.html">Correspondencia entre puntos claves</A>
+<B> Subir:</B> <A NAME="tex2html760"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html756"
+  HREF="node37.html">Asignaci&#195;&#179;n de la orientaci&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html762"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00742000000000000000">
+Creaci&#195;&#179;n del descriptor</A>
+</H2>
+      En esta &#195;&#186;ltima parte, se termina la creaci&#195;&#179;n del descriptor SURF.
+      El primer paso consiste en construir una regi&#195;&#179;n cuadrada de tama&#195;&#177;o <SPAN CLASS="MATH"></SPAN> centrada en el punto de inter&#195;&#169;s y orientada de acuerdo al resultado que se obtuvo en la secci&#195;&#179;n <A HREF="node37.html#sec:orientacion_del_punto">2.4.1</A>. Ejemplos de esas regiones cuadradas son ilustradas en la Fig. <A HREF="#fig:squareregionsexample">2.12</A>.
+      
+<DIV ALIGN="CENTER"><A NAME="fig:squareregionsexample"></A><A NAME="1581"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 2.12:</STRONG>
+Detalle de una escena mostrando el tama&#195;&#177;o de las ventanas orientadas del descriptor a diferentes escalas. (Figura tomada de (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	      <IMG
+ WIDTH="34" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img130.png"
+ ALT="\includegraphics[scale=0.4]{./figs/squareregionsexample}">
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV ALIGN="CENTER"><A NAME="fig:subdivideregions"></A><A NAME="fig:left_boxfilters"></A><A NAME="fig:regioneshaarandresponses"></A><A NAME="1584"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Interpretaci&#195;&#179;n gr&#195;&#161;fica del descriptor SURF. (Figuras tomadas de (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	
+[]
+
+
+	 
+	
+[]
+
+
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV ALIGN="CENTER"><A NAME="fig:descriptorresponses"></A><A NAME="1585"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 2.14:</STRONG>
+Descriptores resultantes para tres subregiones con patrones diferentes (Figura tomada de (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	      
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+Seguidamente, cada regi&#195;&#179;n es dividida en subregiones de <!-- MATH
+ $4 \times 4$
+ -->
+<SPAN CLASS="MATH"></SPAN> como se puede observar en la grilla cuadrada orientada sobre el punto de inter&#195;&#169;s en la Fig. <A HREF="#fig:subdivideregions">2.13a</A>. Luego para cada subregi&#195;&#179;n se calculan las respuestas de las waveletes Haar con una separaci&#195;&#179;n de muestreo de <!-- MATH
+ $5 \times 5$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img135.png"
+ ALT="$ 5 \times 5$"></SPAN>. Las subdivisiones de <!-- MATH
+ $2 \times 2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="$ 2 \times 2$"></SPAN> de cada cuadrado corresponden a los campos reales del descriptor que son las sumas <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img124.png"
+ ALT="$ dx$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img137.png"
+ ALT="$ \vert dx\vert$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$ dy$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.png"
+ ALT="$ \vert dy\vert$"></SPAN> calculadas relativas a la orientaci&#195;&#179;n de la grilla como se observa en la Fig. <A HREF="#fig:left_boxfilters">2.13b</A> donde se denota con <SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$ d_x$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.png"
+ ALT="$ d_y$"></SPAN> a la respuesta de la wavelet Haar en la direcci&#195;&#179;n horizontal y vertical respectivamente (relativas a la orientaci&#195;&#179;n del punto clave, con tama&#195;&#177;o del filtro igual a <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img141.png"
+ ALT="$ 2s$"></SPAN>). Se debe tener en cuenta que para incrementar la robustez ante deformaciones geom&#195;&#169;tricas y errores de localizaci&#195;&#179;n, las respuestas <SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$ d_x$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.png"
+ ALT="$ d_y$"></SPAN> son primero ponderadas con un gaussiano con <!-- MATH
+ $\sigma=3.3s$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img142.png"
+ ALT="$ \sigma=3.3s$"></SPAN> centrado en el punto de inter&#195;&#169;s. Luego, las respuestas <SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$ d_x$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.png"
+ ALT="$ d_y$"></SPAN> se suman en cada subregi&#195;&#179;n, como as&#195;&#173; tambi&#195;&#169;n los valores absolutos de las mismas <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img137.png"
+ ALT="$ \vert dx\vert$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.png"
+ ALT="$ \vert dy\vert$"></SPAN> con el objetivo de brindar informaci&#195;&#179;n de la polaridad sobre los cambios de intensidad. De esta forma, cada subregi&#195;&#179;n queda representada por un vector de 4 dimensiones <!-- MATH
+ $\mathbf{v}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img143.png"
+ ALT="$ \mathbf{v}$"></SPAN>, que caracteriza su intensidad localmente <!-- MATH
+ $\mathbf{v}=(\sum{d_x},\sum{d_y},\sum{|d_x|},\sum{|d_y|})$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.png"
+ ALT="$ \mathbf{v}=(\sum{d_x},\sum{d_y},\sum{\vert d_x\vert},\sum{\vert d_y\vert})$"></SPAN>. Debido a que se tienen <SPAN CLASS="MATH"><IMG
+ WIDTH="253" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img145.png"
+ ALT="$ 16$"></SPAN> subregiones (<!-- MATH
+ $4 \times 4$
+ -->
+<SPAN CLASS="MATH"></SPAN>) con vectores de 4 dimensiones por subregi&#195;&#179;n, se obtiene un vector descriptor de 64 dimensiones (<!-- MATH
+ $16 \times 4$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.png"
+ ALT="$ 16 \times 4$"></SPAN>) por cada punto clave detectado, por lo que se puede decir que el descriptor SURF consiste en las respuestas de la wavelet Haar en una regi&#195;&#179;n de 4x4 alrededor del punto clave (). Las repuestas wavelet son invariantes a un sesgo en la iluminaci&#195;&#179;n, mientras que la invarianza al contraste es alcanzado mediante la normalizaci&#195;&#179;n del descriptor.
+ 
+<P>
+En la Fig. <A HREF="#fig:descriptorresponses">2.14</A> se pueden observar los descriptores para tres subregiones con patrones de im&#195;&#161;genes diferentes. En el caso de una regi&#195;&#179;n homog&#195;&#169;nea se puede observar que todos los valores son relativamente bajos; en presencia de frecuencias en la direcci&#195;&#179;n de <SPAN CLASS="MATH"></SPAN>, los valores de <!-- MATH
+ $\sum{|d_x|}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$ \sum{\vert d_x\vert}$"></SPAN> son altos, mientras los otros son bajos y si la intensidad se incrementa gradualmente en la direcci&#195;&#179;n <SPAN CLASS="MATH"></SPAN>, ambos valores <SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img148.png"
+ ALT="$ \sum{d_x}$"></SPAN> y <!-- MATH
+ $\sum{|d_x|}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$ \sum{\vert d_x\vert}$"></SPAN> son altos.
+
+<P>
+Si bien existen muchos par&#195;&#161;metros del m&#195;&#169;todo que pueden variarse, en este cap&#195;&#173;tulo se han expuestos aquellos que el autor (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>) recomienda seg&#195;&#186;n sus resultados en la publicaci&#195;&#179;n original.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html763"
+  HREF="node39.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html759"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html755"
+  HREF="node37.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html761"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html764"
+  HREF="node39.html">Correspondencia entre puntos claves</A>
+<B> Subir:</B> <A NAME="tex2html760"
+  HREF="node36.html">Descripci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html756"
+  HREF="node37.html">Asignaci&#195;&#179;n de la orientaci&#195;&#179;n</A>
+ &nbsp; <B>  <A NAME="tex2html762"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,7 @@
+sin proc 723
+log 543
+equalized 1312
+pa 1137
+hb 1443
+eqhb: 2227
+

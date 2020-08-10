@@ -1,0 +1,238 @@
+\chapter{Apéndice}
+\label{a:ApendiceA}
+\section{Principales interfases utilizadas de OpenCv}
+En esta sección, se presentan las principales funciones utilizadas de la librería OpenCv como referencia al código fuente del trabajo. Para mayor información, se puede consultar la documentación oficial \footnote{http://opencv.willowgarage.com/wiki/}.
+
+\subsection{Conversión a escala de grises con una formula perceptualmente ponderada}
+Este proceso es llevado a cabo mediante la función provista por la librería OpenCV $cvCvtColor(const CvArr* src, CvArr* dst, int code)$ con el parámetro $code=CV\_RGB2GRAY$.
+
+\subsection[Extracción de características en imágenes - SURF]{Métodos de extracción de características en imágenes - SURF}
+\label{extraccion_caracteristicas}
+Para aplicar el método SURF descripto en el informe, se utilizó el código que ofrece la librería OpenCV (Open Source Computer Vision)\footnote{\url{http://SourceForge.net/projects/opencvlibrary}}. La funci\'on que lo implementa est\'a descrita a continuaci\'on:
+
+\begin{lstlisting}
+void cvExtractSURF(const CvArr* image, 
+		   const CvArr* mask, 
+		   CvSeq** keypoints, 
+		   CvSeq** descriptors, 
+		   CvMemStorage* storage, 
+		   CvSURFParams params)
+\end{lstlisting}
+
+\noindent los parámetros\footnote{\url{http://opencv.willowgarage.com/documentation/feature_detection.html\#cvExtractSURF}} de est\'a funci\'on, son los que se presentan a continuación:
+\begin{itemize}
+ \item \textbf{image} (entrada): imagen de entrada en escala de grises de 8 bits.
+ \item \textbf{mask} (entrada opcional): máscara de 8 bits. Las características sólo son buscadas en áreas que contienen más de un 50\% de los píxeles distintos de cero.
+  \item \textbf{keypoints} (salida): puntero doble a una secuencia que representa los puntos claves. La secuencia de la estructura CvSURFPoint es la siguiente:
+\begin{lstlisting}
+typedef struct CvSURFPoint {
+   CvPoint2D32f pt;
+   int laplacian;
+   int size;
+   float dir;
+   float hessian;
+} CvSURFPoint;
+\end{lstlisting}
+donde:
+\begin{description}
+\item \texttt{pt:} es la posición de la característica en la imagen.
+\item \texttt{laplacian:} representa el signo del laplaciando en el punto, los valores posibles son: -1, 0 o +1. Puede ser usado para la comparación de características (normalmente características con laplacianos de diferentes signos no coincidirán).
+\item \texttt{size:} es el tamaño de la característica.
+\item \texttt{dir:} es la orientación de la característica (0-360 grados).
+\item \texttt{hessian:} es el valor del hessiano (puede ser usado para estimar aproximadamente la intensidad de las características). Relacionado con \texttt{params.hessianThreshold}.
+\end{description}
+
+\item \texttt{descriptors} (salida opcional): puntero doble a una secuencia que representa el descriptor. 
+Dependiendo del valor de \emph{params.extended}, cada elemento de la secuencia contendrá un vector de punto flotante (CV\_32F) de 64 o 128 elementos. Si el parámetro es NULL, el descriptor no es calculado.
+\item \texttt{storage}: almacenamiento de memoria donde serán guardados los puntos claves y descriptores.
+\item \texttt{params}: otros parámetros del algoritmo con la estructura de CvSURFParams:
+\begin{lstlisting}
+typedef struct CvSURFParams
+{  int extended;
+   double hessianThreshold;
+   int nOctaves;
+   int nOctaveLayers;
+} CvSURFParams;
+
+CvSURFParams cvSURFParams(double hessianThreshold,
+			  int extended=0);
+\end{lstlisting}
+donde:
+\begin{description}
+\item \texttt{extended:} tama\~no del descriptor. 0 indica un descriptor básico (64 elementos), mientras que 1 significa un descriptor extendido (128 elementos).
+\item \texttt{hessianThreshold:} umbral para el hessiano del punto clave de las características, se extraen s\'olo aquellas cuyo hessiano supere el umbral.
+% solamente las características con el hessiano del punto clave mayor a este valor serán extraídos. 
+Los valores recomendables por defectos est\'an entre 300 y 500 (dependen del promedio local de contraste y nitidez de la imagen). 
+%Con este parámetro se pueden filtrar ciertas características basadas en el valor del hessiano y otras características.
+\item \texttt{nOctaves:} es el número de octavas a ser usadas en la extracción. Con cada octava adicional, el número de características es duplicado. (3 por defecto).
+\item \texttt{nOctaveLayers:} es el número de capas en cada octava. (4 por defecto).
+\end{description}
+El objetivo de la función \emph{cvExtractSURF} es buscar características robustas en la imagen, como se ha descripto en el informe anterior y en \cite{Bay:2008:SRF}. Por cada característica hallada retorna su localización, tamaño, orientación y opcionalmente el descriptor (básico o extendido). Su uso puede ser la localización y seguimiento de objetos, emparejamiento de imágenes, entre otras aplicaciones.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Búsqueda de correspondencias}
+La librería Rápida para aproximación de vecinos más cercanos (FLANN - Fast library for Approximate Nearest Neighbors) \cite{Muja09fastapproximate}, contiene una colección de algoritmos optimizados para la búsqueda rápida del vecino más cercano, en grandes conjuntos de datos y con  características de altas dimensiones.
+OpenCV, posee una interfaz\footnote{\url{http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html}} a la librería FLANN\footnote{\url{http://people.cs.ubc.ca/~mariusm/index.php/FLANN/FLANN}} la cual ser\'a utilizada para poder resolver el problema de la búsqueda. 
+A continuación se presenta una descripción de los principales métodos de FLANN.
+
+La clase index de FLANN se utiliza para abstraer los diferentes tipos de índices a usar para las búsqueda del vecino más cercano.
+\begin{lstlisting}
+namespace cv
+{
+namespace flann
+{
+    template <typename T>
+    class Index_
+    {
+    public:
+            Index_(const Mat& features, const IndexParams& params);
+            ~Index_();
+            ...
+            void knnSearch(const Mat& queries,
+                           Mat& indices,
+                           Mat& dists,
+                           int knn,
+                           const SearchParams& params);
+	    ...
+            const IndexParams* getIndexParameters();
+    };
+    typedef Index_<float> Index;
+} } // namespace cv::flann
+\end{lstlisting}
+El constructor de la clase
+\begin{lstlisting}
+Index_<T>::Index_(const Mat& features, const IndexParams& params)
+\end{lstlisting}
+construye un índice de búsqueda del vecino más cercano para un conjunto de datos dado. Los parámetros\footnote{\url{http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html\#cv::flann::Index_} }
+son:
+\begin{itemize}
+  \item \textbf{features:} matriz que contiene las características (puntos) a indexar. Se almacena un punto por cada fila de la matriz; el tamaño de la matriz es $C \times D$, donde $C$ es la cantidad de caracter\'isticas y $D$ es la dimensionalidad.
+  \item \textbf{params:} estructura que contiene los parámetros del índice. El tipo del índice será construido dependiendo del tipo de este parámetro. Los parámetros\footnote{\url{http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html\#id4}} posibles son:
+  \begin{itemize}
+    \item \textbf{LinearIndexParams}: el índice lleva a cabo una búsqueda de fuerza bruta lineal.
+    \item \textbf{KDTreeIndexParams}: el índice construido consiste en un conjunto de árboles aleatorios KD (randomized KD-trees) que se buscará en paralelo.
+	\begin{lstlisting}
+	      struct KDTreeIndexParams : public IndexParams{
+		  KDTreeIndexParams( int trees = 4 );
+	      };
+	\end{lstlisting}
+	\textbf{trees:} el número de árboles KD paralelos a usar. Valores que producen buenos resultados se encuentran entre 1 y 16, dependiendo del conjunto de datos.
+    \item \textbf{KMeansIndexParams}: el índice construido será un árbol k-means jerárquico.
+    \item \textbf{CompositeIndexParams}: el índice creado combina árboles aleatorios KD y k-means jerárquicos.
+    \item \textbf{AutotunedIndexParams}: el índice creado será seleccionado automáticamente para ofrecer el mejor rendimiento, eligiendo el tipo de índice óptimo entre el uso de árboles aleatorios KD, k-means jerárquicos o lineales, como así también, los parámetros para el conjunto de datos proporcionados.
+    \item \textbf{SavedIndexParams}: este tipo de objeto es usado para cargar un índice previamente guardado en el disco.
+  \end{itemize}
+\end{itemize}
+
+La funci\'on \textbf{knnSearch}, lleva a cabo la búsqueda de los K-vecinos más cercanos para un punto dado, usando el índice. A continuación se presentan los parámetros\footnote{\url{http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html\#cv-cv-flann-index-t-knnsearch } } 
+de dicha función:
+\begin{lstlisting}
+void Index_<T>::knnSearch(const Mat& queries, 
+			  Mat& indices, 
+			  Mat& dists, 
+			  int knn, 
+			  const SearchParams& params)
+\end{lstlisting}
+Parámetros:
+\begin{itemize}
+  \item \textbf{query:} matriz con puntos para realizar la consulta, su tamaño es $C \times D$, donde $C$ es la cantidad de caracter\'isticas y $D$ es la dimensionalidad (un punto por fila).
+  \item \textbf{indices:} matriz que contendrá los índices de los K vecinos más cercanos encontrados.
+  \item \textbf{dists:} matriz que contendrá las distancias a los K vecinos más cercanos encontrados.
+  \item \textbf{knn:} número de vecinos más cercanos para los que se hará la búsqueda.
+  \item \textbf{params:} parámetros de búsqueda
+\begin{lstlisting}
+ struct SearchParams {
+        SearchParams(int checks = 32);
+};
+\end{lstlisting}
+\textbf{checks:} especifica las hojas máximas a visitar en la búsqueda de los vecinos. Un valor alto para este parámetro, dará una mejor precisión, pero requerir\'a más tiempo. Si se utilizó la configuración automática cuando se creó el índice, el número de controles necesarios para alcanzar la precisión especificada también fue calculado, en cuyo caso se omite este parámetro.
+\end{itemize}
+\subsection {Búsqueda de la homografía}
+Mediante la función \emph{cvFindHomography}\footnote{\url{http://opencv.willowgarage.com/documentation/camera_calibration_and_3d_reconstruction.html\#findhomography}} provista por OpenCV, se procede a buscar la transformación perspectiva entre dos planos. A continuación se presenta el encabezado y sus parámetros:
+\begin{lstlisting}
+void cvFindHomography(const CvMat* srcPoints, 
+		      const CvMat* dstPoints, 
+		      CvMat* H int method=0, 
+		      double ransacReprojThreshold=0, 
+		      CvMat* status=NULL
+		     )
+\end{lstlisting}
+\begin{itemize}
+  \item \textbf{param srcPoints:} Coordenadas del punto en el plano original, es un arreglo de 1 canal de $2 \times N$, $N \times 2$, $3 \times N$ o $N \times 3$ (los últimos casos son para la representación en coordenadas homogéneas), donde $N$ es el número de puntos. Un arreglo de 2 o 3 canales de tamaño $1 \times N$ o $N \times 1$ también puede ser pasado.
+  \item \textbf{param dstPoints:} Coordenadas del punto en el plano destino. Arreglo de 1 canal de $2 \times N$, $N \times 2$, $3 \times N$ o $N \times 3$, o un arreglo de 2 o 3 canales de tamaño $1 \times N$ o $N \times 1$.
+ \item \textbf{param H:} matriz homografía de salida ($3 \times 3$).
+ \item \textbf{param method:}
+    \begin{itemize}
+     \item \textbf{0:} método regular que usa todos los puntos.
+     \item \textbf{CV\_RANSAC:} método robusto basado en RANSAC.
+     \item \textbf{CV\_LMEDS:} método robusto de la menor mediana.
+    \end{itemize}
+
+ \item \textbf{param ransacReprojThreshold} El valor de error de reproyección máximo permitido para tratar a un par de puntos como inliers (usado únicamente con el método RANSAC). Esto es:
+  \begin{equation*}
+    \resizebox{.8\hsize}{!}{$||dstPoints_{i} - convertPointHomogeneous(HsrcPoints_{i})||>ransacReprojThreshold$}
+  \end{equation*}
+  luego el punto $_{i}$ es considerado como outlier. Si $srcPoints$ y $dstPoints$ son medidos en píxeles, un valor con sentido usualmente usado está en el rango 1 a 10.
+ \item \textbf{param status:} máscara de salida opcional devuelta por el método robusto (\textbf{CV\_RANSAC} o \textbf{CV\_LMEDS}). Notar que los valores de la máscara de entrada se han ignorado.
+
+La función busca la transformación perspectiva $H$ entre los planos fuente y destino:
+\end{itemize}
+\begin{eqnarray*}
+s_{i}=\left[\begin{array}{c}
+x'_{i}\\
+y'_{i}\\
+1
+\end{array}\right] & \sim & H\left[\begin{array}{c}
+x_{i}\\
+y_{i}\\
+1
+\end{array}\right]
+\end{eqnarray*}
+ 
+por lo que el error de reproyección es minimizado:
+\begin{eqnarray*}
+\underset{i}{\sum}\left(x'_{i}-\frac{h_{11}x_{i}+h_{12}y_{i}+h_{13}}{h_{31}x_{i}+h_{32}y_{i}+h_{33}}\right)^{2}+\left(y'_{i}-\frac{h_{21}x_{i}+h_{22}y_{i}+h_{23}}{h_{31}x_{i}+h_{32}y_{i}+h_{33}}\right)^{2}
+\end{eqnarray*}
+
+Si el parámetro $method$ se establece al valor por defecto $0$, la función utiliza todos los pares de puntos para calcular la homografía inicial estimada con un simple esquema de mínimos cuadrados. 
+
+Sin embargo, si no todos los pares de puntos $(srcPoints_{i}, dstPoints_{i})$ encajan en la transformación perspectiva (por ejemplo hay algunos valores atípicos), esta estimación inicial será pobre. En este caso, se puede utilizar uno de los dos métodos robustos: $RANSAC$ o $LMeDS$. Estos métodos, prueban muchos subgrupos diferentes de puntos correspondientes (de a 4 pares cada uno) de forma aleatoria, estiman la homografía usando el subconjunto y el algoritmo simple de mínimos cuadrados y luego calculan la calidad  de la matriz homográfica calculada.
+%  (que es el número de inliers para RANSAC). 
+Luego, el mejor subconjunto es usado para producir la estimación inicial de la matriz de homografía y la máscara de valores válidos y espurios.
+
+% Independientemente del método, la matriz homográfica calculada es refinada aún más (usando inliers solo en el caso de un método robusto) con el Método de Levenberg-Marquardt con el objetivo de reducir el error de re proyección aún más.
+
+El método RANSAC 
+% puede manejar prácticamente cualquier relación entre los outliers, pero 
+necesita un umbral para distinguir entre posibles valores válidos y atípicos. El método LMeDS no necesita ningún umbral, pero funciona correctamente solo cuando hay más de un $50\%$ de valores válidos. Finalmente, si se está seguro que en las características calculadas sólo hay presente algo de ruido pequeño, pero no hay valores atípicos, el métodos por defecto puede ser la mejor opción.
+
+% Esta función es usada para buscar las matrices intrínsecas y extrínsecas iniciales. 
+% La homografia se determina hasta una escala, es decir que está normalizada por lo que $h_{33}=1$
+
+% ver estas urls:
+% \url{http://dsp.stackexchange.com/questions/3241/pose-from-homography-matrix-zhang-method}
+% \url{http://dsp.stackexchange.com/questions/2736/step-by-step-camera-pose-estimation-for-visual-tracking-and-planar-markers}
+
+\section{Coordenadas homogéneas}
+Dado que se ha hecho uso del concepto de Coordenadas homogéneas en el desarrollo de este trabajo, se creyó pertinente dejar un concepto breve de lo que representan las mismas de forma resumida. Si se desea profundizar aún más sobre el tema, se puede recurrir a bibliografía externa \cite{Hartley2004}.
+
+Cada punto en una imagen, representa una línea de visión de un rayo de luz: cualquier punto 3D a lo largo de este rayo proyecta el mismo punto en la imagen, por lo que solo la dirección del rayo es relevante y no así la distancia del punto a través de él. 
+Supongamos que la cámara está en el origen $(0,0,0)$. El rayo representado por coordenadas homogéneas $(X,Y,Z)$, es el que pasa a través del punto 3D $(X,Y,Z)$. El punto 3D $s(X,Y,Z)=(sX,sY,sZ)$, también está sobre el mismo rayo, por lo que se concluye que reescalar coordenadas homogéneas no produce diferencias.
+
+Si suponemos el plano de la imagen de la cámara como $Z=1$, el rayo a través del píxel $(x,y)$ puede se representado en coordenadas homogéneas por el vector $(x,y,1) \sim (xZ, yZ, Z)$ para cualquier $Z \neq 0$. Luego, el punto homogéneo $(X,Y,Z)$ con $Z \neq 0$ corresponde al punto (no homogéneo) en la imagen $(\frac{X}{Z}, \frac{Y}{Z})$ en el plano $Z=1$.
+
+Cuando $Z=0$, $(X,Y,0)$ es un punto 3D valido que define un rayo óptico normal, pero este rayo no corresponde a algún píxel finito: es paralelo al plano $Z=1$ y no tiene una intersección finita con el mismo.
+
+% \section{Manipulaciones geométricas de las imágenes}
+% Warping o redimensionado no uniforme. Las funciones que pueden estirar, encoger, deformar y/o rotar imágenes son llamadas transformaciones geométricas. Para áreas planas, hay dos sabores de transformaciones geométricas: transfomraciones que usan matrices de 2 x 3 que son llamadas transformaciones afines (cualquier transformación que puede ser expresada en la forma de la multiplicación de una matriz seguida de la adición de un vector) y transformaciones basadas en matrices de 3x3 llamadas transformaciones perspectivas u homogrfaias. Se pueden pensar a estas ultimas como un método para calcular el camino en el que un plano en tres dimensiones es percibido por un observador particular que no podría estar mirando recto a ese plano.
+% 
+% Las transformaciones afines siguen conservando el paralelismo.. es un rectángulo que se modifica desde las esquinas tirando o empujando...
+% 
+% Cuando se tiene múltiples imágenes que sabemos que son de diferentes vistas del mismo objeto, nos gustaría calcular las trasformaciones actuales que relacionan las diferentes vistas. En este caso, las transformaciones afines a menudo son usadas para modelar las vistas porque tiene pocos parámetros y son fáciles de calcular. La desventaja es que las distorciones perspectivas verdaderas solo pueden ser modeladas por la homografía (es un término matemático para mapear puntos de una superficie a puntos en otra. En el contexto de visión computacional, las homografías casi siempre se refieren al mapeo entre puntos de dos planos de imagen que corresponden a la misma localizacion en un objeto plano en el mundo real. Esa representacion es represetnada por una matriz orhogonal de 3x3).
+% 
+% Las transformaciones afines pueden convertir rectangulos en paralelogramos. Pueden cambiar la forma pero manteniendo el paralelismo pueden rotar y escalar. Las transformaciones perspectivas ofrecen mas flexibilidad; pueden cambiar un rectangulo e un trapezoide. Las transformaciones afines son un subconjunto de las transformaciones perspectivas.
+% 
+% \subsection{Transf afin y perspectiva}
+% La transformación perspectiva esta muy relacionada con la proyeccion perspectiva. La proyeccion perspectiva mapea puntos en el mundo fisico tridimentional en puntos en un plano de imagen bidimensionla a lo largo de un conjunto de linas de proyeccion que se encuentran en un punto comun llamado centro de proyeccion. La transformacion perspectiva que es un tipo especial de homografía (homografia plana) relaciona dos imagenes diferentes que son proyecciones alternativas del mismo objeto tridimensional en dos diferentes planos proyectivos.

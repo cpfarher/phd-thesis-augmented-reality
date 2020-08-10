@@ -1,0 +1,117 @@
+\relax 
+\catcode`"\active
+\catcode`<\active
+\catcode`>\active
+\@nameuse{es@quoting}
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\providecommand*\HyPL@Entry[1]{}
+\@input{portada.aux}
+\HyPL@Entry{0<</S/D>>}
+\select@language{spanish}
+\@writefile{toc}{\select@language{spanish}}
+\@writefile{lof}{\select@language{spanish}}
+\@writefile{lot}{\select@language{spanish}}
+\HyPL@Entry{1<</S/r /St 2>>}
+\@input{resumen.aux}
+\@input{prefacio.aux}
+\@writefile{toc}{\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman  {xiii}}{section*.5}}
+\@input{introduccion.aux}
+\HyPL@Entry{14<</S/D>>}
+\@input{parte3.aux}
+\@input{parte4.aux}
+\@input{parte5.aux}
+\@input{conclusiones.aux}
+\bibstyle{plain}
+\bibdata{bibtesis,../bib1,../bib2,../bib3,../bib4}
+\bibcite{conf/iswc/2007}{1}
+\citation{conf/iswc/2007}
+\bibcite{conf/ismar/2007}{2}
+\citation{conf/ismar/2007}
+\bibcite{bb77826}{3}
+\bibcite{AryaEtAl98}{4}
+\bibcite{Azuma:2001:RAA:616073.618862}{5}
+\bibcite{Bay:2008:SRF}{6}
+\bibcite{Bay06surf:speeded}{7}
+\bibcite{Beis:1997:SIU:794189.794431}{8}
+\@writefile{toc}{\contentsline {chapter}{Bibliograf\'{\i }a}{79}{section*.55}}
+\bibcite{conf/visapp/BenhimaneNGGNM08}{9}
+\bibcite{citeulike:3484001}{10}
+\bibcite{VLDB95574}{11}
+\bibcite{1320421}{12}
+\bibcite{5607509}{13}
+\bibcite{conf/icra/2010}{14}
+\citation{conf/icra/2010}
+\bibcite{Duda:1972:UHT:361237.361242}{15}
+\bibcite{Evans09noteson}{16}
+\bibcite{Fischler:1981:RSC:358669.358692}{17}
+\bibcite{friedman-an-algorithm-toms-77}{18}
+\bibcite{Friedman:1977:AFB:355744.355745}{19}
+\bibcite{Fukunaga75}{20}
+\bibcite{Chen_markerlessaugmented}{21}
+\bibcite{citeulike:665979}{22}
+\bibcite{Harris88alvey}{23}
+\bibcite{bb38231}{24}
+\bibcite{Hartley2004}{25}
+\bibcite{conf/cvpr/HinterstoisserLIFN10}{26}
+\bibcite{bb1919}{27}
+\bibcite{conf/cvpr/JurieS04}{28}
+\bibcite{journals/ijcv/KadirB01}{29}
+\bibcite{5711053}{30}
+\bibcite{KimPW09}{31}
+\bibcite{conf/ismar/KleinM07}{32}
+\citation{conf/ismar/2007}
+\bibcite{BenhimaneNGGNM08}{33}
+\bibcite{Kottman2011}{34}
+\bibcite{citeulike:9456628}{35}
+\bibcite{5739718}{36}
+\bibcite{bb79759}{37}
+\bibcite{oai:infoscience.epfl.ch:52666}{38}
+\bibcite{Lepetit:2005:MMT:1166405.1166406}{39}
+\bibcite{5478308}{40}
+\bibcite{springerlink:10.1023/A:1008045108935}{41}
+\bibcite{Liu04aninvestigation}{42}
+\bibcite{conf/nips/LiuMGY04}{43}
+\bibcite{bb48614}{44}
+\bibcite{Lowe2004}{45}
+\bibcite{Lowe1999}{46}
+\bibcite{loweDistinctive}{47}
+\bibcite{DBLP:journals/ivc/MatasCUP04}{48}
+\bibcite{bb23918}{49}
+\bibcite{bb53077}{50}
+\bibcite{conf/iccv/MikolajczykS01}{51}
+\bibcite{journals/ijcv/MikolajczykS04}{52}
+\bibcite{Mikolajczyk:2005:PEL:1083822.1083989}{53}
+\bibcite{Milgram94augmentedreality}{54}
+\bibcite{conf/ismar/MiyashitaMTOESGGAL08}{55}
+\bibcite{Muja09fastapproximate}{56}
+\bibcite{muja_flann_2009}{57}
+\bibcite{bb78856}{58}
+\bibcite{Nixon:2002:FEI}{59}
+\bibcite{BouGar}{60}
+\bibcite{bb36798}{61}
+\bibcite{Rousseuw_1994}{62}
+\bibcite{Rousseeuw1984}{63}
+\bibcite{Silpa_KDTree}{64}
+\bibcite{Rosten05fusingpoints}{65}
+\bibcite{conf/nips/SimardBHL98}{66}
+\bibcite{Simard99boxlets:a}{67}
+\bibcite{conf/ismar/2004}{68}
+\citation{conf/ismar/2004}
+\bibcite{Takacs:2008:OAR:1460096.1460165}{69}
+\bibcite{Terriberry_gpuaccelerating}{70}
+\bibcite{TuytelaarsM07}{71}
+\bibcite{Viola01rapidobject}{72}
+\bibcite{WagnerRMDS10}{73}
+\bibcite{DBLP:journals/ijpp/Zhang10}{74}
+\@input{apendiceA.aux}

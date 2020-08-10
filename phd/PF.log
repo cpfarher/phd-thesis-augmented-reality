@@ -1,0 +1,3304 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.17)  9 DEC 2013 15:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**PF.tex
+(./PF.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ga
+lician, catalan, spanish, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2011/10/06 v5.0k Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@datefmt=\count89
+\es@quottoks=\toks16
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 496.
+Package babel Info: Making . an active character on input line 599.
+Package babel Info: Making < an active character on input line 644.
+Package babel Info: Making > an active character on input line 644.
+))
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen106
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks19
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks20
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks21
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box28
+\shadowsize=\dimen115
+\@Sbox=\box29
+\do@VerbBox=\toks29
+\the@fancyput=\toks30
+\this@fancyput=\toks31
+\EndVerbatimTokens=\toks32
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box30
+\beforetitleunit=\skip60
+\aftertitleunit=\skip61
+\ttl@plus=\dimen116
+\ttl@minus=\dimen117
+\ttl@toksa=\toks33
+\titlewidth=\dimen118
+\titlewidthlast=\dimen119
+\titlewidthfirst=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen121
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count107
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `linktocpage' set `true' on input line 3941.
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count108
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count109
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count113
+\c@bookmark@seq@number=\count114
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip62
+)
+(/usr/share/texlive/texmf-dist/tex/latex/breakurl/breakurl.sty
+Package: breakurl 2009/01/24 v1.30 Breakable hyperref URLs
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+\XKV@depth=\count115
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 47.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
+Package: delarray 1994/03/14 v1.01 array delimiter package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen124
+\extrarowheight=\dimen125
+\NC@list=\toks36
+\extratabsurround=\skip63
+\backup@length=\skip64
+))
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
+)
+\c@ContinuedFloat=\count116
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count117
+\sf@farskip=\skip65
+\sf@captopadj=\dimen132
+\sf@capskip=\skip66
+\sf@nearskip=\skip67
+\c@subfigure=\count118
+\c@subfigure@save=\count119
+\c@lofdepth=\count120
+\c@subtable=\count121
+\c@subtable@save=\count122
+\c@lotdepth=\count123
+\sf@top=\skip68
+\sf@bottom=\skip69
+)
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count124
+\float@exts=\toks37
+\float@box=\box31
+\@floatcapt=\box32
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks38
+\flrow@foot=\insert233
+\FB@wd=\dimen133
+\FBo@wd=\dimen134
+\FBc@wd=\dimen135
+\FBo@ht=\skip70
+\FBc@ht=\skip71
+\FBf@ht=\skip72
+\FBo@max=\skip73
+\FBc@max=\skip74
+\FBf@max=\skip75
+\c@FBl@b=\count125
+\floatbox@depth=\count126
+\c@FRobj=\count127
+\c@FRsobj=\count128
+\Xhsize=\skip76
+\sXhsize=\skip77
+\Zhsize=\skip78
+\sZhsize=\skip79
+\flrow@rowbox=\box33
+\FR@Zunitlength=\dimen136
+\c@FBcnt=\count129
+\FPOScnt=\count130
+\LTleft=\skip80
+\LTright=\skip81
+\LTleft=\skip82
+\LTright=\skip83
+\flrow@types=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2011/10/31 v0.52 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count131
+\pstFP@xia=\count132
+\pstFP@xib=\count133
+\pstFP@xfa=\count134
+\pstFP@xfb=\count135
+\pstFP@rega=\count136
+\pstFP@regb=\count137
+\pstFP@regs=\count138
+\pstFP@times=\count139
+)
+\psLoopIndex=\count140
+
+`PSTricks' v2.29  <2012/06/04> (tvz)
+\pst@dima=\dimen137
+\pst@dimb=\dimen138
+\pst@dimc=\dimen139
+\pst@dimd=\dimen140
+\pst@dimg=\dimen141
+\pst@dimh=\dimen142
+\pst@dimm=\dimen143
+\pst@dimn=\dimen144
+\pst@dimo=\dimen145
+\pst@dimp=\dimen146
+\pst@hbox=\box34
+\pst@ibox=\box35
+\pst@boxg=\box36
+\pst@cnta=\count141
+\pst@cntb=\count142
+\pst@cntc=\count143
+\pst@cntd=\count144
+\pst@cntg=\count145
+\pst@cnth=\count146
+\pst@cntm=\count147
+\pst@cntn=\count148
+\pst@cnto=\count149
+\pst@cntp=\count150
+\@zero=\count151
+\pst@toks=\toks40
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen147
+\psxunit=\dimen148
+\psyunit=\dimen149
+\pst@C@@rType=\count152
+\pslinewidth=\dimen150
+\psk@startLW=\dimen151
+\psk@endLW=\dimen152
+\pst@customdefs=\toks41
+\pslinearc=\dimen153
+\pst@symbolStep=\dimen154
+\pst@symbolWidth=\dimen155
+\pst@symbolLinewidth=\dimen156
+\everypsbox=\toks42
+\psframesep=\dimen157
+\pslabelsep=\dimen158
+\pst@shift=\dimen159
+\theoverlaybox=\box37
+)
+File: pstricks.tex 2012/06/04 v2.29 `PSTricks' (tvz,hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2012/06/04 v2.29 `PST-fp' (hv)
+
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count153
+\multidocount=\count154
+\multido@stuff=\toks43
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+ v1.42, 2012/05/03 (tvz,hv)
+\pstRadUnit=\dimen160
+\pstRadUnitInv=\dimen161
+\pst@linecnt=\count155
+\psxlabelsep=\dimen162
+\psylabelsep=\dimen163
+\psk@subticksize=\dimen164
+\pst@xticksizeA=\dimen165
+\pst@xticksizeB=\dimen166
+\pst@xticksizeC=\dimen167
+\pst@yticksizeA=\dimen168
+\pst@yticksizeB=\dimen169
+\pst@yticksizeC=\dimen170
+\@digitcounter=\count156
+\psk@llx=\dimen171
+\psk@lly=\dimen172
+\psk@urx=\dimen173
+\psk@ury=\dimen174
+\pst@xunit=\dimen175
+\pst@yunit=\dimen176
+)
+File: pst-plot.tex 2012/05/03 1.42 `pst-plot' (tvz,hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2011/06/05 v1.00 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex
+ v1.22, 2012/02/12
+\psrow=\count157
+\pscol=\count158
+\psmatrixcnt=\count159
+\psrowsep=\skip84
+\pscolsep=\skip85
+\pst@args=\count160
+\num@pts=\count161
+\pst@argcnt=\count162
+)
+File: pst-node.tex 2012/02/12 1.22 `pst-node' (tvz)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count163
+\@cmidlb=\count164
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count165
+\@lastruleclass=\count166
+\@thisrulewidth=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (./slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box38
+\@slashboxb=\box39
+\@slashboxc=\box40
+\@slashboxwd=\count167
+\@slashboxht=\count168
+\@slashsepl=\dimen190
+\@slashsepr=\dimen191
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip86
+\LTright=\skip87
+\LTpre=\skip88
+\LTpost=\skip89
+\LTchunksize=\count169
+\LTcapwidth=\dimen192
+\LT@head=\box41
+\LT@firsthead=\box42
+\LT@foot=\box43
+\LT@lastfoot=\box44
+\LT@cols=\count170
+\LT@rows=\count171
+\c@LT@tables=\count172
+\c@LT@chunks=\count173
+\LT@p@ftn=\toks44
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen193
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks45
+\minrowclearance=\skip90
+) (./lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count174
+\output=\toks46
+\linenoprevgraf=\count175
+\linenumbersep=\dimen194
+\linenumberwidth=\dimen195
+\c@linenumber=\count176
+\c@pagewiselinenumber=\count177
+\c@LN@truepage=\count178
+\c@internallinenumber=\count179
+\c@internallinenumbers=\count180
+\quotelinenumbersep=\dimen196
+\bframerule=\dimen197
+\bframesep=\dimen198
+\bframebox=\box45
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip91
+\enit@outerparindent=\dimen199
+\enit@toks=\toks47
+\enit@inbox=\box46
+\enitdp@description=\count181
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count182
+\lst@gtempboxa=\box47
+\lst@token=\toks48
+\lst@length=\count183
+\lst@currlwidth=\dimen200
+\lst@column=\count184
+\lst@pos=\count185
+\lst@lostspace=\dimen201
+\lst@width=\dimen202
+\lst@newlines=\count186
+\lst@lineno=\count187
+\lst@maxwidth=\dimen203
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count188
+\lst@skipnumbers=\count189
+\lst@framebox=\box48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `PF.idx'.
+
+
+Writing index file PF.idx
+\c@def_transf_proyectiva=\count190
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+(./PF.aux (./portada.aux)
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+ (./agradecimientos.aux) (./resumen.aux)
+(./prefacio.aux) (./introduccion.aux) (./parte3.aux) (./parte4.aux)
+(./parte5.aux) (./conclusiones.aux))
+\openout1 = `PF.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 177.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 177.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 177.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count191
+\scratchdimen=\dimen204
+\scratchbox=\box49
+\nofMPsegments=\count192
+\nofMParguments=\count193
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count194
+\MPscratchDim=\dimen205
+\MPnumerator=\count195
+\makeMPintoPDFobject=\count196
+\everyMPtoPDFconversion=\toks50
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box50
+Package hyperref Info: Link coloring OFF on input line 177.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count197
+)
+LaTeX Info: Redefining \ref on input line 177.
+LaTeX Info: Redefining \pageref on input line 177.
+LaTeX Info: Redefining \nameref on input line 177.
+
+(./PF.out) (./PF.out)
+\@outlinefile=\write5
+\openout5 = `PF.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-subfig.sty
+Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
+\FBsc@max=\skip92
+\FBso@max=\skip93
+)
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box51
+\flrow@LT@prelastfoot=\box52
+\c@FBLTpage=\count198
+)
+\c@lstlisting=\count199
+\openout2 = `portada.aux'.
+
+
+(./portada.tex
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 1.
+ (/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package epstopdf Info: Source file: <figs/fich_unl.eps>
+(epstopdf)                    date: 2012-06-25 18:15:48
+(epstopdf)                    size: 140371 bytes
+(epstopdf)             Output file: <figs/fich_unl-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-04-10 15:21:03
+(epstopdf)                    size: 4303 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/fich_unl-eps-converte
+d-to.pdf figs/fich_unl.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/fich_unl-eps-converted-to.pdf, id=253, 157.58875pt x 79.29625pt>
+File: figs/fich_unl-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/fich_unl-eps-converted-to.pdf>
+Package pdftex.def Info: figs/fich_unl-eps-converted-to.pdf used on input line 
+6.
+(pdftex.def)             Requested size: 78.79417pt x 39.64801pt.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 35.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 35.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 35.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 35.
+
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 35.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 35.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 35.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)) [1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/fich_unl-eps-conver
+ted-to.pdf>]
+\openout2 = `agradecimientos.aux'.
+
+ (./agradecimientos.tex
+
+LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
+(Font)              using `T1/lmss/bx/n' instead on input line 1.
+
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 1.
+
+[2
+
+
+
+]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 13.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 200.
+
+[3] [4
+
+]
+\openout2 = `resumen.aux'.
+
+ (./resumen.tex)
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 206.
+
+[5
+
+
+] [6
+
+]
+\openout2 = `prefacio.aux'.
+
+ (./prefacio.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 6.
+
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 11.
+
+[7
+
+
+]
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 24.
+
+[8])
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 212.
+
+[9]
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 215.
+
+[10
+
+
+
+] (./PF.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
+(Font)              using `T1/lmr/bx/n' instead on input line 4.
+
+
+Package spanish Warning: Replacing `T1/lmr/bx/sc' by 
+(spanish)                faked small caps on input line 4.
+
+
+Package spanish Warning: Replacing `T1/lmr/bx/sc' by 
+(spanish)                faked small caps on input line 5.
+
+
+Package spanish Warning: Replacing `T1/lmr/bx/sc' by 
+(spanish)                faked small caps on input line 6.
+
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 24.
+
+[11]
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 69.
+
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+[12])
+\tf@toc=\write6
+\openout6 = `PF.toc'.
+
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
+
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 217.
+
+[13]
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 217.
+
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
+[14
+
+] (./PF.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 36.
+
+[15])
+\tf@lof=\write7
+\openout7 = `PF.lof'.
+
+
+
+Package spanish Warning: Replacing `T1/lmss/bx/sc' by 
+(spanish)                faked small caps on input line 222.
+
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
+[16]
+\openout2 = `introduccion.aux'.
+
+ (./introduccion.tex
+Cap\'{\i }tulo 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13 
+      [1
+
+
+]
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+ [2]
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+ [3]
+Package epstopdf Info: Source file: <../img_ent1/reality_virtual.eps>
+(epstopdf)                    date: 2013-02-17 20:31:05
+(epstopdf)                    size: 57558 bytes
+(epstopdf)             Output file: <../img_ent1/reality_virtual-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../img_ent1/reality_virtua
+l-eps-converted-to.pdf ../img_ent1/reality_virtual.eps>
+(epstopdf)             \includegraphics on input line 79.
+runsystem(repstopdf --outfile=../img_ent1/reality_virtual-eps-converted-to.pdf 
+../img_ent1/reality_virtual.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../img_ent1/reality_virtual-eps-converted-
+to.pdf>.
+
+
+! Package pdftex.def Error: File `../img_ent1/reality_virtual-eps-converted-to.
+pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...graphics{../img_ent1/reality_virtual.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+[4]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [5]
+Overfull \hbox (0.38788pt too wide) in paragraph at lines 108--111
+[]\T1/lmr/m/n/12 Se re-fie-re al re-co-no-ci-mien-to ba-
+ []
+
+
+Overfull \hbox (10.12167pt too wide) in paragraph at lines 112--113
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+[6]
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+ [7]
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+ [8]
+LaTeX Info: Redefining \. on input line 184.
+LaTeX Info: Redefining \% on input line 184.
+ [9]
+LaTeX Info: Redefining \. on input line 202.
+LaTeX Info: Redefining \% on input line 202.
+ [10]
+LaTeX Info: Redefining \. on input line 209.
+LaTeX Info: Redefining \% on input line 209.
+ [11]
+LaTeX Info: Redefining \. on input line 218.
+LaTeX Info: Redefining \% on input line 218.
+ [12]
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+ [13])
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
+ [14]
+\openout2 = `parte3.aux'.
+
+ (./parte3.tex
+Cap\'{\i }tulo 2.
+[15
+
+
+
+] <figs/../figs/erode_dilate/orig.png, id=723, 339.2675pt x 340.27126pt>
+File: figs/../figs/erode_dilate/orig.png Graphic file (type png)
+
+<use figs/../figs/erode_dilate/orig.png>
+Package pdftex.def Info: figs/../figs/erode_dilate/orig.png used on input line 
+63.
+(pdftex.def)             Requested size: 166.2212pt x 166.7084pt.
+
+
+Package natbib Warning: Citation `Gonzalez:02' on page 16 undefined on input li
+ne 63.
+
+
+Package natbib Warning: Citation `Gonzalez:02' on page 16 undefined on input li
+ne 63.
+
+
+Package natbib Warning: Citation `Gonzalez:02' on page 16 undefined on input li
+ne 63.
+
+
+Package natbib Warning: Citation `Gonzalez:02' on page 16 undefined on input li
+ne 63.
+
+Package epstopdf Info: Source file: <figs/../figs/mascara.eps>
+(epstopdf)                    date: 2013-05-13 18:44:30
+(epstopdf)                    size: 6146 bytes
+(epstopdf)             Output file: <figs/../figs/mascara-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/mascara-eps-c
+onverted-to.pdf figs/../figs/mascara.eps>
+(epstopdf)             \includegraphics on input line 64.
+runsystem(repstopdf --outfile=figs/../figs/mascara-eps-converted-to.pdf figs/..
+/figs/mascara.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/mascara-eps-converted-to.pdf>
+.
+
+! Package pdftex.def Error: File `figs/../figs/mascara-eps-converted-to.pdf' no
+t found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...0in]{../figs/mascara} \label{fig:mascara}}
+                                                  \\
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<figs/../figs/erode_dilate/2dilate.png, id=724, 339.2675pt x 340.27126pt>
+File: figs/../figs/erode_dilate/2dilate.png Graphic file (type png)
+
+<use figs/../figs/erode_dilate/2dilate.png>
+Package pdftex.def Info: figs/../figs/erode_dilate/2dilate.png used on input li
+ne 65.
+(pdftex.def)             Requested size: 166.2212pt x 166.7084pt.
+
+<figs/../figs/erode_dilate/2erode.png, id=725, 339.2675pt x 340.27126pt>
+File: figs/../figs/erode_dilate/2erode.png Graphic file (type png)
+
+<use figs/../figs/erode_dilate/2erode.png>
+Package pdftex.def Info: figs/../figs/erode_dilate/2erode.png used on input lin
+e 66.
+(pdftex.def)             Requested size: 166.2212pt x 166.7084pt.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
+ [16]
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+ [17 <./figs/../figs/erode_dilate/orig.png (PNG copy)> <./figs/../figs/erode_di
+late/2dilate.png (PNG copy)> <./figs/../figs/erode_dilate/2erode.png (PNG copy)
+>]
+
+Package natbib Warning: Citation `Gonzalez:02' on page 18 undefined on input li
+ne 74.
+
+Package epstopdf Info: Source file: <figs/../figs/iluminacion/umbral.eps>
+(epstopdf)                    date: 2013-02-22 12:30:43
+(epstopdf)                    size: 21908 bytes
+(epstopdf)             Output file: <figs/../figs/iluminacion/umbral-eps-conver
+ted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/iluminacion/u
+mbral-eps-converted-to.pdf figs/../figs/iluminacion/umbral.eps>
+(epstopdf)             \includegraphics on input line 92.
+runsystem(repstopdf --outfile=figs/../figs/iluminacion/umbral-eps-converted-to.
+pdf figs/../figs/iluminacion/umbral.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/iluminacion/umbral-eps-conver
+ted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/iluminacion/umbral-eps-converted
+-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 ...ics[scale=1.0]{../figs/iluminacion/umbral}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+[18]
+Package epstopdf Info: Source file: <figs/../figs/iluminacion/logaritmo.eps>
+(epstopdf)                    date: 2013-02-22 12:27:26
+(epstopdf)                    size: 21509 bytes
+(epstopdf)             Output file: <figs/../figs/iluminacion/logaritmo-eps-con
+verted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/iluminacion/l
+ogaritmo-eps-converted-to.pdf figs/../figs/iluminacion/logaritmo.eps>
+(epstopdf)             \includegraphics on input line 111.
+runsystem(repstopdf --outfile=figs/../figs/iluminacion/logaritmo-eps-converted-
+to.pdf figs/../figs/iluminacion/logaritmo.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/iluminacion/logaritmo-eps-con
+verted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/iluminacion/logaritmo-eps-conver
+ted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...scale=1.0]{../figs/iluminacion/logaritmo}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+[19]
+LaTeX Info: Redefining \. on input line 156.
+LaTeX Info: Redefining \% on input line 156.
+ [20]
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
+ [21]
+
+Package natbib Warning: Citation `Viola01rapidobject' on page 22 undefined on i
+nput line 178.
+
+
+Package natbib Warning: Citation `Simard99boxlets:a' on page 22 undefined on in
+put line 178.
+
+
+Package natbib Warning: Citation `Viola01rapidobject' on page 22 undefined on i
+nput line 186.
+
+Package epstopdf Info: Source file: <./figs/sumintegralimages2.eps>
+(epstopdf)                    date: 2013-05-21 10:45:10
+(epstopdf)                    size: 174356 bytes
+(epstopdf)             Output file: <./figs/sumintegralimages2-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2013-12-09 15:49:03
+(epstopdf)                    size: 20814 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figs/sumintegralimages2-
+eps-converted-to.pdf ./figs/sumintegralimages2.eps>
+(epstopdf)             \includegraphics on input line 196.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figs/sumintegralimages2-eps-converted-to.pdf, id=795, 217.81375pt x 204.765p
+t>
+File: ./figs/sumintegralimages2-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./figs/sumintegralimages2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/sumintegralimages2-eps-converted-to.pdf used on
+ input line 196.
+(pdftex.def)             Requested size: 130.68924pt x 122.85992pt.
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
+ [22]
+LaTeX Info: Redefining \. on input line 211.
+LaTeX Info: Redefining \% on input line 211.
+ [23 <./figs/sumintegralimages2-eps-converted-to.pdf>]
+<../img_ent2/surfinchurch1.png, id=820, 448.67625pt x 688.5725pt>
+File: ../img_ent2/surfinchurch1.png Graphic file (type png)
+
+<use ../img_ent2/surfinchurch1.png>
+Package pdftex.def Info: ../img_ent2/surfinchurch1.png used on input line 223.
+(pdftex.def)             Requested size: 151.65105pt x 232.73515pt.
+
+<../img_ent2/surfinchurch2.png, id=822, 516.93124pt x 774.895pt>
+File: ../img_ent2/surfinchurch2.png Graphic file (type png)
+
+<use ../img_ent2/surfinchurch2.png>
+Package pdftex.def Info: ../img_ent2/surfinchurch2.png used on input line 228.
+(pdftex.def)             Requested size: 155.08057pt x 232.47029pt.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 237.
+
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+
+[24]
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+ [25 <../img_ent2/surfinchurch1.png> <../img_ent2/surfinchurch2.png>]
+
+Package natbib Warning: Citation `conf/nips/SimardBHL98' on page 26 undefined o
+n input line 253.
+
+<./figs/pyramidfilters.png, id=841, 545.7631pt x 224.90923pt>
+File: ./figs/pyramidfilters.png Graphic file (type png)
+
+<use ./figs/pyramidfilters.png>
+Package pdftex.def Info: ./figs/pyramidfilters.png used on input line 257.
+(pdftex.def)             Requested size: 327.46039pt x 134.94656pt.
+
+<../img_ent2/gaussiankernelsdiscrete_y.png, id=849, 137.51375pt x 132.495pt>
+File: ../img_ent2/gaussiankernelsdiscrete_y.png Graphic file (type png)
+
+<use ../img_ent2/gaussiankernelsdiscrete_y.png>
+Package pdftex.def Info: ../img_ent2/gaussiankernelsdiscrete_y.png used on inpu
+t line 275.
+(pdftex.def)             Requested size: 61.88062pt x 59.6222pt.
+
+<../img_ent2/gaussiankernelsaprox_y.png, id=850, 133.49875pt x 134.5025pt>
+File: ../img_ent2/gaussiankernelsaprox_y.png Graphic file (type png)
+
+<use ../img_ent2/gaussiankernelsaprox_y.png>
+Package pdftex.def Info: ../img_ent2/gaussiankernelsaprox_y.png used on input l
+ine 280.
+(pdftex.def)             Requested size: 60.07387pt x 60.52554pt.
+
+<../img_ent2/gaussiankernelsdiscrete_xy.png, id=851, 133.49875pt x 134.5025pt>
+File: ../img_ent2/gaussiankernelsdiscrete_xy.png Graphic file (type png)
+
+<use ../img_ent2/gaussiankernelsdiscrete_xy.png>
+Package pdftex.def Info: ../img_ent2/gaussiankernelsdiscrete_xy.png used on inp
+ut line 285.
+(pdftex.def)             Requested size: 60.07387pt x 60.52554pt.
+
+<../img_ent2/gaussiankernelsaprox_xy.png, id=852, 133.49875pt x 134.5025pt>
+File: ../img_ent2/gaussiankernelsaprox_xy.png Graphic file (type png)
+
+<use ../img_ent2/gaussiankernelsaprox_xy.png>
+Package pdftex.def Info: ../img_ent2/gaussiankernelsaprox_xy.png used on input 
+line 290.
+(pdftex.def)             Requested size: 60.07387pt x 60.52554pt.
+LaTeX Info: Redefining \. on input line 297.
+LaTeX Info: Redefining \% on input line 297.
+ [26]
+
+Package natbib Warning: Citation `DBLP:phd/ch/Bay2009' on page 27 undefined on 
+input line 300.
+
+<./figs/tamfilters1.png, id=867, 602.25pt x 256.96pt>
+File: ./figs/tamfilters1.png Graphic file (type png)
+
+<use ./figs/tamfilters1.png>
+Package pdftex.def Info: ./figs/tamfilters1.png used on input line 303.
+(pdftex.def)             Requested size: 192.72392pt x 82.22887pt.
+LaTeX Info: Redefining \. on input line 307.
+LaTeX Info: Redefining \% on input line 307.
+ [27 <./figs/pyramidfilters.png> <../img_ent2/gaussiankernelsdiscrete_y.png> <.
+./img_ent2/gaussiankernelsaprox_y.png> <../img_ent2/gaussiankernelsdiscrete_xy.
+png> <../img_ent2/gaussiankernelsaprox_xy.png>]
+<./figs/333nonmaximum.png, id=884, 368.8262pt x 343.2825pt>
+File: ./figs/333nonmaximum.png Graphic file (type png)
+
+<use ./figs/333nonmaximum.png>
+Package pdftex.def Info: ./figs/333nonmaximum.png used on input line 311.
+(pdftex.def)             Requested size: 129.0911pt x 120.15067pt.
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
+ [28 <./figs/tamfilters1.png>]
+
+Package natbib Warning: Citation `DBLP:phd/ch/Bay2009' on page 29 undefined on 
+input line 316.
+
+Package epstopdf Info: Source file: <../img_ent2/simplekernels1harn.eps>
+(epstopdf)                    date: 2012-10-25 18:11:53
+(epstopdf)                    size: 44935 bytes
+(epstopdf)             Output file: <../img_ent2/simplekernels1harn-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../img_ent2/simplekernels1
+harn-eps-converted-to.pdf ../img_ent2/simplekernels1harn.eps>
+(epstopdf)             \includegraphics on input line 351.
+runsystem(repstopdf --outfile=../img_ent2/simplekernels1harn-eps-converted-to.p
+df ../img_ent2/simplekernels1harn.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../img_ent2/simplekernels1harn-eps-convert
+ed-to.pdf>.
+
+! Package pdftex.def Error: File `../img_ent2/simplekernels1harn-eps-converted-
+to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 ...ale=0.4]{../img_ent2/simplekernels1harn}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../img_ent2/simplekernels2harn.eps>
+(epstopdf)                    date: 2012-10-25 18:11:45
+(epstopdf)                    size: 44935 bytes
+(epstopdf)             Output file: <../img_ent2/simplekernels2harn-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../img_ent2/simplekernels2
+harn-eps-converted-to.pdf ../img_ent2/simplekernels2harn.eps>
+(epstopdf)             \includegraphics on input line 356.
+runsystem(repstopdf --outfile=../img_ent2/simplekernels2harn-eps-converted-to.p
+df ../img_ent2/simplekernels2harn.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../img_ent2/simplekernels2harn-eps-convert
+ed-to.pdf>.
+
+! Package pdftex.def Error: File `../img_ent2/simplekernels2harn-eps-converted-
+to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 ...ale=0.4]{../img_ent2/simplekernels2harn}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Info: Redefining \. on input line 360.
+LaTeX Info: Redefining \% on input line 360.
+[29 <./figs/333nonmaximum.png>]
+<./figs/responsecalculate.png, id=901, 332.69121pt x 314.00069pt>
+File: ./figs/responsecalculate.png Graphic file (type png)
+
+<use ./figs/responsecalculate.png>
+Package pdftex.def Info: ./figs/responsecalculate.png used on input line 366.
+(pdftex.def)             Requested size: 149.70966pt x 141.299pt.
+
+<./figs/squareregionsexample.png, id=906, 505.26698pt x 403.71518pt>
+File: ./figs/squareregionsexample.png Graphic file (type png)
+
+<use ./figs/squareregionsexample.png>
+Package pdftex.def Info: ./figs/squareregionsexample.png used on input line 375
+.
+(pdftex.def)             Requested size: 202.10321pt x 161.4832pt.
+
+<./figs/subdivideregions.png, id=909, 564.45361pt x 356.36586pt>
+File: ./figs/subdivideregions.png Graphic file (type png)
+
+<use ./figs/subdivideregions.png>
+Package pdftex.def Info: ./figs/subdivideregions.png used on input line 384.
+(pdftex.def)             Requested size: 169.33739pt x 106.91058pt.
+
+<./figs/respuestaswavelethaar.png, id=910, 560.71552pt x 426.76682pt>
+File: ./figs/respuestaswavelethaar.png Graphic file (type png)
+
+<use ./figs/respuestaswavelethaar.png>
+Package pdftex.def Info: ./figs/respuestaswavelethaar.png used on input line 39
+0.
+(pdftex.def)             Requested size: 168.21594pt x 128.03102pt.
+
+<./figs/descriptorresponses.png, id=913, 492.18362pt x 189.39725pt>
+File: ./figs/descriptorresponses.png Graphic file (type png)
+
+<use ./figs/descriptorresponses.png>
+Package pdftex.def Info: ./figs/descriptorresponses.png used on input line 396.
+
+(pdftex.def)             Requested size: 295.31245pt x 113.6392pt.
+
+
+Package natbib Warning: Citation `Evans09noteson' on page 30 undefined on input
+ line 402.
+
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+[30 <./figs/responsecalculate.png>]
+LaTeX Info: Redefining \. on input line 407.
+LaTeX Info: Redefining \% on input line 407.
+ [31 <./figs/squareregionsexample.png>]
+LaTeX Info: Redefining \. on input line 407.
+LaTeX Info: Redefining \% on input line 407.
+
+[32 <./figs/subdivideregions.png> <./figs/respuestaswavelethaar.png> <./figs/de
+scriptorresponses.png>]
+LaTeX Info: Redefining \. on input line 423.
+LaTeX Info: Redefining \% on input line 423.
+ [33]
+LaTeX Info: Redefining \. on input line 440.
+LaTeX Info: Redefining \% on input line 440.
+ [34]
+LaTeX Info: Redefining \. on input line 456.
+LaTeX Info: Redefining \% on input line 456.
+ [35]
+
+Package natbib Warning: Citation `Hartley2004' on page 36 undefined on input li
+ne 468.
+
+LaTeX Info: Redefining \. on input line 624.
+LaTeX Info: Redefining \% on input line 624.
+[36]
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 625
+.
+ (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package epstopdf Info: Source file: <figs/../figs/sizzerman/pinholemodel.eps>
+(epstopdf)                    date: 2012-11-08 20:13:40
+(epstopdf)                    size: 53795 bytes
+(epstopdf)             Output file: <figs/../figs/sizzerman/pinholemodel-eps-co
+nverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/sizzerman/pin
+holemodel-eps-converted-to.pdf figs/../figs/sizzerman/pinholemodel.eps>
+(epstopdf)             \includegraphics on input line 635.
+runsystem(repstopdf --outfile=figs/../figs/sizzerman/pinholemodel-eps-converted
+-to.pdf figs/../figs/sizzerman/pinholemodel.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/sizzerman/pinholemodel-eps-co
+nverted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/sizzerman/pinholemodel-eps-conve
+rted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.635 ...ale=0.6]{../figs/sizzerman/pinholemodel}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/sizzerman/pinholemodelgeometr
+ia.eps>
+(epstopdf)                    date: 2012-11-08 20:13:08
+(epstopdf)                    size: 38135 bytes
+(epstopdf)             Output file: <figs/../figs/sizzerman/pinholemodelgeometr
+ia-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/sizzerman/pin
+holemodelgeometria-eps-converted-to.pdf figs/../figs/sizzerman/pinholemodelgeom
+etria.eps>
+(epstopdf)             \includegraphics on input line 641.
+runsystem(repstopdf --outfile=figs/../figs/sizzerman/pinholemodelgeometria-eps-
+converted-to.pdf figs/../figs/sizzerman/pinholemodelgeometria.eps)...executed s
+afely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/sizzerman/pinholemodelgeometr
+ia-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/sizzerman/pinholemodelgeometria-
+eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.641 	  }
+          
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 37 undefined on input li
+ne 643.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 37 undefined on input li
+ne 643.
+
+LaTeX Info: Redefining \. on input line 668.
+LaTeX Info: Redefining \% on input line 668.
+[37]
+LaTeX Info: Redefining \. on input line 728.
+LaTeX Info: Redefining \% on input line 728.
+ [38]
+Package epstopdf Info: Source file: <figs/../figs/sizzerman/transform_between_s
+paces.eps>
+(epstopdf)                    date: 2013-05-08 20:34:05
+(epstopdf)                    size: 51418 bytes
+(epstopdf)             Output file: <figs/../figs/sizzerman/transform_between_s
+paces-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/sizzerman/tra
+nsform_between_spaces-eps-converted-to.pdf figs/../figs/sizzerman/transform_bet
+ween_spaces.eps>
+(epstopdf)             \includegraphics on input line 761.
+runsystem(repstopdf --outfile=figs/../figs/sizzerman/transform_between_spaces-e
+ps-converted-to.pdf figs/../figs/sizzerman/transform_between_spaces.eps)...exec
+uted safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/sizzerman/transform_between_s
+paces-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/sizzerman/transform_between_spac
+es-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.761 ...figs/sizzerman/transform_between_spaces}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 39 undefined on input li
+ne 762.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 39 undefined on input li
+ne 762.
+
+LaTeX Info: Redefining \. on input line 768.
+LaTeX Info: Redefining \% on input line 768.
+[39]
+LaTeX Info: Redefining \. on input line 795.
+LaTeX Info: Redefining \% on input line 795.
+ [40]
+Package epstopdf Info: Source file: <figs/../figs/sizzerman/homografia_esquema.
+eps>
+(epstopdf)                    date: 2012-11-09 18:11:54
+(epstopdf)                    size: 47846 bytes
+(epstopdf)             Output file: <figs/../figs/sizzerman/homografia_esquema-
+eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/sizzerman/hom
+ografia_esquema-eps-converted-to.pdf figs/../figs/sizzerman/homografia_esquema.
+eps>
+(epstopdf)             \includegraphics on input line 836.
+runsystem(repstopdf --outfile=figs/../figs/sizzerman/homografia_esquema-eps-con
+verted-to.pdf figs/../figs/sizzerman/homografia_esquema.eps)...executed safely 
+(allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/sizzerman/homografia_esquema-
+eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/sizzerman/homografia_esquema-eps
+-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.836 ...7]{../figs/sizzerman/homografia_esquema}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 41 undefined on input li
+ne 837.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 41 undefined on input li
+ne 837.
+
+LaTeX Info: Redefining \. on input line 861.
+LaTeX Info: Redefining \% on input line 861.
+[41]
+
+Package natbib Warning: Citation `Hartley2004' on page 42 undefined on input li
+ne 876.
+
+LaTeX Info: Redefining \. on input line 889.
+LaTeX Info: Redefining \% on input line 889.
+[42]
+
+Package natbib Warning: Citation `Hartley2004' on page 43 undefined on input li
+ne 890.
+
+
+Package natbib Warning: Citation `Rousseuw_1994' on page 43 undefined on input 
+line 892.
+
+
+Package natbib Warning: Citation `Fischler:1981:RSC:358669.358692' on page 43 u
+ndefined on input line 892.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 43 undefined on input li
+ne 892.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 43 undefined on input li
+ne 892.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 43 undefined on input li
+ne 901.
+
+LaTeX Info: Redefining \. on input line 902.
+LaTeX Info: Redefining \% on input line 902.
+[43]
+<figs/../figs/robust_line_estimation.png, id=1057, 937.01793pt x 238.6156pt>
+File: figs/../figs/robust_line_estimation.png Graphic file (type png)
+
+<use figs/../figs/robust_line_estimation.png>
+Package pdftex.def Info: figs/../figs/robust_line_estimation.png used on input 
+line 905.
+(pdftex.def)             Requested size: 374.80052pt x 95.44453pt.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 44 undefined on input li
+ne 906.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 44 undefined on input li
+ne 906.
+
+LaTeX Info: Redefining \. on input line 924.
+LaTeX Info: Redefining \% on input line 924.
+[44 <./figs/../figs/robust_line_estimation.png>]
+
+Package natbib Warning: Citation `Hartley2004' on page 45 undefined on input li
+ne 926.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 45 undefined on input li
+ne 926.
+
+
+Package natbib Warning: Citation `Hartley2004' on page 45 undefined on input li
+ne 928.
+
+LaTeX Info: Redefining \. on input line 929.
+LaTeX Info: Redefining \% on input line 929.
+[45]
+LaTeX Info: Redefining \. on input line 942.
+LaTeX Info: Redefining \% on input line 942.
+ [46]
+
+Package natbib Warning: Citation `Hartley2004' on page 47 undefined on input li
+ne 960.
+
+)
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
+ [47]
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
+ [48]
+\openout2 = `parte4.aux'.
+
+ (./parte4.tex
+Cap\'{\i }tulo 3.
+[49
+
+
+
+]
+Package epstopdf Info: Source file: <figs/../figs/proceso_completo_entrenamient
+o.eps>
+(epstopdf)                    date: 2013-04-10 17:38:46
+(epstopdf)                    size: 1946461 bytes
+(epstopdf)             Output file: <figs/../figs/proceso_completo_entrenamient
+o-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/proceso_compl
+eto_entrenamiento-eps-converted-to.pdf figs/../figs/proceso_completo_entrenamie
+nto.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(repstopdf --outfile=figs/../figs/proceso_completo_entrenamiento-eps-c
+onverted-to.pdf figs/../figs/proceso_completo_entrenamiento.eps)...executed saf
+ely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/proceso_completo_entrenamient
+o-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/proceso_completo_entrenamiento-e
+ps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...7]{../figs/proceso_completo_entrenamiento}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/proceso_completo.eps>
+(epstopdf)                    date: 2013-05-23 18:43:13
+(epstopdf)                    size: 2157220 bytes
+(epstopdf)             Output file: <figs/../figs/proceso_completo-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/proceso_compl
+eto-eps-converted-to.pdf figs/../figs/proceso_completo.eps>
+(epstopdf)             \includegraphics on input line 19.
+runsystem(repstopdf --outfile=figs/../figs/proceso_completo-eps-converted-to.pd
+f figs/../figs/proceso_completo.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/proceso_completo-eps-converte
+d-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/proceso_completo-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...hics[scale=0.57]{../figs/proceso_completo}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+[50]
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+ [51]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [52]
+Package epstopdf Info: Source file: <figs/../figs/procesomovimiento.eps>
+(epstopdf)                    date: 2013-04-10 18:07:38
+(epstopdf)                    size: 70046 bytes
+(epstopdf)             Output file: <figs/../figs/procesomovimiento-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/procesomovimi
+ento-eps-converted-to.pdf figs/../figs/procesomovimiento.eps>
+(epstopdf)             \includegraphics on input line 62.
+runsystem(repstopdf --outfile=figs/../figs/procesomovimiento-eps-converted-to.p
+df figs/../figs/procesomovimiento.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/procesomovimiento-eps-convert
+ed-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/procesomovimiento-eps-converted-
+to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...ics[scale=0.65]{../figs/procesomovimiento}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/preprocess/srcPrev.eps>
+(epstopdf)                    date: 2012-10-08 20:47:47
+(epstopdf)                    size: 1151015 bytes
+(epstopdf)             Output file: <figs/../figs/preprocess/srcPrev-eps-conver
+ted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/preprocess/sr
+cPrev-eps-converted-to.pdf figs/../figs/preprocess/srcPrev.eps>
+(epstopdf)             \includegraphics on input line 68.
+runsystem(repstopdf --outfile=figs/../figs/preprocess/srcPrev-eps-converted-to.
+pdf figs/../figs/preprocess/srcPrev.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/preprocess/srcPrev-eps-conver
+ted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/preprocess/srcPrev-eps-converted
+-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ... \label{fig:deteccion_movimietno-srcprev}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/preprocess/src.eps>
+(epstopdf)                    date: 2012-10-08 20:47:34
+(epstopdf)                    size: 1154215 bytes
+(epstopdf)             Output file: <figs/../figs/preprocess/src-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/preprocess/sr
+c-eps-converted-to.pdf figs/../figs/preprocess/src.eps>
+(epstopdf)             \includegraphics on input line 69.
+runsystem(repstopdf --outfile=figs/../figs/preprocess/src-eps-converted-to.pdf 
+figs/../figs/preprocess/src.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/preprocess/src-eps-converted-
+to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/preprocess/src-eps-converted-to.
+pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...src} \label{fig:deteccion_movimietno-src}}
+                                                  \\
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/preprocess/absDiff.eps>
+(epstopdf)                    date: 2012-10-08 20:59:46
+(epstopdf)                    size: 1064441 bytes
+(epstopdf)             Output file: <figs/../figs/preprocess/absDiff-eps-conver
+ted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/preprocess/ab
+sDiff-eps-converted-to.pdf figs/../figs/preprocess/absDiff.eps>
+(epstopdf)             \includegraphics on input line 70.
+runsystem(repstopdf --outfile=figs/../figs/preprocess/absDiff-eps-converted-to.
+pdf figs/../figs/preprocess/absDiff.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/preprocess/absDiff-eps-conver
+ted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/preprocess/absDiff-eps-converted
+-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ... \label{fig:deteccion_movimietno-absdiff}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/preprocess/threshold.eps>
+(epstopdf)                    date: 2012-10-08 20:53:54
+(epstopdf)                    size: 60616 bytes
+(epstopdf)             Output file: <figs/../figs/preprocess/threshold-eps-conv
+erted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/preprocess/th
+reshold-eps-converted-to.pdf figs/../figs/preprocess/threshold.eps>
+(epstopdf)             \includegraphics on input line 71.
+runsystem(repstopdf --outfile=figs/../figs/preprocess/threshold-eps-converted-t
+o.pdf figs/../figs/preprocess/threshold.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/preprocess/threshold-eps-conv
+erted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/preprocess/threshold-eps-convert
+ed-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...} \label{fig:deteccion_movimietno-umbral}}
+                                                  \\
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/preprocess/erode.eps>
+(epstopdf)                    date: 2012-10-08 20:48:33
+(epstopdf)                    size: 33582 bytes
+(epstopdf)             Output file: <figs/../figs/preprocess/erode-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/preprocess/er
+ode-eps-converted-to.pdf figs/../figs/preprocess/erode.eps>
+(epstopdf)             \includegraphics on input line 72.
+runsystem(repstopdf --outfile=figs/../figs/preprocess/erode-eps-converted-to.pd
+f figs/../figs/preprocess/erode.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/preprocess/erode-eps-converte
+d-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/preprocess/erode-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...e} \label{fig:deteccion_movimietno-erode}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/preprocess/dilate.eps>
+(epstopdf)                    date: 2012-10-08 20:47:03
+(epstopdf)                    size: 36196 bytes
+(epstopdf)             Output file: <figs/../figs/preprocess/dilate-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/preprocess/di
+late-eps-converted-to.pdf figs/../figs/preprocess/dilate.eps>
+(epstopdf)             \includegraphics on input line 73.
+runsystem(repstopdf --outfile=figs/../figs/preprocess/dilate-eps-converted-to.p
+df figs/../figs/preprocess/dilate.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/preprocess/dilate-eps-convert
+ed-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/preprocess/dilate-eps-converted-
+to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...} \label{fig:deteccion_movimietno-dilate}}
+                                                  \\
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <figs/../figs/preprocess/boundingrect.eps>
+(epstopdf)                    date: 2012-10-08 21:16:34
+(epstopdf)                    size: 40028 bytes
+(epstopdf)             Output file: <figs/../figs/preprocess/boundingrect-eps-c
+onverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/preprocess/bo
+undingrect-eps-converted-to.pdf figs/../figs/preprocess/boundingrect.eps>
+(epstopdf)             \includegraphics on input line 74.
+runsystem(repstopdf --outfile=figs/../figs/preprocess/boundingrect-eps-converte
+d-to.pdf figs/../figs/preprocess/boundingrect.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/preprocess/boundingrect-eps-c
+onverted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/preprocess/boundingrect-eps-conv
+erted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 ...el{fig:deteccion_movimietno-boundingrect}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Float too large for page by 218.92442pt on input line 77.
+
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+[53]
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+ [54]
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+ [55]
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+ [56]
+<./figs/extraccion/800.png, id=1189, 641.39626pt x 484.81125pt>
+File: ./figs/extraccion/800.png Graphic file (type png)
+
+<use ./figs/extraccion/800.png>
+Package pdftex.def Info: ./figs/extraccion/800.png used on input line 168.
+(pdftex.def)             Requested size: 320.69734pt x 242.40503pt.
+
+<./figs/extraccion/3000.png, id=1190, 641.39626pt x 484.81125pt>
+File: ./figs/extraccion/3000.png Graphic file (type png)
+
+<use ./figs/extraccion/3000.png>
+Package pdftex.def Info: ./figs/extraccion/3000.png used on input line 174.
+(pdftex.def)             Requested size: 320.69734pt x 242.40503pt.
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
+ [57]
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
+ [58 <./figs/extraccion/800.png> <./figs/extraccion/3000.png>]
+<figs/../figs/extraccion/correspondencias.png, id=1208, 1283.79625pt x 481.8pt>
+File: figs/../figs/extraccion/correspondencias.png Graphic file (type png)
+<use figs/../figs/extraccion/correspondencias.png>
+Package pdftex.def Info: figs/../figs/extraccion/correspondencias.png used on i
+nput line 185.
+(pdftex.def)             Requested size: 385.14185pt x 144.5411pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
+[][][][]$\T1/pcr/m/n/10 http : / / opencv . willowgarage . com / documentation 
+/ cpp / flann _ fast _
+ []
+
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+[59 <./figs/../figs/extraccion/correspondencias.png>]
+LaTeX Info: Redefining \. on input line 208.
+LaTeX Info: Redefining \% on input line 208.
+ [60]
+Package epstopdf Info: Source file: <figs/../figs/validaciones_poligono/concavo
+_invalido.eps>
+(epstopdf)                    date: 2012-10-11 15:19:50
+(epstopdf)                    size: 401065 bytes
+(epstopdf)             Output file: <figs/../figs/validaciones_poligono/concavo
+_invalido-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/validaciones_
+poligono/concavo_invalido-eps-converted-to.pdf figs/../figs/validaciones_poligo
+no/concavo_invalido.eps>
+(epstopdf)             \includegraphics on input line 237.
+runsystem(repstopdf --outfile=figs/../figs/validaciones_poligono/concavo_invali
+do-eps-converted-to.pdf figs/../figs/validaciones_poligono/concavo_invalido.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/validaciones_poligono/concavo
+_invalido-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/validaciones_poligono/concavo_in
+valido-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 	}
+        
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
+[]\T1/lmr/m/n/10 (a) |Po-lí-gono
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
+[]\T1/lmr/m/n/10 (a) |Po-lí-gono
+ []
+
+Package epstopdf Info: Source file: <figs/../figs/validaciones_poligono/convexo
+_invalido.eps>
+(epstopdf)                    date: 2012-10-11 15:19:16
+(epstopdf)                    size: 401065 bytes
+(epstopdf)             Output file: <figs/../figs/validaciones_poligono/convexo
+_invalido-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/validaciones_
+poligono/convexo_invalido-eps-converted-to.pdf figs/../figs/validaciones_poligo
+no/convexo_invalido.eps>
+(epstopdf)             \includegraphics on input line 243.
+runsystem(repstopdf --outfile=figs/../figs/validaciones_poligono/convexo_invali
+do-eps-converted-to.pdf figs/../figs/validaciones_poligono/convexo_invalido.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/validaciones_poligono/convexo
+_invalido-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/validaciones_poligono/convexo_in
+valido-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 	}
+        
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/lmr/m/n/10 (b) |Po-lí-gono
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/lmr/m/n/10 (b) |Po-lí-gono
+ []
+
+Package epstopdf Info: Source file: <figs/../figs/validaciones_poligono/poligot
+o_fuera_viewport_valida.eps>
+(epstopdf)                    date: 2012-10-11 15:18:37
+(epstopdf)                    size: 437468 bytes
+(epstopdf)             Output file: <figs/../figs/validaciones_poligono/poligot
+o_fuera_viewport_valida-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/validaciones_
+poligono/poligoto_fuera_viewport_valida-eps-converted-to.pdf figs/../figs/valid
+aciones_poligono/poligoto_fuera_viewport_valida.eps>
+(epstopdf)             \includegraphics on input line 249.
+runsystem(repstopdf --outfile=figs/../figs/validaciones_poligono/poligoto_fuera
+_viewport_valida-eps-converted-to.pdf figs/../figs/validaciones_poligono/poligo
+to_fuera_viewport_valida.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/validaciones_poligono/poligot
+o_fuera_viewport_valida-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `figs/../figs/validaciones_poligono/poligoto_f
+uera_viewport_valida-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.249 	}
+        
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]\T1/lmr/m/n/10 (c) |Po-lí-gono
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 249--249
+\T1/lmr/m/n/10 del área de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T1/lmr/m/n/10 vi-sua-li-za-ción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]\T1/lmr/m/n/10 (c) |Po-lí-gono
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 249--249
+\T1/lmr/m/n/10 del área de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T1/lmr/m/n/10 vi-sua-li-za-ción
+ []
+
+LaTeX Info: Redefining \. on input line 256.
+LaTeX Info: Redefining \% on input line 256.
+[61]
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
+ [62]
+<figs/../figs/restauracion_transfromacion.pdf, id=1275, 543.02875pt x 287.0725p
+t>
+File: figs/../figs/restauracion_transfromacion.pdf Graphic file (type pdf)
+ <use figs/../figs/restauracion_transfromacion.pdf>
+Package pdftex.def Info: figs/../figs/restauracion_transfromacion.pdf used on i
+nput line 273.
+(pdftex.def)             Requested size: 434.42357pt x 229.65831pt.
+
+Overfull \hbox (44.42357pt too wide) in paragraph at lines 273--274
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 282.
+LaTeX Info: Redefining \% on input line 282.
+[63 <./figs/../figs/restauracion_transfromacion.pdf>]
+Package epstopdf Info: Source file: <figs/../figs/transfperspectiva.eps>
+(epstopdf)                    date: 2013-05-23 20:00:33
+(epstopdf)                    size: 3178087 bytes
+(epstopdf)             Output file: <figs/../figs/transfperspectiva-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/transfperspec
+tiva-eps-converted-to.pdf figs/../figs/transfperspectiva.eps>
+(epstopdf)             \includegraphics on input line 299.
+runsystem(repstopdf --outfile=figs/../figs/transfperspectiva-eps-converted-to.p
+df figs/../figs/transfperspectiva.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/transfperspectiva-eps-convert
+ed-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/transfperspectiva-eps-converted-
+to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.299 ...cs[scale=0.75]{../figs/transfperspectiva}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[][][][]$\T1/pcr/m/n/10 http : / / opencv . willowgarage . com / documentation 
+/ cpp / imgproc _
+ []
+
+)
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+ [64]
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+ [65]
+\openout2 = `parte5.aux'.
+
+ (./parte5.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [66
+
+
+
+]
+Cap\'{\i }tulo 4.
+[67]
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ [68]
+Package epstopdf Info: Source file: <figs/../figs/entorno/entorno_pruebas.eps>
+(epstopdf)                    date: 2013-05-31 15:55:16
+(epstopdf)                    size: 47719509 bytes
+(epstopdf)             Output file: <figs/../figs/entorno/entorno_pruebas-eps-c
+onverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../figs/entorno/entor
+no_pruebas-eps-converted-to.pdf figs/../figs/entorno/entorno_pruebas.eps>
+(epstopdf)             \includegraphics on input line 39.
+runsystem(repstopdf --outfile=figs/../figs/entorno/entorno_pruebas-eps-converte
+d-to.pdf figs/../figs/entorno/entorno_pruebas.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../figs/entorno/entorno_pruebas-eps-c
+onverted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../figs/entorno/entorno_pruebas-eps-conv
+erted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...cale=0.5]{../figs/entorno/entorno_pruebas}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<figs/../exp1/train_normal_BN/train_normal.jpg, id=1364, 642.4pt x 481.8pt>
+File: figs/../exp1/train_normal_BN/train_normal.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_normal_BN/train_normal.jpg>
+Package pdftex.def Info: figs/../exp1/train_normal_BN/train_normal.jpg used on 
+input line 65.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_brillante_BH/train_brillante.jpg, id=1365, 642.4pt x 481.8p
+t>
+File: figs/../exp1/train_brillante_BH/train_brillante.jpg Graphic file (type jp
+g)
+ <use figs/../exp1/train_brillante_BH/train_brillante.jpg>
+Package pdftex.def Info: figs/../exp1/train_brillante_BH/train_brillante.jpg us
+ed on input line 66.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_oscura_BL/train_oscura.jpg, id=1366, 642.4pt x 481.8pt>
+File: figs/../exp1/train_oscura_BL/train_oscura.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_oscura_BL/train_oscura.jpg>
+Package pdftex.def Info: figs/../exp1/train_oscura_BL/train_oscura.jpg used on 
+input line 67.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
+ [69]
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+ [70 <./figs/../exp1/train_normal_BN/train_normal.jpg> <./figs/../exp1/train_br
+illante_BH/train_brillante.jpg> <./figs/../exp1/train_oscura_BL/train_oscura.jp
+g>]
+<figs/../exp1/train_normal_BN/train_normal_grises.jpg, id=1394, 642.4pt x 481.8
+pt>
+File: figs/../exp1/train_normal_BN/train_normal_grises.jpg Graphic file (type j
+pg)
+ <use figs/../exp1/train_normal_BN/train_normal_grises.jpg>
+Package pdftex.def Info: figs/../exp1/train_normal_BN/train_normal_grises.jpg u
+sed on input line 98.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_normal_BN/train_normal_515.jpg, id=1395, 642.4pt x 481.8pt>
+File: figs/../exp1/train_normal_BN/train_normal_515.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_normal_BN/train_normal_515.jpg>
+Package pdftex.def Info: figs/../exp1/train_normal_BN/train_normal_515.jpg used
+ on input line 99.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_normal_BN/keypoints2.jpg, id=1396, 642.4pt x 481.8pt>
+File: figs/../exp1/train_normal_BN/keypoints2.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_normal_BN/keypoints2.jpg>
+Package pdftex.def Info: figs/../exp1/train_normal_BN/keypoints2.jpg used on in
+put line 100.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_normal_BN/keypoints3.jpg, id=1397, 642.4pt x 481.8pt>
+File: figs/../exp1/train_normal_BN/keypoints3.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_normal_BN/keypoints3.jpg>
+Package pdftex.def Info: figs/../exp1/train_normal_BN/keypoints3.jpg used on in
+put line 101.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_normal_BN/keypoints4.jpg, id=1398, 642.4pt x 481.8pt>
+File: figs/../exp1/train_normal_BN/keypoints4.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_normal_BN/keypoints4.jpg>
+Package pdftex.def Info: figs/../exp1/train_normal_BN/keypoints4.jpg used on in
+put line 102.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_normal_BN/keypoints5.jpg, id=1399, 642.4pt x 481.8pt>
+File: figs/../exp1/train_normal_BN/keypoints5.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_normal_BN/keypoints5.jpg>
+Package pdftex.def Info: figs/../exp1/train_normal_BN/keypoints5.jpg used on in
+put line 103.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_brillante_BH/train_brillante_grises.jpg, id=1400, 642.4pt x
+ 481.8pt>
+File: figs/../exp1/train_brillante_BH/train_brillante_grises.jpg Graphic file (
+type jpg)
+ <use figs/../exp1/train_brillante_BH/train_brillante_grises.jpg>
+Package pdftex.def Info: figs/../exp1/train_brillante_BH/train_brillante_grises
+.jpg used on input line 110.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_brillante_BH/train_brillante622.jpg, id=1401, 642.4pt x 481
+.8pt>
+File: figs/../exp1/train_brillante_BH/train_brillante622.jpg Graphic file (type
+ jpg)
+ <use figs/../exp1/train_brillante_BH/train_brillante622.jpg>
+Package pdftex.def Info: figs/../exp1/train_brillante_BH/train_brillante622.jpg
+ used on input line 111.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_brillante_BH/keypoints2.jpg, id=1402, 642.4pt x 481.8pt>
+File: figs/../exp1/train_brillante_BH/keypoints2.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_brillante_BH/keypoints2.jpg>
+Package pdftex.def Info: figs/../exp1/train_brillante_BH/keypoints2.jpg used on
+ input line 112.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_brillante_BH/keypoints3.jpg, id=1403, 642.4pt x 481.8pt>
+File: figs/../exp1/train_brillante_BH/keypoints3.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_brillante_BH/keypoints3.jpg>
+Package pdftex.def Info: figs/../exp1/train_brillante_BH/keypoints3.jpg used on
+ input line 113.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_brillante_BH/keypoints4.jpg, id=1404, 642.4pt x 481.8pt>
+File: figs/../exp1/train_brillante_BH/keypoints4.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_brillante_BH/keypoints4.jpg>
+Package pdftex.def Info: figs/../exp1/train_brillante_BH/keypoints4.jpg used on
+ input line 114.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_brillante_BH/keypoints5.jpg, id=1405, 642.4pt x 481.8pt>
+File: figs/../exp1/train_brillante_BH/keypoints5.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_brillante_BH/keypoints5.jpg>
+Package pdftex.def Info: figs/../exp1/train_brillante_BH/keypoints5.jpg used on
+ input line 115.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_oscura_BL/train_oscura_grises.jpg, id=1406, 642.4pt x 481.8
+pt>
+File: figs/../exp1/train_oscura_BL/train_oscura_grises.jpg Graphic file (type j
+pg)
+ <use figs/../exp1/train_oscura_BL/train_oscura_grises.jpg>
+Package pdftex.def Info: figs/../exp1/train_oscura_BL/train_oscura_grises.jpg u
+sed on input line 122.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_oscura_BL/train_oscura453.jpg, id=1407, 642.4pt x 481.8pt>
+File: figs/../exp1/train_oscura_BL/train_oscura453.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_oscura_BL/train_oscura453.jpg>
+Package pdftex.def Info: figs/../exp1/train_oscura_BL/train_oscura453.jpg used 
+on input line 123.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_oscura_BL/keypoints2.jpg, id=1408, 642.4pt x 481.8pt>
+File: figs/../exp1/train_oscura_BL/keypoints2.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_oscura_BL/keypoints2.jpg>
+Package pdftex.def Info: figs/../exp1/train_oscura_BL/keypoints2.jpg used on in
+put line 124.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_oscura_BL/keypoints3.jpg, id=1409, 642.4pt x 481.8pt>
+File: figs/../exp1/train_oscura_BL/keypoints3.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_oscura_BL/keypoints3.jpg>
+Package pdftex.def Info: figs/../exp1/train_oscura_BL/keypoints3.jpg used on in
+put line 125.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_oscura_BL/keypoints4.jpg, id=1410, 642.4pt x 481.8pt>
+File: figs/../exp1/train_oscura_BL/keypoints4.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_oscura_BL/keypoints4.jpg>
+Package pdftex.def Info: figs/../exp1/train_oscura_BL/keypoints4.jpg used on in
+put line 126.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../exp1/train_oscura_BL/keypoints5.jpg, id=1411, 642.4pt x 481.8pt>
+File: figs/../exp1/train_oscura_BL/keypoints5.jpg Graphic file (type jpg)
+
+<use figs/../exp1/train_oscura_BL/keypoints5.jpg>
+Package pdftex.def Info: figs/../exp1/train_oscura_BL/keypoints5.jpg used on in
+put line 127.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [71]
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [72 <./figs/../exp1/train_normal_BN/train_normal_grises.jpg> <./figs/../exp1/t
+rain_normal_BN/train_normal_515.jpg> <./figs/../exp1/train_normal_BN/keypoints2
+.jpg> <./figs/../exp1/train_normal_BN/keypoints3.jpg> <./figs/../exp1/train_nor
+mal_BN/keypoints4.jpg> <./figs/../exp1/train_normal_BN/keypoints5.jpg>]
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [73 <./figs/../exp1/train_brillante_BH/train_brillante_grises.jpg> <./figs/../
+exp1/train_brillante_BH/train_brillante622.jpg> <./figs/../exp1/train_brillante
+_BH/keypoints2.jpg> <./figs/../exp1/train_brillante_BH/keypoints3.jpg> <./figs/
+../exp1/train_brillante_BH/keypoints4.jpg> <./figs/../exp1/train_brillante_BH/k
+eypoints5.jpg>]
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [74 <./figs/../exp1/train_oscura_BL/train_oscura_grises.jpg> <./figs/../exp1/t
+rain_oscura_BL/train_oscura453.jpg> <./figs/../exp1/train_oscura_BL/keypoints2.
+jpg> <./figs/../exp1/train_oscura_BL/keypoints3.jpg> <./figs/../exp1/train_oscu
+ra_BL/keypoints4.jpg> <./figs/../exp1/train_oscura_BL/keypoints5.jpg>]
+<figs/../pruebas_modif/graph_ptos_realces.pdf, id=1456, 597.23125pt x 845.1575p
+t>
+File: figs/../pruebas_modif/graph_ptos_realces.pdf Graphic file (type pdf)
+ <use figs/../pruebas_modif/graph_ptos_realces.pdf>
+Package pdftex.def Info: figs/../pruebas_modif/graph_ptos_realces.pdf used on i
+nput line 203.
+(pdftex.def)             Requested size: 447.92233pt x 633.86658pt.
+
+Overfull \hbox (57.92233pt too wide) in paragraph at lines 203--204
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 80.86656pt on input line 206.
+
+LaTeX Info: Redefining \. on input line 207.
+LaTeX Info: Redefining \% on input line 207.
+[75]
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
+ [76]
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
+ [77 <./figs/../pruebas_modif/graph_ptos_realces.pdf>]
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
+ [78]
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
+ [79]
+Package epstopdf Info: Source file: <figs/../pruebas_modif/3500_sinproc/graph_t
+iempos_3500_presentacion1.eps>
+(epstopdf)                    date: 2013-07-26 19:31:13
+(epstopdf)                    size: 171370 bytes
+(epstopdf)             Output file: <figs/../pruebas_modif/3500_sinproc/graph_t
+iempos_3500_presentacion1-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figs/../pruebas_modif/3500
+_sinproc/graph_tiempos_3500_presentacion1-eps-converted-to.pdf figs/../pruebas_
+modif/3500_sinproc/graph_tiempos_3500_presentacion1.eps>
+(epstopdf)             \includegraphics on input line 260.
+runsystem(repstopdf --outfile=figs/../pruebas_modif/3500_sinproc/graph_tiempos_
+3500_presentacion1-eps-converted-to.pdf figs/../pruebas_modif/3500_sinproc/grap
+h_tiempos_3500_presentacion1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/../pruebas_modif/3500_sinproc/graph_t
+iempos_3500_presentacion1-eps-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `figs/../pruebas_modif/3500_sinproc/graph_tiem
+pos_3500_presentacion1-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.260 ...sinproc/graph_tiempos_3500_presentacion1}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Info: Redefining \. on input line 266.
+LaTeX Info: Redefining \% on input line 266.
+[80]
+<figs/../pruebas_modif/capturas/usables/train_normal.jpg, id=1518, 642.4pt x 48
+1.8pt>
+File: figs/../pruebas_modif/capturas/usables/train_normal.jpg Graphic file (typ
+e jpg)
+ <use figs/../pruebas_modif/capturas/usables/train_normal.jpg>
+Package pdftex.def Info: figs/../pruebas_modif/capturas/usables/train_normal.jp
+g used on input line 270.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../pruebas_modif/capturas/usables/pinguino.jpg, id=1519, 642.4pt x 481.8p
+t>
+File: figs/../pruebas_modif/capturas/usables/pinguino.jpg Graphic file (type jp
+g)
+ <use figs/../pruebas_modif/capturas/usables/pinguino.jpg>
+Package pdftex.def Info: figs/../pruebas_modif/capturas/usables/pinguino.jpg us
+ed on input line 271.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../pruebas_modif/capturas/usables/captured154.jpg, id=1520, 642.4pt x 481
+.8pt>
+File: figs/../pruebas_modif/capturas/usables/captured154.jpg Graphic file (type
+ jpg)
+ <use figs/../pruebas_modif/capturas/usables/captured154.jpg>
+Package pdftex.def Info: figs/../pruebas_modif/capturas/usables/captured154.jpg
+ used on input line 272.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../pruebas_modif/capturas/usables/captured135.jpg, id=1521, 642.4pt x 481
+.8pt>
+File: figs/../pruebas_modif/capturas/usables/captured135.jpg Graphic file (type
+ jpg)
+ <use figs/../pruebas_modif/capturas/usables/captured135.jpg>
+Package pdftex.def Info: figs/../pruebas_modif/capturas/usables/captured135.jpg
+ used on input line 273.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../pruebas_modif/capturas/usables/captured141.jpg, id=1522, 642.4pt x 481
+.8pt>
+File: figs/../pruebas_modif/capturas/usables/captured141.jpg Graphic file (type
+ jpg)
+ <use figs/../pruebas_modif/capturas/usables/captured141.jpg>
+Package pdftex.def Info: figs/../pruebas_modif/capturas/usables/captured141.jpg
+ used on input line 274.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../pruebas_modif/capturas/usables/captured207.jpg, id=1523, 642.4pt x 481
+.8pt>
+File: figs/../pruebas_modif/capturas/usables/captured207.jpg Graphic file (type
+ jpg)
+ <use figs/../pruebas_modif/capturas/usables/captured207.jpg>
+Package pdftex.def Info: figs/../pruebas_modif/capturas/usables/captured207.jpg
+ used on input line 275.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../imgvitina/vitina.jpg, id=1531, 642.4pt x 481.8pt>
+File: figs/../imgvitina/vitina.jpg Graphic file (type jpg)
+
+<use figs/../imgvitina/vitina.jpg>
+Package pdftex.def Info: figs/../imgvitina/vitina.jpg used on input line 293.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../imgvitina/preciosvirtuales.png, id=1532, 642.4pt x 481.8pt>
+File: figs/../imgvitina/preciosvirtuales.png Graphic file (type png)
+
+<use figs/../imgvitina/preciosvirtuales.png>
+Package pdftex.def Info: figs/../imgvitina/preciosvirtuales.png used on input l
+ine 294.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../imgvitina/captured87,000000.jpg, id=1533, 642.4pt x 481.8pt>
+File: figs/../imgvitina/captured87,000000.jpg Graphic file (type jpg)
+
+<use figs/../imgvitina/captured87,000000.jpg>
+Package pdftex.def Info: figs/../imgvitina/captured87,000000.jpg used on input 
+line 297.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../imgvitina/captured94,000000.jpg, id=1534, 642.4pt x 481.8pt>
+File: figs/../imgvitina/captured94,000000.jpg Graphic file (type jpg)
+
+<use figs/../imgvitina/captured94,000000.jpg>
+Package pdftex.def Info: figs/../imgvitina/captured94,000000.jpg used on input 
+line 298.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../imgvitina/captured146,000000.jpg, id=1535, 642.4pt x 481.8pt>
+File: figs/../imgvitina/captured146,000000.jpg Graphic file (type jpg)
+
+<use figs/../imgvitina/captured146,000000.jpg>
+Package pdftex.def Info: figs/../imgvitina/captured146,000000.jpg used on input
+ line 302.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+
+<figs/../imgvitina/captured176,000000.jpg, id=1536, 642.4pt x 481.8pt>
+File: figs/../imgvitina/captured176,000000.jpg Graphic file (type jpg)
+
+<use figs/../imgvitina/captured176,000000.jpg>
+Package pdftex.def Info: figs/../imgvitina/captured176,000000.jpg used on input
+ line 304.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+)
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+ [81]
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+ [82 <./figs/../pruebas_modif/capturas/usables/train_normal.jpg> <./figs/../pru
+ebas_modif/capturas/usables/pinguino.jpg> <./figs/../pruebas_modif/capturas/usa
+bles/captured154.jpg> <./figs/../pruebas_modif/capturas/usables/captured135.jpg
+> <./figs/../pruebas_modif/capturas/usables/captured141.jpg> <./figs/../pruebas
+_modif/capturas/usables/captured207.jpg>]
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+ [83]
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+ [84 <./figs/../imgvitina/vitina.jpg> <./figs/../imgvitina/preciosvirtuales.png
+> <./figs/../imgvitina/captured87,000000.jpg> <./figs/../imgvitina/captured94,0
+00000.jpg> <./figs/../imgvitina/captured146,000000.jpg> <./figs/../imgvitina/ca
+ptured176,000000.jpg>]
+\openout2 = `conclusiones.aux'.
+
+ (./conclusiones.tex
+Cap\'{\i }tulo 5.
+[85
+
+
+
+]
+
+Package natbib Warning: Citation `Terriberry_gpuaccelerating' on page 86 undefi
+ned on input line 20.
+
+
+Package natbib Warning: Citation `DBLP:journals/ijpp/Zhang10' on page 86 undefi
+ned on input line 20.
+
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+[86])
+LaTeX Info: Redefining \. on input line 235.
+LaTeX Info: Redefining \% on input line 235.
+ [87] (./PF.bbl
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [88
+
+
+] [89]
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+ [90]
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+ [91]
+LaTeX Info: Redefining \. on input line 247.
+LaTeX Info: Redefining \% on input line 247.
+ [92]
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
+ [93])
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+[94]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+ (./PF.aux (./portada.aux)
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+ (./agradecimientos.aux) (./resumen.aux)
+(./prefacio.aux) (./introduccion.aux) (./parte3.aux) (./parte4.aux)
+(./parte5.aux) (./conclusiones.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+Package rerunfilecheck Info: File `PF.out' has not changed.
+(rerunfilecheck)             Checksum: 0F92EA76CD9FA092B3D85DFE85F4A19B;4813.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
+ ) 
+Here is how much of TeX's memory you used:
+ 17219 strings out of 494997
+ 260033 string characters out of 3180092
+ 413171 words of memory out of 3000000
+ 19467 multiletter control sequences out of 15000+200000
+ 173512 words of font info for 103 fonts, out of 3000000 for 9000
+ 40 hyphenation exceptions out of 8191
+ 61i,14n,97p,1740b,789s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
+thsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive
+/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/courier/ucrr8a.pfb>
+Output written on PF.pdf (110 pages, 9109592 bytes).
+PDF statistics:
+ 1799 PDF objects out of 2073 (max. 8388607)
+ 1535 compressed objects within 16 object streams
+ 405 named destinations out of 1000 (max. 500000)
+ 787 words of extra memory for PDF output out of 10000 (max. 10000000)
+

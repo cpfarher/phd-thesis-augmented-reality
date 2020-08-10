@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Invarianza a escala</TITLE>
+<META NAME="description" CONTENT="Invarianza a escala">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node32.html">
+<LINK REL="up" HREF="node32.html">
+<LINK REL="next" HREF="node34.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html705"
+  HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html701"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html697"
+  HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html703"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html706"
+  HREF="node34.html">Puntos claves basados en</A>
+<B> Subir:</B> <A NAME="tex2html702"
+  HREF="node32.html">El problema de cambio</A>
+<B> Anterior:</B> <A NAME="tex2html698"
+  HREF="node32.html">El problema de cambio</A>
+ &nbsp; <B>  <A NAME="tex2html704"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00731100000000000000"></A><A NAME="sec:invarianza_a_escala"></A>
+<BR>
+Invarianza a escala
+</H3>
+      Es sabido que los filtros gaussianos son com&#195;&#186;nmente usados para detecci&#195;&#179;n de puntos (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>). Si la escala del filtro es muy peque&#195;&#177;a, el resultado incluye muchos puntos redundantes de detalles innecesarios. Contrariamente, si la escala es muy grande, los puntos de regiones con soporte peque&#195;&#177;o tienden a desaparecer con el borroneado. Luego, para solucionar los problemas existentes en el filtrado gaussiano con escalas fijas, se han propuesto procedimientos espacio-escala basados en la representaci&#195;&#179;n de la curvatura discreta multi escalar. El esquema est&#195;&#161; basado en el criterio de estabilidad que establece que la presencia de una esquina debe ocurrir como un m&#195;&#161;ximo de curvatura observable en la mayor&#195;&#173;a de las escalas (<A
+ HREF="node79.html#springerlink:10.1023/A:1008045108935">36</A>).
+
+<P>
+La derivada de una imagen puede ser estimada mediante el uso de filtros gaussianos. Los mismos utilizan un par&#195;&#161;metro <SPAN CLASS="MATH"></SPAN> que representa la varianza de la funci&#195;&#179;n gaussiana usada para construir el filtro y que define impl&#195;&#173;citamente la escala en que la derivada es evaluada.
+
+<P>
+Si se calcula el laplaciano de un punto en una imagen usando filtros gaussianos a diferentes escalas, se obtienen diferentes valores en los que se puede observar la evoluci&#195;&#179;n de las respuestas para diferentes factores de escala. As&#195;&#173;, se  obtiene una curva que alcanza un valor m&#195;&#161;ximo en alg&#195;&#186;n valor de <SPAN CLASS="MATH"></SPAN> espec&#195;&#173;fico. Si se extrae este valor para dos im&#195;&#161;genes del mismo objeto (tomadas a escalas diferentes), la relaci&#195;&#179;n que existe entre los <SPAN CLASS="MATH"></SPAN> m&#195;&#161;ximos se corresponder&#195;&#161;n en relaci&#195;&#179;n con las escalas en que fueron tomadas cada una de las fotograf&#195;&#173;as. Esta observaci&#195;&#179;n es el n&#195;&#186;cleo del proceso de extracci&#195;&#179;n de caracter&#195;&#173;sticas invariantes a la escala que es aplicado tanto en SIFT como en SURF. 
+<DIV ALIGN="CENTER"><A NAME="fig:church1"></A><A NAME="fig:church2"></A><A NAME="fig:church_difference_surf"></A><A NAME="1548"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Fotograf&#195;&#173;a tomada a diferentes escalas de la misma escena. El tama&#195;&#177;o de los c&#195;&#173;rculos de cada punto clave detectado es proporcional a la escala calculada para cada uno de ellos. (Figuras tomadas de (<A
+ HREF="node79.html#citeulike:9456628">28</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	
+[]
+
+<IMG
+ WIDTH="18" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img73.png"
+ ALT="\includegraphics[scale=0.338]{../img_ent2/surfinchurch1}">
+	 
+	
+[]
+
+
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html705"
+  HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html701"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html697"
+  HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html703"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html706"
+  HREF="node34.html">Puntos claves basados en</A>
+<B> Subir:</B> <A NAME="tex2html702"
+  HREF="node32.html">El problema de cambio</A>
+<B> Anterior:</B> <A NAME="tex2html698"
+  HREF="node32.html">El problema de cambio</A>
+ &nbsp; <B>  <A NAME="tex2html704"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

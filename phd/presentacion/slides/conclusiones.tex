@@ -1,0 +1,39 @@
+\section{Conclusiones y trabajos futuros}
+\subsection*{}
+\begin{frame}{Conclusiones}
+ \begin{itemize}
+  \item Se ha desarrollado un método para detectar objetos planos (sin marcadores) en un ambiente natural sobre imágenes obtenidas con una cámara web estándar.
+    \note[item]{, mediante la detección de características }
+%   \item Se han introducido conceptos de RA, detectores de características y herramientas para detección y seguimiento de objetos.
+  \item Se han propuesto técnicas simples para realce de detalles e iluminación que mejoren el desempeño del método en diferentes condiciones del ambiente.
+    \note[item]{de forma que el usuario pueda considerar la aplicación de alguna de ellas de ser necesario,}
+  \item Se han aplicado estrategias para una correcta detección de objetos, optimizando el método para que funcione en tiempo real.
+  \item El software utilizado permite su portabilidad a diferentes sistemas operativos.
+  \item Se han presentado dos prototipos de aplicación.
+  \note[item]{La detecci'on de objetos puede se aplicada  a variedad de tem'atica, control de calidad, robotica, vigilancia, etc. lo cual lo hace una tem'atica que provee una amplia variedad de posibles futuros desarrollos. La realidad aumentada, tambi'en permite extender esto a diferentes areas, como publicidad, ecommerce, capacitaciones, etc.
+  Algunos de los trabajos futuros que se proponen...}
+ \end{itemize}
+\end{frame}
+ %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{}
+\begin{frame}{Trabajos futuros}
+    \note[item]{A fin de mejorar el desempeño general, se proponen algunas modificaciones que podrían aplicarse al método}
+    \begin{itemize}
+    \item Estudiar soluciones basadas en GPU y múltiples hilos de procesamiento.
+	  \note[item]{aplicado al proceso de extracción y descripción de características.}
+	  \note[item]{Existen implementaciones en el tema en internet}
+	  \note[item]{Utilizar para la búsqueda de correspondencias ``nano flann'' en vez de FLANN: eficiencia en tiempo y consumo de memoria.}
+	  \note[item]{Selección automática del umbral hessiano para la discriminación de puntos.}
+	  \note[item]{correr con distintos umbrales hessianos sobre la imagen patrón y determinar el adecuado cuando esté  en un rango que se considere apropiado.. entre 200 y 1000 puntos}
+      \item Investigar soluciones para el manejo de la oclusión.
+	  \note[item]{Marcelo: Si la oclusión es rápida zafa por 3 frames}
+	  \note[item]{Marcelo: lo dejo a esto? - para oclusiones de hasta 3 frames es manejable}
+	  \note[item]{si pongo la mano que se dibuje por encima el objeto virtual}
+      \item Explorar el uso de diferentes detectores de características: MSER, FAST, etc. 
+	  \note[item]{Comparación en \url{http://bit.ly/hox3gW}.}
+      \item Integrar el método en una aplicación con interfaz gráfica para detección sobre un conjunto de imágenes.
+	  \note[item]{Implementar una aplicación con interfaz gráfica orientada a un usuario final. Reconocer diferentes imágenes patrón de una BD y llevar a cabo una acción particular para el enriquecimiento de la realidad.}
+	  \note[item]{en comparación no debería llevar tanto tiempo ya que como vimos al menos en estos experimentos no representa un alto consumo de tiempo}
+    \end{itemize}
+\end{frame}

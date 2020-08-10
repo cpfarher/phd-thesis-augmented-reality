@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Determinaci&#195;&#179;n adaptativa de la cantidad de muestras</TITLE>
+<META NAME="description" CONTENT="Determinaci&#195;&#179;n adaptativa de la cantidad de muestras">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node49.html">
+<LINK REL="up" HREF="node49.html">
+<LINK REL="next" HREF="node51.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html926"
+  HREF="node51.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html922"
+  HREF="node49.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html918"
+  HREF="node49.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html924"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html927"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Subir:</B> <A NAME="tex2html923"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+<B> Anterior:</B> <A NAME="tex2html919"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+ &nbsp; <B>  <A NAME="tex2html925"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H5><A NAME="SECTION00763121000000000000">
+Determinaci&#195;&#179;n adaptativa de la cantidad de muestras</A>
+</H5>
+Por lo general <SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img267.png"
+ ALT="$ \epsilon$"></SPAN> es desconocido por lo que en dicho caso, el algoritmo es inicializado usando el peor caso de estimaci&#195;&#179;n de <SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img267.png"
+ ALT="$ \epsilon$"></SPAN>, y esta estimaci&#195;&#179;n es actualizada a medida que se encuentran m&#195;&#161;s conjuntos consistentes. Por ejemplo, si se supone que el peor caso es <!-- MATH
+ $\epsilon=0.5$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img268.png"
+ ALT="$ \epsilon=0.5$"></SPAN> y del conjunto consensuado se encuentra un <SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img269.png"
+ ALT="$ 80\%$"></SPAN> de datos como v&#195;&#161;lidos, la estimaci&#195;&#179;n actualizada es <!-- MATH
+ $\epsilon=0.2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img270.png"
+ ALT="$ \epsilon=0.2$"></SPAN>.
+
+<P>
+La idea de ``probar'' los datos mediante el conjunto consensuado puede ser aplicada repetidamente para de determinar adaptativamente la cantidad de muestras <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN>. Si tenemos en cuenta el ejemplo mencionado en el p&#195;&#161;rrafo anterior, la peor estimaci&#195;&#179;n <!-- MATH
+ $\epsilon=0.5$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img268.png"
+ ALT="$ \epsilon=0.5$"></SPAN> determina el valor inicial de <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> en base a la ecuaci&#195;&#179;n (<A HREF="node49.html#eq:determineN">2.27</A>). Cuando el conjunto consensuado contiene m&#195;&#161;s del <SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img244.png"
+ ALT="$ 50\%$"></SPAN> de datos encontrados, sabemos que hay por lo menos esa misma cantidad de valores v&#195;&#161;lidos. Esta estimaci&#195;&#179;n actualizada de <SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img267.png"
+ ALT="$ \epsilon$"></SPAN> determina un <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> reducido de acuerdo a la ecuaci&#195;&#179;n (<A HREF="node49.html#eq:determineN">2.27</A>). Esta actualizaci&#195;&#179;n es repetida para cada muestra y cada vez que es encontrado un conjunto consensuado con <SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img267.png"
+ ALT="$ \epsilon$"></SPAN> menor que el ya estimado, la cantidad <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> tambi&#195;&#169;n disminuye. El algoritmo termina tan pronto como <SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="358" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.png"
+ ALT="$ N$"></SPAN> muestras han sido analizadas.
+
+<P>
+Los pasos que se siguen para la determinaci&#195;&#179;n adaptativa de la cantidad de muestras como as&#195;&#173; tambi&#195;&#169;n la proporci&#195;&#179;n de valores espurios de cada conjunto consensuado, son los siguientes:
+
+<P>
+<SPAN ID="fcol1697"><IMG
+ WIDTH="61" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img271.png"
+ ALT="$\textstyle \parbox{365pt}{%
+\noindent %\textbf{Eksempel.}
+\begin{enumerate}[nol...
+...rementar $contador\_muestras$\ por 1
+\end{itemize} \item Fin.
+\end{enumerate}}$"></SPAN>
+
+<P>
+
+<P></P>
+El algoritmo RANSAC, es aplicado a las potenciales correspondencias para estimar la homograf&#195;&#173;a como as&#195;&#173; tambi&#195;&#169;n las correspondencias v&#195;&#161;lidas consistentes con dicha estimaci&#195;&#179;n. Como se ha mencionado, cuatro correspondencias son suficientes para determinar la homograf&#195;&#173;a (siempre que no hayan tres colineales), sin embargo, se puede obtener una mejor estimaci&#195;&#179;n usando todos los valores v&#195;&#161;lidos (en vez de s&#195;&#179;lo cuatro), adem&#195;&#161;s de obtener un conjunto con mayor cantidad de correspondencias v&#195;&#161;lidas de forma que la homograf&#195;&#173;a resulte m&#195;&#161;s precisa. Esto, se logra con la minimizaci&#195;&#179;n de la funci&#195;&#179;n del error de reproyecci&#195;&#179;n mediante el algoritmo Levenberg-Marquardt (m&#195;&#169;todo iterativo con una variaci&#195;&#179;n al m&#195;&#169;todo iterativo de Gauss-Newton (, p. 600)). Todos los pasos descriptos para la estimaci&#195;&#179;n de la homograf&#195;&#173;a se describen a continuaci&#195;&#179;n:
+
+<P>
+<SPAN ID="fcol1698"><IMG
+ WIDTH="583" HEIGHT="236" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$\textstyle \parbox{365pt}{%
+\noindent \textbf{C\~{A}!\lq lculo de la homograf\~{A}...
+...}_i}\; \forall i$\ usando el algoritmo de Levenberg-Marquardt.
+\end{enumerate}}$"></SPAN>
+   
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html926"
+  HREF="node51.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html922"
+  HREF="node49.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html918"
+  HREF="node49.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html924"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html927"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Subir:</B> <A NAME="tex2html923"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+<B> Anterior:</B> <A NAME="tex2html919"
+  HREF="node49.html">Homograf&#195;&#173;a con RANSAC.</A>
+ &nbsp; <B>  <A NAME="tex2html925"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Correspondencia entre puntos claves</TITLE>
+<META NAME="description" CONTENT="Correspondencia entre puntos claves">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node63.html">
+<LINK REL="previous" HREF="node61.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node63.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1093"
+  HREF="node63.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1089"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1083"
+  HREF="node61.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1091"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1094"
+  HREF="node63.html">Detecci&#195;&#179;n de homograf&#195;&#173;a</A>
+<B> Subir:</B> <A NAME="tex2html1090"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html1084"
+  HREF="node61.html">Extracci&#195;&#179;n y descripci&#195;&#179;n de</A>
+ &nbsp; <B>  <A NAME="tex2html1092"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00860000000000000000">
+Correspondencia entre puntos claves</A>
+</H1>
+Luego de detectar los puntos claves y sus descriptores tanto en la imagen patr&#195;&#179;n como en la imagen objetivo, se procede con la b&#195;&#186;squeda de coincidencias entre ambas im&#195;&#161;genes. Para ello, se utiliza la b&#195;&#186;squeda del vecino m&#195;&#161;s cercano, aqu&#195;&#173; se utilizan dos vecinos al punto clave detectado como se describe en la secci&#195;&#179;n <A HREF="node39.html#sec:correspop_ptos_claves">2.5</A>. Adem&#195;&#161;s, se utiliza la t&#195;&#169;cnica de &#195;&#161;rboles KD para acelerar la b&#195;&#186;squeda y el filtrado de correspondencias no v&#195;&#161;lidas, que se describi&#195;&#179; en la secci&#195;&#179;n <A HREF="node41.html#sec:remocion_corresp_invalidas">2.5.2</A>.
+
+<P>
+De esta forma se obtiene un conjunto de pares de puntos entre la ima-gen patr&#195;&#179;n y la imagen objetivo. Un ejemplo puede ser observado en la Fig. <A HREF="#fig:correspondencias_deteccion_lineas">3.6</A>, donde los par&#195;&#161;metros descriptos en la Sec. <A HREF="node41.html#sec:remocion_corresp_invalidas">2.5.2</A> se establecieron a <!-- MATH
+ $\mathit{hessianThreshold}=2000$
+ -->
+<SPAN CLASS="MATH"></SPAN> y <!-- MATH
+ $\varepsilon=0.8$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="199" HEIGHT="43" ALIGN="BOTTOM" BORDER="0"
+ SRC="img166.png"
+ ALT="$ \varepsilon=0.8$"></SPAN>. Las l&#195;&#173;neas entre las im&#195;&#161;genes representan las correspondencias detectadas entre los puntos claves de la imagen patr&#195;&#179;n (izquierda) y la imagen objetivo (derecha), correspondiente al flujo de video en un instante de tiempo. Las correspondencias espurias que se pueden observar (por ejemplo, la letra ``o'' en la palabra ``oto&#195;&#177;o''), pueden ser luego descartadas mediante el uso de RANSAC en la estimaci&#195;&#179;n de la homograf&#195;&#173;a.
+
+<DIV ALIGN="CENTER"><A NAME="fig:correspondencias_deteccion_lineas"></A><A NAME="2876"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Correspondencias de puntos entre im&#195;&#161;genes patr&#195;&#179;n y objetivo antes de estimar la homograf&#195;&#173;a con RANSAC.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>        <IMG
+ WIDTH="209" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img301.png"
+ ALT="\includegraphics[scale=0.3]{../figs/extraccion/correspondencias}">
+    
+</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Las funcionalidades de b&#195;&#186;squeda del vecino m&#195;&#161;s cercano, junto con el armado de &#195;&#161;rboles para una indexaci&#195;&#179;n m&#195;&#161;s r&#195;&#161;pida fueron realizadas mediante la interfase FLANN<A NAME="tex2html33"
+  HREF="footnode.html#foot2953"><SUP><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN></SUP></A> provista por OpenCV. 
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1093"
+  HREF="node63.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1089"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1083"
+  HREF="node61.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1091"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1094"
+  HREF="node63.html">Detecci&#195;&#179;n de homograf&#195;&#173;a</A>
+<B> Subir:</B> <A NAME="tex2html1090"
+  HREF="node51.html">M&#195;&#169;todo propuesto</A>
+<B> Anterior:</B> <A NAME="tex2html1084"
+  HREF="node61.html">Extracci&#195;&#179;n y descripci&#195;&#179;n de</A>
+ &nbsp; <B>  <A NAME="tex2html1092"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

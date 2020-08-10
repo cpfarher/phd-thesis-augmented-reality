@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Experimento 2</TITLE>
+<META NAME="description" CONTENT="Experimento 2">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node73.html">
+<LINK REL="up" HREF="node72.html">
+<LINK REL="next" HREF="node75.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1239"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1235"
+  HREF="node72.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1231"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1237"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1240"
+  HREF="node75.html">Implementaci&#195;&#179;n de prototipos</A>
+<B> Subir:</B> <A NAME="tex2html1236"
+  HREF="node72.html">Experimentos</A>
+<B> Anterior:</B> <A NAME="tex2html1232"
+  HREF="node73.html">Experimento 1</A>
+ &nbsp; <B>  <A NAME="tex2html1238"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00922000000000000000">
+Experimento 2</A>
+</H2>
+En el cap&#195;&#173;tulo <A HREF="node51.html#c:parte4">3</A>, se ha descripto el diagrama de flujo del m&#195;&#169;todo desarrollado, el cual presenta condicionales que permiten mejorar la detecci&#195;&#179;n y minimizar los tiempos de procesamiento. En esta secci&#195;&#179;n se analizan y discuten los tiempos que insumen los procesos observables en el diagrama de la Fig. <A HREF="node52.html#fig:diagrama_metodo">3.2</A> para obtener una conclusi&#195;&#179;n m&#195;&#161;s detallada sobre la efectividad de las alternativas planteadas.
+
+<P>
+Cuando se realiza el procesamiento en condiciones de baja iluminaci&#195;&#179;n (como se ha descripto en la Sec. <A HREF="node73.html#subsec:paraqumetros_utilizados">4.2.1</A>), la detecci&#195;&#179;n no resulta del todo estable (se produce efecto de ``parapadeo'' seguido y repetitivo del objeto de RA). Dado que aqu&#195;&#173; se desea obtener conclusiones cuando el m&#195;&#169;todo es ``estable'' en la detecci&#195;&#179;n, se realizaron dos pruebas en condiciones de iluminaci&#195;&#179;n <SPAN CLASS="MATH"><IMG
+ WIDTH="3" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ B_{N}$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$ B_{H}$"></SPAN>, estableci&#195;&#169;ndose emp&#195;&#173;ricamente el umbral hessiano para lograr un equilibrio entre el tiempo de procesamiento y la correcta detecci&#195;&#179;n del objeto. La aplicaci&#195;&#179;n de alguna de las t&#195;&#169;cnicas mencionadas en el ``Pre-Procesamiento de Iluminaci&#195;&#179;n y Realce de detalles'' no fue necesaria, ya que con las condiciones ambientales se obtuvieron resultados aceptables. Si bien aplicar alguna de estas t&#195;&#169;cnicas mejora la calidad de detecci&#195;&#179;n, tambi&#195;&#169;n incrementa el tiempo de procesamiento y es por ello que se deja a criterio del usuario la decisi&#195;&#179;n de aplicarlas, seg&#195;&#186;n lo considere necesario. Las pruebas se definieron como:
+
+<UL>
+<LI><SPAN  CLASS="textbf">Prueba 1 (P1)</SPAN>: duraci&#195;&#179;n: 1:50 minutos, umbral hessiano: 3500. Imagen con condici&#195;&#179;n <SPAN CLASS="MATH"><IMG
+ WIDTH="3" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ B_{N}$"></SPAN> Fig. <A HREF="node73.html#fig:train_normal">4.2a</A> <A NAME="tex2html49"
+  HREF="footnode.html#foot3517"><SUP><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN></SUP></A>
+</LI>
+<LI><SPAN  CLASS="textbf">Prueba 2 (P2)</SPAN>: duraci&#195;&#179;n: 1:35 minutos, umbral hessiano: 5000. Imagen con condici&#195;&#179;n <SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$ B_{H}$"></SPAN> Fig. <A HREF="node73.html#fig:train_brillante">4.2b</A> <A NAME="tex2html51"
+  HREF="footnode.html#foot3518"><SUP><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN></SUP></A>
+</LI>
+</UL>
+Cabe aclarar que <SPAN  CLASS="textbf">P1</SPAN> y <SPAN  CLASS="textbf">P2</SPAN> son dos pruebas independientes, en las que el objeto presenta movimientos parecidos aunque diferentes en las escenas.
+
+<P>
+Para cada ciclo de la fase de ejecuci&#195;&#179;n de cada prueba se computaron los siguientes datos:
+
+<UL>
+<LI>Tiempo de <SPAN  CLASS="textit">detecci&#195;&#179;n de movimiento</SPAN>,
+</LI>
+<LI>Tiempo de <SPAN  CLASS="textit">extracci&#195;&#179;n y descripci&#195;&#179;n de las caracter&#195;&#173;sticas en BR</SPAN> *,
+</LI>
+<LI>Tiempo de <SPAN  CLASS="textit">b&#195;&#186;squeda de correspondencias</SPAN> *,
+</LI>
+<LI>Tiempo de <SPAN  CLASS="textit">estimaci&#195;&#179;n de la homograf&#195;&#173;a</SPAN> *,
+</LI>
+<LI>Tiempo de comprobaci&#195;&#179;n <SPAN  CLASS="textit">contorno convexo y v&#195;&#169;rtices v&#195;&#161;lidos</SPAN> *,
+</LI>
+<LI>Tiempo de <SPAN  CLASS="textit">transformaci&#195;&#179;n perspectiva de la imagen de RA utilizando la homograf&#195;&#173;a</SPAN> *,
+</LI>
+<LI>Cuadros por segundo (FPS),
+</LI>
+<LI>Total de puntos detectados en la imagen patr&#195;&#179;n,
+</LI>
+<LI>Total de puntos detectados en la imagen objeto,
+</LI>
+<LI>Total de coincidencias potencialmente v&#195;&#161;lidas.
+</LI>
+</UL>
+
+<P>
+Si se observa el diagrama del ``m&#195;&#169;todo propuesto'' en la Fig. <A HREF="node52.html#fig:diagrama_metodo">3.2</A>, se notar&#195;&#161; que las operaciones marcadas con (*) pueden ignorarse si se cumple una determinada condici&#195;&#179;n en el ciclo de ejecuci&#195;&#179;n, sin impedir que se realice el enriquecimiento de la realidad. Esto como consecuencia del buffer de transformaciones descripto en la secci&#195;&#179;n <A HREF="node67.html#subsubsec:presente_en_alguno_3_frames_previos">3.9</A>. As&#195;&#173;, por ejemplo si la comprobaci&#195;&#179;n de contornos convexo y v&#195;&#169;rtices v&#195;&#161;lidos (<SPAN  CLASS="textit">CCVV</SPAN>) no se cumple, entonces no se calcula la transformaci&#195;&#179;n perspectiva (<SPAN  CLASS="textit">TP</SPAN>);  o si la homograf&#195;&#173;a no es detectada, luego, no se realiza la <SPAN  CLASS="textit">CCVV</SPAN> y por ende tampoco la <SPAN  CLASS="textit">TP</SPAN>; a&#195;&#186;n m&#195;&#161;s, si no se detecta movimiento en al escena, entonces ninguno de los procesos anteriormente mencionados es ejecutado. As&#195;&#173;, todos estos condicionales producen que el tiempo promedio de procesamiento en el m&#195;&#169;todo propuesto disminuya cuando alguna (o todas) las operaciones son ignoradas. Adicionalmente se ha definido un proceso que denominamos ``m&#195;&#169;todo est&#195;&#161;ndar'' que comprende s&#195;&#179;lo las siguientes operaciones de la Fig. <A HREF="node52.html#fig:diagrama_metodo">3.2</A>: captura del flujo de video, conversi&#195;&#179;n a escala de grises, extracci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas (en toda la imagen), b&#195;&#186;squeda de correspondencias, estimaci&#195;&#179;n de la homograf&#195;&#173;a, transformaci&#195;&#179;n perspectiva del objeto virtual y enriquecimiento de la realidad.
+
+<P>
+En el gr&#195;&#161;fico de la Fig. <A HREF="#graph:graph_tiempos_3500">4.7</A>, se pueden observar los tiempos promedios en la fase de ejecuci&#195;&#179;n para el m&#195;&#169;todo propuesto y el m&#195;&#169;todo est&#195;&#161;ndar en P1. Para analizar los datos, se calcularon los FPS promedio (<!-- MATH
+ $FPS_{prom}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="600" HEIGHT="344" ALIGN="MIDDLE" BORDER="0"
+ SRC="img368.png"
+ ALT="$ FPS_{prom}$"></SPAN>) para el proceso de ejecuci&#195;&#179;n. De ello, se pudo advertir que el valor de <!-- MATH
+ $FPS_{prom}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="600" HEIGHT="344" ALIGN="MIDDLE" BORDER="0"
+ SRC="img368.png"
+ ALT="$ FPS_{prom}$"></SPAN> para el m&#195;&#169;todo est&#195;&#161;ndar fue de <SPAN CLASS="MATH"><IMG
+ WIDTH="78" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img369.png"
+ ALT="$ 6.93$"></SPAN> FPS, mientras que para el propuesto fue de <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img370.png"
+ ALT="$ 28.35$"></SPAN> FPS, lo cual constituye una mejora notable en el tiempo de procesamiento. Dicho de otro modo, la l&#195;&#179;gica de los condicionales planteados para mejorar el tiempo de procesamiento y la detecci&#195;&#179;n del objeto evidencia un gran incremento en los <!-- MATH
+ $FPS_{prom}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="600" HEIGHT="344" ALIGN="MIDDLE" BORDER="0"
+ SRC="img368.png"
+ ALT="$ FPS_{prom}$"></SPAN> y esto se debe en gran parte a que evita el proceso de extracci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas (observar que la barra verde en el gr&#195;&#161;fico representa casi la mitad de tiempo sobre la barra violeta).
+
+<P>
+En lo que respecta a los tiempos en los diferentes procesos, se puede visualizar en la Fig. <A HREF="#graph:graph_tiempos_3500">4.7</A> que la extracci&#195;&#179;n y descripci&#195;&#179;n de caracter&#195;&#173;sticas es la que m&#195;&#161;s tiempo requiere, a pesar de que se minimiz&#195;&#179; el procesamiento en un &#195;&#161;rea de la imagen (BR) como se explic&#195;&#179; en la Sec. <A HREF="node55.html#sec:deteccion_cambiante_imagen">3.4</A>. Experimentalmente se comprob&#195;&#179; que si el &#195;&#161;rea BR en la que se extraen caracter&#195;&#173;sticas es del 50% de la imagen patr&#195;&#179;n de <!-- MATH
+ $640 \times 480$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="$ 640 \times 480$"></SPAN> p&#195;&#173;xeles, el tiempo de procesamiento representa aproximadamente un 42% del tiempo total que se requiere para extraer las caracter&#195;&#173;sticas en la totalidad de la imagen.
+
+<P>
+El segundo proceso que m&#195;&#161;s tiempo consume es la estimaci&#195;&#179;n de la homograf&#195;&#173;a por tratarse de un m&#195;&#169;todo iterativo que estima la matriz <SPAN CLASS="MATH"><IMG
+ WIDTH="561" HEIGHT="227" ALIGN="BOTTOM" BORDER="0"
+ SRC="img324.png"
+ ALT="$ H$"></SPAN> y refina las coincidencias. La transformaci&#195;&#179;n perspectiva que involucra una interpolaci&#195;&#179;n, ocupa el tercer lugar, seguida de la b&#195;&#186;squeda de correspondencias, la detecci&#195;&#179;n de movimiento y finalmente, la CCVV que est&#195;&#161; compuesta de operaciones triviales.
+
+<DIV ALIGN="CENTER"><A NAME="graph:graph_tiempos_3500"></A><A NAME="3436"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Tiempos promedios de operaci&#195;&#179;n para los diferentes procesos en la Prueba 1</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>        <IMG
+ WIDTH="49" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img371.png"
+ ALT="\includegraphics[scale=0.45]{../pruebas_modif/3500_sinproc/graph_tiempos_3500_presentacion1}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+En lo que respecta a total de puntos detectados y las potenciales correspondencias v&#195;&#161;lidas, para P1 se detectaron 192 puntos claves en la imagen patr&#195;&#179;n y un promedio de 130 puntos en la imagen del flujo de video. De los mismos se obtuvo (en promedio) 38 pares de coincidencias potencialmente v&#195;&#161;lidas, observ&#195;&#161;ndose un m&#195;&#161;ximo de 81 pares.
+
+<P>
+En la Fig. <A HREF="#fig:imagen_secuencia1_ejemplo">4.8c</A> a <A HREF="#fig:imagen_secuencia4_ejemplo">4.8f</A> se presentan diferentes capturas del resultado final del m&#195;&#169;todo, utilizando como imagen patr&#195;&#179;n la Fig. <A HREF="#fig:imagen_patron_ejemplo">4.8a</A> y como objeto de realidad aumentada la imagen de la Fig. <A HREF="#fig:imagen_objetoar_ejemplo">4.8b</A>. El umbral hessiano se estableci&#195;&#179; a 3500 y la escena se encuentra en condici&#195;&#179;n <SPAN CLASS="MATH"><IMG
+ WIDTH="3" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ B_{N}$"></SPAN> de iluminaci&#195;&#179;n.
+
+<DIV ALIGN="CENTER"><A NAME="fig:imagen_patron_ejemplo"></A><A NAME="fig:imagen_objetoar_ejemplo"></A><A NAME="fig:imagen_secuencia1_ejemplo"></A><A NAME="fig:imagen_secuencia2_ejemplo"></A><A NAME="fig:imagen_secuencia3_ejemplo"></A><A NAME="fig:imagen_secuencia4_ejemplo"></A><A NAME="fig:secuencia_ejemplo_BN"></A><A NAME="3458"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Imagen patr&#195;&#179;n, objeto de RA y capturas de im&#195;&#161;genes con enriquecimiento de la realidad.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>[][Imagen patr&#195;&#179;n con Ilum. <SPAN CLASS="MATH"><IMG
+ WIDTH="3" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ B_{N}$"></SPAN>]<IMG
+ WIDTH="549" HEIGHT="393" ALIGN="BOTTOM" BORDER="0"
+ SRC="img372.png"
+ ALT="\includegraphics[width=2.5in]{../pruebas_modif/capturas/usables/train_normal}">
+[][Objeto de RA]<IMG
+ WIDTH="287" HEIGHT="216" ALIGN="BOTTOM" BORDER="0"
+ SRC="img373.png"
+ ALT="\includegraphics[width=2.5in]{../pruebas_modif/capturas/usables/pinguino}">
+<BR>[][]<IMG
+ WIDTH="287" HEIGHT="216" ALIGN="BOTTOM" BORDER="0"
+ SRC="img374.png"
+ ALT="\includegraphics[width=2.5in]{../pruebas_modif/capturas/usables/captured154}">
+[][]<IMG
+ WIDTH="287" HEIGHT="216" ALIGN="BOTTOM" BORDER="0"
+ SRC="img375.png"
+ ALT="\includegraphics[width=2.5in]{../pruebas_modif/capturas/usables/captured135}">
+<BR>[][]<IMG
+ WIDTH="287" HEIGHT="216" ALIGN="BOTTOM" BORDER="0"
+ SRC="img376.png"
+ ALT="\includegraphics[width=2.5in]{../pruebas_modif/capturas/usables/captured141}">
+[][]<IMG
+ WIDTH="287" HEIGHT="216" ALIGN="BOTTOM" BORDER="0"
+ SRC="img377.png"
+ ALT="\includegraphics[width=2.5in]{../pruebas_modif/capturas/usables/captured207}">
+<BR>
+</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+En lo que respecta a la prueba P2, los detalles de los resultados no ser&#195;&#161;n expuestos aqu&#195;&#173; para no extender este informe. Sin embargo, se debe mencionar que de su an&#195;&#161;lisis se obtuvieron resultados similares en los &#195;&#179;rdenes de magnitud de tiempos por procesos. La cantidad de puntos claves detectados, no puede ser comparada con P1, ya que se trata de un umbral e imagen diferente, en condiciones diferentes de iluminaci&#195;&#179;n. De todas formas, podemos decir que la cantidad de puntos detectados en la imagen patr&#195;&#179;n, se vio incrementada a pesar de aumentar el umbral hessiano, debido a que la imagen sobre la cual se aplic&#195;&#179; pose&#195;&#173;a mayor luminosidad y, por lo tanto mayores detalles apreciables.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1239"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1235"
+  HREF="node72.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1231"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1237"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1240"
+  HREF="node75.html">Implementaci&#195;&#179;n de prototipos</A>
+<B> Subir:</B> <A NAME="tex2html1236"
+  HREF="node72.html">Experimentos</A>
+<B> Anterior:</B> <A NAME="tex2html1232"
+  HREF="node73.html">Experimento 1</A>
+ &nbsp; <B>  <A NAME="tex2html1238"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

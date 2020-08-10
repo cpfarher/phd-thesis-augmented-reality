@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Propiedades de caracter&#195;&#173;sticas locales</TITLE>
+<META NAME="description" CONTENT="Propiedades de caracter&#195;&#173;sticas locales">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node10.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html388"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html384"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html380"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html386"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html389"
+  HREF="node13.html">Detecci&#195;&#179;n y correspondencia de</A>
+<B> Subir:</B> <A NAME="tex2html385"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+<B> Anterior:</B> <A NAME="tex2html381"
+  HREF="node11.html">Caracter&#195;&#173;sticas locales</A>
+ &nbsp; <B>  <A NAME="tex2html387"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00622200000000000000">
+Propiedades de caracter&#195;&#173;sticas locales</A>
+</H3>
+Las caracter&#195;&#173;sticas locales com&#195;&#186;nmente vienen representadas por una extensi&#195;&#179;n espacial, por ejemplo una vecindad de p&#195;&#173;xeles de un punto de inter&#195;&#169;s dado. Los detectores seleccionan caracter&#195;&#173;sticas locales basadas en la intensidad de los patrones subyacentes.
+
+<P>
+Las caracter&#195;&#173;sticas son consideradas &#195;&#186;tiles cuando poseen las siguientes propiedades:
+
+<UL>
+<LI><SPAN  CLASS="textbf">Repetibilidad</SPAN>: dadas dos im&#195;&#161;genes tomadas bajo diferentes condiciones del mismo objeto o escena, un alto porcentaje de las caracter&#195;&#173;sticas detectadas debe poder ser encontrada en ambas im&#195;&#161;genes.
+</LI>
+<LI><SPAN  CLASS="textbf">Distintividad</SPAN>: los patrones de intensidad subyacentes a las caracter&#195;&#173;sticas detectadas deber&#195;&#173;an mostrar variaciones significativas, de forma tal que las caracter&#195;&#173;sticas sean distinguibles y se puedan encontrar posteriormente pares de correspondencias.
+</LI>
+<LI><SPAN  CLASS="textbf">Localidad</SPAN>: Las caracter&#195;&#173;sticas deber&#195;&#173;an ser locales (en el sentido de tener una extensi&#195;&#179;n espacial acotada) para reducir la posibilidad de oclusi&#195;&#179;n y permitir un modelo de aproximaci&#195;&#179;n a las deformaciones geom&#195;&#169;tricas y fotom&#195;&#169;tricas entre dos im&#195;&#161;genes tomadas bajo diferentes condiciones visuales. </LI>
+<LI><SPAN  CLASS="textbf">Cantidad</SPAN>: El n&#195;&#186;mero de caracter&#195;&#173;sticas detectadas debe ser lo suficientemente grande para que a&#195;&#186;n en objetos peque&#195;&#177;os, una cantidad razonable de &#195;&#169;stos puedan ser detectada. Esta cantidad depende de la aplicaci&#195;&#179;n y, por lo general, puede ser adaptada mediante un umbral. La densidad de las caracter&#195;&#173;sticas debe reflejar el contenido de informaci&#195;&#179;n de la imagen de forma de proveer una representaci&#195;&#179;n compacta de la misma.
+</LI>
+<LI><SPAN  CLASS="textbf">Precisi&#195;&#179;n</SPAN>: Las caracter&#195;&#173;sticas detectadas deber&#195;&#173;an ser precisamente localizadas respecto a la posici&#195;&#179;n en la imagen, al tama&#195;&#177;o de la misma y en lo posible a su forma.
+</LI>
+<LI><SPAN  CLASS="textbf">Eficiencia</SPAN>: la detecci&#195;&#179;n de caracter&#195;&#173;sticas en una imagen nueva, deber&#195;&#173;a poseer tiempos lo m&#195;&#161;s acotados posibles para una aplicaci&#195;&#179;n.
+</LI>
+</UL>
+
+<P>
+La Repetibilidad es com&#195;&#186;nmente una de las propiedades de mayor importancia y se puede lograr alcanzando dos propiedades, invariancia y robustez:
+
+<UL>
+<LI><SPAN  CLASS="textbf">Invariancia</SPAN>: si se esperan grandes deformaciones, la idea consiste en modelar matem&#195;&#161;ticamente las mismas de forma de tener un m&#195;&#169;todo de detecci&#195;&#179;n de caracter&#195;&#173;sticas que no se vea afectado por dichas transformaciones matem&#195;&#161;ticas.
+</LI>
+<LI><SPAN  CLASS="textbf">Robustez</SPAN>: en el caso de deformaciones relativamente peque&#195;&#177;as, por lo general es suficiente con hacer que los m&#195;&#169;todos de detecci&#195;&#179;n de caracter&#195;&#173;sticas resulten menos sensitivos a dichas deformaciones, por ejemplo, la precisi&#195;&#179;n de la detecci&#195;&#179;n puede decrecer pero no deber&#195;&#173;a hacerlo de forma dr&#195;&#161;stica. Algunas deformaciones t&#195;&#173;picas que se pueden afrontar mediante la robustez son: el ruido en la imagen, los efectos de discretizaci&#195;&#179;n, el borroneado, como as&#195;&#173; tambi&#195;&#169;n las desviaciones geom&#195;&#169;tricas y fotom&#195;&#169;tricas del modelo matem&#195;&#161;tico utilizado para obtener invariancia.
+</LI>
+</UL>
+
+<P>
+La importancia de las propiedades mencionadas, dependen de la aplicaci&#195;&#179;n sobre la cual se trabajar&#195;&#161;. El ajuste de &#195;&#169;stas, conlleva un compromiso y se fortalecer&#195;&#161;n unas u otras dependiendo de cada caso en particular.
+
+<P>
+La <SPAN  CLASS="textit">localizaci&#195;&#179;n</SPAN> y <SPAN  CLASS="textit">distintividad</SPAN> son propiedades interdependientes que no pueden ser maximizadas simult&#195;&#161;neamente: cuanto m&#195;&#161;s local es una caracter&#195;&#173;stica, menos informaci&#195;&#179;n est&#195;&#161; disponible sobre el patr&#195;&#179;n de intensidad subyacente y se hace m&#195;&#161;s dif&#195;&#173;cil de encontrar la correspondencia correcta (distintividad). Por otro lado, en el caso de objetos planos o rotaci&#195;&#179;n de c&#195;&#161;maras, las im&#195;&#161;genes est&#195;&#161;n relacionadas por la homograf&#195;&#173;a global, y no existen problemas con las oclusiones o discontinuidad de profundidades. Bajo estas condiciones, la cantidad de caracter&#195;&#173;sticas locales puede ser incrementada sin problemas, resultando ser altamente distintivas, pero impactando negativamente en la <SPAN  CLASS="textit">eficiencia</SPAN>.
+
+<P>
+Similarmente, al incrementar el nivel de <SPAN  CLASS="textit">invariancia</SPAN>, se reduce la <SPAN  CLASS="textit">distintividad</SPAN>. Un an&#195;&#161;lisis similar se puede hacer entre <SPAN  CLASS="textit">robustez</SPAN> y <SPAN  CLASS="textit">distintividad</SPAN>, t&#195;&#173;picamente cierta informaci&#195;&#179;n (considerada ruido) es descartada con el objetivo de lograr <SPAN  CLASS="textit">robustez</SPAN>. Como resultado, es importante tener una idea clara del grado requerido de invariancia o robustez para una aplicaci&#195;&#179;n espec&#195;&#173;fica. Es dif&#195;&#173;cil alcanzar alta invariancia y robustez al mismo tiempo.
+
+<P>
+La <SPAN  CLASS="textit">precisi&#195;&#179;n</SPAN> es especialmente importante cuando se precisan usar correspondencias, por ejemplo, para estimar la geometr&#195;&#173;a epipolar o calibrar una c&#195;&#161;mara.
+
+<P>
+La <SPAN  CLASS="textit">cantidad</SPAN> es particularmente &#195;&#186;til en m&#195;&#169;todos de reconocimiento de objetos o escenas, donde es importante cubrir densamente el objeto de inter&#195;&#169;s. Sin embargo y como se ha mencionado, una gran cantidad de caracter&#195;&#173;sticas impacta negativamente en el tiempo de computo.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html388"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html384"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html380"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html386"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html389"
+  HREF="node13.html">Detecci&#195;&#179;n y correspondencia de</A>
+<B> Subir:</B> <A NAME="tex2html385"
+  HREF="node10.html">Puntos caracter&#195;&#173;sticos y descriptores</A>
+<B> Anterior:</B> <A NAME="tex2html381"
+  HREF="node11.html">Caracter&#195;&#173;sticas locales</A>
+ &nbsp; <B>  <A NAME="tex2html387"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

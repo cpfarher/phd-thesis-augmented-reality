@@ -1,0 +1,6 @@
+sin proc 154
+log 453
+eq 1233
+pa 269
+hb 353 
+eq+hb 2002

@@ -1,0 +1,48 @@
+% \section {Operaciones morfológicas}
+% algo
+% \subsection{Conversión a Escala de grises}
+% algo
+% \subsection{Erosión}
+% algo
+% \subsection{Dilatación}
+% algo
+% \subsection{Bounding Box}
+% algo
+% \subsection{Convex Hull}
+% algo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Detección y correspondencia de puntos de interés}
+En visión computacional, los conceptos de puntos de interés o puntos claves (Keypoints) y puntos característicos (Feature Points) como la correspondencia entre los mismos, son usado ampliamente en diversidad de tareas tales como: el reconocimiento de objetos, la identificación de imágenes, seguimiento de objetivos, reconstrucción de escenas 3D, etc. La idea consiste en  seleccionar algunos puntos especiales de la imagen, para realizar un análisis sobre ellos. Esta aproximación es válida, en la medida en que se detecten la cantidad de puntos suficientes de tal forma que los mismos sean distinguibles y además, formen un conjunto de características estables que permitan ser precisamente localizadas en próximas observaciones (posean repetibilidad ante diferentes situaciones) como se describió en \ref{c:deteccioncaracteristicas}.
+
+La búsqueda de puntos de correspondencias discretos en imágenes puede ser dividida en tres grandes pasos:
+\begin{itemize}
+ \item Primeramente, los puntos de interés (esquinas, uniones de tipo T, etc.) son seleccionados como características distintivas de la imagen. La propiedad más sobresaliente de un detector de puntos de interés es su repetibilidad que expresa la robustez del detector en buscar los mismos puntos de interés bajo diferentes condiciones de visualización.
+
+ \item Luego, se representa la vecindad de cada punto de interés detectado mediante un vector de características (vector descriptor). Este descriptor debe ser distinguible y al mismo tiempo robusto al ruido, detección de desplazamientos y deformaciones geométricas o fotométricas idealmente.
+
+ \item Finalmente se buscan las correspondencias entre los vectores descriptores de las imágenes. Dicha correspondencia, generalmente se encuentra basada en la distancia entre los vectores (por ejemplo: la euclídea). La dimensión del descriptor, impacta directamente en el tiempo de cálculo. Así, buscar correspondencias entre vectores de bajas dimensiones resulta más rápido pero a su vez los vectores se hacen menos distintivos. En su contra parte: vectores de altas dimensiones involucran altos tiempos de procesamiento a costes de lograr mayor distintividad.
+\end{itemize}
+
+% Es nuestro objetivo seleccionar un detector y descriptor que cumpla los requisitos mínimos para la realización de este trabajo.
+Cuando se trabaja con características locales, una de los primeros inconvenientes a resolver es obtener un nivel de invarianza. Claramente, esto depende de las deformaciones geométricas y fotométricas que pueda sufrir la imagen y en nuestro caso, nos centraremos en los cambios de escala y la rotación en el plano asumiendo que los efectos de segundo orden: inclinación, perspectiva y anisotropía son cubiertos en cierto grado por la robustez global del descriptor utilizado. En cuanto a las deformaciones fotométricas, se asume un modelo lineal simple con un offset y un cambio de contraste (factor de escala).
+
+En este trabajo, se tratará con características locales: las mismas describen una parte de la imagen; en contraposición con las características globales que describen la imagen como un todo.
+
+Existen diferentes tipos de características locales: aquellas que se basan en lineas o curvas (detectadas por ejemplo con la transformada de Hough) y otras como las que utilizaremos en este trabajo que se valen de puntos característicos, como esquinas, bordes, puntos de textura, etc. llamados puntos claves (keypoints).
+
+Existe gran variedad de algoritmos de detección de características entre los cuales se pueden mencionar:
+\begin{itemize}
+ \item Detector de esquinas de Harris (Harris Corner Detector) \ref{citeulike:665979} y el detector ``Buenas características a seguir'' (Good Features to track) \ref{Shi_1994_3266}, los cuales se basan en los eigen valores de la Matriz Hessiana para determinar si un punto es una esquina.
+ \item Regiones extremas mas estables (Most Stable Extremal Regions o MSER) \ref{DBLP:journals/ivc/MatasCUP04}, que identifica regiones extremas, las cuales vienen definidas como regiones de una imagen cuyos píxeles son más brillantes u oscuros que los píxeles vecinos. %con rendimiento de $\mathcal{O}(n)$ basado en la cantidad de píxeles
+ \item Características por test de segmento acelerado (Features From Accelerated Segment Test o FAST) \ref{Rosten05fusingpoints} que compara los valores de los píxeles en un circulo alrededor del punto y se fija en los arcos continuos que son más oscuros o más claros que el punto en si mediante un umbral determinando de esta forma una esquina. Este algoritmo se caracteriza por ser rápido comparado con otros detectores (como el detector de Harris), mientras mantiene un grado de repetitibilidad similar. 
+\end{itemize}
+
+% La propiedad importante que se analiza de los mismos, es su grado de repetibilidad de las características detectadas (las mismas características deberían poder ser detectadas bajo diferentes condiciones de iluminación, transformaciones afines: como la rotación y traslación; transformaciones perspectivas, etc.). 
+
+% Determinan automáticamente la localización y la escala de las características locales. Las características son comúnmente regiones circulares.
+% 
+% Muchos métodos existentes buscan el máximo en una representación 3D de la imágen (x,y y escala). La idea es detectar características locales en la dimensión espacio-escala. Una representación piramidal es calculada con filtros pasa bajos. Un punto característico es detectado si es un máximo local de los puntos 3D a su alrededor y si su valor absoluto es mayor que cierto umbral.
+% Existen varios métodos para seleccionar los puntos en la representación espacio-escala. Los existentes métodos diferente principalmente en la expresión diferencial usada para construir la representación espacio-escala.

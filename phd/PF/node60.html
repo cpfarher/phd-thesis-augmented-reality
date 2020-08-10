@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>&#195;&#129;rea del rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo</TITLE>
+<META NAME="description" CONTENT="&#195;&#129;rea del rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node55.html">
+<LINK REL="up" HREF="node55.html">
+<LINK REL="next" HREF="node61.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1069"
+  HREF="node61.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1065"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1061"
+  HREF="node59.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1067"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1070"
+  HREF="node61.html">Extracci&#195;&#179;n y descripci&#195;&#179;n de</A>
+<B> Subir:</B> <A NAME="tex2html1066"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+<B> Anterior:</B> <A NAME="tex2html1062"
+  HREF="node59.html">Rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo</A>
+ &nbsp; <B>  <A NAME="tex2html1068"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00841000000000000000"></A>
+<A NAME="subsec:validacion_area_boundingrect"></A>
+<BR>
+&#195;&#129;rea del rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo
+</H2>
+La detecci&#195;&#179;n de la parte cambiante de la imagen en el flujo de video, determina un BR sobre el que se ejecuta el procesamiento. En la pr&#195;&#161;ctica, se pueden identificar situaciones particulares que involucran la determinaci&#195;&#179;n del BR:
+
+<OL>
+<LI>&#194;&#191;Qu&#195;&#169; sucede si no se detecta movimiento?
+</LI>
+<LI>&#194;&#191;Qu&#195;&#169; sucede si el BR del &#195;&#161;rea detectada es demasiado peque&#195;&#177;a?
+</LI>
+</OL>
+
+<P>
+Para dar respuesta a estos interrogantes, se ha propuesto un proceso en el algoritmo que censa el tama&#195;&#177;o del BR mediante un bloque condicional presentado en el diagrama de la Fig. <A HREF="node52.html#fig:diagrama_metodo">3.2</A>, cuya expresi&#195;&#179;n es: <!-- MATH
+ $area(BR)>areaUmbral$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="252" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$ area(BR)&gt;areaUmbral$"></SPAN>, donde <!-- MATH
+ $area(\cdot)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.png"
+ ALT="$ area(\cdot)$"></SPAN> es una funci&#195;&#179;n que calcula el &#195;&#161;rea en p&#195;&#173;xeles sobre el argumento y <!-- MATH
+ $areaUmbral$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img293.png"
+ ALT="$ areaUmbral$"></SPAN> el valor en p&#195;&#173;xeles que el &#195;&#161;rea debe superar.
+
+<P>
+Respecto al primer interrogante, si no existe movimiento tampoco existe <SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img294.png"
+ ALT="$ BR$"></SPAN> y por ende la condici&#195;&#179;n de &#195;&#161;rea no se satisface. Entonces, el flujo del procesamiento se deriva al procedimiento establecido en la Sec. <A HREF="node67.html#subsubsec:presente_en_alguno_3_frames_previos">3.9</A>.
+
+<P>
+Para la segunda pregunta, se hizo una b&#195;&#186;squeda del valor &#195;&#179;ptimo de <!-- MATH
+ $areaUmbral$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img293.png"
+ ALT="$ areaUmbral$"></SPAN> para la configuraci&#195;&#179;n general de la escena que se utiliza. El mismo fue establecido de manera emp&#195;&#173;rica en <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img295.png"
+ ALT="$ 10000$"></SPAN> p&#195;&#173;xeles que fue el valor con el que se obtuvieron mejores resultados. &#195;&#137;sto limita la detecci&#195;&#179;n cuando las esquinas proyectadas de la imagen patr&#195;&#179;n resultantes de aplicar la homograf&#195;&#173;a, forman un &#195;&#161;rea relativamente peque&#195;&#177;a (se puede pensar en un cuadril&#195;&#161;tero de <!-- MATH
+ $100 \times 100$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="51" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img296.png"
+ ALT="$ 100 \times 100$"></SPAN> sobre la ventana de <!-- MATH
+ $640 \times 480$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="$ 640 \times 480$"></SPAN>). Obtener la cantidad suficiente de caracter&#195;&#173;sticas en objetos de estos tama&#195;&#177;os es una limitante que presenta el dispositivo de adquisici&#195;&#179;n de im&#195;&#161;genes utilizado. De esta manera, si el &#195;&#161;rea de BR no supera el umbral establecido, se considera a la regi&#195;&#179;n como ``demasiado peque&#195;&#177;a'' y el procesamiento al igual que en el caso anterior, se deriva a la acci&#195;&#179;n que se describe en la Sec. <A HREF="node67.html#subsubsec:presente_en_alguno_3_frames_previos">3.9</A>.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1069"
+  HREF="node61.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1065"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1061"
+  HREF="node59.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1067"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html1070"
+  HREF="node61.html">Extracci&#195;&#179;n y descripci&#195;&#179;n de</A>
+<B> Subir:</B> <A NAME="tex2html1066"
+  HREF="node55.html">Detecci&#195;&#179;n de la regi&#195;&#179;n</A>
+<B> Anterior:</B> <A NAME="tex2html1062"
+  HREF="node59.html">Rect&#195;&#161;ngulo delimitador m&#195;&#173;nimo</A>
+ &nbsp; <B>  <A NAME="tex2html1068"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

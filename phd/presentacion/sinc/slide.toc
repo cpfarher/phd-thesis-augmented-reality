@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {2}{Introducci\'on}{3}{0}{1}
+\beamer@sectionintoc {3}{M\'etodo propuesto}{14}{0}{2}
+\beamer@sectionintoc {4}{Experimentos y resultados}{21}{0}{3}
+\beamer@sectionintoc {5}{Conclusiones}{40}{0}{4}

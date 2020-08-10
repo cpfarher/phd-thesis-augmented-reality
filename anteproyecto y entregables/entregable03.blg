@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: entregable03.aux
+The style file: alpha.bst
+Database file #1: bib1.bib
+Database file #2: bib2.bib
+Database file #3: bib3.bib
+Database file #4: bib4.bib
+Repeated entry---line 107 of file bib4.bib
+ : @inproceedings{Beis:1997:SIU:794189.794431
+ :                                           ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "conf/nips/LiuMGY04"
+refers to entry "conf/nips/2004", which doesn't exist
+Warning--I didn't find a database entry for "conf/nips/2004"
+Warning--empty journal in Silpa_KDTree
+You've used 13 entries,
+            2543 wiz_defined-function locations,
+            647 strings with 6640 characters,
+and the built_in function-call counts, 6234 in all, are:
+= -- 642
+> -- 277
+< -- 9
++ -- 99
+- -- 95
+* -- 415
+:= -- 961
+add.period$ -- 41
+call.type$ -- 13
+change.case$ -- 85
+chr.to.int$ -- 13
+cite$ -- 14
+duplicate$ -- 277
+empty$ -- 458
+format.name$ -- 109
+if$ -- 1335
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 13
+newline$ -- 69
+num.names$ -- 39
+pop$ -- 90
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 255
+stack$ -- 0
+substring$ -- 366
+swap$ -- 89
+text.length$ -- 9
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 104
+warning$ -- 1
+while$ -- 62
+width$ -- 18
+write$ -- 174
+(There were 2 error messages)

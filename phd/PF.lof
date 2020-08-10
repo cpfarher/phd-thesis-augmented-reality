@@ -1,0 +1,62 @@
+\select@language {spanish}
+\select@language {spanish}
+\select@language {spanish}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama continuo de Realidad-Virtualidad}}{5}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Efecto de la operaci\IeC {\'o}n de erosi\IeC {\'o}n y dilataci\IeC {\'o}n sobre una imagen}}{17}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Umbral binario}}{19}{figure.caption.10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Curva de la transformaci\IeC {\'o}n logar\IeC {\'\i }tmica}}{19}{figure.caption.11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Suma de intensidades usando im\IeC {\'a}genes integrales}}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Fotograf\IeC {\'\i }a tomada a diferentes escalas para la misma escena}}{25}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{25}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{25}{subfigure.5.2}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Pir\IeC {\'a}mide de escala de im\IeC {\'a}genes para SIFT y SURF}}{27}{figure.caption.16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Derivadas parciales gaussianas discretas y aproximadas}}{27}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{27}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{27}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{27}{subfigure.7.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{27}{subfigure.7.4}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Longitudes de los filtros para 3 diferentes octavas}}{28}{figure.caption.18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Representaci\IeC {\'o}n de una octava compuesta por tres niveles de escala}}{29}{figure.caption.19}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Filtros Wavelets Haar}}{30}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{subfigure.10.2}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Asignaci\IeC {\'o}n de la orientaci\IeC {\'o}n para un punto clave}}{30}{figure.caption.21}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Ejemplo de ventanas del descriptor a diferentes escalas sobre una imagen}}{31}{figure.caption.22}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Interpretaci\IeC {\'o}n gr\IeC {\'a}fica del descriptor SURF}}{32}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{32}{subfigure.13.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{32}{subfigure.13.2}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Descriptores resultantes para tres subregiones con patrones diferentes}}{32}{figure.caption.24}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Modelo de c\IeC {\'a}mara oscura y su interpretaci\IeC {\'o}n geom\IeC {\'e}trica}}{37}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}{subfigure.15.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}{subfigure.15.2}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Transformaci\IeC {\'o}n entre diferentes espacios de coordenadas}}{39}{figure.caption.27}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Mapeo de puntos de un plano a otro}}{41}{figure.caption.28}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Estimaci\IeC {\'o}n robusta de una l\IeC {\'\i }nea}}{44}{figure.caption.32}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de flujo de la etapa de configuraci\IeC {\'o}n}}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de flujo de la etapa de ejecuci\IeC {\'o}n}}{50}{figure.caption.35}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Detalle del proceso de detecci\IeC {\'o}n de movimiento}}{53}{figure.caption.36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Detecci\IeC {\'o}n de movimiento}}{54}{figure.caption.37}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de extracci\IeC {\'o}n de caracter\IeC {\'\i }sticas en una imagen}}{58}{figure.caption.42}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}{subfigure.5.2}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Correspondencias de puntos entre im\IeC {\'a}genes patr\IeC {\'o}n y objetivo}}{59}{figure.caption.43}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Pol\IeC {\'\i }gonos resultantes de la transformaci\IeC {\'o}n con la matriz de homograf\IeC {\'\i }a}}{62}{figure.caption.46}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Pol\IeC {\'\i }gono c\IeC {\'o}ncavo}}{62}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Pol\IeC {\'\i }gono convexo}}{62}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces Pol\IeC {\'\i }gono convexo fuera del \IeC {\'a}rea de visualizaci\IeC {\'o}n de la ventana}}{62}{subfigure.7.3}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Esquema de restauraci\IeC {\'o}n de la \IeC {\'u}ltima transformaci\IeC {\'o}n v\IeC {\'a}lida}}{63}{figure.caption.47}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Esquema de transformaci\IeC {\'o}n perspectiva}}{65}{figure.caption.48}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema del ambiente en el que se realizaron las pruebas}}{69}{figure.caption.49}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Im\IeC {\'a}genes obtenidas para condiciones de iluminaci\IeC {\'o}n diferentes}}{70}{figure.caption.50}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultados de aplicar las t\IeC {\'e}cnicas para la mejora en iluminaci\IeC {\'o}n y detalles en condici\IeC {\'o}n $B_{N}$}}{72}{figure.caption.51}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultados de aplicar las t\IeC {\'e}cnicas para la mejora en iluminaci\IeC {\'o}n y detalles en condici\IeC {\'o}n $B_{H}$}}{73}{figure.caption.52}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Resultados de aplicar las t\IeC {\'e}cnicas para la mejora en iluminaci\IeC {\'o}n y detalles en condici\IeC {\'o}n $B_{L}$}}{74}{figure.caption.53}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Cantidad de puntos detectados para la imagen con luminosidad normal, alta y baja}}{77}{figure.caption.55}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Tiempos promedios de operaci\IeC {\'o}n para los diferentes procesos en la Prueba 1}}{80}{figure.caption.56}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Capturas de im\IeC {\'a}genes con enriquecimiento de la realidad}}{82}{figure.caption.57}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Capturas en la etapa de ejecuci\IeC {\'o}n para el prototipo publicitario}}{84}{figure.caption.58}
+\addvspace {10\p@ }

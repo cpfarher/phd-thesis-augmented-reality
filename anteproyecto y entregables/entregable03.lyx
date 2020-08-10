@@ -1,0 +1,9339 @@
+#LyX file created by tex2lyx 2.0.0
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\RequirePackage{lineno} 
+
+
+\usepackage{slashbox}\usepackage{longtable}\usepackage{multirow}\usepackage{colortbl}\@ifundefined{definecolor}
+ {\usepackage{color}}{}
+\usepackage{lineno}\usepackage{tikz}\usepackage{fancybox}\usepackage{bigfoot}%for split long footnotes
+\usepackage{babel}
+
+\usepackage{listings}%for c++ code
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  language=C++,                % the language of the code
+  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  %numbers=left,                   % where to put the line-numbers
+  %numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  %stepnumber=2,                   % the step between two line-numbers. If it's 1, each line  will be numbered
+  %numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=8,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=false,                % sets automatic line breaking
+  breakatwhitespace=true,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                   % show the filename of files included with \lstinputlisting;
+  basicstyle=\scriptsize,                             % also try caption instead of title
+  keywordstyle=\color{blue},          % keyword style
+  commentstyle=\color{dkgreen},       % comment style
+  stringstyle=\color{mauve},         % string literal style
+  %escapeinside={\%*}{*)},            % if you want to add a comment within your code
+  %morekeywords={*,...}               % if you want to add more keywords to the set
+}
+
+\usepackage{subfig}
+
+
+
+% \usepackage{gantt}
+% \setlength{\textheight}{24cm}
+% \textwidth=16.5cm
+% \topmargin=0cm
+% \oddsidemargin=0cm
+% \parindent=10mm
+% \definecolor{shadecolor}{rgb}{1, 0, 0}
+
+\end_preamble
+\use_default_options false
+\language spanish
+\inputencoding utf8
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize 11
+\spacing single
+\use_hyperref 1
+\pdf_bookmarks 1
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 0
+\pdf_backref section
+\pdf_pdfusetitle 1
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+linenumbers
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%activar nro de lineas
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+pagestyle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+empty
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\series bold
+
+\size larger
+Método para detección y seguimiento de objetos con aplicaciones en Realidad Aumentada
+\family default
+\series default
+\shape default
+ 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%	{
+\backslash
+bf
+\backslash
+Large Algoritmo para la detección de objetos planos en videos en un ambiente controlado.} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+
+\size large
+Christian Nicolás Pfarher
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+Punto de control N
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+ 3: 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+Métodos de extracción de características en imágenes parte 2. 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+Matching de características entre imágenes. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%(Algoritmo knn - k-nearest neighbor algorithm).
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+Director
+\begin_inset Newline newline
+\end_inset
+
+ 
+\shape italic
+Dr. Enrique Marcelo Albornoz
+\shape default
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+Codirector
+\begin_inset Newline newline
+\end_inset
+
+ 
+\shape italic
+Dr. César Martínez
+\shape default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\shape italic
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\shape default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Float figure
+placement tbhp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\size large
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics 
+	filename img/fich_unl.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Ingeniería Informática
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Facultad de Ingeniería y Ciencias Hídricas
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+UNIVERSIDAD NACIONAL DEL LITORAL
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+pagestyle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+plain
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\size default
+
+\end_layout
+
+\begin_layout Section
+
+Métodos de extracción de características en imágenes parte 2
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+Para aplicar el método SURF descripto en el informe anterior, se procede al uso del código ya implementado que ofrece la librería OpenCV (Open Source Computer Vision)
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://SourceForge.net/projects/opencvlibrary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+void cvExtractSURF(const CvArr* image, 
+\end_layout
+
+\begin_layout Plain Layout
+
+		   const CvArr* mask, 
+\end_layout
+
+\begin_layout Plain Layout
+
+		   CvSeq** keypoints, 
+\end_layout
+
+\begin_layout Plain Layout
+
+		   CvSeq** descriptors, 
+\end_layout
+
+\begin_layout Plain Layout
+
+		   CvMemStorage* storage, 
+\end_layout
+
+\begin_layout Plain Layout
+
+		   CvSURFParams params)
+\end_layout
+
+\end_inset
+
+Parámetros
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://opencv.willowgarage.com/documentation/feature_detection.html#cvExtractSURF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+image
+\series default
+ – Entrada: Imagen de entrada en escala de grises de 8 bits. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+mask
+\series default
+ – Entrada: Marcara opcional de 8 bits. Las características sólo son buscadas en las áreas que contienen más de un 50% de los píxeles distintos de cero. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+keypoints
+\series default
+ – Salida: puntero doble a una secuencia que representa los puntos claves. La secuencia de la estructura CvSURFPoint es la siguiente: 
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+typedef struct CvSURFPoint {
+\end_layout
+
+\begin_layout Plain Layout
+
+   CvPoint2D32f pt;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int laplacian;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int size;
+\end_layout
+
+\begin_layout Plain Layout
+
+   float dir;
+\end_layout
+
+\begin_layout Plain Layout
+
+   float hessian;
+\end_layout
+
+\begin_layout Plain Layout
+
+} CvSURFPoint;
+\end_layout
+
+\end_inset
+
+donde: 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+pt:
+\family default
+ es la posición de la característica en la imagen. 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+laplacian:
+\family default
+ los valores posibles son: -1, 0 o +1 y representan el signo del laplaciando en el punto. Puede ser usado para la comparación de características (normalmente características con laplacianos de diferentes signos no coincidirán). 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+size:
+\family default
+ es el tamaño de la características. 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+dir:
+\family default
+ es la orientación de la característica (0-360 grados). 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+hessian:
+\family default
+ es el valor del hessiano (puede ser usado para estimar aproximadamente la intensidad de las características). Relacionado con 
+\family typewriter
+params.hessianThreshold
+\family default
+. 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size large
+
+
+\family typewriter
+descriptors
+\family default
+ – Salida: puntero doble a una secuencia que representa el descriptor (parámetro opcional). Dependiendo del valor de la variable 
+\emph on
+params.extended
+\emph default
+, cada elemento de la secuencia contendrá un vector de punto flotante(CV_32F) de 64 o 128 elementos. Si el parámetro es NULL, el descriptor no es calculado. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\family typewriter
+storage
+\family default
+ – Almacenamiento de memoria donde serán guardados los puntos claves y descriptores. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\family typewriter
+params
+\family default
+ – Varios parámetros del algoritmo con la estructura de CvSURFParams: 
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+typedef struct CvSURFParams
+\end_layout
+
+\begin_layout Plain Layout
+
+{  int extended;
+\end_layout
+
+\begin_layout Plain Layout
+
+   double hessianThreshold;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int nOctaves;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int nOctaveLayers;
+\end_layout
+
+\begin_layout Plain Layout
+
+} CvSURFParams;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CvSURFParams cvSURFParams(double hessianThreshold,
+\end_layout
+
+\begin_layout Plain Layout
+
+			  int extended=0);
+\end_layout
+
+\end_inset
+
+donde: 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+extended:
+\family default
+ 0 indica un descriptor básico (64 elementos), mientras que 1 significa un descriptor extendido (128 elementos). 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+hessianThreshold:
+\family default
+ Solamente las características con el hessiano del punto clave mayor a este valor serán extraídos. Los valores por defectos recomendables son entre 
+\begin_inset Formula $~300-500$
+\end_inset
+
+ (dependen del promedio local de contraste y nitidez de la imagen). Con este parámetro se pueden filtrar ciertas características basadas en el valor del hessiano y otras características. 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+nOctaves:
+\family default
+ es el número de octavas a ser usadas en la extracción. Con cada octava siguiente, el número de características es duplicado. (3 por defecto). 
+\end_layout
+
+\begin_layout Description
+
+\size large
+
+
+\family typewriter
+nOctaveLayers:
+\family default
+ es el número de capas en cada octava (4 por defecto). 
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+La función 
+\emph on
+cvExtractSURF
+\emph default
+ busca características robustas en la imagen, como se describe en el informe anterior y en 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "cita29"
+
+\end_inset
+
+. Para cada característica retorna su localización, tamaño, orientación y opcionalmente el descriptor (ya sea básico o extendido). La función puede ser usada para localización y seguimiento de objetos, emparejamiento de imágenes, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+Emparejamiento (matching) de características entre imágenes.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%(Algoritmo knn - k-nearest neighbor algorithm).
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+Una vez identificados los puntos claves en la imagen y sus descriptores correspondientes, es el momento de buscar la correspondencia (si es que existe) entre la imagen patrón y la imagen del flujo de video. Sean 
+\emph on
+d_patron
+\emph default
+ y 
+\emph on
+d_video
+\emph default
+ los descriptores de la imagen patrón y del flujo de video respectivamente, se procede con una técnica denominada búsqueda del K-vecino más cercano (K-Nearest Neighbor Search). 
+\size default
+
+\end_layout
+
+\begin_layout Subsection
+
+Búsqueda del K-vecino más cercano (K-Nearest Neighbor Search).
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+Clase index de FLANN. Esta clase se utiliza para abstraer los diferentes tipos de índices a usar para las búsqueda del vecino más cercano. 
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+namespace cv
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+namespace flann
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    template <typename T>
+\end_layout
+
+\begin_layout Plain Layout
+
+    class Index_
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+    public:
+\end_layout
+
+\begin_layout Plain Layout
+
+            Index_(const Mat& features, const IndexParams& params);
+\end_layout
+
+\begin_layout Plain Layout
+
+            ~Index_();
+\end_layout
+
+\begin_layout Plain Layout
+
+            ...
+\end_layout
+
+\begin_layout Plain Layout
+
+            void knnSearch(const Mat& queries,
+\end_layout
+
+\begin_layout Plain Layout
+
+                           Mat& indices,
+\end_layout
+
+\begin_layout Plain Layout
+
+                           Mat& dists,
+\end_layout
+
+\begin_layout Plain Layout
+
+                           int knn,
+\end_layout
+
+\begin_layout Plain Layout
+
+                           const SearchParams& params);
+\end_layout
+
+\begin_layout Plain Layout
+
+	    ...
+\end_layout
+
+\begin_layout Plain Layout
+
+            const IndexParams* getIndexParameters();
+\end_layout
+
+\begin_layout Plain Layout
+
+    };
+\end_layout
+
+\begin_layout Plain Layout
+
+    typedef Index_<float> Index;
+\end_layout
+
+\begin_layout Plain Layout
+
+} } // namespace cv::flann
+\end_layout
+
+\end_inset
+
+El constructor de la clase 
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+Index_<T>::Index_(const Mat& features, const IndexParams& params)
+\end_layout
+
+\end_inset
+
+construye un índice de búsqueda del vecino más cercano para un conjunto de datos dado. Los parámetros
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\size large
+
+ 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html#cv::flann::Index_
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+ son: 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+features:
+\series default
+ matriz que contiene las características (puntos) a indexar. Se almacena un punto por cáda fila de la matriz; el tamaño de la matriz es 
+\begin_inset Formula $cant_caracteristicas X dimensionalidad$
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+params:
+\series default
+ Estructura que contiene los parámetros del índice. El tipo del índice será construido dependiendo del tipo de este parámetro. Los parámetros
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html#id4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ posibles son: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+LinearIndexParams
+\series default
+ Cuando se pasa un objeto de este tipo, el índice lleva a cabo una búsqueda de fuerza bruta lineal. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+KDTreeIndexParams
+\series default
+ Cuando se pasa un objeto de este tipo, el índice construido consiste en un conjunto de arboles aleatorios kd (randomized kd-trees) que se buscará en paralelo. 
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+struct KDTreeIndexParams : public IndexParams{
+\end_layout
+
+\begin_layout Plain Layout
+
+		  KDTreeIndexParams( int trees = 4 );
+\end_layout
+
+\begin_layout Plain Layout
+
+	      };
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\end_inset
+
+
+\series bold
+trees:
+\series default
+ El número de árboles kd paralelos a usar. Valores que producen buenos resultados se encuentran entre 1 y 16. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+KMeansIndexParams
+\series default
+ Cuando se pasa un objeto de este tipo, el índice construido será un árbol k-means jerárquico. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+CompositeIndexParams
+\series default
+ Cuando se pasa un objeto de este tipo, el índice creado combina árboles aleatorios kd y k-means jerárquicos. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+AutotunedIndexParams
+\series default
+ Cuando se pasa un objeto de este tipo, el índice creado será seleccionado automáticamente para ofrecer el mejor rendimiento eligiendo el tipo de índice óptimo entre el uso de árboles aleatorios kd, k-means jerárquicos o lineales , como así también los parámetros para el conjunto de datos proporcionados. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+SavedIndexParams
+\series default
+ Este tipo de objeto es usado para cargar un índice previamente guardado en el disco. 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size large
+
+OpenCV provee una interfase
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ a la Biblioteca Rápida para aproximación de vecinos más próximos o FLANN (Fast Library for Approximate Nearest Neighbors)
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://people.cs.ubc.ca/
+\begin_inset space ~
+
+\end_inset
+
+mariusm/index.php/FLANN/FLANN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+. Esta es una librería que contiene una colección de algoritmos optimizados para la búsqueda rápida del vecino más cercano en grandes conjuntos de datos y de elevadas características dimensionales.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\series bold
+knnSearch
+\series default
+ lleva a cabo la búsqueda de los K-vecinos más cercanos para un punto dado, usando el índice. A continuación se presentan los parámetros
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://opencv.willowgarage.com/documentation/cpp/flann_fast_approximate_nearest_neighbor_search.html#cv-cv-flann-index-t-knnsearch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ de dicha función: 
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+void Index_<T>::knnSearch(const Mat& queries, 
+\end_layout
+
+\begin_layout Plain Layout
+
+			  Mat& indices, 
+\end_layout
+
+\begin_layout Plain Layout
+
+			  Mat& dists, 
+\end_layout
+
+\begin_layout Plain Layout
+
+			  int knn, 
+\end_layout
+
+\begin_layout Plain Layout
+
+			  const SearchParams& params)
+\end_layout
+
+\end_inset
+
+Parámetros: 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+query:
+\series default
+ matriz con puntos para realizar la consulta. El tamaño es 
+\begin_inset Formula $cantidad_puntos_consulta x dimensionalidad$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+indices:
+\series default
+ vector que contendrá los índices de los K vecinos más cercanos encontrados. Debe tener un tamaño mínimo de 
+\begin_inset Formula $cantidad_puntos_consulta x knn$
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+dists:
+\series default
+ vector que contendrá las distancias a los K vecinos más cercanos encontrados. Debe tener un tamaño mínimo de 
+\begin_inset Formula $cantidad_puntos_consulta x knn$
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+knn:
+\series default
+ Número de vecinos más cercanos para los que ser hará la búsqueda. 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+
+
+\series bold
+params:
+\series default
+ Parámetros de búsqueda 
+\begin_inset listings
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+struct SearchParams {
+\end_layout
+
+\begin_layout Plain Layout
+
+        SearchParams(int checks = 32);
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\end_inset
+
+
+\series bold
+checks:
+\series default
+ especifica las hojas máximas a visitar en la búsqueda de los vecinos. Un valor alto para este parámetro, dará una mejor precisión, pero tardará más tiempo. Si se utilizó la configuración automática cuando se creó el índice, el número de controles necesarios para alcanzar la precisión especificada también fue calculado, en cuyo caso se omite este parámetro.
+\end_layout
+
+\begin_layout Section
+
+Nearest Neighbor search - wikpedia
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+Nearest neighbor search(NNS), también conocido como búsqueda de proximidad, búsqueda por similitud o búsqueda del más cercano, es un problema de optimización que intenta encontrar los puntos más cercanos en un espacio métrico. Esto es: dado un conjunto 
+\begin_inset Formula $S$
+\end_inset
+
+ de puntos en un espacio métrico 
+\begin_inset Formula $M$
+\end_inset
+
+ y un conjunto de puntos 
+\begin_inset Formula $q$
+\end_inset
+
+ de consulta (con 
+\begin_inset Formula $q \in M$
+\end_inset
+
+), encontrar el punto más cercado en 
+\begin_inset Formula $S$
+\end_inset
+
+ para 
+\begin_inset Formula $q$
+\end_inset
+
+. En muchos casos, 
+\begin_inset Formula $M$
+\end_inset
+
+ se toma como un espacio euclídeo d-dimensional y la distancia se mide por la distancia euclídea o la distancia Manhattan.
+\end_layout
+
+\begin_layout Section
+
+FLANN - Fast Library for Approximate Nearest Neighbors
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+Podemos definir el problema de la busqueda del vecino más cercano (NSS) de la siguiente forma: dado un conjunto de puntos 
+\begin_inset Formula $P=p_1, p_2, ...,p_n$
+\end_inset
+
+ en un espacio métrico 
+\begin_inset Formula $X$
+\end_inset
+
+, estos puntos son procesados de tal forma que dado un nuevo punto 
+\begin_inset Formula $q \in X$
+\end_inset
+
+, buscar el punto en 
+\begin_inset Formula $P$
+\end_inset
+
+ que es más cercano a 
+\begin_inset Formula $q$
+\end_inset
+
+ de una forma rápida. 1 El problema de la busqeuda del vecino más cercano es uno de los más importantes una gran variedad de aplicaciones como el reconocimiento de imágenes, compresión de datos, reconocimiento de patrones y clasificación, aprendizaje maquina, sistemas de recuperación de documentos, estadísticas y análisis de datos. Sin embargo, resolver este tipo de problemas en espacios de muchas dimensiones resulta ser una tarea difícil y no hay un algoritmo que tenga una performance elevadamente mayor a la busqueda por fuerza bruta. Esto ha conducido a incrementar el interés en una clase de algoritmos que realicen búsquedas aproximadas de vecinos más cercanos que han demostrado ser una aproximación lo suficientemente buena en aplicaciones prácticas y en la mayoría de los casos y que además poseen un orden mayor (más rápidos) que los algoritmos que realizan las busquedas exactas.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+FLANN (Fast library for Approximate Nearest Neighbors) es una librería para llevar a cabo la búsqueda del vecino más cercano rápidamente.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Otros
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita01"
+
+\end_inset
+
+ Gary Bradsky and Adrian Kaehler. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Learning OpenCV
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+O'Reilly Media, Inc.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2008
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita02"
+
+\end_inset
+
+ Robert Laganière. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ OpenCV 2 Computer Vision Application Programming Cookbook.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Packt Publishing Ltd. Birmingham, UK.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2011
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita03}Bernd Jähne and Horst Haußecker.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Computer Vision and Applications. A Guide for Students and Practitioners}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Interdisciplinary Center for Scientific Computing University of Heidelberg, Heidelberg, Germany and Scripps Institution of Oceanography University of California, San Diego.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Xerox Palo Alto Research Center},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2000}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita04"
+
+\end_inset
+
+Luo Juan & Oubong Gwun 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ A Comparison of SIFT, PCA-SIFT and SURF
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+International Journal of Image Processing (IJIP) Volume(3), Issue(4)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2009
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita05}D. Conrad and G. N. DeSouza.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Homography-Based Ground Plane Detection for Mobile Robot
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Navigation Using a Modified EM Algorithm}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IEEE International Conference on Robotics and Automation},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita06}Jonathan Ventura 
+\backslash
+& Tobias Hollerer
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Online Environment Model Estimation for Augmented Reality}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IEEE International Symposium on Mixed and Augmented Reality},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2009}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita07}J. Arrospide L. Salgado M. Nieto R. Mohedano
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Homography-based ground plane detection
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% using a single on-board camera}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IET Intell. Transp. Syst., Vol. 4, Iss. 2, pp. 149 – 160},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita08}Bruno Fernandes, Joaquin Fernández
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Using Haar-like Feature Classifiers for Hand Tracking in Tabletop
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Augmented Reality
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {XII Symposium on Virtual and Augmented Reality, Natal, RN, Brazil},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita09}Christopher Mei, Selim Benhimane, Ezio Malis and Patrick Rives
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Efficient Homography-based Tracking and 3-D
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Reconstruction for Single Viewpoint Sensors
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IEEE TRANSACTIONS ON ROBOTICS L07-344},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita10}Eray Molla and Vincent Lepetit
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Augmented Reality for Board Games}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {EPFL, CVLab},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita11"
+
+\end_inset
+
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, and Luc Van Gool. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Speeded-Up Robust Features (SURF)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ETH Zurich, BIWI Sternwartstrasse 7 CH-8092 Zurich Switzerland, K. U. Leuven, ESAT-PSI Kasteelpark Arenberg 10 B-3001 Leuven Belgium
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2008
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita12"
+
+\end_inset
+
+Krystian Mikolajczyk and Cordelia Schmid. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ A Performance Evaluation of Local Descriptors
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+IEEE Transactions On Pattern Analysis And Machine Intelligence, Vol. 27, No. 10, October 2005 1615
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2005
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita13}Taehee Lee, Student Member and Tobias Hollerer
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Multithreaded Hybrid Feature Tracking
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% for Markerless Augmented Reality}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. 15, NO. 3, 355},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2009}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita14"
+
+\end_inset
+
+Daniel Wagner, Gerhard Reitmayr, Alessandro Mulloni, Tom Drummond, and Dieter Schmalstieg. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Real-Time Detection and Tracking for Augmented Reality on Mobile Phones
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Ieee Transactions On Visualization And Computer Graphics, Vol. 16, No. 3, 355
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2010
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita15}Stefan Hinterstoisser , Vincent Lepetit , Slobodan Ilic, Pascal Fua, Nassir Navab
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Dominant Orientation Templates for Real-Time Detection of Texture-Less Objects
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Department of Computer Science, CAMP, Technische Universitat Munchen (TUM), Germany, Ecole Polytechnique Fédérale de Lausanne (EPFL), Computer Vision Laboratory, Switzerland
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita16"
+
+\end_inset
+
+Tuytelaars and K. Mikolajczyk. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Local Invariant Feature Detectors: A Survey
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Foundations and Trends in Computer Graphics and Vision Vol. 3, No. 3 (2007) 177–280 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2008
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita17}Mustafa Özuysal, Michael Calonder, Vincent Lepetit and Pascal Fua
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Fast Keypoint Recognition using Random Ferns}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {École Polytechnique Fédérale de Lausanne (EPFL)
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Computer Vision Laboratory, I
+\backslash
+&C Faculty
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% CH-1015 Lausanne, Switzerland
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita18}Georg Klein
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Visual Tracking for
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Augmented Reality}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {King’s College},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2006}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita19}Christopher Evans
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Notes on the OpenSURF Library}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {-},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2009}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita20"
+
+\end_inset
+
+Tsz-Wai Rachel Lo, J. Paul Siebert. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Local feature extraction and matching on range images: 2.5D SIFT
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Department of Computing Science, University of Glasgow, Sir Alwyn Williams Building, Lilybank Gardens, Glasgow G12 8RZ, UK
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2009
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita21"
+
+\end_inset
+
+Mark S. Nixon and Alberto S. Aguado. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Feature Extraction and Image Processing
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Technical Report TR-193, Cambridge University Engineering Department
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2002
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita22}T. Miyashita�� , P. Meier, T. Tachikawa, S. Orlic, T. Eble, V. Scholz, A. Gapel,
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% O. Gerl, S. Arnaudov, S. Lieberknecht.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em An Augmented Reality Museum Guide}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IEEE International Symposium on Mixed and Augmented Reality 2008
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 15 -18 September, Cambridge, UK
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2008}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita23} Vincent Lepetit
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em On Computer Vision for Augmented Reality}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Computer Vision Laboratory
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% CH-1015 Lausanne, Switzerland},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  
+\backslash
+bibitem{cita24}Ian Y-H Chen and Bruce MacDonald and Burkhard Wunsche.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  {
+\backslash
+em Markerless Augmented Reality for Robots in Unprepared
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  Environments
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  {University of Auckland, New Zealand},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  {2008}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita25} Zhuo Chen and Xinyu Li.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Markless Tracking based on Natural Feature for Augmented Reality
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {International Coriference on Educational and Information Technology (ICEIT 2010)},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita26}Veronica Teichrieb, Joao Paulo Silva do Monte Lima, Eduardo Lourenco Apolinário,
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Thiago Souto Maior Cordeiro de Farias, Márcio Augusto Silva Bueno, Judith Kelner, and Ismael H. F. Santos
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em A Survey of Online Monocular Markerless
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Augmented Reality}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {INTERNATIONAL JOURNAL OF MODELING AND SIMULATION FOR THE PETROLEUM INDUSTRY, VOL. 1, NO. 1
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2007}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita27} V. Ferrari, T. Tuytelaars and L. Van Gool
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Markerless Augmented Reality with a Real-time Affine Region Tracker
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Computer Vision Group (BIWI), ETH Zuerich, Switzerland, ESAT-PSI, University of Leuven, Belgium},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita28}Zilong Dong, Guofeng Zhang, Jiaya Jia and Hujun Bao
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Keyframe-Based Real-Time Camera Tracking}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {State Key Lab of CAD
+\backslash
+&CG, Zhejiang University and The Chinese University of Hong Kong
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita29"
+
+\end_inset
+
+ Herbert Bay, Andreas Ess, Tinne Tuytelaars, Luc Van Gool. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Speeded-Up Robust Features (SURF)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2007
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita30}Wei-Chao Chen, Yingen Xiong, Jiang Gao, Natasha Gelfand, Radek Grzeszczuk
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Efficient Extraction of Robust Image Features on Mobile Devices}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Nokia Research Center, Palo Alto},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita31} Guoqin Qiu and Jifeng Sun
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Plane Detection in Stereo Images Based on Homography}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {3rd International Conference on Advanced Computer Theory and Engineering(ICACTE)},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita32}Martin Schumann, Sabine Achilles, Stefan Müller
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Analysis by Synthesis Techniques for Markerless Tracking}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Universität Koblenz-Landau
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Institut für Computervisualistik
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Arbeitsgruppe Computergraphik
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Universitätsstrasse 1
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 56070 Koblenz
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita33} Georg Klein and David Murray
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Compositing for Small Cameras
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Active Vision Laboratory
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Department of Engineering Science
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% University of Oxford
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2008}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita34}Jong-Hyoun Kim and Teresa Cho.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em The Initiative Experiments for Utilizing Real Cards in Online Trading Card Game}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Department of Gameware
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Kaywon School of Art 
+\backslash
+& Design
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 125 Naeson-dong, Euwang, Republic of Korea},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2009}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita35} Stefan Hinterstoisser, Vincent Lepetit, Slobodan Ilic, Pascal Fua, Nassir Navab.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Dominant Orientation Templates for Real-Time Detection of Texture-Less Objects
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Department of Computer Science, CAMP, Technische Universitate Munchen (TUM), Germany, École Polytechnique Fédérale de Lausanne (EPFL), Computer Vision Laboratory, Switzerland
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita36}Taehee Lee, Tobias Hollerer.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Handy AR: Markerless Inspection of Augmented Reality Objects
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Using Fingertip Tracking
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Four Eyes Laboratory, Department of Computer Science
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% University of California, Santa Barbara, California 93106 USA
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2007}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita37} Georg Klein and David Murray.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Parallel Tracking and Mapping for Small AR Workspaces
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Active Vision Laboratory
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Department of Engineering Science
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% University of Oxford
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2007}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita38}Mustafa Özuysal, Pascal Fua, Vincent Lepetit.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Fast Keypoint Recognition in Ten Lines of Code}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Computer Vision Laboratory
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% École Polytechnique Fédérale de Lausanne (EPFL) 1015 Lausanne, Switzerland
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2007}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita39"
+
+\end_inset
+
+ Óscar Boullosa García. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Estudio comparativo de descriptores visuales para la detección de escenas cuasi-duplicadas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Proyecto Fin De Carrera, Universidad Autónoma De Madrid Escuela Politécnica Superior 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2011
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita40} Robert Castle
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Parallel Tracking and Multiple
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Mapping (PTAMM) Manual
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Robotics Research Group
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Department of Engineering Science
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% University of Oxford
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita41} Vincent Lepetit and Pascal Fua.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Monocular Model-Based 3D Tracking of
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Rigid Objects
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Foundations and Trends R in
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Computer Graphics and Vision
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Vol. 1, No 1 (2005) 1–89
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2005}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita42} Gilles Simon, Andrew W. Fitzgibbon and Andrew Zisserman
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Markerless Tracking using Planar Structures in the Scene
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Robotics Research Group,
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Department of Engineering Science,
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% University of Oxford,
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 19 Parks Road, Oxford OX1 3PJ, United Kingdom
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita43} Dong-Wook Seo, Hyun-Uk Chae, Byeong-Woo Kim, Won-Ho Choi, Kang-Hyun Jo
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Human Tracking based on Multiple View Homography
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Journal of Universal Computer Science, vol. 15, no. 13, 2463-2484
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2009}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita44"
+
+\end_inset
+
+ Ahyun Lee, Jae-Young Lee, Seok-Han Lee, Jong-Soo Choi. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Markerless Augmented Reality System Based on Planar Object Tracking 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Graduated School of Advanced Imaging Science, Multimedia, and Film Chung-Ang University Seoul, Korea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2010
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita45}Xinyu Li, Dongyi Chen.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Augmented Reality in E-commerce with Markerless Tracking}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {School of Automation Engineering 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% University of Electronic Science and Technology of 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% China 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Chengdu, China 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita46}Kiyoung Kim, Jonghee Park, and Woontack Woo.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Marker-Less Tracking for Multi-layer Authoring
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% in AR Books
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {GIST U-VR Lab.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 500-712, Gwangju, S. Korea
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2009}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita47}Taehee Lee, Tobias Höllerer.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Initializing Markerless Tracking Using a Simple Hand Gesture
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IEEE/ACM ISMAR},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2007}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita48"
+
+\end_inset
+
+Iryna Skrypnyk and David G. Lowe. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Scene Modelling, Recognition and Tracking with Invariant Image Features 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Proceedings of the Third IEEE and ACM International Symposium on Mixed and Augmented Reality (ISMAR)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2004
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita49}Herbert Bay, Tinne Tuytelaars, and Luc Van Gool
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em SURF: Speeded Up Robust Features}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {ETH Zurich, Katholieke Universiteit Leuven},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita50}Zilong Dong, Guofeng Zhang, Jiaya Jia and Hujun Bao
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Keyframe-Based Real-Time Camera Tracking}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {State Key Lab of CAD
+\backslash
+&CG, Zhejiang University and The Chinese University of Hong Kong
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita51"
+
+\end_inset
+
+David G. Lowe. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Distinctive Image Features from Scale-Invariant Keypoints 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Computer Science Department University of British Columbia Vancouver, B.C., Canada 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2004
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita52}Irene Markelic
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Tutorial on Homographies}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Bernstein Center for Computational Neuroscience, University of Gottingen,
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Bunsenstrasse. 10, 37073 Gottingen, Germany
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita53}Vincent Lepetit and Pascal Fua.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Towards Recognizing Feature Points using Classification Trees}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {(EPFL Technical Report IC/2004/74)},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2004}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita54}Kun Zeng, Ke Yang, Leyuan Liu, Qing Yang
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Real-time Registration based on Planar Template Tracking for AR System}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Congress on Image and Signal Processing},
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2008}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita55}Jun Park, Suya You, Ulrich Neumann
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Natural Feature Tracking
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% for Extendible Robust Augmented Realities
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Computer Science Department
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Integrated Media Systems Center
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% University Of Southern California
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Los Angeles, California 90089-2561
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {???}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita56}Yuan Tian, Tao Guan and Cheng Wang
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Real-Time Occlusion Handling in Augmented Reality Based on
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% an Object Tracking Approach}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Sensors 2010, 10, 2885-2900;
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita57}Gabriel Takacs, Vijay Chandrasekhar, Natasha Gelfand, Yingen Xiong, Wei-Chao Chen, Thanos Bismpigiannis, Radek Grzeszczuk, Kari Pulli, Bernd Girod.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Outdoors Augmented Reality on Mobile Phone using
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Loxel-Based Visual Feature Organization
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {MIR08, October 30–31, Vancouver, British Columbia, Canada.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2008}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita58}Simon J.D. Prince, Ke Xu, and Adrian David Che
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Augmented Reality
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Camera Tracking
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% with
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Homographies
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {IEEE Computer Graphics and Applications
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2002}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%% acá vienen los posta:
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita59}Youngmin Park, Vincent Lepetit, Woontack Woo %este no es muy confiable ...
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Multiple 3D Object Tracking for Augmented Reality
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {GIST, U-VR Lab and EPFL, CVLab 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2008 ?}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita60}Hideaki Uchiyama and Eric Marchand
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Toward Augmenting Everything:
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Detecting and Tracking Geometrical Features on Planar Objects
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {INRIA Rennes Bretagne-Atlantique and Universite de Rennes 1, IRISA
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {????}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita61"
+
+\end_inset
+
+Michal Kottman. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Planar Object Detection using Local Feature Descriptors 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Information Sciences and Technologies Bulletin of the ACM Slovakia, Special Section on Student Research in Informatics and Information Technologies, Vol. 3, No. 2 (2011) 59-63 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2011
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita62}Selim Benhimane, Hesam Najafi, Matthias Grundmann, Ezio Malis, Yakup Genc, Nassir Navab.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Real-Time object detection and tracking for industrial applications.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {Department of Computer Science, Technical University Munich, Boltzmannstr. 3 , 85748 Garching, Germany. - Real-Time Vision 
+\backslash
+& Modeling Dept., Siemens Corporate Research, Inc., College Rd E, Princeton, NJ 08540, USA - ollege of Computing, Georgia Institute of Technology, Atlanta, GA 30332, USA - I.N.R.I.A. Sophia-Antipolis, France}, {2002}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% % 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita63}Kiyoung Kim, Vincent Lepetit, Woontack Woo
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Scalable Real-time Planar Targets Tracking for Digilog
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Books
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {GIST U-VR Lab., S. Korea - EPFL CVLab, Switzerland - GIST U-VR Lab., S. Korea
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% },
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {2010}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita64}Ronald Azuma, Yohan Baillot, Reinhold Behringer, Steven Feiner, Simon Julier and Blair MacIntyre.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Recent Advances in
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% Augmented Reality
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {HRL Laboratories, NRL Virtual Reality Lab/ITT Advanced Engineering, Rockwell Scientific, Columbia University and Georgia Institute of Technology
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }, {2001}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita65} Ben Butchart.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Augmented Reality for Smartphones - A guide for developers and content publishers
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {JISC Observatory
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }, {2011}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% 
+\backslash
+bibitem{cita66} Paul Milgram, Haruo Takemura, Akira Utsumi, Fumio Kishino.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {
+\backslash
+em Augmented Reality: A class of displays on the reality-virtuality continuum
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% {ATR COmmunication Systems Research Laboratories. 2-2 Hikaridai, Seika-cho, Soraku-gun Kyoto 619-02, Japan.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% }, {1994}.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita67"
+
+\end_inset
+
+ David G. Lowe. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Object Recognition from Local Scale-Invariant Features 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Computer Science Department - University of British Columbia. Vancouver, B.C., Canada 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2004
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita68"
+
+\end_inset
+
+ David G. Lowe. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Object Recognition from Local Scale-Invariant Features 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Computer Science Department - University of British Columbia. Vancouver, B.C., Canada 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2004
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita100"
+
+\end_inset
+
+ Antonio Redondo López. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Extracción de Características de Imagen para Navegación de Robots Móviles 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Universidad de Extremadura, Escuela Politécnica. Ingeniería Técnica de Telecomunicaciones (Especialidad Imagen y Sonido). Proyecto Fin de Carrera 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2011
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita70"
+
+\end_inset
+
+ P.A. Viola, M.J. Jones. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Rapid object detection using a boosted cascade of simple features. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+CVPR, issue 1, pp. 511–518. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2001
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size large
+
+
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label ""
+key "cita71"
+
+\end_inset
+
+ P. Simard, L. Bottou, P. Haffner, Y. LeCun. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Boxlets: a fast convolution algorithm for signal processing and neural networks 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+NIPS 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+1998
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

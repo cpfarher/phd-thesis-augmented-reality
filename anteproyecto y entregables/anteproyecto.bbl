@@ -1,0 +1,198 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WRM{\etalchar{+}}10}
+
+\bibitem[ABB{\etalchar{+}}01]{Azuma:2001:RAA:616073.618862}
+Ronald Azuma, Yohan Baillot, Reinhold Behringer, Steven Feiner, Simon Julier,
+  and Blair MacIntyre.
+\newblock Recent advances in augmented reality.
+\newblock {\em IEEE Comput. Graph. Appl.}, 21(6):34--47, November 2001.
+
+\bibitem[BETV08]{Bay:2008:SRF}
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, and Luc {Van Gool}.
+\newblock Speeded-up {Robust} {Features} {(SURF)}.
+\newblock {\em Computer Vision and Image Understanding: CVIU}, 110(3):346--359,
+  June 2008.
+
+\bibitem[BK08]{citeulike:3484001}
+Gary Bradski and Adrian Kaehler.
+\newblock {\em {Learning OpenCV: Computer Vision with the OpenCV Library}}.
+\newblock O'Reilly Media, 1st edition, October 2008.
+
+\bibitem[BNG{\etalchar{+}}08]{conf/visapp/BenhimaneNGGNM08}
+Selim Benhimane, Hesam Najafi, Matthias Grundmann, Yakup Genc, Nassir Navab,
+  and Ezio Malis.
+\newblock Real-time object detection and tracking for industrial applications.
+\newblock In Alpesh Ranchordas and Helder Ara{\'u}jo, editors, {\em VISAPP
+  (2)}, pages 337--345. INSTICC - Institute for Systems and Technologies of
+  Information, Control and Communication, 2008.
+
+\bibitem[But11]{1320421}
+Ben Butchart.
+\newblock Augmented reality for smartphones - a guide for developers and
+  content publishers.
+\newblock In {\em JISC Observatory}, 2011.
+
+\bibitem[CD10]{conf/icra/2010}
+Daniel Conrad and Guilherme~N. DeSouza.
+\newblock Homography-based ground plane detection for mobile robot navigation
+  using a modified {EM} algorithm.
+\newblock In {\em ICRA\/} \cite{conf/icra/2010}, pages 910--915.
+
+\bibitem[CL10]{5607509}
+Zhuo Chen and Xinyu Li.
+\newblock Markless tracking based on natural feature for augmented reality.
+\newblock In {\em Educational and Information Technology (ICEIT), 2010
+  International Conference on}, volume~2, pages V2--126 --V2--129, sept. 2010.
+
+\bibitem[H07a]{conf/iswc/2007}
+Taehee~Lee 0002 and Tobias H{\"o}llerer.
+\newblock Handy {AR}: Markerless inspection of augmented reality objects using
+  fingertip tracking.
+\newblock In {\em ISWC\/} \cite{conf/iswc/2007}, pages 83--90.
+
+\bibitem[H07b]{conf/ismar/2007}
+Taehee~Lee 0002 and Tobias H{\"o}llerer.
+\newblock Initializing markerless tracking using a simple hand gesture.
+\newblock In {\em ISMAR\/} \cite{conf/ismar/2007}, pages 259--260.
+
+\bibitem[hCMW08]{Chen_markerlessaugmented}
+Ian~Y h~Chen, Bruce Macdonald, and Burkhard W{\"u}nsche.
+\newblock Markerless augmented reality for robots in unprepared environments,
+  2008.
+
+\bibitem[HLI{\etalchar{+}}10]{conf/cvpr/HinterstoisserLIFN10}
+Stefan Hinterstoisser, Vincent Lepetit, Slobodan Ilic, Pascal Fua, and Nassir
+  Navab.
+\newblock Dominant orientation templates for real-time detection of
+  texture-less objects.
+\newblock In {\em CVPR}, pages 2257--2264. IEEE, 2010.
+
+\bibitem[JH00]{bb1919}
+B.~Jahne and H.~W. Haussecker.
+\newblock {\em Computer Vision and Applications: {A} Guide for Students and
+  Practitioners}.
+\newblock Academic Press, April 2000.
+
+\bibitem[KC10]{5711053}
+Jong-Hyoun Kim and T.~Cho.
+\newblock The initiative experiments for utilizing real cards in online trading
+  card game.
+\newblock In {\em Computer Sciences and Convergence Information Technology
+  (ICCIT), 2010 5th International Conference on}, pages 182 --185, 30 2010-dec.
+  2 2010.
+
+\bibitem[KM07]{conf/ismar/KleinM07}
+Georg Klein and David~W. Murray.
+\newblock Parallel tracking and mapping for small {AR} workspaces.
+\newblock In {\em ISMAR\/} \cite{conf/ismar/2007}, pages 225--234.
+
+\bibitem[Kot11]{BenhimaneNGGNM08}
+Michal Kottman.
+\newblock Planar object detection using local feature descriptors.
+\newblock In {\em Information Sciences and Technologies Bulletin of the ACM
+  Slovakia, Special Section on Student Research in Informatics and Information
+  Technologies}, pages 59--63, 2011.
+
+\bibitem[KPW09]{KimPW09}
+Kiyoung Kim, Jonghee Park, and Woontack Woo.
+\newblock Marker-less tracking for multi-layer authoring in {AR} books.
+\newblock In St{\'e}phane Natkin and J{\'e}r{\^o}me Dupire, editors, {\em
+  ICEC}, volume 5709 of {\em Lecture Notes in Computer Science}, pages 48--59.
+  Springer, 2009.
+
+\bibitem[Lag11]{citeulike:9456628}
+Robert Lagani\`{e}re.
+\newblock {\em {OpenCV 2 Computer Vision Application Programming Cookbook}}.
+\newblock Packt Publishing, June 2011.
+
+\bibitem[LC10]{5478308}
+Xinyu Li and Dongyi Chen.
+\newblock Augmented reality in e-commerce with markerless tracking.
+\newblock In {\em Information Management and Engineering (ICIME), 2010 The 2nd
+  IEEE International Conference on}, pages 609 --613, april 2010.
+
+\bibitem[LF04]{oai:infoscience.epfl.ch:52666}
+Vincent Lepetit and Pascal Fua.
+\newblock Towards recognizing feature points using classification trees, 2004.
+
+\bibitem[LF05]{Lepetit:2005:MMT:1166405.1166406}
+Vincent Lepetit and Pascal Fua.
+\newblock Monocular model-based 3d tracking of rigid objects.
+\newblock {\em Found. Trends. Comput. Graph. Vis.}, 1(1):1--89, January 2005.
+
+\bibitem[LLLC11]{5739718}
+Ahyun Lee, Jae-Young Lee, Seok-Han Lee, and Jong-Soo Choi.
+\newblock Markerless augmented reality system based on planar object tracking.
+\newblock In {\em Frontiers of Computer Vision (FCV), 2011 17th Korea-Japan
+  Joint Workshop on}, pages 1 --4, feb. 2011.
+
+\bibitem[Low04]{Lowe2004}
+D.~G. Lowe.
+\newblock Distinctive image features from scale-invariant keypoints.
+\newblock {\em International Journal of Computer Vision}, 60(2):91--110, 2004.
+
+\bibitem[LS09]{bb48614}
+T.~W.~R. Lo and J.~P. Siebert.
+\newblock Local feature extraction and matching on range images: 2.5{D} {SIFT}.
+\newblock {\em Computer Vision and Image Understanding}, 113(12):1235--1250,,
+  December 2009.
+
+\bibitem[MMT{\etalchar{+}}08]{conf/ismar/MiyashitaMTOESGGAL08}
+Tsutomu Miyashita, Peter~Georg Meier, Tomoya Tachikawa, Stephanie Orlic, Tobias
+  Eble, Volker Scholz, Andreas Gapel, Oliver Gerl, Stanimir Arnaudov, and
+  Sebastian Lieberknecht.
+\newblock An augmented reality museum guide.
+\newblock In {\em ISMAR}, pages 103--106. IEEE, 2008.
+
+\bibitem[MS05]{bb53077}
+K.~Mikolajczyk and C.~Schmid.
+\newblock A performance evaluation of local descriptors.
+\newblock {\em IEEE Trans. Pattern Analysis and Machine Intelligence},
+  27(10):1615--1630, October 2005.
+
+\bibitem[NA02]{Nixon:2002:FEI}
+Mark~S. Nixon and Alberto~S. Aguado.
+\newblock {\em Feature extraction and image processing}.
+\newblock Newnes, Oxford, 2002.
+
+\bibitem[OBG11]{BouGar}
+\`{O}scar Boullosa~Garc\`{i}a.
+\newblock Estudio comparativo de descriptores visuales para la detecci\`{o}n de
+  escenas cuasi-duplicadas.
+\newblock In {\em Proyecto Fin De Carrera, Universidad Aut\`{o}noma De Madrid
+  Escuela Polit\`{e}cnica Superior}, 2011.
+
+\bibitem[OFL07]{bb36798}
+M.~Ozuysal, P.~Fua, and V.~Lepetit.
+\newblock Fast keypoint recognition in ten lines of code.
+\newblock In {\em CVPR}, pages 1--8, 2007.
+
+\bibitem[SL04]{conf/ismar/2004}
+Iryna Skrypnyk and David~G. Lowe.
+\newblock Scene modelling, recognition and tracking with invariant image
+  features.
+\newblock In {\em ISMAR\/} \cite{conf/ismar/2004}, pages 110--119.
+
+\bibitem[TCG{\etalchar{+}}08]{Takacs:2008:OAR:1460096.1460165}
+Gabriel Takacs, Vijay Chandrasekhar, Natasha Gelfand, Yingen Xiong, Wei-Chao
+  Chen, Thanos Bismpigiannis, Radek Grzeszczuk, Kari Pulli, and Bernd Girod.
+\newblock Outdoors augmented reality on mobile phone using loxel-based visual
+  feature organization.
+\newblock In {\em Proceedings of the 1st ACM international conference on
+  Multimedia information retrieval}, MIR '08, pages 427--434, New York, NY,
+  USA, 2008. ACM.
+
+\bibitem[TM07]{TuytelaarsM07}
+Tinne Tuytelaars and Krystian Mikolajczyk.
+\newblock Local invariant feature detectors: {A} survey.
+\newblock {\em Foundations and Trends in Computer Graphics and Vision},
+  3(3):177--280, 2007.
+
+\bibitem[WRM{\etalchar{+}}10]{WagnerRMDS10}
+Daniel Wagner, Gerhard Reitmayr, Alessandro Mulloni, Tom Drummond, and Dieter
+  Schmalstieg.
+\newblock Real-time detection and tracking for augmented reality on mobile
+  phones.
+\newblock {\em IEEE Trans. Vis. Comput. Graph}, 16(3):355--368, 2010.
+
+\end{thebibliography}

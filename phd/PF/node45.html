@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Par&#195;&#161;metros extr&#195;&#173;nsecos e intr&#195;&#173;nsecos</TITLE>
+<META NAME="description" CONTENT="Par&#195;&#161;metros extr&#195;&#173;nsecos e intr&#195;&#173;nsecos">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="previous" HREF="node44.html">
+<LINK REL="up" HREF="node44.html">
+<LINK REL="next" HREF="node46.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html862"
+  HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html858"
+  HREF="node44.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html854"
+  HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html860"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html863"
+  HREF="node46.html">Transformaci&#195;&#179;n proyectiva y estimaci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html859"
+  HREF="node44.html">El modelo de c&#195;&#161;mara</A>
+<B> Anterior:</B> <A NAME="tex2html855"
+  HREF="node44.html">El modelo de c&#195;&#161;mara</A>
+ &nbsp; <B>  <A NAME="tex2html861"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00762100000000000000">
+Par&#195;&#161;metros extr&#195;&#173;nsecos e intr&#195;&#173;nsecos</A>
+</H3>
+Generalmente los puntos del espacio est&#195;&#161;n expresados en un sistema de coordenadas denominado ``Global''. Este sistema y el <SPAN  CLASS="textit">sistema de coordenadas de la c&#195;&#161;mara</SPAN> est&#195;&#161;n relacionados mediante una rotaci&#195;&#179;n y una traslaci&#195;&#179;n como se puede observar en el esquema de la Fig. <A HREF="#fig:transform_between_spaces">2.16</A>. Sea:
+
+<UL>
+<LI><!-- MATH
+ $\tilde{\mathbf{X}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img192.png"
+ ALT="$ \tilde{\mathbf{X}}$"></SPAN> un vector de 3 dimensiones no homog&#195;&#169;neo que representa las coordenadas de un punto en el sistema de coordenadas global,
+</LI>
+<LI><!-- MATH
+ $\tilde{\mathbf{X}}_{cam}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="20" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.png"
+ ALT="$ \tilde{\mathbf{X}}_{cam}$"></SPAN> el mismo punto, pero en el sistema de coordenadas de la c&#195;&#161;mara,
+</LI>
+<LI><!-- MATH
+ $\tilde{\mathbf{C}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="42" ALIGN="BOTTOM" BORDER="0"
+ SRC="img194.png"
+ ALT="$ \tilde{\mathbf{C}}$"></SPAN> las coordenadas del centro de la c&#195;&#161;mara en el sistema global y,
+</LI>
+<LI><SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ R$"></SPAN> la matriz de rotaci&#195;&#179;n de <!-- MATH
+ $3 \times 3$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="262" HEIGHT="262" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ 3\times3$"></SPAN> que representa la orientaci&#195;&#179;n del sistema de coordenadas de la c&#195;&#161;mara,
+</LI>
+</UL>
+se puede escribir: <!-- MATH
+ $\tilde{\mathbf{X}}_{cam}=R(\tilde{\mathbf{X}}-\tilde{\mathbf{C}})$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="17" ALIGN="MIDDLE" BORDER="0"
+ SRC="img196.png"
+ ALT="$ \tilde{\mathbf{X}}_{cam}=R(\tilde{\mathbf{X}}-\tilde{\mathbf{C}})$"></SPAN> que en coordenadas homog&#195;&#169;neas se puede expresar como:
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:xcam_homogenea"></A><!-- MATH
+ \begin{equation}
+\mathbf{X}_{cam} =
+\left[\begin{array}{cc}
+R & -R \tilde{\mathbf{C}}\\
+0 & 1
+\end{array}\right]
+\left(\begin{array}{c}
+\mathsf{X}\\
+\mathsf{Y}\\
+\mathsf{Z}\\
+1
+\end{array}\right)
+=
+\left[\begin{array}{cc}
+R & -R \tilde{\mathbf{C}}\\
+0 & 1
+\end{array}\right]
+\mathbf{X}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="156" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="$\displaystyle \mathbf{X}_{cam} = \left[\begin{array}{cc} R &amp; -R \tilde{\mathbf{...
+...egin{array}{cc} R &amp; -R \tilde{\mathbf{C}}\\ 0 &amp; 1 \end{array}\right] \mathbf{X}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">20</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+y combinado con la expresi&#195;&#179;n <A HREF="node44.html#eq:mapp_xcam">2.19</A>, resulta en 
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:xcam_homog_combinado"></A><!-- MATH
+ \begin{equation}
+\mathbf{x}=KR[I\:|\mathbf{-\tilde{\mathbf{C}}}]\mathbf{X},
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="395" HEIGHT="112" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.png"
+ ALT="$\displaystyle \mathbf{x}=KR[I\:\vert\mathbf{-\tilde{\mathbf{C}}}]\mathbf{X},$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">21</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+que es la ecuaci&#195;&#179;n general de mapeo para el modelo de c&#195;&#161;mara oscura, donde <!-- MATH
+ $\mathbf{X}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="124" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img170.png"
+ ALT="$ \mathbf{X}$"></SPAN> est&#195;&#161; expresado en coordenadas globales.
+
+<DIV ALIGN="CENTER"><A NAME="fig:transform_between_spaces"></A><A NAME="1601"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Esquema de transformaci&#195;&#179;n eucl&#195;&#173;dea entre el sistema de coordenadas globales y el de la c&#195;&#161;mara. (Figura adaptada de ()).</CAPTION>
+<TR><TD>
+<DIV CLASS="centerline" ID="par13130" ALIGN="CENTER">
+<IMG
+ WIDTH="156" HEIGHT="45" ALIGN="BOTTOM" BORDER="0"
+ SRC="img199.png"
+ ALT="\includegraphics[scale=0.7]{../figs/sizzerman/transform_between_spaces}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+La ecuaci&#195;&#179;n (<A HREF="#eq:xcam_homog_combinado">2.21</A>) tiene 9 grados de libertad (9DoF): 3 para <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ K$"></SPAN> <!-- MATH
+ $(f,p_x,p_y)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="413" HEIGHT="171" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.png"
+ ALT="$ (f,p_x,p_y)$"></SPAN>, 3 para <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ R$"></SPAN> y 3 para <!-- MATH
+ $\tilde{\mathbf{C}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="42" ALIGN="BOTTOM" BORDER="0"
+ SRC="img194.png"
+ ALT="$ \tilde{\mathbf{C}}$"></SPAN> donde los par&#195;&#161;metros de <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ K$"></SPAN> son conocidos como <SPAN  CLASS="textit">par&#195;&#161;metros internos de la c&#195;&#161;mara o intr&#195;&#173;nsecos</SPAN> que resultan constantes para un sistema lente-c&#195;&#161;mara, mientras que los de <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ R$"></SPAN> y <!-- MATH
+ $\tilde{\mathbf{C}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="42" ALIGN="BOTTOM" BORDER="0"
+ SRC="img194.png"
+ ALT="$ \tilde{\mathbf{C}}$"></SPAN> son denominados <SPAN  CLASS="textit">externos o extr&#195;&#173;nsecos</SPAN> y relacionan la orientaci&#195;&#179;n de la c&#195;&#161;mara y la posici&#195;&#179;n del sistema de coordenadas global y resultan ser diferentes para diferentes ``puntos de vista''.
+
+<P>
+Si no se explicita el centro de la c&#195;&#161;mara, se puede representar la transformaci&#195;&#179;n del sistema global al de la imagen como <!-- MATH
+ $\mathbf{\tilde{X}}_{cam}=R \tilde{\mathbf{X}}+\mathbf{t}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="81" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.png"
+ ALT="$ \mathbf{\tilde{X}}_{cam}=R \tilde{\mathbf{X}}+\mathbf{t}$"></SPAN> y la matriz de la c&#195;&#161;mara puede simplificarse a la expresi&#195;&#179;n: <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:matrix_camera"></A><!-- MATH
+ \begin{equation}
+P=K[R|\mathbf{t}] \, con \,\,\,\,\, \mathbf{t}=-R \tilde{\mathbf{C}}.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="134" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$\displaystyle P=K[R\vert\mathbf{t}] \, con \,\,\,\,\, \mathbf{t}=-R \tilde{\mathbf{C}}.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">22</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+El modelo de la c&#195;&#161;mara derivado hasta el momento, asume que las coordenadas de las imagen son coordenadas eucl&#195;&#173;deas, que tienen igual escala en ambos ejes direccionales. Sin embargo, esto no siempre es as&#195;&#173;, ya que los p&#195;&#173;xeles de las c&#195;&#161;maras pueden no ser perfectamente cuadrados. Denotando <SPAN CLASS="MATH"><IMG
+ WIDTH="231" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img203.png"
+ ALT="$ m_x$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.png"
+ ALT="$ m_y$"></SPAN> el n&#195;&#186;mero de p&#195;&#173;xeles por unidad de distancia en las direcciones <SPAN CLASS="MATH"></SPAN> e <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.png"
+ ALT="$ y$"></SPAN> respectivamente (en coordenadas del plano imagen), se puede obtener una forma general de la matriz de calibraci&#195;&#179;n de la c&#195;&#161;mara mostrada en <A HREF="#eq:k_gral">2.23</A> donde <!-- MATH
+ $\alpha_x = fm_x$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.png"
+ ALT="$ \alpha_x = fm_x$"></SPAN> y <!-- MATH
+ $\alpha_y = fm_y$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="86" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.png"
+ ALT="$ \alpha_y = fm_y$"></SPAN> representan la distancia focal de la c&#195;&#161;mara en t&#195;&#169;rmino de dimensiones de p&#195;&#173;xeles en la direcci&#195;&#179;n <SPAN CLASS="MATH"></SPAN> e <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.png"
+ ALT="$ y$"></SPAN> respectivamente, <!-- MATH
+ $\mathbf{\tilde{x}}_0=(x_0,y_0)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.png"
+ ALT="$ \mathbf{\tilde{x}}_0=(x_0,y_0)$"></SPAN> es el punto principal con coordenadas <!-- MATH
+ $x_0=m_x p_x$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.png"
+ ALT="$ x_0=m_x p_x$"></SPAN> y <!-- MATH
+ $y_0 = m_y p_y$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="90" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.png"
+ ALT="$ y_0 = m_y p_y$"></SPAN> y el par&#195;&#161;metro <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ s$"></SPAN> representa la distorsi&#195;&#179;n de la c&#195;&#161;mara.
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:k_gral"></A><!-- MATH
+ \begin{equation}
+K=\left[\begin{array}{ccc}
+	    \alpha_x & s & x_0 \\
+	    \quad & \alpha_y & y_0 \\
+	    \quad & \quad & 1
+	  \end{array}\right].
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.png"
+ ALT="$\displaystyle K=\left[\begin{array}{ccc} \alpha_x &amp; s &amp; x_0 \\ \quad &amp; \alpha_y &amp; y_0 \\ \quad &amp; \quad &amp; 1 \end{array}\right].$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">23</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html862"
+  HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html858"
+  HREF="node44.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html854"
+  HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html860"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html863"
+  HREF="node46.html">Transformaci&#195;&#179;n proyectiva y estimaci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html859"
+  HREF="node44.html">El modelo de c&#195;&#161;mara</A>
+<B> Anterior:</B> <A NAME="tex2html855"
+  HREF="node44.html">El modelo de c&#195;&#161;mara</A>
+ &nbsp; <B>  <A NAME="tex2html861"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,260 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Fundamentos te\IeC {\'o}ricos}{15}{chapter.2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{c:parte3}{{2}{15}{Fundamentos teóricos\relax }{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Operaciones morfol\IeC {\'o}gicas en im\IeC {\'a}genes}{15}{section.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Dilataci\IeC {\'o}n}{16}{subsection.2.1.1}}
+\newlabel{eq:eq_dilatacion}{{2.1}{16}{Dilatación\relax }{equation.2.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Dilataci\IeC {\'o}n de una imagen}}{16}{figure.caption.9}}
+\newlabel{fig:dilatacion_example}{{2.1}{16}{Dilatación de una imagen\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Erosi\IeC {\'o}n}{17}{subsection.2.1.2}}
+\newlabel{eq:eq_erosion}{{2.2}{17}{Erosión\relax }{equation.2.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Erosi\IeC {\'o}n de una imagen}}{17}{figure.caption.10}}
+\newlabel{fig:erosion_example}{{2.2}{17}{Erosión de una imagen\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Realce de im\IeC {\'a}genes en el dominio espacial}{17}{section.2.2}}
+\newlabel{subsec:mejoras_iluminacion}{{2.2}{17}{Realce de imágenes en el dominio espacial\relax }{section.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Umbral}{18}{subsection.2.2.1}}
+\newlabel{eq:equation_umbral_binario}{{2.3}{18}{Umbral\relax }{equation.2.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Umbral binario}}{18}{figure.caption.11}}
+\newlabel{fig:umbral_curve}{{2.3}{18}{Umbral binario\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Transformaci\IeC {\'o}n logar\IeC {\'\i }tmica}{18}{subsection.2.2.2}}
+\newlabel{subsec:transf_logaritmica}{{2.2.2}{18}{Transformación logarítmica\relax }{subsection.2.2.2}{}}
+\newlabel{eq:logaritmo}{{2.4}{19}{Transformación logarítmica\relax }{equation.2.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Curva de la transformaci\IeC {\'o}n logar\IeC {\'\i }tmica}}{19}{figure.caption.12}}
+\newlabel{fig:log_curve}{{2.4}{19}{Curva de la transformación logarítmica\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Ecualizaci\IeC {\'o}n de histograma}{19}{subsection.2.2.3}}
+\newlabel{subsec:iluminacion_ecualizacion}{{2.2.3}{19}{Ecualización de histograma\relax }{subsection.2.2.3}{}}
+\newlabel{eq:relacion_probabilidades}{{2.5}{20}{Ecualización de histograma\relax }{equation.2.2.5}{}}
+\newlabel{eq:cdf_acumulada}{{2.6}{20}{Ecualización de histograma\relax }{equation.2.2.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Filtrado pasa altos}{20}{subsection.2.2.4}}
+\newlabel{suubsec:iluminacion_pasaaltos}{{2.2.4}{20}{Filtrado pasa altos\relax }{subsection.2.2.4}{}}
+\newlabel{eq:ec_convolucion}{{2.7}{20}{Filtrado pasa altos\relax }{equation.2.2.7}{}}
+\citation{Bay:2008:SRF}
+\citation{citeulike:3484001}
+\citation{Viola01rapidobject}
+\citation{Simard99boxlets:a}
+\citation{Bay:2008:SRF}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Filtrado de alta potencia}{21}{subsection.2.2.5}}
+\newlabel{subsec:iluminacion_altapotencia}{{2.2.5}{21}{Filtrado de alta potencia\relax }{subsection.2.2.5}{}}
+\newlabel{eq:form_alta_potencia}{{2.8}{21}{Filtrado de alta potencia\relax }{equation.2.2.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Detecci\IeC {\'o}n de puntos claves}{21}{section.2.3}}
+\newlabel{sec:detec_ptos_claves}{{2.3}{21}{Detección de puntos claves\relax }{section.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}El problema de cambio de escala}{22}{subsection.2.3.1}}
+\newlabel{sec:problema_cambio_escala}{{2.3.1}{22}{El problema de cambio de escala\relax }{subsection.2.3.1}{}}
+\citation{citeulike:9456628}
+\citation{citeulike:9456628}
+\newlabel{fig:church1}{{2.5a}{23}{Subfigure 2 2.5a\relax }{subfigure.2.5.1}{}}
+\newlabel{sub@fig:church1}{{(a)}{a}{Subfigure 2 2.5a\relax }{subfigure.2.5.1}{}}
+\newlabel{fig:church2}{{2.5b}{23}{Subfigure 2 2.5b\relax }{subfigure.2.5.2}{}}
+\newlabel{sub@fig:church2}{{(b)}{b}{Subfigure 2 2.5b\relax }{subfigure.2.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Fotograf\IeC {\'\i }a tomada a diferentes escalas para la misma escena}}{23}{figure.caption.13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{23}{subfigure.5.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{23}{subfigure.5.2}}
+\newlabel{fig:church_difference_surf}{{2.5}{23}{Fotografía tomada a diferentes escalas para la misma escena\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Invarianza a escala}{23}{subsubsection*.14}}
+\newlabel{sec:invarianza_a_escala}{{2.3.1}{23}{Invarianza a escala\relax }{subsubsection*.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Puntos claves basados en la Matriz Hessiana}{24}{subsection.2.3.2}}
+\newlabel{sec:matHessiana}{{2.3.2}{24}{Puntos claves basados en la Matriz Hessiana\relax }{subsection.2.3.2}{}}
+\newlabel{eq:HessianMatrix}{{2.9}{24}{Puntos claves basados en la Matriz Hessiana\relax }{equation.2.3.9}{}}
+\citation{conf/nips/SimardBHL98}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Pir\IeC {\'a}mide de escala de im\IeC {\'a}genes para SIFT y SURF}}{25}{figure.caption.15}}
+\newlabel{fig:pyramidfilters}{{2.6}{25}{Pirámide de escala de imágenes para SIFT y SURF\relax }{figure.caption.15}{}}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\newlabel{eq:det_happrox}{{2.11}{26}{Puntos claves basados en la Matriz Hessiana\relax }{equation.2.3.11}{}}
+\newlabel{fig:gaussiankernelsdiscreted_y}{{2.7a}{26}{Subfigure 2 2.7a\relax }{subfigure.2.7.1}{}}
+\newlabel{sub@fig:gaussiankernelsdiscreted_y}{{(a)}{a}{Subfigure 2 2.7a\relax }{subfigure.2.7.1}{}}
+\newlabel{fig:gaussiankernelsaprox_y}{{2.7b}{26}{Subfigure 2 2.7b\relax }{subfigure.2.7.2}{}}
+\newlabel{sub@fig:gaussiankernelsaprox_y}{{(b)}{b}{Subfigure 2 2.7b\relax }{subfigure.2.7.2}{}}
+\newlabel{fig:gaussiankernelsdiscreted_xy}{{2.7c}{26}{Subfigure 2 2.7c\relax }{subfigure.2.7.3}{}}
+\newlabel{sub@fig:gaussiankernelsdiscreted_xy}{{(c)}{c}{Subfigure 2 2.7c\relax }{subfigure.2.7.3}{}}
+\newlabel{fig:gaussiankernelsaprox_xy}{{2.7d}{26}{Subfigure 2 2.7d\relax }{subfigure.2.7.4}{}}
+\newlabel{sub@fig:gaussiankernelsaprox_xy}{{(d)}{d}{Subfigure 2 2.7d\relax }{subfigure.2.7.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Derivadas parciales gaussianas discretizadas y aproximadas}}{26}{figure.caption.16}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{26}{subfigure.7.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{26}{subfigure.7.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{26}{subfigure.7.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{26}{subfigure.7.4}}
+\newlabel{fig:gaussiankernels}{{2.7}{26}{Derivadas parciales gaussianas discretizadas y aproximadas\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Determinaci\IeC {\'o}n de la localizaci\IeC {\'o}n de puntos claves}{26}{subsection.2.3.3}}
+\citation{Viola01rapidobject}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Longitudes de los filtros para 3 diferentes octavas}}{27}{figure.caption.17}}
+\newlabel{fig:tamfilters1}{{2.8}{27}{Longitudes de los filtros para 3 diferentes octavas\relax }{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Im\IeC {\'a}genes integrales}{27}{subsubsection*.18}}
+\newlabel{sec:imagenes_integrales}{{2.3.3}{27}{Imágenes integrales\relax }{subsubsection*.18}{}}
+\newlabel{eq:integral_image_1}{{2.12}{27}{Imágenes integrales\relax }{equation.2.3.12}{}}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Suma de intensidades usando im\IeC {\'a}genes integrales}}{28}{figure.caption.19}}
+\newlabel{fig:integral_image_sum}{{2.9}{28}{Suma de intensidades usando imágenes integrales\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Descripci\IeC {\'o}n de puntos claves}{28}{section.2.4}}
+\newlabel{sec:descripcion_ptos_claves}{{2.4}{28}{Descripción de puntos claves\relax }{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Asignaci\IeC {\'o}n de la orientaci\IeC {\'o}n}{28}{subsection.2.4.1}}
+\newlabel{sec:orientacion_del_punto}{{2.4.1}{28}{Asignación de la orientación\relax }{subsection.2.4.1}{}}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\newlabel{fig:simplekernels1}{{2.10a}{29}{Subfigure 2 2.10a\relax }{subfigure.2.10.1}{}}
+\newlabel{sub@fig:simplekernels1}{{(a)}{a}{Subfigure 2 2.10a\relax }{subfigure.2.10.1}{}}
+\newlabel{fig:simplekernels2}{{2.10b}{29}{Subfigure 2 2.10b\relax }{subfigure.2.10.2}{}}
+\newlabel{sub@fig:simplekernels2}{{(b)}{b}{Subfigure 2 2.10b\relax }{subfigure.2.10.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Filtros Wavelets Haar}}{29}{figure.caption.20}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{29}{subfigure.10.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{29}{subfigure.10.2}}
+\newlabel{fig:simplekernels}{{2.10}{29}{Filtros Wavelets Haar\relax }{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Ejemplo de asignaci\IeC {\'o}n de la orientaci\IeC {\'o}n a un punto clave}}{29}{figure.caption.21}}
+\newlabel{fig:responsecalculate}{{2.11}{29}{Ejemplo de asignación de la orientación a un punto clave\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Creaci\IeC {\'o}n del descriptor}{29}{subsection.2.4.2}}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\citation{Evans09noteson}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Ejemplo de ventanas del descriptor a diferentes escalas sobre una imagen}}{30}{figure.caption.22}}
+\newlabel{fig:squareregionsexample}{{2.12}{30}{Ejemplo de ventanas del descriptor a diferentes escalas sobre una imagen\relax }{figure.caption.22}{}}
+\newlabel{fig:subdivideregions}{{2.13a}{30}{Subfigure 2 2.13a\relax }{subfigure.2.13.1}{}}
+\newlabel{sub@fig:subdivideregions}{{(a)}{a}{Subfigure 2 2.13a\relax }{subfigure.2.13.1}{}}
+\newlabel{fig:left_boxfilters}{{2.13b}{30}{Subfigure 2 2.13b\relax }{subfigure.2.13.2}{}}
+\newlabel{sub@fig:left_boxfilters}{{(b)}{b}{Subfigure 2 2.13b\relax }{subfigure.2.13.2}{}}
+\newlabel{fig:regioneshaarandresponses}{{\caption@xref {fig:regioneshaarandresponses}{ on input line 388}}{30}{Creación del descriptor\relax }{subfigure.2.13.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Interpretaci\IeC {\'o}n gr\IeC {\'a}fica del descriptor SURF}}{30}{figure.caption.23}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{30}{subfigure.13.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{30}{subfigure.13.2}}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\citation{Bay:2008:SRF}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces Resultados del descriptor SURF en una subregi\IeC {\'o}n}}{31}{figure.caption.24}}
+\newlabel{fig:descriptorresponses}{{2.14}{31}{Resultados del descriptor SURF en una subregión\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Correspondencia entre puntos claves}{31}{section.2.5}}
+\newlabel{sec:correspop_ptos_claves}{{2.5}{31}{Correspondencia entre puntos claves\relax }{section.2.5}{}}
+\citation{AryaEtAl98}
+\citation{muja_flann_2009}
+\citation{muja_flann_2009}
+\citation{Beis:1997:SIU:794189.794431}
+\citation{Silpa_KDTree}
+\citation{bb77826}
+\citation{Muja09fastapproximate}
+\citation{Silpa_KDTree}
+\citation{bb77826}
+\citation{Muja09fastapproximate}
+\citation{friedman-an-algorithm-toms-77}
+\citation{Muja09fastapproximate}
+\citation{Silpa_KDTree}
+\citation{Silpa_KDTree}
+\citation{bb77826}
+\citation{Muja09fastapproximate}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}El algoritmo de \IeC {\'a}rboles KD aleatorio}{33}{subsection.2.5.1}}
+\citation{loweDistinctive}
+\citation{loweDistinctive}
+\citation{loweDistinctive}
+\citation{loweDistinctive}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Remoci\IeC {\'o}n de correspondencias no v\IeC {\'a}lidas}{34}{subsection.2.5.2}}
+\newlabel{sec:remocion_corresp_invalidas}{{2.5.2}{34}{Remoción de correspondencias no válidas\relax }{subsection.2.5.2}{}}
+\citation{citeulike:3484001}
+\citation{citeulike:9456628}
+\citation{bb38231}
+\citation{citeulike:3484001}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Formaci\IeC {\'o}n de la imagen y transformaci\IeC {\'o}n proyectiva}{35}{section.2.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Introducci\IeC {\'o}n}{35}{subsection.2.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}El modelo de c\IeC {\'a}mara oscura}{35}{subsection.2.6.2}}
+\citation{bb38231}
+\citation{bb38231}
+\newlabel{eq:mapeo}{{2.13}{36}{El modelo de cámara oscura\relax }{equation.2.6.13}{}}
+\newlabel{fig:pinholemodel}{{2.15a}{36}{Subfigure 2 2.15a\relax }{subfigure.2.15.1}{}}
+\newlabel{sub@fig:pinholemodel}{{(a)}{a}{Subfigure 2 2.15a\relax }{subfigure.2.15.1}{}}
+\newlabel{fig:pinholemodel_geometria}{{2.15b}{36}{Subfigure 2 2.15b\relax }{subfigure.2.15.2}{}}
+\newlabel{sub@fig:pinholemodel_geometria}{{(b)}{b}{Subfigure 2 2.15b\relax }{subfigure.2.15.2}{}}
+\newlabel{fig:pinholecmaeramodelinterpretation}{{\caption@xref {fig:pinholecmaeramodelinterpretation}{ on input line 669}}{36}{El modelo de cámara oscura\relax }{subfigure.2.15.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Modelo de c\IeC {\'a}mara oscura y su interpretaci\IeC {\'o}n geom\IeC {\'e}trica}}{36}{figure.caption.25}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{36}{subfigure.15.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{36}{subfigure.15.2}}
+\newlabel{eq:eq_mapeo_matricial}{{2.14}{36}{El modelo de cámara oscura\relax }{equation.2.6.14}{}}
+\newlabel{eq:eq_mapeo_matricial_notacion}{{2.15}{36}{El modelo de cámara oscura\relax }{equation.2.6.15}{}}
+\newlabel{eq:mapeo_general}{{2.16}{37}{El modelo de cámara oscura\relax }{equation.2.6.16}{}}
+\newlabel{eq:eq_mapeo_matricial_homogeneo}{{2.17}{37}{El modelo de cámara oscura\relax }{equation.2.6.17}{}}
+\newlabel{eq:k}{{2.18}{37}{El modelo de cámara oscura\relax }{equation.2.6.18}{}}
+\newlabel{eq:mapp_xcam}{{2.19}{37}{El modelo de cámara oscura\relax }{equation.2.6.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Par\IeC {\'a}metros extr\IeC {\'\i }nsecos e intr\IeC {\'\i }nsecos}{37}{subsubsection*.26}}
+\citation{bb38231}
+\citation{bb38231}
+\newlabel{eq:xcam_homogenea}{{2.20}{38}{Parámetros extrínsecos e intrínsecos\relax }{equation.2.6.20}{}}
+\newlabel{eq:xcam_homog_combinado}{{2.21}{38}{Parámetros extrínsecos e intrínsecos\relax }{equation.2.6.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Transformaci\IeC {\'o}n entre diferentes espacios de coordenadas}}{38}{figure.caption.27}}
+\newlabel{fig:transform_between_spaces}{{2.16}{38}{Transformación entre diferentes espacios de coordenadas\relax }{figure.caption.27}{}}
+\newlabel{eq:matrix_camera}{{2.22}{38}{Parámetros extrínsecos e intrínsecos\relax }{equation.2.6.22}{}}
+\newlabel{eq:k_gral}{{2.23}{39}{Parámetros extrínsecos e intrínsecos\relax }{equation.2.6.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Transformaciones proyectivas}{39}{subsection.2.6.3}}
+\newlabel{sec:transf_proyectiva_homograph}{{2.6.3}{39}{Transformaciones proyectivas\relax }{subsection.2.6.3}{}}
+\newlabel{def:transf_proyectiva}{{1}{39}{Transformaciones proyectivas\relax }{def_transf_proyectiva.1}{}}
+\citation{bb38231}
+\citation{bb38231}
+\citation{citeulike:9456628}
+\citation{bb38231}
+\newlabel{eq:eq_cumple_homografia}{{2.24}{40}{Transformaciones proyectivas\relax }{equation.2.6.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Mapeo de puntos de un plano a otro}}{40}{figure.caption.28}}
+\newlabel{fig:homografia_esquema}{{2.17}{40}{Mapeo de puntos de un plano a otro\relax }{figure.caption.28}{}}
+\newlabel{eq:eq_ecuacion_rel_homography_ptos}{{2.25}{40}{Transformaciones proyectivas\relax }{equation.2.6.25}{}}
+\citation{Rousseuw_1994}
+\citation{Rousseeuw1984}
+\citation{Fischler:1981:RSC:358669.358692}
+\citation{Hartley2004}
+\citation{Hartley2004}
+\citation{Kottman2011}
+\@writefile{toc}{\contentsline {subsubsection}{Estimaci\IeC {\'o}n de la homograf\IeC {\'\i }a}{41}{subsubsection*.29}}
+\newlabel{sec:estimacion_ransac_homografia}{{2.6.3}{41}{Estimación de la homografía\relax }{subsubsection*.29}{}}
+\newlabel{eq:resol_ecuaciones_ptos_correspondientes_reemplasando_s}{{2.26}{41}{Estimación de la homografía\relax }{equation.2.6.26}{}}
+\newlabel{eq:resol_ecuaciones_ptos_correspondientes_reemplasando_s_matricial}{{2.27}{41}{Estimación de la homografía\relax }{equation.2.6.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Homograf\IeC {\'\i }a con RANSAC}{42}{subsubsection*.30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces Estimaci\IeC {\'o}n robusta de una l\IeC {\'\i }nea mediante RANSAC}}{43}{figure.caption.31}}
+\citation{bb38231}
+\citation{bb38231}
+\newlabel{eq:determineN}{{2.28}{44}{Homografía con RANSAC\relax }{equation.2.6.28}{}}
+\citation{bb38231}
+\citation{bb38231}
+\@setckpt{parte3}{
+\setcounter{page}{47}
+\setcounter{equation}{28}
+\setcounter{enumi}{3}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{section}{6}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{18}
+\setcounter{table}{0}
+\setcounter{parentequation}{0}
+\setcounter{Item}{8}
+\setcounter{Hfootnote}{3}
+\setcounter{ContinuedFloat}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{0}
+\setcounter{lotdepth}{1}
+\setcounter{float@type}{8}
+\setcounter{FBl@b}{0}
+\setcounter{FRobj}{-12}
+\setcounter{FRsobj}{0}
+\setcounter{FBcnt}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{linenumber}{1287}
+\setcounter{LN@truepage}{62}
+\setcounter{lstnumber}{1}
+\setcounter{def_transf_proyectiva}{1}
+\setcounter{section@level}{0}
+\setcounter{FBLTpage}{0}
+\setcounter{lstlisting}{0}
+}

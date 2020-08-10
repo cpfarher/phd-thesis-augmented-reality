@@ -1,0 +1,96 @@
+\documentclass[spanish]{beamer}
+%\documentclass[handout]{beamer} %ignorar overlays para imprimir
+\usepackage{pgfpages}
+%
+\include{conf/preconfig}
+\include{conf/packages}
+\include{conf/config}
+\include{beamerconf}
+%
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{float}
+%\usetheme{Warsaw}
+\usepackage[font=scriptsize]{caption}
+%\usetheme{Marburg}
+%\usetheme{Antibes}
+%\usetheme{Berlin}
+%\usetheme{classic}
+\usetheme{Darmstadt}
+%\usetheme{Montpellier}
+%\usetheme{Goettingen}
+\usecolortheme{orchid}
+%
+%-----------------------------------------
+% Definiciï¿œn de comandos ï¿œtiles
+%-----------------------------------------
+\newcommand{\RR}{{\mathbb{R}}}
+\newcommand{\NN}{{\mathbb{N}}}
+\newcommand{\ZZ}{{\mathbb{Z}}}
+\newcommand{\vs}{{\vspace{5mm}}}
+\newcommand{\vts}{{\vspace{15mm}}}
+\newcommand{\hs}{{\hspace{5mm}}}
+\newcommand{\hts}{{\hspace{15mm}}}
+\newcommand{\vv}[1]{{\mathbf{#1}}}
+\newcommand{\expected}[2][\!]{\:\mathop{\mathcal{E}}\limits_{#1}\!\left[{#2}\right]}
+\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
+%
+\AtBeginSection[]{\frame{\frametitle{Contenido}\tableofcontents[current]}}
+
+%
+%\setbeameroption{show only notes}
+%\setbeameroption{show notes} %un-comment to see the notes
+%\setbeameroption{show notes on second screen=right}
+%\setbeameroption{second mode text on second screen=right}
+%
+\title[Método para detección de objetos]{Método para detección y seguimiento de objetos con aplicaciones en Realidad Aumentada}
+\author[Christian Nicolás Pfarher]{
+  \footnotesize \emph{Christian Nicolás Pfarher}\\
+    \emph{Director: Enrique Marcelo Albornoz} \\
+    \emph{Co-Director: Cesar Martínez}
+  }
+%
+\institute[sinc($i$)-UNL]{
+  {\rmfamily
+  \textbf{Proyecto Final de Carrera}
+  \\
+  \textbf{Ingeniería en Informática}\\
+%     {\small Centro de {\textcolor{red}{I}}nvestigaci\'on en} {\normalsize {\textcolor{blue}{\bfseries s}}e\~{n}ales}\\[1mm]
+%     {\normalsize sistemas e {\bfseries in}teligencia {\bfseries c}omputacional} \\
+  }
+  \vs
+{\scriptsize 
+\emph{Facultad de Ingeniería y Ciencias Hídricas} \\
+\emph{Universidad Nacional del Litoral}\\
+\vs
+}\hspace{2mm}\includegraphics[height=5.8mm]{imagenes/fichunl}\hs\includegraphics[height=6.5mm]{imagenes/sinc}\\
+  \vspace{1mm}
+}
+
+\date{\tiny 02 de Agosto de 2013}
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamertemplate{footline}[frame number]
+\begin{document}
+\frame{
+  \thispagestyle{empty}
+\titlepage
+}
+\note[item]{La detección ha tenido y tiene gran cantidad de desarrollos en diversas áreas (robótica, control de calidad, interactividad, vigilancia, etc. Si bien las personas reconocemos los objetos facilmente indpendiente de.... en un algoritmo computacional la tarea no resulta trivial. La detección de objetos junto a realidad aumentada son 2 de los temas principales que se tratarán en esta presentación.}
+\note[item]{Marcelo: no repetir lo que dice gastón martín al iniciar la presnetaicón.. directamente empezar...}
+\note[item]{Marcelo: Explicar la motivación del proyecto.. Las personas reconocemos los objetos fácilmente independientemente de la perspectiva en que se los mire, la iluminación, si los mismos estan rotados obtruidos por otros etc.}
+\note[item]{Marcelo: En este trabajo el problema de reocnocer objetos resulta de gran importancia para poder aplicar realidad aumetnada.}
+\note[item]{En este trabajo la detección de objetos forma parte principal del método combinado con AR..}
+\begin{frame}{Contenido}
+\setcounter{framenumber}{1}
+  \tableofcontents
+\end{frame}
+\captionsetup[subfigure]{labelformat=empty} %label para subfiguras
+\captionsetup[figure]{labelformat=empty} %label para figuras
+%
+     \include{introduccion}
+     \include{metodo}
+     \include{resultados}
+     \include{conclusiones}
+     \include{fin}
+\end{document}

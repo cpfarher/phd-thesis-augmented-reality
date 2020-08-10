@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Filtrado pasa altos</TITLE>
+<META NAME="description" CONTENT="Filtrado pasa altos">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node29.html">
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node24.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html645"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html641"
+  HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html635"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html643"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html646"
+  HREF="node29.html">Filtrado de alta potencia</A>
+<B> Subir:</B> <A NAME="tex2html642"
+  HREF="node24.html">Realce de im&#195;&#161;genes en</A>
+<B> Anterior:</B> <A NAME="tex2html636"
+  HREF="node27.html">Ecualizaci&#195;&#179;n de histograma</A>
+ &nbsp; <B>  <A NAME="tex2html644"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00724000000000000000"></A>
+<A NAME="suubsec:iluminacion_pasaaltos"></A>
+<BR>
+Filtrado pasa altos
+</H2>
+Los filtros pasa altos realzan las altas frecuencias que son los detalles de una imagen y pueden ser realizados mediante una diferenciaci&#195;&#179;n espacial. La aplicaci&#195;&#179;n de este tipo de filtros, realza ejes, bordes y diversas discontinuidades (incluido el ruido) y aten&#195;&#186;a &#195;&#161;reas cuyos niveles de grises var&#195;&#173;an lentamente (bajas frecuencias).
+
+<P>
+Un filtro pasa altos puede ser aplicado mediante la convoluci&#195;&#179;n de la imagen con un kernel pasa altos que puede ser de diferentes tama&#195;&#177;os y que seg&#195;&#186;n esto, actuar&#195;&#161; de diferentes maneras (realzando en mayor o menor medida los detalles). Si definimos a <!-- MATH
+ $f(x+s, y+t)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="545" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.png"
+ ALT="$ f(x+s, y+t)$"></SPAN> como el valor de los p&#195;&#173;xeles del bloque seleccionado de la imagen y <SPAN CLASS="MATH"><IMG
+ WIDTH="121" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.png"
+ ALT="$ w(s,t)$"></SPAN> los coeficientes del kernel, se puede expresar el filtrado lineal con la expresi&#195;&#179;n definida en la ecuaci&#195;&#179;n (<A HREF="#eq:ec_convolucion">2.7</A>).
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:ec_convolucion"></A><!-- MATH
+ \begin{equation}
+g(x,y)=\sum_{s=-a}^{a}\sum_{\; t=-b}^{a}w(s,t)f(x+s,y+t).
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$\displaystyle g(x,y)=\sum_{s=-a}^{a}\sum_{\; t=-b}^{a}w(s,t)f(x+s,y+t).$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Si la suma de los coeficientes del kernel es 1, se realzan las altas frecuencias conserv&#195;&#161;ndose el brillo medio de la imagen sobre la cual se aplica el filtro.
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html645"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html641"
+  HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html635"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html643"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html646"
+  HREF="node29.html">Filtrado de alta potencia</A>
+<B> Subir:</B> <A NAME="tex2html642"
+  HREF="node24.html">Realce de im&#195;&#161;genes en</A>
+<B> Anterior:</B> <A NAME="tex2html636"
+  HREF="node27.html">Ecualizaci&#195;&#179;n de histograma</A>
+ &nbsp; <B>  <A NAME="tex2html644"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

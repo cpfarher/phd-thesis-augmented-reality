@@ -1,0 +1,423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Puntos claves basados en la matriz hessiana</TITLE>
+<META NAME="description" CONTENT="Puntos claves basados en la matriz hessiana">
+<META NAME="keywords" CONTENT="PF">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="PF.css">
+
+<LINK REL="next" HREF="node35.html">
+<LINK REL="previous" HREF="node32.html">
+<LINK REL="up" HREF="node30.html">
+<LINK REL="next" HREF="node35.html">
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html717"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html713"
+  HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html707"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html715"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html718"
+  HREF="node35.html">Determinaci&#195;&#179;n de la localizaci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html714"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html708"
+  HREF="node33.html">Invarianza a escala</A>
+ &nbsp; <B>  <A NAME="tex2html716"
+  HREF="node4.html">&#205;ndice General</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00732000000000000000"></A>
+      <A NAME="sec:matHessiana"></A>
+<BR>
+Puntos claves basados en la matriz hessiana
+</H2>
+      Con la idea que se introdujo en la secci&#195;&#179;n <A HREF="node32.html#sec:problema_cambio_escala">2.3.1</A>, el descriptor SURF hace uso de la matriz hessiana (<A HREF="#eq:HessianMatrix">2.10</A>) y describe c&#195;&#179;mo las intensidades de los p&#195;&#173;xeles se distribuyen dentro de una vecindad, que es dependiente de la escala de cada punto de inter&#195;&#169;s detectado por el hessiano. M&#195;&#161;s espec&#195;&#173;ficamente, utiliza el determinante de la matriz para la determinaci&#195;&#179;n de la localizaci&#195;&#179;n y escala de los puntos. As&#195;&#173;, cuando el determinante del hessiano es un m&#195;&#161;ximo local (previa eliminaci&#195;&#179;n de m&#195;&#173;nimos mediante un umbral), se determina un punto clave. El uso del hessiano es alentado por su velocidad de c&#195;&#161;lculo y precisi&#195;&#179;n.<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:HessianMatrix"></A><!-- MATH
+ \begin{equation}
+H(x,y)=\begin{bmatrix}\frac{\partial^{2}I}{\partial x\text{\texttwosuperior}} & \frac{\partial^{2}I}{\partial x\partial y}\\
+	& \\
+	\frac{\partial^{2}I}{\partial y\partial x} & \frac{\partial^{2}I}{\partial y\text{\texttwosuperior}}
+	\end{bmatrix};\; \textrm{con}\; \frac{\partial^{2}I}{\partial x\partial y}=\frac{\partial^{2}I}{\partial y\partial x}.
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Sea <!-- MATH
+ $\mathbf{p}=(x,y)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="368" HEIGHT="96" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.png"
+ ALT="$ \mathbf{p}=(x,y)$"></SPAN> un punto en la imagen <!-- MATH
+ $\mathit{I}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img68.png"
+ ALT="$ \mathit{I}$"></SPAN>, la matriz hessiana en <!-- MATH
+ $\mathbf{p}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \mathbf{p}$"></SPAN> en la escala <SPAN CLASS="MATH"></SPAN> viene definida como:
+      <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\mathcal{H}(\mathbf{p},\sigma)=\left[\begin{array}{cc}
+      \mathit{L_{xx}(\mathbf{p},}\sigma)\hphantom{} & \mathit{L_{xy}(\mathbf{p},}\sigma)\\
+      \mathit{L_{xy}(\mathbf{p},}\sigma)\hphantom{} & \mathit{L_{yy}(\mathbf{p},}\sigma)
+      \end{array}\right],
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img78.png"
+ ALT="$\displaystyle \mathcal{H}(\mathbf{p},\sigma)=\left[\begin{array}{cc} \mathit{L_...
+...p},}\sigma)\hphantom{} &amp; \mathit{L_{yy}(\mathbf{p},}\sigma) \end{array}\right],$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+donde <!-- MATH
+ $\mathit{L_{xx}(\mathbf{p},}\sigma)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="289" HEIGHT="66" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.png"
+ ALT="$ \mathit{L_{xx}(\mathbf{p},}\sigma)$"></SPAN> es la convoluci&#195;&#179;n de la derivada segunda de una gaussiana <!-- MATH
+ $\frac{\partial^{2}}{\partial x^{2}}\mathit{g}(\sigma)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$ \frac{\partial^{2}}{\partial x^{2}}\mathit{g}(\sigma)$"></SPAN> con la imagen <!-- MATH
+ $\mathit{I}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img68.png"
+ ALT="$ \mathit{I}$"></SPAN> en el punto <!-- MATH
+ $\mathbf{p}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \mathbf{p}$"></SPAN>; <!-- MATH
+ $\mathit{L_{xy}(\mathbf{p},}\sigma)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.png"
+ ALT="$ \mathit{L_{xy}(\mathbf{p},}\sigma)$"></SPAN> es la convoluci&#195;&#179;n de la derivada segunda de una gaussiana <!-- MATH
+ $\frac{\partial^{2}}{\partial x \partial y}\mathit{g}(\sigma)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$ \frac{\partial^{2}}{\partial x \partial y}\mathit{g}(\sigma)$"></SPAN> con la imagen <!-- MATH
+ $\mathit{I}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img68.png"
+ ALT="$ \mathit{I}$"></SPAN> en el punto <!-- MATH
+ $\mathbf{p}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \mathbf{p}$"></SPAN> y <!-- MATH
+ $\mathit{L_{yy}(\mathbf{p},}\sigma)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img83.png"
+ ALT="$ \mathit{L_{yy}(\mathbf{p},}\sigma)$"></SPAN> es la convoluci&#195;&#179;n de la derivada segunda de una gaussiana <!-- MATH
+ $\frac{\partial^{2}}{\partial y^{2}}\mathit{g}(\sigma)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.png"
+ ALT="$ \frac{\partial^{2}}{\partial y^{2}}\mathit{g}(\sigma)$"></SPAN> con la imagen <!-- MATH
+ $\mathit{I}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img68.png"
+ ALT="$ \mathit{I}$"></SPAN> en el punto <!-- MATH
+ $\mathbf{p}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \mathbf{p}$"></SPAN>.
+
+<P>
+A pesar de que los filtros gaussianos pueden ser utilizados para el an&#195;&#161;lisis del espacio escala como se introdujo en la Sec. <A HREF="node33.html#sec:invarianza_a_escala">2.3.1</A>, SURF hace uso de los filtros tipo caja (). &#195;&#137;stos son una aproximaci&#195;&#179;n a las derivadas gaussianas segundas y pueden ser aplicados r&#195;&#161;pidamente cuando se utilizan con las im&#195;&#161;genes integrales. Aqu&#195;&#173; es donde se encuentra presente una de las diferencias que contribuye a una mejora en velocidad del m&#195;&#169;todo SURF respecto a SIFT, pues en este &#195;&#186;ltimo el espacio escala es creado a partir de im&#195;&#161;genes suavizadas repetidamente mediante un filtro gaussiano que luego, son submuestreadas (produci&#195;&#169;ndose un efecto de aliasing indeseado) para alcanzar escalas mayores. En el caso de SURF, el espacio escala es analizado mediante el incremento en el tama&#195;&#177;o del filtro. Un esquema del espacio escala SIFT puede verse en la Fig. <A HREF="#fig:pyramidfilters">2.6</A> (izquierda) en el que se redimensiona la imagen para obtener las escalas sucesivas; mientras que en el espacio escala SURF en la Fig. <A HREF="#fig:pyramidfilters">2.6</A> (derecha) el redimensionamiento se produce sobre el filtro tipo caja y la imagen es siempre la misma.
+      
+<DIV ALIGN="CENTER"><A NAME="fig:pyramidfilters"></A><A NAME="1569"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura:</STRONG>
+Pir&#195;&#161;mide de escala de im&#195;&#161;genes para el m&#195;&#169;todo SIFT (izquierda) y el m&#195;&#169;todo SURF (derecha). (Figura tomada de (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	      <IMG
+ WIDTH="67" HEIGHT="47" ALIGN="BOTTOM" BORDER="0"
+ SRC="img85.png"
+ ALT="\includegraphics[scale=0.6]{./figs/pyramidfilters}">
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+As&#195;&#173; el determinante de la matriz hessiana (aproximado) usado por SURF queda definido como:
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:det_happrox"></A><!-- MATH
+ \begin{equation}
+\det(\mathcal{H}_{approximado})=D_{xx}D_{yy}-(wD_{xy})^{2}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+con <SPAN CLASS="MATH"><IMG
+ WIDTH="318" HEIGHT="41" ALIGN="BOTTOM" BORDER="0"
+ SRC="img87.png"
+ ALT="$ w=0.9$"></SPAN> y donde <!-- MATH
+ $\mathit{D}_{xx}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="67" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ \mathit{D}_{xx}$"></SPAN>, <!-- MATH
+ $\mathit{D}_{yy}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ \mathit{D}_{yy}$"></SPAN> y <!-- MATH
+ $\mathit{D}_{xy}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="$ \mathit{D}_{xy}$"></SPAN> son las derivadas parciales gaussianas de segundo orden aproximadas. La ponderaci&#195;&#179;n relativa <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img91.png"
+ ALT="$ w$"></SPAN> de la respuesta del filtro es usada para balancear la expresi&#195;&#179;n del determinante hessiano. Si bien el mismo var&#195;&#173;a para diferentes escalas, en la pr&#195;&#161;ctica se puede establecer este factor como constante con <SPAN CLASS="MATH"><IMG
+ WIDTH="318" HEIGHT="41" ALIGN="BOTTOM" BORDER="0"
+ SRC="img87.png"
+ ALT="$ w=0.9$"></SPAN>, ya que el mismo no tiene un impacto significante en los resultados (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>).
+
+<P>
+La derivada parcial de segundo orden gaussiana en la direcci&#195;&#179;n ``y'' <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.png"
+ ALT="$ L_{yy}$"></SPAN> puede ser observada en la Fig. <A HREF="#fig:gaussiankernelsdiscreted_y">2.7a</A> y su hom&#195;&#179;loga aproximada <SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.png"
+ ALT="$ D_{yy}$"></SPAN> en la Fig. <A HREF="#fig:gaussiankernelsaprox_y">2.7b</A>; en tanto que en la Fig. <A HREF="#fig:gaussiankernelsdiscreted_xy">2.7c</A> se encuentra representada la derivada parcial de segundo orden gaussiana en la direcci&#195;&#179;n ``x-y'' <SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.png"
+ ALT="$ L_{xy}$"></SPAN> y su hom&#195;&#179;loga aproximada <SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ D_{xy}$"></SPAN> (Fig. <A HREF="#fig:gaussiankernelsaprox_xy">2.7d</A>).
+
+<DIV ALIGN="CENTER"><A NAME="fig:gaussiankernelsdiscreted_y"></A><A NAME="fig:gaussiankernelsaprox_y"></A><A NAME="fig:gaussiankernelsdiscreted_xy"></A><A NAME="fig:gaussiankernelsaprox_xy"></A><A NAME="fig:gaussiankernels"></A><A NAME="1574"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 2.7:</STRONG>
+Derivadas parciales gaussianas de segundo orden discretas y sus hom&#195;&#179;logas aproximadas (tambi&#195;&#169;n referenciadas como filtros tipo caja). Las regiones grises de la imagen son iguales a cero (Figuras tomadas de (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	    
+[]
+
+<IMG
+ WIDTH="38" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img96.png"
+ ALT="\includegraphics[scale=0.45]{../img_ent2/gaussiankernelsdiscrete_y}">
+		   
+	    
+[]
+
+
+		   
+	    
+[]
+
+
+		   
+	    
+[]
+
+</TD></TR>
+</TABLE>
+</DIV>
+
+      Como se ha mencionado, en el m&#195;&#169;todo SURF se aplican sucesivamente filtros de tama&#195;&#177;o creciente sobre la imagen original. El filtro m&#195;&#161;s peque&#195;&#177;o utilizado tiene un tama&#195;&#177;o de <!-- MATH
+ $9 \times 9$
+ -->
+<SPAN CLASS="MATH"></SPAN> y corresponde a la derivada parcial de segundo orden de una gaussiana con <!-- MATH
+ $\sigma=1.2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img101.png"
+ ALT="$ \sigma=1.2$"></SPAN> siendo este el nivel de escala inicial que da la m&#195;&#161;xima resoluci&#195;&#179;n espacial (<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img102.png"
+ ALT="$ s=1.2$"></SPAN>). De la misma forma, convolucionando la imagen original con filtros de mayores dimensiones se van obteniendo los niveles siguientes.
+
+<P>
+El espacio escala para el descriptor SURF est&#195;&#161; dividido en octavas. Una octava representa una serie de respuestas obtenidas mediante la convoluci&#195;&#179;n de la imagen original con filtros de tama&#195;&#177;os cada vez mayores. En total, una octava comprende un factor de escalado de 2 y cada una de ellas es subdividida en un n&#195;&#186;mero constante de niveles de escala (v&#195;&#169;ase la Fig. <A HREF="node35.html#fig:maximum_supression3by3by3">2.9</A>).
+ En la Fig. <A HREF="#fig:tamfilters1">2.8</A> se puede observar un esquema gr&#195;&#161;fico del an&#195;&#161;lisis de 3 octavas en donde el eje horizontal, expresado logar&#195;&#173;tmicamente, representa las escalas. Notar que para cada nueva octava, el tama&#195;&#177;o del filtro es incrementado al doble (en la primer octava el paso es 6, en la segunda de 12, en la tercera 24, etc.) y cada una de ellas empieza con un tama&#195;&#177;o de filtro igual al segundo de la octava anterior. Tambi&#195;&#169;n, se puede observar que las octavas est&#195;&#161;n solapadas, esto, con el objetivo de cubrir todas las posibles escalas. Por ejemplo, para la primer octava el espacio escala comienza con filtros de <!-- MATH
+ $9 \times 9$
+ -->
+<SPAN CLASS="MATH"></SPAN> continuando con los de <!-- MATH
+ $15 \times 15$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="62" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.png"
+ ALT="$ 15 \times 15$"></SPAN>, <!-- MATH
+ $21 \times 21$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img104.png"
+ ALT="$ 21 \times 21$"></SPAN>, y <!-- MATH
+ $27 \times 27$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ 27 \times 27$"></SPAN>. Debido a que se realiza una supresi&#195;&#179;n de no-m&#195;&#161;ximos<A NAME="tex2html15"
+  HREF="footnode.html#foot930"><SUP><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN></SUP></A> tanto espacialmente como con las escalas vecinas, las respuestas del hessiano en el primer y &#195;&#186;ltimo nivel son usadas solo para comparaci&#195;&#179;n. Por ello, luego de realizar una interpolaci&#195;&#179;n, la escala posible m&#195;&#161;s peque&#195;&#177;a es <!-- MATH
+ $\sigma = 1.6$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img106.png"
+ ALT="$ \sigma = 1.6$"></SPAN> correspondiente a un filtro de <!-- MATH
+ $12 \times 12$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.png"
+ ALT="$ 12 \times 12$"></SPAN>, y la m&#195;&#161;s grande a <!-- MATH
+ $\sigma = 3.2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="35" ALIGN="BOTTOM" BORDER="0"
+ SRC="img108.png"
+ ALT="$ \sigma = 3.2$"></SPAN> correspondiente a un filtro de <!-- MATH
+ $24 \times 24$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="19" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.png"
+ ALT="$ 24 \times 24$"></SPAN>. Consideraciones similares se aplican para las dem&#195;&#161;s octavas. Para m&#195;&#161;s detalles se puede consultar ().
+      
+<DIV ALIGN="CENTER"><A NAME="fig:tamfilters1"></A><A NAME="1575"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 2.8:</STRONG>
+Representaci&#195;&#179;n gr&#195;&#161;fica de las longitudes de los filtros para 3 diferentes octavas (Figura adaptada de (<A
+ HREF="node79.html#Bay:2008:SRF">4</A>)).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>	      <IMG
+ WIDTH="67" HEIGHT="36" ALIGN="BOTTOM" BORDER="0"
+ SRC="img110.png"
+ ALT="\includegraphics[scale=0.32]{./figs/tamfilters1}">
+	  
+</TD></TR>
+</TABLE>
+</DIV>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html717"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html713"
+  HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html707"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html715"
+  HREF="node4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Siguiente:</B> <A NAME="tex2html718"
+  HREF="node35.html">Determinaci&#195;&#179;n de la localizaci&#195;&#179;n</A>
+<B> Subir:</B> <A NAME="tex2html714"
+  HREF="node30.html">Detecci&#195;&#179;n de puntos claves</A>
+<B> Anterior:</B> <A NAME="tex2html708"
+  HREF="node33.html">Invarianza a escala</A>
+ &nbsp; <B>  <A NAME="tex2html716"
+  HREF="node4.html">&#205;ndice General</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+christian
+2014-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: entregable04.aux
+The style file: alpha.bst
+Database file #1: bib4.bib
+Warning--empty booktitle in Chum-PhD-TR-2005-19
+Warning--there's a number but no series in Chum-PhD-TR-2005-19
+Warning--empty booktitle in Liu04aninvestigation
+You've used 9 entries,
+            2543 wiz_defined-function locations,
+            625 strings with 6135 characters,
+and the built_in function-call counts, 3905 in all, are:
+= -- 395
+> -- 173
+< -- 7
++ -- 60
+- -- 58
+* -- 269
+:= -- 618
+add.period$ -- 29
+call.type$ -- 9
+change.case$ -- 54
+chr.to.int$ -- 9
+cite$ -- 12
+duplicate$ -- 173
+empty$ -- 290
+format.name$ -- 69
+if$ -- 825
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 12
+newline$ -- 48
+num.names$ -- 27
+pop$ -- 65
+preamble$ -- 1
+purify$ -- 65
+quote$ -- 0
+skip$ -- 149
+stack$ -- 0
+substring$ -- 203
+swap$ -- 42
+text.length$ -- 7
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 60
+warning$ -- 3
+while$ -- 39
+width$ -- 10
+write$ -- 121
+(There were 3 warnings)
